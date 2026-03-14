@@ -1,65 +1,300 @@
-import Image from "next/image";
+import Link from "next/link";
+
+const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/nexora";
+
+const agentTypes = [
+  { name: "Legal Counsel", desc: "Drafts contracts, reviews docs, flags legal risk" },
+  { name: "Financial Analyst", desc: "Tracks metrics, builds forecasts, monitors burn" },
+  { name: "Sales Coordinator", desc: "Manages pipeline, follows up leads, logs CRM" },
+  { name: "Marketing Specialist", desc: "Creates content, schedules posts, runs campaigns" },
+  { name: "Executive Assistant", desc: "Manages calendar, preps briefs, handles comms" },
+  { name: "HR Coordinator", desc: "Onboards staff, tracks compliance, manages offers" },
+  { name: "Project Manager", desc: "Tracks tasks, sends updates, flags blockers" },
+  { name: "Research Analyst", desc: "Synthesizes intel, monitors competitors, writes reports" },
+  { name: "IT/Security", desc: "Monitors systems, manages alerts, enforces policies" },
+  { name: "Content Creator", desc: "Writes blogs, scripts videos, builds brand voice" },
+  { name: "Customer Support", desc: "Handles tickets, resolves issues, escalates edge cases" },
+  { name: "Bookkeeper", desc: "Reconciles accounts, categorizes expenses, flags anomalies" },
+];
+
+const steps = [
+  { n: "01", title: "Free Consult", desc: "Tell us the roles you need" },
+  { n: "02", title: "Scope & Design", desc: "Build plan in 48 hours, you approve" },
+  { n: "03", title: "Build & Deploy", desc: "Live in 1-2 weeks" },
+  { n: "04", title: "Start Using It", desc: "Talk to your agents like teammates" },
+  { n: "05", title: "We Keep Improving", desc: "Monthly upgrades, ongoing support" },
+];
+
+const problems = [
+  {
+    label: "Chatbots",
+    verdict: "Talk but don't do",
+    desc: "They answer questions from a script. No memory, no action, no initiative. Every conversation starts from zero.",
+  },
+  {
+    label: "Copilots",
+    verdict: "Marginal improvements",
+    desc: "They make you 20% faster at things you already do. You're still doing the work.",
+  },
+  {
+    label: "Agents",
+    verdict: "Hard to set up, sit idle",
+    desc: "Most agent setups require devs, break constantly, and wait for explicit commands. They don't actually run your business.",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <>
+      {/* ── HERO ── */}
+      <section className="relative px-6 pt-24 pb-20 max-w-6xl mx-auto">
+        <div className="max-w-3xl">
+          <h1 className="text-7xl md:text-8xl font-black tracking-tighter text-white leading-none mb-4">
+            AI or Die
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-300 mb-6">
+            AI Employees That Actually Work
+          </h2>
+          <p className="text-lg text-gray-400 max-w-xl mb-10 leading-relaxed">
+            We build, deploy, and manage AI employee teams for your business.
+            Grow without hiring.
+          </p>
+          <div className="flex flex-wrap items-center gap-4">
             <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              href={CONSULT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded font-bold text-lg transition-colors"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
+              Book a Free Consult
+            </a>
             <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              href="tel:2063806319"
+              className="text-gray-400 hover:text-white transition-colors text-lg font-medium"
             >
-              Learning
-            </a>{" "}
-            center.
+              206-380-6319
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SOCIAL PROOF BAR ── */}
+      <div className="bg-[#111111] border-y border-gray-800 py-4 px-6">
+        <div className="max-w-6xl mx-auto text-center">
+          <p className="text-gray-300 font-medium">
+            <span className="text-red-500 font-bold">20+ agents</span> across{" "}
+            <span className="text-white font-bold">5 live business units</span>{" "}
+            — right now, in production.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </div>
+
+      {/* ── THE OLD WAY IS BROKEN ── */}
+      <section className="px-6 py-24 max-w-6xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
+          The Old Way Is Broken
+        </h2>
+        <p className="text-gray-400 mb-12 text-lg max-w-2xl">
+          Every AI approach before now has missed the point. Here&apos;s why.
+        </p>
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
+          {problems.map((p) => (
+            <div
+              key={p.label}
+              className="bg-[#111111] border border-gray-800 rounded-lg p-6"
+            >
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-white font-bold text-lg">{p.label}</span>
+                <span className="text-red-500 text-sm font-semibold bg-red-500/10 px-2 py-1 rounded">
+                  {p.verdict}
+                </span>
+              </div>
+              <p className="text-gray-400 text-sm leading-relaxed">{p.desc}</p>
+            </div>
+          ))}
         </div>
-      </main>
-    </div>
+        <div className="border-l-4 border-red-500 pl-6">
+          <p className="text-xl font-bold text-white">We do it differently.</p>
+          <p className="text-gray-400 mt-1">
+            AI employees that have memory, run autonomously, and actually do the
+            work.
+          </p>
+        </div>
+      </section>
+
+      {/* ── HOW IT WORKS ── */}
+      <section className="bg-[#111111] border-y border-gray-800 px-6 py-24">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
+            How It Works
+          </h2>
+          <p className="text-gray-400 mb-14 text-lg">
+            From idea to live AI employees in under two weeks.
+          </p>
+          <div className="grid md:grid-cols-5 gap-6">
+            {steps.map((s) => (
+              <div key={s.n} className="flex flex-col">
+                <div className="text-red-500 font-black text-4xl mb-3">
+                  {s.n}
+                </div>
+                <div className="text-white font-bold mb-2">{s.title}</div>
+                <div className="text-gray-400 text-sm leading-relaxed">
+                  {s.desc}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── AGENT TYPES ── */}
+      <section className="px-6 py-24 max-w-6xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
+          Agent Types
+        </h2>
+        <p className="text-gray-400 mb-12 text-lg">
+          Every agent is custom-built for your business. Here&apos;s what we can
+          deploy.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {agentTypes.map((a) => (
+            <div
+              key={a.name}
+              className="bg-[#111111] border border-gray-800 hover:border-gray-600 rounded-lg p-5 transition-colors group"
+            >
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 rounded-full bg-red-500 mt-2 shrink-0" />
+                <div>
+                  <div className="text-white font-semibold mb-1">{a.name}</div>
+                  <div className="text-gray-400 text-sm">{a.desc}</div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── QUICK PRICING ── */}
+      <section className="bg-[#111111] border-y border-gray-800 px-6 py-16">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+          <div>
+            <h2 className="text-2xl font-black text-white mb-2">Pricing</h2>
+            <div className="flex flex-wrap gap-4 text-sm text-gray-400">
+              <span className="text-white font-semibold">
+                $2,000 setup · $500/month per agent
+              </span>
+              <span>·</span>
+              <span className="text-green-400 font-semibold">
+                3 agents from $1,200/mo
+              </span>
+            </div>
+          </div>
+          <Link
+            href="/pricing"
+            className="border border-gray-600 hover:border-white text-white px-6 py-3 rounded font-semibold transition-colors whitespace-nowrap"
+          >
+            See Full Pricing →
+          </Link>
+        </div>
+      </section>
+
+      {/* ── DEPLOYMENT OPTIONS ── */}
+      <section className="px-6 py-24 max-w-6xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-black text-white mb-12">
+          Deployment Options
+        </h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          {[
+            {
+              title: "Cloud",
+              desc: "Fully managed. We host, monitor, and maintain everything. Zero infrastructure overhead for you.",
+              icon: "☁️",
+            },
+            {
+              title: "On-Premise",
+              desc: "Your data stays on your hardware. Full control, maximum privacy, complete ownership.",
+              icon: "🏢",
+            },
+            {
+              title: "Hybrid",
+              desc: "Sensitive data on-prem, compute in the cloud. Best of both worlds.",
+              icon: "⚡",
+            },
+          ].map((d) => (
+            <div
+              key={d.title}
+              className="bg-[#111111] border border-gray-800 rounded-lg p-6"
+            >
+              <div className="text-3xl mb-4">{d.icon}</div>
+              <h3 className="text-white font-bold text-xl mb-3">{d.title}</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">{d.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── THE MATH ── */}
+      <section className="bg-[#111111] border-y border-gray-800 px-6 py-20">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-8">
+            The Math Is Simple
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6 mb-10 text-left">
+            <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-6">
+              <div className="text-red-400 font-semibold text-sm mb-2 uppercase tracking-wider">
+                The Old Way
+              </div>
+              <div className="text-white font-black text-3xl mb-2">
+                ~$350K/year
+              </div>
+              <p className="text-gray-400 text-sm">
+                Hiring legal + financial + sales coordinators — salary,
+                benefits, overhead, PTO.
+              </p>
+            </div>
+            <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-6">
+              <div className="text-green-400 font-semibold text-sm mb-2 uppercase tracking-wider">
+                AI Employees
+              </div>
+              <div className="text-white font-black text-3xl mb-2">
+                $19,400/year
+              </div>
+              <p className="text-gray-400 text-sm">
+                3 AI employees. Same work. 24/7. No PTO, no benefits, no
+                overhead.
+              </p>
+            </div>
+          </div>
+          <p className="text-xl text-gray-300 font-semibold">
+            You avoid{" "}
+            <span className="text-white font-black">$330K in hires</span> —
+            and agents work 24/7.
+          </p>
+        </div>
+      </section>
+
+      {/* ── PATIENT ZERO ── */}
+      <section className="px-6 py-24 max-w-4xl mx-auto text-center">
+        <div className="text-red-500 font-bold text-sm uppercase tracking-widest mb-4">
+          Patient Zero
+        </div>
+        <h2 className="text-3xl md:text-4xl font-black text-white mb-6">
+          We proved it on ourselves.
+        </h2>
+        <p className="text-gray-400 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+          Tomek Group runs 20+ AI agents across 5 business units in production
+          every day. We&apos;re not pitching a vision. We&apos;re selling what
+          we already use.
+        </p>
+        <a
+          href={CONSULT_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-red-500 hover:bg-red-600 text-white px-10 py-4 rounded font-bold text-lg transition-colors"
+        >
+          Book a Free Consult
+        </a>
+      </section>
+    </>
   );
 }
