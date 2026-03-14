@@ -185,7 +185,7 @@ export default function Home() {
               </span>
               <span>·</span>
               <span className="text-green-400 font-semibold">
-                3 agents from $1,200/mo
+                3-agent bundle from $1,200/mo (volume discount)
               </span>
             </div>
           </div>
@@ -257,11 +257,11 @@ export default function Home() {
                 AI Employees
               </div>
               <div className="text-white font-black text-3xl mb-2">
-                $19,400/year
+                $19,400 year one
               </div>
               <p className="text-gray-400 text-sm">
-                3 AI employees. Same work. 24/7. No PTO, no benefits, no
-                overhead.
+                3 AI employees. $5,000 setup + $1,200/mo. Year 2+ drops to
+                $14,400/yr. 24/7, no PTO, no overhead.
               </p>
             </div>
           </div>

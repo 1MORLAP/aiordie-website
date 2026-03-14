@@ -66,7 +66,7 @@ const included = [
   "Custom-built for you",
   "Memory that works",
   "Tool integrations",
-  "5,400+ community skills",
+  "5,400+ pre-built integrations (email, CRM, Slack, GitHub, and more)",
   "24/7 operation",
   "Isolated infrastructure",
   "Monthly improvements",
