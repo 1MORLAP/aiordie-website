@@ -3,7 +3,66 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Pricing — AI or Die",
   description:
-    "Simple, transparent pricing for AI employees. From $500/mo per agent.",
+    "Simple, transparent pricing for AI employees. $2,000 setup + $500/mo per agent. Volume bundles from $1,200/mo. No contracts, cancel anytime.",
+  openGraph: {
+    title: "AI Employee Pricing — AI or Die",
+    description:
+      "$2,000 setup + $500/mo per agent. Volume bundles from $1,200/mo. No contracts, cancel anytime.",
+    url: "https://aiordie.now/pricing",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Employee Pricing — AI or Die",
+    description: "$2,000 setup + $500/mo per agent. No contracts, cancel anytime.",
+  },
+  alternates: { canonical: "https://aiordie.now/pricing" },
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How long does it take to get started with an AI employee?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Typically 1-2 weeks from your initial consult to a live deployed agent. We handle all configuration, integrations, and testing.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do I need technical knowledge to use AI employees?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "None. We handle all setup, deployment, and ongoing management. You interact with your agents just like you would a human employee — through chat, email, or Slack.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can I cancel my AI employee subscription?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. No long-term contracts. Cancel with 30 days notice. You keep all your agent configurations and files — zero lock-in.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What AI models do the agents use?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We recommend Anthropic Claude (Claude Max 5x at $100/mo covers 3-5 agents comfortably). We also support OpenAI and Venice AI. You choose and subscribe directly — we never upcharge on model costs.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is my business data safe with AI employees?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Each client runs on isolated infrastructure — no shared environments between clients. Your data never mixes with other businesses. We also offer on-premise deployment for maximum data control.",
+      },
+    },
+  ],
 };
 
 const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/nexora";
@@ -77,6 +136,12 @@ const included = [
 export default function PricingPage() {
   return (
     <>
+      {/* ── FAQPage JSON-LD ── */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+
       {/* ── HERO ── */}
       <section className="px-6 pt-20 pb-16 max-w-6xl mx-auto">
         <h1 className="text-5xl md:text-6xl font-black text-white mb-4 tracking-tight">

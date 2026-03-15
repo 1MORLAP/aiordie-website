@@ -1,4 +1,41 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "AI or Die — AI Employees That Actually Work",
+  description:
+    "We build, deploy, and manage AI employee teams for your business. Legal, finance, sales, marketing — all the roles you need, without the headcount.",
+  openGraph: {
+    title: "AI or Die — AI Employees That Actually Work",
+    description:
+      "We build, deploy, and manage AI employee teams for your business. Grow without hiring.",
+    url: "https://aiordie.now",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI or Die — AI Employees That Actually Work",
+    description: "We build, deploy, and manage AI employee teams for your business. Grow without hiring.",
+  },
+  alternates: { canonical: "https://aiordie.now" },
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "AI or Die",
+  url: "https://aiordie.now",
+  description:
+    "We build, deploy, and manage AI employee teams for businesses. Legal, finance, sales, marketing — all the roles you need, without the headcount.",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Miami",
+    addressRegion: "FL",
+    addressCountry: "US",
+  },
+  telephone: "+12063806319",
+  areaServed: "Worldwide",
+  serviceType: "AI Employee Deployment and Management",
+};
 
 const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/nexora";
 
@@ -46,10 +83,16 @@ const problems = [
 export default function Home() {
   return (
     <>
+      {/* ── Organization JSON-LD ── */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+
       {/* ── HERO ── */}
-      <section className="relative px-6 pt-24 pb-20 max-w-6xl mx-auto">
+      <section className="relative px-6 pt-16 sm:pt-24 pb-16 sm:pb-20 max-w-6xl mx-auto">
         <div className="max-w-3xl">
-          <h1 className="text-7xl md:text-8xl font-black tracking-tighter text-white leading-none mb-4">
+          <h1 className="text-5xl sm:text-6xl md:text-8xl font-black tracking-tighter text-white leading-none mb-4">
             AI or Die
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-300 mb-6">
@@ -59,12 +102,12 @@ export default function Home() {
             We build, deploy, and manage AI employee teams for your business.
             Grow without hiring.
           </p>
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-4">
             <a
               href={CONSULT_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded font-bold text-lg transition-colors"
+              className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded font-bold text-lg transition-colors w-full sm:w-auto text-center"
             >
               Book a Free Consult
             </a>
@@ -131,7 +174,7 @@ export default function Home() {
           <p className="text-gray-400 mb-14 text-lg">
             From idea to live AI employees in under two weeks.
           </p>
-          <div className="grid md:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
             {steps.map((s) => (
               <div key={s.n} className="flex flex-col">
                 <div className="text-red-500 font-black text-4xl mb-3">
