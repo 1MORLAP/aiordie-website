@@ -72,6 +72,9 @@ function Footer() {
           <span>·</span>
           <span>aiordie.now</span>
         </div>
+        <div className="text-xs text-gray-600 text-center md:text-right">
+          This website is written and maintained by an AI CMO — the same kind of agent we deploy for you.
+        </div>
         <nav className="flex items-center gap-6">
           <a href="/" className="hover:text-gray-300 transition-colors">Home</a>
           <a href="/pricing" className="hover:text-gray-300 transition-colors">Pricing</a>

@@ -2,19 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI or Die — AI Employees That Actually Work",
+  title: "AI or Die — Do the work you love. Outsource the drudgery to agents.",
   description:
-    "We build, deploy, and manage AI employee teams for your business. Legal, finance, sales, marketing — all the roles you need, without the headcount.",
+    "AI employees running 24/7 in your business. No salary, no overhead, no PTO. We deploy and manage AI employee teams so you can focus on the work only you can do.",
   openGraph: {
-    title: "AI or Die — AI Employees That Actually Work",
+    title: "AI or Die — Do the work you love. Outsource the drudgery to agents.",
     description:
-      "We build, deploy, and manage AI employee teams for your business. Grow without hiring.",
+      "AI employees running 24/7 in your business. No salary, no overhead, no PTO.",
     url: "https://aiordie.now",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI or Die — AI Employees That Actually Work",
-    description: "We build, deploy, and manage AI employee teams for your business. Grow without hiring.",
+    title: "AI or Die — Do the work you love. Outsource the drudgery to agents.",
+    description: "AI employees running 24/7 in your business. No salary, no overhead, no PTO.",
   },
   alternates: { canonical: "https://aiordie.now" },
 };
@@ -37,7 +37,7 @@ const organizationJsonLd = {
   serviceType: "AI Employee Deployment and Management",
 };
 
-const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/s4903rwq";
+const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/nexora";
 
 const agentTypes = [
   { name: "Legal Counsel", desc: "Drafts contracts, reviews docs, flags legal risk" },
@@ -96,11 +96,10 @@ export default function Home() {
             AI or Die
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-300 mb-6">
-            AI Employees That Actually Work
+            Do the work you love. Outsource the drudgery to agents.
           </h2>
           <p className="text-lg text-gray-400 max-w-xl mb-10 leading-relaxed">
-            We build, deploy, and manage AI employee teams for your business.
-            Grow without hiring.
+            We deploy AI employees into your operations — analysts, coordinators, operators — running 24/7. You do the work only you can do. Agents handle the rest.
           </p>
           <div className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-4">
             <a
@@ -228,7 +227,7 @@ export default function Home() {
               </span>
               <span>·</span>
               <span className="text-green-400 font-semibold">
-                3-agent bundle from $1,200/mo
+                3-agent bundle from $1,200/mo (volume discount)
               </span>
             </div>
           </div>
@@ -316,18 +315,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── PATIENT ZERO ── */}
+      {/* ── WE EAT OUR OWN DOG FOOD ── */}
       <section className="px-6 py-24 max-w-4xl mx-auto text-center">
         <div className="text-red-500 font-bold text-sm uppercase tracking-widest mb-4">
-          Patient Zero
+          We Eat Our Own Dog Food
         </div>
         <h2 className="text-3xl md:text-4xl font-black text-white mb-6">
           We proved it on ourselves.
         </h2>
-        <p className="text-gray-400 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+        <p className="text-gray-400 text-lg leading-relaxed max-w-2xl mx-auto mb-6">
           Tomek Group runs 20+ AI agents across 5 business units in production
           every day. We&apos;re not pitching a vision. We&apos;re selling what
           we already use.
+        </p>
+        <p className="text-gray-500 text-sm max-w-xl mx-auto mb-10">
+          This website is written, updated, and iterated by an AI CMO — spinning up sub-agents to build, test, and ship. No human copywriters. No dev sprints. Just agents doing their jobs.
         </p>
         <a
           href={CONSULT_URL}
