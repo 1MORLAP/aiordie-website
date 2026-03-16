@@ -43,7 +43,7 @@ const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/s4903rwq";
 const liveAgents = [
   {
     agent: "AI CMO",
-    unit: "AIorDie",
+    unit: "AI or Die",
     task: "This website — every word. Written, updated, and iterated. No copywriters. No agency.",
   },
   {
@@ -150,7 +150,7 @@ export default function Home() {
           </h1>
 
           <p className="text-lg text-gray-400 max-w-xl mb-10 leading-relaxed">
-            AIorDie deploys AI employees into your operations — CMOs, analysts,
+            AI or Die deploys AI employees into your operations — CMOs, analysts,
             legal counsel, coordinators — running 24/7. You do the work only
             you can do. Agents handle the rest.
           </p>
@@ -244,7 +244,7 @@ export default function Home() {
             This is the trap every founder walks into. Most never walk out.
           </p>
           <p>
-            AIorDie exists because that trap is now optional. The operational
+            AI or Die exists because that trap is now optional. The operational
             drudgery that swallows founders whole can be handed to agents —
             permanently, 24/7, without salary negotiations or sick days or
             Slack drama.
