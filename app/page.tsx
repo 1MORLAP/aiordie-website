@@ -25,7 +25,7 @@ const organizationJsonLd = {
   name: "AI or Die",
   url: "https://aiordie.now",
   description:
-    "We build, deploy, and manage AI employee teams for businesses. Legal, finance, sales, marketing — all the roles you need, without the headcount.",
+    "AI employees running 24/7 in your business. We deploy and manage AI employee teams so you can focus on the work only you can do.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Miami",
@@ -37,7 +37,7 @@ const organizationJsonLd = {
   serviceType: "AI Employee Deployment and Management",
 };
 
-const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/nexora";
+const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/s4903rwq";
 
 const agentTypes = [
   { name: "Legal Counsel", desc: "Drafts contracts, reviews docs, flags legal risk" },
