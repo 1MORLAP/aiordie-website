@@ -168,9 +168,12 @@ export default function Home() {
               href="tel:+17869989310"
               className="text-gray-400 hover:text-white transition-colors text-lg font-medium"
             >
-              (786) 998-9310
+              Or call (786) 998-9310
             </a>
           </div>
+          <p className="text-gray-600 text-sm mt-3">
+            Consult is with a real human. Call to book, or to talk to our AI agent directly.
+          </p>
         </div>
       </section>
 
@@ -495,14 +498,14 @@ export default function Home() {
             Book a Free Consult
           </a>
           <p className="mt-6 text-gray-600 text-sm">
-            Or call directly:{" "}
+            Prefer to talk first?{" "}
             <a
               href="tel:+17869989310"
               className="text-gray-400 hover:text-white transition-colors"
             >
               (786) 998-9310
-            </a>{" "}
-            — AI receptionist, available 24/7.
+            </a>
+            {" "}— call to book or talk to our AI agent directly. Consult itself is with a real human.
           </p>
         </div>
       </section>
