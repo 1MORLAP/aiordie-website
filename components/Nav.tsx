@@ -36,7 +36,7 @@ export default function Nav() {
             Blog
           </Link>
           <a
-            href="https://calendar.notion.so/meet/tomaszwojewoda/nexora"
+            href="https://calendar.notion.so/meet/tomaszwojewoda/s4903rwq"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded font-semibold transition-colors text-sm"
@@ -101,7 +101,7 @@ export default function Nav() {
             Blog
           </Link>
           <a
-            href="https://calendar.notion.so/meet/tomaszwojewoda/nexora"
+            href="https://calendar.notion.so/meet/tomaszwojewoda/s4903rwq"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded font-semibold transition-colors text-sm text-center"

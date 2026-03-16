@@ -37,7 +37,7 @@ const organizationJsonLd = {
   serviceType: "AI Employee Deployment and Management",
 };
 
-const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/nexora";
+const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/s4903rwq";
 
 const agentTypes = [
   { name: "Legal Counsel", desc: "Drafts contracts, reviews docs, flags legal risk" },

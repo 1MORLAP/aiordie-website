@@ -117,7 +117,7 @@ export default async function BlogPostPage({ params }: Props) {
             Ready to stop hiring and start deploying?
           </p>
           <a
-            href="https://calendar.notion.so/meet/tomaszwojewoda/nexora"
+            href="https://calendar.notion.so/meet/tomaszwojewoda/s4903rwq"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded font-bold transition-colors"
