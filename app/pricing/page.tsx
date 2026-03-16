@@ -351,6 +351,13 @@ export default function PricingPage() {
         >
           Book a Free Consult
         </a>
+        <p className="mt-6 text-gray-500 text-sm">
+          Rather talk first?{" "}
+          <a href="tel:+17869989310" className="text-gray-300 hover:text-white transition-colors font-medium">
+            (786) 998-9310
+          </a>
+          {" "}— our AI receptionist picks up 24/7.
+        </p>
       </section>
     </>
   );

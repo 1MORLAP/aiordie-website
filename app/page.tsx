@@ -32,7 +32,7 @@ const organizationJsonLd = {
     addressRegion: "FL",
     addressCountry: "US",
   },
-  telephone: "+12063806319",
+  telephone: "+17869989310",
   areaServed: "Worldwide",
   serviceType: "AI Employee Deployment and Management",
 };
@@ -111,10 +111,10 @@ export default function Home() {
               Book a Free Consult
             </a>
             <a
-              href="tel:2063806319"
+              href="tel:+17869989310"
               className="text-gray-400 hover:text-white transition-colors text-lg font-medium"
             >
-              206-380-6319
+              (786) 998-9310
             </a>
           </div>
         </div>

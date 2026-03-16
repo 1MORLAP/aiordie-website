@@ -66,8 +66,8 @@ function Footer() {
           <span>·</span>
           <span>Miami, FL</span>
           <span>·</span>
-          <a href="tel:2063806319" className="hover:text-gray-300 transition-colors">
-            206-380-6319
+          <a href="tel:+17869989310" className="hover:text-gray-300 transition-colors">
+            (786) 998-9310
           </a>
           <span>·</span>
           <span>aiordie.now</span>
