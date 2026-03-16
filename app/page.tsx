@@ -228,7 +228,7 @@ export default function Home() {
               </span>
               <span>·</span>
               <span className="text-green-400 font-semibold">
-                3-agent bundle from $1,200/mo (volume discount)
+                3-agent bundle from $1,200/mo
               </span>
             </div>
           </div>
