@@ -307,7 +307,7 @@ export default function PricingPage() {
               </div>
             ))}
           </div>
-          <div className="border border-green-500/30 bg-green-500/5 rounded-lg p-4 max-w-2xl">
+          <div className="border border-green-500/30 bg-green-500/5 rounded-lg p-4">
             <p className="text-green-400 text-sm font-medium">
               💡 Recommendation: Anthropic Max 5x ($100/mo) covers 3-5 agents
               comfortably — the sweet spot for most clients.
