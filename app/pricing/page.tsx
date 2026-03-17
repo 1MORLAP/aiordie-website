@@ -65,7 +65,7 @@ const faqJsonLd = {
   ],
 };
 
-const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/s4903rwq";
+const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/aod";
 
 const tiers = [
   {

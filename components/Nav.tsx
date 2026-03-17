@@ -69,7 +69,7 @@ export default function Nav() {
           </Link>
           <ThemeToggle />
           <a
-            href="https://calendar.notion.so/meet/tomaszwojewoda/s4903rwq"
+            href="https://calendar.notion.so/meet/tomaszwojewoda/aod"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-accent px-4 py-2 rounded font-semibold text-sm"
@@ -139,7 +139,7 @@ export default function Nav() {
             Blog
           </Link>
           <a
-            href="https://calendar.notion.so/meet/tomaszwojewoda/s4903rwq"
+            href="https://calendar.notion.so/meet/tomaszwojewoda/aod"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-accent px-4 py-2 rounded font-semibold text-sm text-center"

@@ -5,7 +5,7 @@ import LiveFleetDashboard from "@/components/LiveFleetDashboard";
 import OrgChart from "@/components/OrgChart";
 import ScrollReveal from "@/components/ScrollReveal";
 
-const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/s4903rwq";
+const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/aod";
 
 export const metadata: Metadata = {
   title: "AI or Die — Scale Leaders With AI Teams",
