@@ -65,7 +65,7 @@ export default function OrgChart() {
 
         return (
           <ScrollReveal key={team.leader} delayMs={teamIdx * 90}>
-            <article className="org-team-card rounded-[1.4rem] border border-[var(--border)] p-5 md:p-6">
+            <article className="org-team-card flex h-full flex-col rounded-[1.4rem] border border-[var(--border)] p-5 md:p-6">
               <div className="org-network">
                 <div className="org-hub-wrap">
                   <div className="org-hub">
@@ -93,7 +93,7 @@ export default function OrgChart() {
                 </div>
               </div>
 
-              <p className="mt-5 border-t border-[var(--border)] pt-3 text-sm text-[var(--text-secondary)]">
+              <p className="mt-auto border-t border-[var(--border)] pt-3 text-sm text-[var(--text-secondary)]">
                 {team.outcome}
               </p>
             </article>

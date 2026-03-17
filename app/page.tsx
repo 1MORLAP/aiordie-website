@@ -358,7 +358,7 @@ export default function Home() {
           <OrgChart />
 
           <ScrollReveal delayMs={120}>
-            <p className="mt-10 max-w-3xl text-[var(--text-secondary)]">
+            <p className="mt-10 text-[var(--text-secondary)]">
               High-value leaders drowning in low-value tasks — that&apos;s the founder trap. The fix isn&apos;t another expensive hire. It&apos;s giving each leader AI direct reports that execute without sleep, attrition, or lag.
             </p>
           </ScrollReveal>
