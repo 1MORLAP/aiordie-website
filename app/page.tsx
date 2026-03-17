@@ -157,7 +157,7 @@ const proofOfConcept = [
   {
     name: "Any.Markets",
     tag: "Startup Launch",
-    desc: "A prediction markets startup that launched with an AI CEO, CTO, and CMO from day one. Full leadership team. Zero C-suite salary burn. We add whatever roles they need as they grow.",
+    desc: "Launch your own prediction markets. Profit from the fees they generate. Any.Markets deployed a full AI leadership team — CEO, CTO, CMO — from day one.",
     detail: "AI CEO + CTO + CMO from launch.",
     color: "purple",
   },
@@ -685,7 +685,7 @@ export default function Home() {
               <div className="text-white font-black text-xl mb-0.5">Any.Markets</div>
               <div className="text-gray-600 text-xs font-mono mb-3">any.markets</div>
               <p className="text-gray-400 text-sm leading-relaxed mb-3">
-                Prediction markets platform launching with a full AI leadership team from day one.
+                Launch your own prediction markets. Profit from the fees they generate. Full AI leadership team deployed from day one.
               </p>
               <p className="text-gray-300 text-sm leading-relaxed">
                 <span className="text-gray-500">What we built:</span> Full AI leadership — CEO, CTO, CMO agents deployed from launch. All new roles staffed with AI as needed.
