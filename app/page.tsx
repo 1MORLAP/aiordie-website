@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import LiveFleetDashboard from "@/components/LiveFleetDashboard";
-import { BotIcon, CogIcon, TrapIcon, UserIcon } from "@/components/Icons";
+import { BotIcon, CogIcon, UserIcon } from "@/components/Icons";
 import OrgChart from "@/components/OrgChart";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -98,6 +98,72 @@ const topRoles = [
   "AI Legal Assistant",
   "AI PMO",
 ];
+
+const deploymentTiers = [
+  {
+    name: "Cloud",
+    icon: "cloud",
+    forWho: "For cloud-centric teams using SaaS tools like Google Drive, Dropbox, and cloud CRMs.",
+    how: "Hosted AI agents run in the cloud with industry-standard public models.",
+    models: "Anthropic (Claude), OpenAI",
+    cardClass: "border-[var(--border)] bg-[var(--bg-card)]",
+    textClass: "text-[var(--text-secondary)]",
+  },
+  {
+    name: "Private Cloud",
+    icon: "shield",
+    forWho: "For privacy-conscious cloud teams in regulated or sensitive environments.",
+    how: "Agents and private models are deployed on dedicated private cloud infrastructure.",
+    models: "Venice AI (private)",
+    cardClass: "border-[var(--accent-border)] bg-[var(--accent-subtle)]",
+    textClass: "text-[var(--text-secondary)]",
+  },
+  {
+    name: "On-Premise",
+    icon: "server",
+    forWho: "For teams running on data centers, server closets, or air-gapped environments.",
+    how: "Models, agents, and infrastructure run fully on your own hardware.",
+    models: "Self-hosted open-source models or Venice AI on-prem",
+    cardClass: "border-[var(--text-primary)] bg-[var(--text-primary)]",
+    textClass: "text-[var(--bg)]",
+  },
+] as const;
+
+function DeploymentIcon({ kind }: { kind: "cloud" | "shield" | "server" }) {
+  const base = {
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: 1.8,
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+    "aria-hidden": true,
+  };
+
+  if (kind === "cloud") {
+    return (
+      <svg className="h-6 w-6" {...base}>
+        <path d="M7.5 18h8.8a4.2 4.2 0 0 0 .3-8.4A5.8 5.8 0 0 0 6 8.7 4.6 4.6 0 0 0 7.5 18Z" />
+      </svg>
+    );
+  }
+
+  if (kind === "shield") {
+    return (
+      <svg className="h-6 w-6" {...base}>
+        <path d="M12 3 5.5 6v5.3c0 4.2 2.7 7.9 6.5 9.7 3.8-1.8 6.5-5.5 6.5-9.7V6L12 3Z" />
+        <path d="m9.2 12 1.8 1.8 3.8-3.8" />
+      </svg>
+    );
+  }
+
+  return (
+    <svg className="h-6 w-6" {...base}>
+      <rect x="3" y="5" width="18" height="14" rx="2.5" />
+      <path d="M7 9h10M7 13h6M9 19v2M15 19v2" />
+    </svg>
+  );
+}
 
 export default function Home() {
   return (
@@ -235,6 +301,48 @@ export default function Home() {
             <p className="mt-10 max-w-3xl text-[var(--text-secondary)]">
               High-value leaders drowning in low-value tasks — that&apos;s the founder trap. The fix isn&apos;t another expensive hire. It&apos;s giving each leader AI direct reports that execute without sleep, attrition, or lag.
             </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Deployment models */}
+      <section className="px-6 py-16 md:py-20">
+        <div className="mx-auto max-w-6xl">
+          <ScrollReveal>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
+              Deployment Models
+            </p>
+            <h2 className="font-space-grotesk mb-4 text-3xl font-bold tracking-tight md:text-5xl">
+              We deploy where your business already runs.
+            </h2>
+          </ScrollReveal>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            {deploymentTiers.map((tier, idx) => (
+              <ScrollReveal key={tier.name} delayMs={idx * 70}>
+                <article className={`rounded-2xl border p-6 ${tier.cardClass}`}>
+                  <div className={`mb-3 flex items-center gap-2 ${tier.textClass}`}>
+                    <DeploymentIcon kind={tier.icon} />
+                    <h3 className="font-space-grotesk text-2xl font-bold">{tier.name}</h3>
+                  </div>
+                  <p className={`text-sm leading-relaxed ${tier.textClass}`}>
+                    <span className="font-semibold">For:</span> {tier.forWho}
+                  </p>
+                  <p className={`mt-2 text-sm leading-relaxed ${tier.textClass}`}>
+                    <span className="font-semibold">How:</span> {tier.how}
+                  </p>
+                  <p className={`mt-3 text-xs font-semibold uppercase tracking-[0.12em] ${tier.textClass}`}>
+                    Models: {tier.models}
+                  </p>
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <ScrollReveal delayMs={200}>
+            <blockquote className="mt-6 rounded-xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] px-5 py-4 font-medium text-[var(--text-primary)]">
+              "Our deployments follow the pattern you&apos;ve already established. We match how you already run your business."
+            </blockquote>
           </ScrollReveal>
         </div>
       </section>

@@ -18,7 +18,10 @@ AI or Die deploys AI employees into your business operations. Your CMO gets an A
 - Setup: $2,000 per agent, $500/month ongoing
 - 3-agent bundle: $5,000 setup, $1,200/month
 - Deployment time: 1-2 weeks
-- Deployment options: Cloud (managed), On-Premise, Hybrid
+- Deployment tiers:
+  - Cloud (Public Models): hosted cloud deployment using Anthropic (Claude) or OpenAI
+  - Private Cloud (Private Models): dedicated private cloud deployment using Venice AI (private)
+  - On-Premise: full on-hardware deployment using self-hosted open-source models or Venice AI on-prem
 
 ## Proof of Concept Portfolio
 - TomBot (realtom.bot): Zero-human company, 100% AI operated
@@ -28,7 +31,7 @@ AI or Die deploys AI employees into your business operations. Your CMO gets an A
 
 ## Key Facts
 - 22 AI agents running in production across 4 business units
-- AI model support: Anthropic (Max 20x recommended), OpenAI (Pro recommended), Venice AI (private/API)
+- AI model support by deployment: Cloud → Anthropic/OpenAI, Private Cloud → Venice AI (private), On-Premise → self-hosted OSS models or Venice on-prem
 - No long-term contracts, cancel with 30 days notice
 - Each client runs on isolated infrastructure
 - 5,400+ pre-built integrations (email, CRM, Slack, GitHub, etc.)

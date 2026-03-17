@@ -125,18 +125,72 @@ const brainCosts = [
 
 const deploymentOptions = [
   {
-    title: "Cloud",
-    text: "Fastest launch. We host, monitor, and optimize your AI employees in isolated cloud infrastructure.",
+    title: "Cloud (Public Models)",
+    icon: "cloud",
+    forWho: "Cloud-centric teams using Google Drive, Dropbox, cloud CRMs, and SaaS tools.",
+    how: "Hosted AI agents run in the cloud with public model providers.",
+    models: "Anthropic (Claude), OpenAI",
+    privacy: "Standard cloud security. Data is processed by public AI providers.",
+    brainMap: "AI Brain Cost mapping: Anthropic Pro/Max or OpenAI Plus/Pro subscriptions.",
+    cardClass: "border-[var(--border)] bg-[var(--bg-card)]",
+  },
+  {
+    title: "Private Cloud (Private Models)",
+    icon: "shield",
+    forWho: "Privacy-conscious cloud teams in regulated or sensitive industries.",
+    how: "Agents and models are deployed on dedicated private cloud infrastructure.",
+    models: "Venice AI (private)",
+    privacy: "Data never touches public AI providers; it stays in your private environment.",
+    brainMap: "AI Brain Cost mapping: Venice AI private deployment (usage-based).",
+    cardClass: "border-[var(--accent-border)] bg-[var(--accent-subtle)]",
   },
   {
     title: "On-Premise",
-    text: "Maximum control for regulated teams. Deploy your agent stack inside your own environment.",
+    icon: "server",
+    forWho: "Teams operating from their own hardware, data centers, or air-gapped environments.",
+    how: "Everything runs on your infrastructure: models, agents, storage, and orchestration.",
+    models: "Self-hosted open-source models or Venice AI on-prem",
+    privacy: "Maximum control. Nothing leaves your building unless you choose.",
+    brainMap: "AI Brain Cost mapping: self-hosted model stack or Venice AI on-prem licensing.",
+    cardClass: "border-[var(--text-primary)] bg-[var(--text-primary)] text-[var(--bg)]",
   },
-  {
-    title: "Hybrid",
-    text: "Keep sensitive workflows in-house while running growth and ops automation in the cloud.",
-  },
-];
+] as const;
+
+function DeploymentTierIcon({ kind }: { kind: "cloud" | "shield" | "server" }) {
+  const base = {
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: 1.8,
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+    "aria-hidden": true,
+  };
+
+  if (kind === "cloud") {
+    return (
+      <svg className="h-6 w-6" {...base}>
+        <path d="M7.5 18h8.8a4.2 4.2 0 0 0 .3-8.4A5.8 5.8 0 0 0 6 8.7 4.6 4.6 0 0 0 7.5 18Z" />
+      </svg>
+    );
+  }
+
+  if (kind === "shield") {
+    return (
+      <svg className="h-6 w-6" {...base}>
+        <path d="M12 3 5.5 6v5.3c0 4.2 2.7 7.9 6.5 9.7 3.8-1.8 6.5-5.5 6.5-9.7V6L12 3Z" />
+        <path d="m9.2 12 1.8 1.8 3.8-3.8" />
+      </svg>
+    );
+  }
+
+  return (
+    <svg className="h-6 w-6" {...base}>
+      <rect x="3" y="5" width="18" height="14" rx="2.5" />
+      <path d="M7 9h10M7 13h6M9 19v2M15 19v2" />
+    </svg>
+  );
+}
 
 const included = [
   "Custom-built for you",
@@ -362,21 +416,45 @@ export default function PricingPage() {
       <section className="border-y border-[var(--border)] bg-[var(--bg-secondary)] px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <ScrollReveal>
-            <h2 className="font-space-grotesk mb-10 text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
+            <h2 className="font-space-grotesk mb-3 text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
               Deployment options
             </h2>
+            <p className="mb-10 max-w-3xl text-[var(--text-secondary)]">
+              Our deployments follow the pattern you&apos;ve already established. We match how you already run your business.
+            </p>
           </ScrollReveal>
           <div className="grid gap-5 md:grid-cols-3">
-            {deploymentOptions.map((option, idx) => (
-              <ScrollReveal key={option.title} delayMs={idx * 75}>
-                <article className="rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-border)]">
-                  <h3 className="font-space-grotesk mb-3 text-2xl font-bold text-[var(--text-primary)]">
-                    {option.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-[var(--text-secondary)]">{option.text}</p>
-                </article>
-              </ScrollReveal>
-            ))}
+            {deploymentOptions.map((option, idx) => {
+              const isOnPrem = option.icon === "server";
+
+              return (
+                <ScrollReveal key={option.title} delayMs={idx * 75}>
+                  <article className={`rounded-xl border p-6 ${option.cardClass}`}>
+                    <div className={`mb-3 flex items-center gap-2 ${isOnPrem ? "text-[var(--bg)]" : "text-[var(--accent)]"}`}>
+                      <DeploymentTierIcon kind={option.icon} />
+                      <h3 className={`font-space-grotesk text-2xl font-bold ${isOnPrem ? "text-[var(--bg)]" : "text-[var(--text-primary)]"}`}>
+                        {option.title}
+                      </h3>
+                    </div>
+                    <p className={`text-sm leading-relaxed ${isOnPrem ? "text-[var(--bg)]" : "text-[var(--text-secondary)]"}`}>
+                      <span className="font-semibold">For:</span> {option.forWho}
+                    </p>
+                    <p className={`mt-2 text-sm leading-relaxed ${isOnPrem ? "text-[var(--bg)]" : "text-[var(--text-secondary)]"}`}>
+                      <span className="font-semibold">How:</span> {option.how}
+                    </p>
+                    <p className={`mt-2 text-sm leading-relaxed ${isOnPrem ? "text-[var(--bg)]" : "text-[var(--text-secondary)]"}`}>
+                      <span className="font-semibold">Models:</span> {option.models}
+                    </p>
+                    <p className={`mt-2 text-sm leading-relaxed ${isOnPrem ? "text-[var(--bg)]" : "text-[var(--text-secondary)]"}`}>
+                      <span className="font-semibold">Privacy:</span> {option.privacy}
+                    </p>
+                    <p className={`mt-3 rounded-lg border px-3 py-2 text-xs font-medium ${isOnPrem ? "border-[var(--bg)] bg-[var(--bg)] text-[var(--text-primary)]" : "border-[var(--border)] bg-[var(--bg)] text-[var(--text-secondary)]"}`}>
+                      {option.brainMap}
+                    </p>
+                  </article>
+                </ScrollReveal>
+              );
+            })}
           </div>
         </div>
       </section>

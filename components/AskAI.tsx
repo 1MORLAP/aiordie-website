@@ -48,6 +48,30 @@ const FAQ_BANK: FaqEntry[] = [
       "We support Anthropic, OpenAI, and Venice AI. Recommended production setups are Anthropic Max 20x or OpenAI Pro, with Venice AI available for private/on-prem workflows.",
   },
   {
+    topic: "deployment-options",
+    keywords: ["deployment", "options", "tiers", "cloud", "private cloud", "on-premise", "on-prem"],
+    answer:
+      "We offer 3 deployment tiers: Cloud (public models like Anthropic/OpenAI), Private Cloud (private Venice AI in your dedicated cloud), and On-Premise (everything on your hardware using self-hosted models or Venice on-prem).",
+  },
+  {
+    topic: "data-private",
+    keywords: ["is my data private", "data private", "private", "secure", "sensitive", "regulated"],
+    answer:
+      "Yes — if you need stricter privacy than public cloud, choose Private Cloud or On-Premise. Private Cloud keeps data and models inside your private environment; On-Premise keeps everything on your hardware.",
+  },
+  {
+    topic: "on-premise",
+    keywords: ["can you deploy on-premise", "on-premise", "on premise", "data center", "server closet", "air-gapped"],
+    answer:
+      "Yes. We can deploy fully on-premise: models, agents, orchestration, and data all run on your hardware, including data-center and air-gapped environments.",
+  },
+  {
+    topic: "data-privacy-tiers",
+    keywords: ["what about data privacy", "privacy", "compliance", "data leaves", "security levels"],
+    answer:
+      "Data privacy is tiered by deployment: Cloud = standard cloud security with public AI providers; Private Cloud = data stays in your private cloud with Venice AI; On-Premise = maximum control, nothing leaves your building.",
+  },
+  {
     topic: "proof",
     keywords: ["proof", "case", "portfolio", "examples", "tombot", "nexora", "any.markets"],
     answer:

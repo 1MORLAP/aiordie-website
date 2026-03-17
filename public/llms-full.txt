@@ -55,12 +55,35 @@ Examples:
 - Venice AI:
   - API pay-per-use (usage-based)
 
-## Deployment Model
+## Deployment Models
 - Typical deployment time: 1-2 weeks
-- Deployment options:
-  - Cloud (managed): fastest launch
-  - On-Premise: maximum data control
-  - Hybrid: mixed architecture for sensitive + growth workflows
+
+### 1) Cloud (Public Models)
+- For: cloud-centric companies using Google Drive, Dropbox, cloud CRMs, and SaaS-native workflows
+- How it works: AI agents are hosted in cloud infrastructure and run on public model providers
+- Message: If your data lives in the cloud, your agents do too. We deploy alongside your existing stack using industry-standard AI models.
+- Models: Anthropic (Claude), OpenAI
+- Privacy: Standard cloud security; data is processed by public AI providers
+- AI brain cost mapping: Anthropic Pro/Max or OpenAI Plus/Pro subscriptions
+
+### 2) Private Cloud (Private Models)
+- For: cloud-first but privacy-conscious teams (regulated industries, sensitive data, strict compliance)
+- How it works: agents are deployed on dedicated private cloud infrastructure with private AI models
+- Message: Your data stays in your private cloud. Your AI models run there too. No data leaves your environment.
+- Models: Venice AI (private)
+- Privacy: data never touches public AI providers; runs on dedicated private infrastructure
+- AI brain cost mapping: Venice AI private deployment (usage-based)
+
+### 3) On-Premise
+- For: teams operating from owned hardware, data centers, server closets, or air-gapped environments
+- How it works: models, agents, orchestration, and storage run fully on client hardware
+- Message: If your data lives in your data center or your server closet, that's where we deploy. Models, agents, infrastructure — all on your hardware.
+- Models: self-hosted open-source models or Venice AI on-prem
+- Privacy: maximum control; nothing leaves the building unless client policy allows it
+- AI brain cost mapping: self-hosted model stack or Venice AI on-prem licensing
+
+### Deployment Principle
+Our deployments follow the pattern you've already established. We match how you already run your business.
 
 ## Agent Types (Full Catalog)
 ### Leadership coverage lanes
