@@ -623,21 +623,27 @@ export default function Home() {
       {/* Roles */}
       <section className="border-y border-[var(--border)] bg-[var(--bg-secondary)] px-6 py-16">
         <div className="mx-auto max-w-6xl">
-          <div className="mb-7 flex items-end justify-between gap-4">
+          <div className="mb-7 flex flex-wrap items-end justify-between gap-4">
             <div>
               <h2 className="font-space-grotesk text-3xl font-bold tracking-tight md:text-4xl">Roles We Deploy</h2>
-              <p className="mt-2 text-sm text-[var(--text-secondary)]">Start with six high-impact roles, then scale to all 12.</p>
+              <p className="mt-2 text-sm text-[var(--text-secondary)]">
+                Six featured roles below. Full role library covers every major business function.
+              </p>
             </div>
-            <Link href="/pricing" className="text-sm font-semibold text-[var(--accent)] hover:underline">
-              See all roles →
+            <Link
+              href="/roles"
+              className="rounded-full border border-[var(--accent-border)] bg-[var(--accent-subtle)] px-4 py-2 text-sm font-semibold text-[var(--accent)] transition-all hover:-translate-y-0.5 hover:border-[var(--accent)]"
+            >
+              See all 34 roles →
             </Link>
           </div>
-          <div className="grid gap-3 md:grid-cols-3">
-            {topRoles.map((role, idx) => (
-              <ScrollReveal key={role} delayMs={idx * 60}>
-                <div className="rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-4 py-4 text-sm font-semibold text-[var(--text-primary)]">
-                  {role}
-                </div>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {featuredRoles.map((role, idx) => (
+              <ScrollReveal key={role.name} delayMs={idx * 60}>
+                <article className="h-full rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-border)] hover:shadow-[0_20px_40px_-30px_var(--accent)]">
+                  <h3 className="font-space-grotesk text-lg font-bold text-[var(--text-primary)]">{role.name}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]">{role.summary}</p>
+                </article>
               </ScrollReveal>
             ))}
           </div>

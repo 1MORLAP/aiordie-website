@@ -95,6 +95,12 @@ export default function Nav() {
             Pricing
           </Link>
           <Link
+            href="/roles"
+            className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
+          >
+            Roles
+          </Link>
+          <Link
             href="/blog"
             className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
           >
@@ -163,6 +169,13 @@ export default function Nav() {
             onClick={() => setOpen(false)}
           >
             Pricing
+          </Link>
+          <Link
+            href="/roles"
+            className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
+            onClick={() => setOpen(false)}
+          >
+            Roles
           </Link>
           <Link
             href="/blog"

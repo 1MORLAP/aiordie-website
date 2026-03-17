@@ -192,6 +192,7 @@ Yes. Each client runs on isolated infrastructure. On-prem options are available.
 ## Important Pages
 - Homepage: https://aiordie.now
 - Pricing: https://aiordie.now/pricing
+- Roles: https://aiordie.now/roles
 - Blog: https://aiordie.now/blog
 
 ## Contact

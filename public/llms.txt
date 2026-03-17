@@ -62,6 +62,7 @@ AI or Die deploys AI employees into your business operations. Your CMO gets an A
 ## Pages
 - Homepage: https://aiordie.now
 - Pricing: https://aiordie.now/pricing
+- Roles: https://aiordie.now/roles
 - Blog: https://aiordie.now/blog
 
 ## Contact
