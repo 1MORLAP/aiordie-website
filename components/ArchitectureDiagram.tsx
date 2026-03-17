@@ -120,12 +120,12 @@ export default function ArchitectureDiagram() {
             {agents.map((agent, idx) => (
               <ScrollReveal key={agent.key} delayMs={160 + idx * 70}>
                 <div
-                  className="agent-node"
+                  className="agent-node h-full"
                   data-agent={agent.key}
                   style={{ "--agent-color": agent.color } as CSSProperties}
                 >
                   <div className="gateway-connector" />
-                  <article className="agent-card rounded-xl p-4" data-agent={agent.key}>
+                  <article className="agent-card flex h-full flex-col rounded-xl p-4" data-agent={agent.key}>
                     <div className="mb-3 flex items-start justify-between gap-3">
                       <p className="font-space-grotesk text-lg font-bold leading-tight text-[var(--text-primary)]">
                         {agent.name}
@@ -154,7 +154,7 @@ export default function ArchitectureDiagram() {
 
                     <p className="mt-3 text-xs text-[var(--text-muted)]">Workspace: isolated bind mount</p>
 
-                    <p className="mt-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.1em] text-[var(--text-secondary)]">
+                    <p className="mt-auto pt-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.1em] text-[var(--text-secondary)]">
                       <span className={`arch-status-dot ${agent.networkEnabled ? "is-enabled" : "is-disabled"}`} />
                       Network: {agent.network}
                     </p>
