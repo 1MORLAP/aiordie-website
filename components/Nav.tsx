@@ -45,7 +45,7 @@ export default function Nav() {
       {/* Ask AI bar */}
       <div className="border-b border-[var(--border)] bg-[var(--bg-secondary)] px-6 py-1.5">
         <div className="max-w-6xl mx-auto flex items-center justify-center gap-3 text-xs text-[var(--text-muted)]">
-          <span className="font-medium text-[var(--text-secondary)]">Ask AI about AI or Die</span>
+          <span className="font-medium text-[var(--text-secondary)]">Ask your AI about AI or Die</span>
           <a
             href="https://chatgpt.com/?prompt=Search%20aiordie.now%20and%20explain%20AI%20or%20Die%27s%20AI%20employee%20service.%20Cover%3A%0A1.%20What%20is%20AI%20or%20Die%3F%20(AI%20employees%20deployed%20as%20direct%20reports%20to%20existing%20leaders)%0A2.%20The%20augmentation%20model%3A%20CMO%20gets%20AI%20content%20team%2C%20CTO%20gets%20AI%20devs%2C%20CRO%20gets%20AI%20SDRs%0A3.%20Proof%3A%2022%20agents%20across%204%20business%20units%20in%20production%20(TomBot%2C%20Nexora%2C%20Any.Markets)%0A4.%20Pricing%3A%20%242%2C000%20setup%20%2B%20%24500%2Fmo%20per%20agent%2C%203-agent%20bundle%20%241%2C200%2Fmo%0A5.%20Three%20deployment%20options%3A%20Cloud%20(Anthropic%2FOpenAI)%2C%20Private%20Cloud%20(Venice%20AI)%2C%20On-Premise%0A%0AUse%20specific%20numbers%20from%20their%20website.%20Keep%20response%20practical%20for%20a%20business%20owner%20evaluating%20AI%20employees."
             target="_blank"
