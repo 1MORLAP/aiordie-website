@@ -116,7 +116,7 @@ const deploymentTiers = [
     forWho: "For privacy-conscious cloud teams in regulated or sensitive environments.",
     how: "Agents and private models are deployed on dedicated private cloud infrastructure.",
     models: "Venice AI (private)",
-    cardClass: "border-[var(--accent-border)] bg-[var(--accent-subtle)]",
+    cardClass: "border-[var(--border)] bg-[var(--bg-card)]",
     textClass: "text-[var(--text-secondary)]",
   },
   {
