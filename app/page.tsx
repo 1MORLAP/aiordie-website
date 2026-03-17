@@ -592,6 +592,112 @@ export default function Home() {
         </p>
       </section>
 
+      {/* ── CLIENTS & CASE STUDIES ── */}
+      <section className="px-6 py-24 max-w-6xl mx-auto">
+        <div className="text-red-500 font-bold text-sm uppercase tracking-widest mb-4">
+          In Production
+        </div>
+        <h2 className="text-3xl md:text-4xl font-black text-white mb-4 leading-tight">
+          Built for Real Businesses
+        </h2>
+        <p className="text-gray-400 text-lg max-w-2xl mb-12 leading-relaxed">
+          These aren&apos;t pilot programs. These are operating companies running on AI or Die
+          infrastructure right now.
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {/* TomBot */}
+          <a
+            href="https://www.realtom.bot/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#111111] border border-gray-800 hover:border-gray-600 rounded-lg p-6 flex flex-col gap-4 transition-colors group"
+          >
+            <div className="flex items-center justify-between gap-3">
+              <div className="w-12 h-12 rounded-lg bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-400 font-black text-lg shrink-0">
+                TB
+              </div>
+              <span className="text-xs font-bold uppercase tracking-wider bg-red-500/10 border border-red-500/30 text-red-400 rounded px-2 py-1 text-right">
+                Zero-Human Company
+              </span>
+            </div>
+            <div className="flex-1">
+              <div className="text-white font-black text-xl mb-0.5">TomBot</div>
+              <div className="text-gray-600 text-xs font-mono mb-3">realtom.bot</div>
+              <p className="text-gray-400 text-sm leading-relaxed mb-3">
+                A fully autonomous AI organization. Zero human staff. Every function runs on agents.
+              </p>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                <span className="text-gray-500">What we built:</span> The entire company. CEO, CMO, CTO, content, ops — 100% AI operated.
+              </p>
+            </div>
+            <div className="text-red-400 text-xs font-semibold group-hover:text-red-300 transition-colors mt-auto">
+              Visit realtom.bot →
+            </div>
+          </a>
+
+          {/* Nexora */}
+          <a
+            href="https://nexora.build"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#111111] border border-gray-800 hover:border-gray-600 rounded-lg p-6 flex flex-col gap-4 transition-colors group"
+          >
+            <div className="flex items-center justify-between gap-3">
+              <div className="w-12 h-12 rounded-lg bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-400 font-black text-lg shrink-0">
+                NX
+              </div>
+              <span className="text-xs font-bold uppercase tracking-wider bg-red-500/10 border border-red-500/30 text-red-400 rounded px-2 py-1 text-right">
+                Enterprise Scale
+              </span>
+            </div>
+            <div className="flex-1">
+              <div className="text-white font-black text-xl mb-0.5">Nexora</div>
+              <div className="text-gray-600 text-xs font-mono mb-3">nexora.build</div>
+              <p className="text-gray-400 text-sm leading-relaxed mb-3">
+                Blockchain-as-a-Service for enterprises. zkEVM L2/L3, RWA tokenization. Publicly listed in Hong Kong.
+              </p>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                <span className="text-gray-500">What we built:</span> AI leadership and operational team — scaling their Web3 business without proportional headcount growth.
+              </p>
+            </div>
+            <div className="text-red-400 text-xs font-semibold group-hover:text-red-300 transition-colors mt-auto">
+              Visit nexora.build →
+            </div>
+          </a>
+
+          {/* Any.Markets */}
+          <a
+            href="https://any.markets"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#111111] border border-gray-800 hover:border-gray-600 rounded-lg p-6 flex flex-col gap-4 transition-colors group"
+          >
+            <div className="flex items-center justify-between gap-3">
+              <div className="w-12 h-12 rounded-lg bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-400 font-black text-lg shrink-0">
+                AM
+              </div>
+              <span className="text-xs font-bold uppercase tracking-wider bg-red-500/10 border border-red-500/30 text-red-400 rounded px-2 py-1 text-right">
+                Startup AI Leadership
+              </span>
+            </div>
+            <div className="flex-1">
+              <div className="text-white font-black text-xl mb-0.5">Any.Markets</div>
+              <div className="text-gray-600 text-xs font-mono mb-3">any.markets</div>
+              <p className="text-gray-400 text-sm leading-relaxed mb-3">
+                Prediction markets platform launching with a full AI leadership team from day one.
+              </p>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                <span className="text-gray-500">What we built:</span> Full AI leadership — CEO, CTO, CMO agents deployed from launch. All new roles staffed with AI as needed.
+              </p>
+            </div>
+            <div className="text-red-400 text-xs font-semibold group-hover:text-red-300 transition-colors mt-auto">
+              Visit any.markets →
+            </div>
+          </a>
+        </div>
+      </section>
+
       {/* ── FINAL CTA ── */}
       <section className="bg-[#111111] border-t border-gray-800 px-6 py-24 text-center">
         <div className="max-w-2xl mx-auto">
