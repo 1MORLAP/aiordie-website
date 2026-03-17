@@ -458,8 +458,6 @@ export default function Home() {
         </div>
       </section>
 
-      <ArchitectureDiagram />
-
       {/* Case studies */}
       <section className="border-y border-[var(--border)] bg-[var(--bg-secondary)] px-6 py-16 md:py-24">
         <div className="mx-auto max-w-6xl">
@@ -662,6 +660,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ArchitectureDiagram />
 
       {/* Final CTA */}
       <section className="mesh-bg border-t border-[var(--border)] px-6 py-20 text-center md:py-24">
