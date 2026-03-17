@@ -63,7 +63,7 @@ const caseStudies = [
   },
   {
     name: "NEXORA",
-    badge: "Enterprise expansion",
+    badge: "HKEX-listed · Global scale",
     line: "HKEX-listed Web3 infrastructure using AI teams to scale without proportional hiring.",
     color: "#3B82F6",
     href: "https://nexora.build",
@@ -163,8 +163,8 @@ const technologyProviders = [
   {
     name: "OpenAI",
     href: "https://openai.com",
-    description: "GPT models for cloud and enterprise AI employee deployments.",
-    function: "GPT model intelligence for enterprise AI employee deployments",
+    description: "GPT models for cloud and production AI direct report deployments.",
+    function: "GPT model intelligence for production AI direct report deployments",
   },
   {
     name: "Anthropic",

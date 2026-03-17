@@ -62,10 +62,10 @@ export default function ArchitectureDiagram() {
         <ScrollReveal>
           <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">Security Architecture</p>
           <h2 className="font-space-grotesk mb-4 text-3xl font-bold tracking-tight md:text-5xl">
-            Enterprise-Grade Agent Isolation
+            Your Agents. Your Data. Nobody Else's.
           </h2>
           <p className="max-w-3xl text-[var(--text-secondary)]">
-            Every agent runs in its own container. Every workspace is separated. Every data access is controlled.
+            Your data stays yours. Isolated by default, controlled by you — whether you're a 5-person team or a 500-person company.
           </p>
         </ScrollReveal>
 
