@@ -51,7 +51,7 @@ const faqJsonLd = {
       name: "What AI models do the agents use?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "We recommend Anthropic Claude (Claude Max 5x at $100/mo covers 3-5 agents comfortably). We also support OpenAI and Venice AI. You choose and subscribe directly — we never upcharge on model costs.",
+        text: "We recommend Anthropic Max 20x ($200/mo) or OpenAI Pro ($200/mo) for best performance. We also support Venice AI (private AI, API pay-per-use). You choose and subscribe directly — we never upcharge on model costs.",
       },
     },
     {
@@ -104,20 +104,20 @@ const brainCosts = [
     provider: "Anthropic",
     tiers: [
       { name: "Pro", price: "$20/mo" },
-      { name: "Max 5x", price: "$100/mo", rec: true },
-      { name: "Max 20x", price: "$200/mo" },
+      { name: "Max 5x", price: "$100/mo" },
+      { name: "Max 20x", price: "$200/mo", rec: true },
     ],
   },
   {
     provider: "OpenAI",
     tiers: [
       { name: "Plus", price: "$20/mo" },
-      { name: "Pro", price: "$200/mo" },
+      { name: "Pro", price: "$200/mo", rec: true },
     ],
   },
   {
-    provider: "Venice AI",
-    tiers: [{ name: "Plans", price: "$10–50/mo" }],
+    provider: "Venice AI — Private AI",
+    tiers: [{ name: "API Pay-per-use", price: "Usage-based" }],
   },
 ];
 
@@ -309,8 +309,8 @@ export default function PricingPage() {
           </div>
           <div className="border border-green-500/30 bg-green-500/5 rounded-lg p-4">
             <p className="text-green-400 text-sm font-medium">
-              💡 Recommendation: Anthropic Max 5x ($100/mo) covers 3-5 agents
-              comfortably — the sweet spot for most clients.
+              💡 We recommend: Anthropic Max 20x ($200/mo) or OpenAI Pro ($200/mo)
+              — best performance for production AI employees. Venice AI for private/on-prem needs.
             </p>
           </div>
         </div>
