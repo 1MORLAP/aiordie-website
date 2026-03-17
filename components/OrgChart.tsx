@@ -24,7 +24,7 @@ const TEAMS: Team[] = [
   },
   {
     icon: "📈",
-    leader: "Sales VP",
+    leader: "CRO",
     reports: ["AI SDR", "AI CRM", "AI Follow-up"],
     outcome: "Pipeline stays warm 24/7, no dead leads.",
   },
@@ -34,11 +34,23 @@ const TEAMS: Team[] = [
     reports: ["AI Analyst", "AI Bookkeeper", "AI Compliance"],
     outcome: "Closer books and earlier risk visibility.",
   },
+  {
+    icon: "🚀",
+    leader: "CPO",
+    reports: ["AI PM", "AI Research", "AI UX Writer"],
+    outcome: "Ship product faster with AI-powered discovery and delivery.",
+  },
+  {
+    icon: "⚖️",
+    leader: "CLO",
+    reports: ["AI Contract Review", "AI Compliance", "AI Legal Research"],
+    outcome: "Legal risk flagged before it reaches the boardroom.",
+  },
 ];
 
 export default function OrgChart() {
   return (
-    <div className="grid gap-6 md:grid-cols-2">
+    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       {TEAMS.map((team, teamIdx) => (
         <ScrollReveal key={team.leader} delayMs={teamIdx * 90}>
           <article className="org-team-card rounded-[1.4rem] border border-[var(--border)] p-5 md:p-6">
