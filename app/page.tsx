@@ -137,10 +137,10 @@ const technologyProviders = [
     function: "open-source AI agent orchestration and deployment framework",
   },
   {
-    name: "Hermes Agent",
-    href: "https://hermes-agent.nousresearch.com",
-    description: "Self-improving AI agent with built-in learning loops. Gets smarter the longer it runs.",
-    function: "self-improving agent learning loops for continuous optimization",
+    name: "Nous Research",
+    href: "https://nousresearch.com",
+    description: "Hermes Agent — self-improving AI with built-in learning loops. Open-source language models for agentic workflows.",
+    function: "self-improving agentic AI and open-source language models",
   },
   {
     name: "NVIDIA",
