@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI or Die — Scale Leaders With AI Teams",
     description:
-      "20+ agents live across 4 business units. We deploy the same system into your company.",
+      "22 agents live across 4 business units. We deploy the same system into your company.",
     url: "https://aiordie.now",
   },
   twitter: {
@@ -135,7 +135,7 @@ export default function Home() {
             <ScrollReveal delayMs={220}>
               <div className="mt-7 flex flex-wrap gap-2.5">
                 <div className="stat-pill rounded-full px-4 py-2 text-sm font-medium text-[var(--text-primary)]">
-                  <AnimatedCounter to={20} suffix="+" /> Agents
+                  <AnimatedCounter to={22} /> Agents
                 </div>
                 <div className="stat-pill rounded-full px-4 py-2 text-sm font-medium text-[var(--text-primary)]">
                   <AnimatedCounter to={4} /> Business Units
@@ -173,8 +173,7 @@ export default function Home() {
               </p>
               <div className="mb-4 flex items-end gap-2">
                 <AnimatedCounter
-                  to={20}
-                  suffix="+"
+                  to={22}
                   className="font-space-grotesk text-6xl font-extrabold leading-none text-[var(--text-primary)]"
                 />
                 <span className="pb-2 text-sm font-semibold text-[var(--text-secondary)]">
@@ -208,7 +207,7 @@ export default function Home() {
               This is not a mockup.
             </h2>
             <p className="mb-8 max-w-2xl text-[var(--text-secondary)]">
-              Six core agents shown below. 20+ are live across four business units. This infrastructure runs every day before a single sales call.
+              Six core agents shown below. 22 are live across four business units. This infrastructure runs every day before a single sales call.
             </p>
           </ScrollReveal>
           <LiveFleetDashboard />
@@ -302,7 +301,7 @@ export default function Home() {
             <ScrollReveal>
               <div className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-7">
                 <p className="mb-2 text-xs uppercase tracking-[0.14em] text-[var(--text-muted)]">Agents live</p>
-                <AnimatedCounter to={20} suffix="+" className="font-space-grotesk text-5xl font-bold" />
+                <AnimatedCounter to={22} className="font-space-grotesk text-5xl font-bold" />
               </div>
             </ScrollReveal>
             <ScrollReveal delayMs={70}>

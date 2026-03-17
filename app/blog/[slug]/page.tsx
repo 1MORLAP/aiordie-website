@@ -78,52 +78,54 @@ export default async function BlogPostPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(buildArticleJsonLd(post)) }}
       />
-      <article className="px-6 pt-16 pb-24 max-w-3xl mx-auto">
-        <Link
-          href="/blog"
-          className="text-gray-500 hover:text-gray-300 text-sm transition-colors mb-8 inline-block"
-        >
-          ← Back to Blog
-        </Link>
-
-        <div className="flex flex-wrap items-center gap-3 mb-4">
-          <span className="text-red-500 text-sm font-semibold bg-red-500/10 px-3 py-1 rounded-full">
-            {post.category}
-          </span>
-          <span className="text-gray-500 text-sm">
-            {new Date(post.date).toLocaleDateString("en-US", {
-              year: "numeric",
-              month: "long",
-              day: "numeric",
-            })}
-          </span>
-          <span className="text-gray-600 text-sm">·</span>
-          <span className="text-gray-500 text-sm">{readingTime} min read</span>
-        </div>
-
-        <h1 className="text-3xl md:text-4xl font-black text-white mb-6 leading-tight">
-          {post.title}
-        </h1>
-        <p className="text-gray-400 text-lg mb-12 leading-relaxed border-l-4 border-red-500 pl-4">
-          {post.excerpt}
-        </p>
-
-        <div className="prose prose-invert">
-          <MDXRemote source={post.content} />
-        </div>
-
-        <div className="mt-16 pt-8 border-t border-gray-800">
-          <p className="text-gray-400 mb-4">
-            Ready to stop hiring and start deploying?
-          </p>
-          <a
-            href="https://calendar.notion.so/meet/tomaszwojewoda/s4903rwq"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded font-bold transition-colors"
+      <article className="px-6 pb-24 pt-14 md:pt-16">
+        <div className="mx-auto max-w-3xl">
+          <Link
+            href="/blog"
+            className="mb-8 inline-block text-sm text-[var(--text-muted)] transition-colors hover:text-[var(--text-primary)]"
           >
-            Book a Free Consult
-          </a>
+            ← Back to Blog
+          </Link>
+
+          <div className="mb-4 flex flex-wrap items-center gap-3">
+            <span className="rounded-full border border-[var(--accent-border)] bg-[var(--accent-subtle)] px-3 py-1 text-sm font-semibold text-[var(--accent)]">
+              {post.category}
+            </span>
+            <span className="text-sm text-[var(--text-muted)]">
+              {new Date(post.date).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </span>
+            <span className="text-sm text-[var(--text-muted)]">·</span>
+            <span className="text-sm text-[var(--text-muted)]">{readingTime} min read</span>
+          </div>
+
+          <h1 className="font-space-grotesk mb-6 text-3xl font-extrabold leading-tight tracking-tight text-[var(--text-primary)] md:text-5xl">
+            {post.title}
+          </h1>
+          <p className="mb-12 border-l-4 border-[var(--accent)] pl-4 text-lg leading-relaxed text-[var(--text-secondary)]">
+            {post.excerpt}
+          </p>
+
+          <div className="prose">
+            <MDXRemote source={post.content} />
+          </div>
+
+          <div className="mt-16 border-t border-[var(--border)] pt-8">
+            <p className="mb-4 text-[var(--text-secondary)]">
+              Ready to stop hiring and start deploying?
+            </p>
+            <a
+              href="https://calendar.notion.so/meet/tomaszwojewoda/s4903rwq"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-lg bg-[var(--accent)] px-8 py-3 font-bold text-[var(--text-on-accent)] transition-colors hover:bg-[var(--accent-hover)]"
+            >
+              Book a Free Consult
+            </a>
+          </div>
         </div>
       </article>
     </>
