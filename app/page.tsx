@@ -123,7 +123,7 @@ const deploymentTiers = [
     icon: "server",
     forWho: "For teams running in own data centers.",
     how: "Models, agents, and infrastructure run fully on your own hardware.",
-    models: "Self-hosted open-source models or Venice AI on-prem",
+    models: "Self-hosted open-source models",
     cardClass: "border-[var(--text-primary)] bg-[var(--text-primary)]",
     textClass: "text-[var(--bg)]",
   },
@@ -340,9 +340,9 @@ export default function Home() {
           </div>
 
           <ScrollReveal delayMs={200}>
-            <blockquote className="mt-6 rounded-xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] px-5 py-4 font-medium text-[var(--text-primary)]">
-              "Our deployments follow the pattern you&apos;ve already established. We match how you already run your business."
-            </blockquote>
+            <p className="mt-8 max-w-3xl text-[var(--text-secondary)]">
+              Our deployments follow the pattern you&apos;ve already established. If your data lives on Google Drive, we deploy in the cloud. If it lives in your data center, we deploy there. We match how you already run your business.
+            </p>
           </ScrollReveal>
         </div>
       </section>
