@@ -42,6 +42,11 @@ export default function BlogPage() {
             {featuredPost && (
               <ScrollReveal>
                 <article className="group mb-10 rounded-2xl border border-[var(--accent-border)] bg-[var(--bg-card)] p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_70px_-46px_var(--accent)] md:p-10">
+                  {featuredPost.image && (
+                    <div className="mb-6 overflow-hidden rounded-xl">
+                      <img src={featuredPost.image} alt={featuredPost.title} className="h-auto w-full object-cover" style={{ aspectRatio: "1200/630" }} />
+                    </div>
+                  )}
                   <p className="mb-3 text-sm font-semibold uppercase tracking-[0.08em] text-[var(--accent)]">
                     Latest post
                   </p>
