@@ -60,7 +60,7 @@ const caseStudies = [
   {
     name: "Any.Markets",
     badge: "Startup launch stack",
-    line: "AI CEO, AI CTO, and AI CMO deployed from day one for rapid market entry.",
+    line: "AI advisors to CEO, CTO, and CMO deployed from day one for rapid market entry.",
     color: "#8B5CF6",
     href: "https://any.markets",
   },
