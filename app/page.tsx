@@ -183,7 +183,7 @@ export default function Home() {
           <div className="flex items-center gap-3 mb-2">
             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse shrink-0" />
             <span className="text-green-400 font-bold text-sm uppercase tracking-widest">
-              Live Fleet — Tomek Group
+              Live Fleet — HQ (HEADQUARTERS)
             </span>
           </div>
           <p className="text-gray-500 text-sm mb-10 max-w-2xl">
