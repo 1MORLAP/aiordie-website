@@ -39,6 +39,13 @@ AI or Die deploys AI employees into your business operations. Your CMO gets an A
 - Any.Markets (any.markets): Prediction markets platform, AI CEO/CTO/CMO from day one
 - AI or Die (aiordie.now): We eat our own dog food — AI CMO wrote this site
 
+## Multilingual
+- All AI employees are multilingual by default
+- Input: documents, invoices, research in any language and any currency
+- Output: results in whichever language the business needs
+- No translation layer — agents understand context natively across languages
+- Phone line: callers can speak in any language
+
 ## Key Facts
 - 22 AI agents running in production across 4 business units
 - AI model support by deployment: Cloud → Anthropic/OpenAI, Private Cloud → Venice AI (private), On-Premise → self-hosted OSS models or Venice on-prem

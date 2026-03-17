@@ -286,7 +286,7 @@ export default function Home() {
                   href="tel:+17869989310"
                   className="text-sm font-semibold text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
                 >
-                  Talk to AI · (786) 998-9310
+                  Talk to AI in any language · (786) 998-9310
                 </a>
               </div>
             </ScrollReveal>
@@ -558,6 +558,45 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Multilingual */}
+      <section className="px-6 py-16 md:py-20">
+        <div className="mx-auto max-w-6xl">
+          <ScrollReveal>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
+              Every Language. Every Currency.
+            </p>
+            <h2 className="font-space-grotesk mb-4 text-3xl font-bold tracking-tight md:text-5xl">
+              Your agents speak every language your business does.
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal delayMs={80}>
+            <p className="max-w-3xl text-[var(--text-secondary)]">
+              AI employees are multilingual by default. Documents, invoices, and research can be submitted in any language and any currency — the output comes back in whatever language you need. If your team works in Spanish but reports need to be in English, done. If a client sends contracts in German, your AI Legal Counsel reads them natively.
+            </p>
+          </ScrollReveal>
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            <ScrollReveal delayMs={100}>
+              <div className="rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5">
+                <p className="font-space-grotesk text-xl font-bold text-[var(--text-primary)]">Input</p>
+                <p className="mt-1 text-sm text-[var(--text-secondary)]">Submit documents, data, and instructions in any language. Invoices in any currency.</p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delayMs={170}>
+              <div className="rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5">
+                <p className="font-space-grotesk text-xl font-bold text-[var(--text-primary)]">Process</p>
+                <p className="mt-1 text-sm text-[var(--text-secondary)]">Agents understand context across languages — no translation layer, no loss of meaning.</p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delayMs={240}>
+              <div className="rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5">
+                <p className="font-space-grotesk text-xl font-bold text-[var(--text-primary)]">Output</p>
+                <p className="mt-1 text-sm text-[var(--text-secondary)]">Get results in whichever language you need. Same agent, any language, zero overhead.</p>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
       {/* How it works */}
       <section className="px-6 py-16 md:py-24">
         <div className="mx-auto max-w-6xl">
@@ -673,7 +712,10 @@ export default function Home() {
               </a>
             </div>
             <p className="mt-4 text-sm text-[var(--text-muted)]">
-              Talk to our AI agent: <a href="tel:+17869989310" className="font-semibold text-[var(--text-secondary)] hover:text-[var(--text-primary)]">(786) 998-9310</a>
+              Talk to our AI agent in any language: <a href="tel:+17869989310" className="font-semibold text-[var(--text-secondary)] hover:text-[var(--text-primary)]">(786) 998-9310</a>
+            </p>
+            <p className="mt-2 text-xs text-[var(--text-muted)]">
+              Speak in your native language or try any language just for fun. Our agents understand all of them.
             </p>
           </ScrollReveal>
         </div>
