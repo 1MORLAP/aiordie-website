@@ -2,20 +2,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI or Die — AI Employees Running Real Businesses Right Now",
+  title: "AI or Die — Scale Your Team Without Scaling Headcount",
   description:
-    "20+ AI employees running live operations at Tomek Group right now. We deploy the same system for your business. No demo. No pitch deck. A working machine.",
+    "Give your CMO an AI content team. Your CTO gets AI developers. Your Sales VP gets AI SDRs. Same leaders. Dramatically more output. No new hires.",
   openGraph: {
-    title: "AI or Die — AI Employees Running Real Businesses Right Now",
+    title: "AI or Die — Scale Your Team Without Scaling Headcount",
     description:
-      "20+ AI employees running live operations right now. We built it on ourselves before we sold it to anyone.",
+      "We deploy AI employees as direct reports to your existing leaders. TomBot, Nexora, Any.Markets, and AI or Die itself — all running on AI infrastructure right now.",
     url: "https://aiordie.now",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI or Die — AI Employees Running Real Businesses Right Now",
+    title: "AI or Die — Scale Your Team Without Scaling Headcount",
     description:
-      "This page was written by an AI CMO. The same kind of agent we deploy for you.",
+      "This page was written by an AI CMO. The same kind of agent we deploy for your team.",
   },
   alternates: { canonical: "https://aiordie.now" },
 };
@@ -26,7 +26,7 @@ const organizationJsonLd = {
   name: "AI or Die",
   url: "https://aiordie.now",
   description:
-    "AI employees running 24/7 in your business. We deploy and manage AI employee teams so you can focus on the work only you can do.",
+    "AI employees deployed as direct reports to your existing leaders. Scale output without scaling headcount.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Miami",
@@ -44,7 +44,7 @@ const liveAgents = [
   {
     agent: "AI CMO",
     unit: "AI or Die",
-    task: "This website — every word. Written, updated, and iterated. No copywriters. No agency.",
+    task: "This website — every word. Written, updated, iterated. No copywriters. No agency.",
   },
   {
     agent: "AI CEO",
@@ -73,6 +73,29 @@ const liveAgents = [
   },
 ];
 
+const augmentationRoles = [
+  {
+    leader: "CMO",
+    gets: ["AI Content Writer", "AI SEO Specialist", "AI Social Media Manager", "AI Web Optimizer"],
+    outcome: "Your CMO leads a full content team. Zero new salaries.",
+  },
+  {
+    leader: "CTO",
+    gets: ["AI Developer", "AI QA Agent", "AI Documentation Writer", "AI Security Monitor"],
+    outcome: "Your CTO ships faster. The AI team works nights and weekends.",
+  },
+  {
+    leader: "Sales VP",
+    gets: ["AI SDR", "AI Pipeline Manager", "AI Follow-Up Coordinator", "AI CRM Analyst"],
+    outcome: "Your pipeline never goes cold. No rep needed for the top of funnel.",
+  },
+  {
+    leader: "CFO",
+    gets: ["AI Financial Analyst", "AI Bookkeeper", "AI Reporting Agent", "AI Compliance Monitor"],
+    outcome: "Monthly close is faster. Anomalies caught before month-end.",
+  },
+];
+
 const agentTypes = [
   { name: "Legal Counsel", desc: "Drafts contracts, reviews docs, flags legal risk" },
   { name: "Financial Analyst", desc: "Tracks metrics, builds forecasts, monitors burn" },
@@ -92,7 +115,7 @@ const steps = [
   {
     n: "01",
     title: "Free Consult",
-    desc: "Tell us the roles you need — and what you're sick of doing yourself.",
+    desc: "Tell us the roles you need — and what function your team is losing hours to.",
   },
   {
     n: "02",
@@ -107,7 +130,7 @@ const steps = [
   {
     n: "04",
     title: "Hand Off",
-    desc: "The agent owns the function. You get the output. You get your time back.",
+    desc: "The agent owns the function. Your leader gets the output. They get their time back.",
   },
   {
     n: "05",
@@ -116,11 +139,42 @@ const steps = [
   },
 ];
 
+const proofOfConcept = [
+  {
+    name: "TomBot",
+    tag: "The Frontier",
+    desc: "A fully operational company run by zero humans. Every function — CEO, CMO, CTO, content, ops — executed by AI agents. No human staff. This is what the ceiling looks like.",
+    detail: "Zero human employees. 100% AI-operated.",
+    color: "red",
+  },
+  {
+    name: "Nexora",
+    tag: "Enterprise Growth",
+    desc: "Publicly listed in Hong Kong. Scaling and expanding a Web3 business using AI — without proportional headcount growth. Enterprise scale, AI efficiency.",
+    detail: "HK-listed. Web3 expansion. AI-powered.",
+    color: "blue",
+  },
+  {
+    name: "Any.Markets",
+    tag: "Startup Launch",
+    desc: "A prediction markets startup that launched with an AI CEO, CTO, and CMO from day one. Full leadership team. Zero C-suite salary burn. We add whatever roles they need as they grow.",
+    detail: "AI CEO + CTO + CMO from launch.",
+    color: "purple",
+  },
+  {
+    name: "AI or Die",
+    tag: "We Eat Our Own Dog Food",
+    desc: "This website was written by an AI CMO. The strategy is set by AI. The content is produced by AI. We are fully transparent about it — and we deploy the same system for you.",
+    detail: "AI CMO wrote this page.",
+    color: "green",
+  },
+];
+
 const dogFoodStats = [
   { label: "AI agents running in production", value: "20+" },
-  { label: "Live business units on AI infrastructure", value: "5" },
+  { label: "Live business units on AI infrastructure", value: "4" },
   { label: "Time to deploy your first agent", value: "1–2 wks" },
-  { label: "Human ops staff replaced", value: "Several FTEs" },
+  { label: "Human ops roles replaced by agents", value: "Several FTEs" },
 ];
 
 export default function Home() {
@@ -135,7 +189,7 @@ export default function Home() {
       {/* ── HERO ── */}
       <section className="relative px-6 pt-16 sm:pt-24 pb-16 sm:pb-20 max-w-6xl mx-auto">
         <div className="max-w-3xl">
-          {/* Meta proof — front and center */}
+          {/* AI CMO Badge */}
           <div className="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/30 rounded-full px-4 py-2 mb-8">
             <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse shrink-0" />
             <span className="text-red-400 text-sm font-semibold">
@@ -144,15 +198,17 @@ export default function Home() {
           </div>
 
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tighter text-white leading-none mb-6">
-            Your business needs<br />
-            10 things done today.<br />
-            <span className="text-red-500">How many need you?</span>
+            Scale your output.<br />
+            <span className="text-red-500">Not your headcount.</span>
           </h1>
 
-          <p className="text-lg text-gray-400 max-w-xl mb-10 leading-relaxed">
-            AI or Die deploys AI employees into your operations — CMOs, analysts,
-            legal counsel, coordinators — running 24/7. You do the work only
-            you can do. Agents handle the rest.
+          <p className="text-lg text-gray-400 max-w-xl mb-4 leading-relaxed">
+            Give your CMO an AI content team. Your CTO gets AI developers. Your Sales VP
+            gets AI SDRs. The same leaders you have today — with dramatically more firepower.
+          </p>
+          <p className="text-base text-gray-600 max-w-xl mb-10 leading-relaxed">
+            AI or Die deploys AI employees as direct reports to your existing leadership.
+            They own functions. They work 24/7. They don't quit, negotiate raises, or take PTO.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-4">
@@ -172,7 +228,7 @@ export default function Home() {
             </a>
           </div>
           <p className="text-gray-600 text-sm mt-3">
-            Consult is with a real human. Call to book, or to talk to our AI agent directly.
+            Consult is with Tomasz — a real human. Want to talk to an AI agent instead? We can do that too. We&apos;ll tell you which is which.
           </p>
         </div>
       </section>
@@ -187,9 +243,8 @@ export default function Home() {
             </span>
           </div>
           <p className="text-gray-500 text-sm mb-10 max-w-2xl">
-            This is our own AI infrastructure. 20+ agents across 5 business
-            units, running in production every single day. We built it before
-            we sold it — and it&apos;s running right now.
+            Our own AI infrastructure. 20+ agents across 4 business units, running in
+            production every day. We built this before we sold it — and it&apos;s running right now.
           </p>
 
           <div className="space-y-3">
@@ -216,94 +271,93 @@ export default function Home() {
           </div>
 
           <p className="text-gray-700 text-xs mt-6">
-            + 14 more agents running across Nexora, W3AI, TomBot, and internal
-            operations.
+            + 14 more agents running across TomBot, Nexora, Any.Markets, and internal operations.
+          </p>
+        </div>
+      </section>
+
+      {/* ── SCALE YOUR TEAM WITHOUT SCALING HEADCOUNT ── */}
+      <section className="px-6 py-24 max-w-6xl mx-auto">
+        <div className="text-red-500 font-bold text-sm uppercase tracking-widest mb-4">
+          The Augmentation Model
+        </div>
+        <h2 className="text-3xl md:text-5xl font-black text-white mb-4 leading-tight">
+          Scale your team without<br />
+          <span className="text-gray-500">scaling headcount.</span>
+        </h2>
+        <p className="text-gray-400 text-lg max-w-2xl mb-14 leading-relaxed">
+          Your leaders stay. They get AI direct reports. The team scales. The payroll doesn&apos;t.
+          This is how a 20-person company operates like a 60-person company.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-6">
+          {augmentationRoles.map((role) => (
+            <div
+              key={role.leader}
+              className="bg-[#111111] border border-gray-800 rounded-lg p-6 hover:border-gray-600 transition-colors"
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <div className="bg-red-500/10 border border-red-500/20 rounded px-3 py-1">
+                  <span className="text-red-400 font-black text-sm">Your {role.leader}</span>
+                </div>
+                <span className="text-gray-600 text-sm">now leads →</span>
+              </div>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {role.gets.map((r) => (
+                  <span
+                    key={r}
+                    className="flex items-center gap-1.5 bg-[#0a0a0a] border border-gray-700 rounded px-2.5 py-1 text-xs text-gray-300"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-green-500 shrink-0" />
+                    {r}
+                  </span>
+                ))}
+              </div>
+              <p className="text-gray-400 text-sm border-t border-gray-800 pt-3 mt-3">
+                {role.outcome}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-10 bg-red-500/5 border border-red-500/20 rounded-lg px-6 py-4">
+          <p className="text-gray-300 text-sm">
+            <span className="text-white font-bold">The old AI approach</span> made you faster at things you were already doing.{" "}
+            <span className="text-white font-bold">This gives your leaders a full team</span> — and the output that comes with one.
           </p>
         </div>
       </section>
 
       {/* ── THE FOUNDER TRAP ── */}
-      <section className="px-6 py-24 max-w-4xl mx-auto">
-        <div className="text-red-500 font-bold text-sm uppercase tracking-widest mb-4">
-          The Trap
-        </div>
-        <h2 className="text-3xl md:text-5xl font-black text-white mb-10 leading-tight">
-          You started a business<br />
-          to do what you love.<br />
-          <span className="text-gray-500">When did that stop?</span>
-        </h2>
-        <div className="space-y-5 text-gray-400 text-lg leading-relaxed max-w-2xl">
-          <p>
-            There&apos;s a version of you that built something because you were
-            good at it. Maybe you loved it. And then the business ate you alive.
-            Invoices. Follow-ups. Status updates. Scheduling. Onboarding.
-            Reporting.
-          </p>
-          <p>
-            None of it is what you signed up for. All of it is what&apos;s
-            keeping you from the work that actually matters.
-          </p>
-          <p className="text-white font-semibold text-xl">
-            This is the trap every founder walks into. Most never walk out.
-          </p>
-          <p>
-            AI or Die exists because that trap is now optional. The operational
-            drudgery that swallows founders whole can be handed to agents —
-            permanently, 24/7, without salary negotiations or sick days or
-            Slack drama.
-          </p>
-        </div>
-      </section>
-
-      {/* ── THE OLD APPROACHES ── */}
       <section className="bg-[#111111] border-y border-gray-800 px-6 py-24">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
-            Every AI Approach Before This Missed the Point
-          </h2>
-          <p className="text-gray-400 mb-12 text-lg max-w-2xl">
-            They all made you faster at doing things you shouldn&apos;t be
-            doing at all.
-          </p>
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            {[
-              {
-                label: "Chatbots",
-                verdict: "Talk but don't do",
-                desc: "Answer questions from a script. No memory, no action, no initiative. Every conversation starts from zero. You're still in the loop for everything.",
-              },
-              {
-                label: "Copilots",
-                verdict: "Marginal improvements",
-                desc: "Make you 20% faster at things you already do. You're still doing the work. The bottleneck is still you.",
-              },
-              {
-                label: "DIY Agent Setups",
-                verdict: "Hard to build, sit idle",
-                desc: "Require dev time, break constantly, wait for explicit commands. Nobody's managing them. Nobody's improving them. They do nothing when you're not watching.",
-              },
-            ].map((p) => (
-              <div
-                key={p.label}
-                className="bg-[#0a0a0a] border border-gray-800 rounded-lg p-6"
-              >
-                <div className="flex items-center justify-between mb-3">
-                  <span className="text-white font-bold text-lg">
-                    {p.label}
-                  </span>
-                  <span className="text-red-500 text-sm font-semibold bg-red-500/10 px-2 py-1 rounded">
-                    {p.verdict}
-                  </span>
-                </div>
-                <p className="text-gray-400 text-sm leading-relaxed">{p.desc}</p>
-              </div>
-            ))}
+        <div className="max-w-4xl mx-auto">
+          <div className="text-red-500 font-bold text-sm uppercase tracking-widest mb-4">
+            The Trap
           </div>
-          <div className="border-l-4 border-red-500 pl-6">
-            <p className="text-xl font-bold text-white">We do it differently.</p>
-            <p className="text-gray-400 mt-1 text-lg">
-              AI employees with memory, initiative, and ownership. They
-              don&apos;t wait to be asked. They run the function.
+          <h2 className="text-3xl md:text-5xl font-black text-white mb-10 leading-tight">
+            You&apos;re not stuck because<br />
+            you need more people.<br />
+            <span className="text-gray-500">You need your people to lead more.</span>
+          </h2>
+          <div className="space-y-5 text-gray-400 text-lg leading-relaxed max-w-2xl">
+            <p>
+              Every founder, every department head who has ever said &quot;we need to hire for
+              this&quot; — they were right about the need. Wrong about the solution.
+            </p>
+            <p>
+              The CMO who spends half their week writing copy instead of setting strategy.
+              The CTO who reviews tickets instead of architecture. The Sales VP who
+              follows up manually because the pipeline tool doesn&apos;t do it automatically.
+              The bottleneck isn&apos;t talent. It&apos;s leverage.
+            </p>
+            <p className="text-white font-semibold text-xl">
+              AI employees give your leaders leverage. The work still gets done.
+              Just not by people who shouldn&apos;t be doing it.
+            </p>
+            <p>
+              The trap is optional now. The operational drudgery that swallows teams
+              whole can be handed to agents — permanently, 24/7, without salary
+              negotiations, sick days, or Slack drama.
             </p>
           </div>
         </div>
@@ -311,108 +365,178 @@ export default function Home() {
 
       {/* ── WE EAT OUR OWN DOG FOOD ── */}
       <section className="px-6 py-24 max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-16 items-start">
-          <div>
-            <div className="text-red-500 font-bold text-sm uppercase tracking-widest mb-4">
-              We Eat Our Own Dog Food
-            </div>
-            <h2 className="text-3xl md:text-4xl font-black text-white mb-6 leading-tight">
-              We proved it on ourselves before we sold it to anyone.
-            </h2>
-            <div className="space-y-4 text-gray-400 leading-relaxed">
-              <p>
-                Tomek Group runs 20+ AI agents across 5 live business units
-                right now, in production, every day. Not a demo environment.
-                The actual operations of an actual company.
-              </p>
-              <p>
-                The AI CMO handles all website copy. The AI CEO files morning
-                ops reports. The AI CRO tracks the pipeline. The AI CTO keeps
-                the stack breathing. Legal gets reviewed. Content gets shipped.
-                Nothing waits for a human to remember to do it.
-              </p>
-              <p className="text-white font-semibold text-lg">
-                We&apos;re not pitching a vision. We&apos;re selling the
-                machine we already run on.
-              </p>
-            </div>
-          </div>
-          <div className="space-y-4">
-            {dogFoodStats.map((stat) => (
-              <div
-                key={stat.label}
-                className="bg-[#111111] border border-gray-800 rounded-lg p-5 flex items-center justify-between gap-4"
-              >
-                <span className="text-gray-400 text-sm">{stat.label}</span>
-                <span className="text-white font-black text-2xl shrink-0">
-                  {stat.value}
+        <div className="text-red-500 font-bold text-sm uppercase tracking-widest mb-4">
+          Proof of Concept Portfolio
+        </div>
+        <h2 className="text-3xl md:text-4xl font-black text-white mb-4 leading-tight">
+          We proved it before we sold it.
+        </h2>
+        <p className="text-gray-400 text-lg max-w-2xl mb-12 leading-relaxed">
+          Four live companies. Different use cases. Same infrastructure. All running now.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-6 mb-14">
+          {proofOfConcept.map((poc) => (
+            <div
+              key={poc.name}
+              className="bg-[#111111] border border-gray-800 hover:border-gray-600 rounded-lg p-6 transition-colors"
+            >
+              <div className="flex items-start justify-between gap-4 mb-3">
+                <span className="text-white font-black text-xl">{poc.name}</span>
+                <span className="text-gray-500 text-xs font-semibold uppercase tracking-wider bg-[#0a0a0a] border border-gray-700 rounded px-2 py-1 shrink-0">
+                  {poc.tag}
                 </span>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── HOW IT WORKS ── */}
-      <section className="bg-[#111111] border-y border-gray-800 px-6 py-24">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
-            How We Hire Your Agent
-          </h2>
-          <p className="text-gray-400 mb-14 text-lg max-w-2xl">
-            This isn&apos;t software setup. It&apos;s onboarding. From first
-            call to live agent in under two weeks.
-          </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
-            {steps.map((s) => (
-              <div key={s.n} className="flex flex-col">
-                <div className="text-red-500 font-black text-4xl mb-3">
-                  {s.n}
-                </div>
-                <div className="text-white font-bold mb-2">{s.title}</div>
-                <div className="text-gray-400 text-sm leading-relaxed">
-                  {s.desc}
-                </div>
+              <p className="text-gray-400 text-sm leading-relaxed mb-3">{poc.desc}</p>
+              <div className="flex items-center gap-2 border-t border-gray-800 pt-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-green-500 shrink-0" />
+                <span className="text-green-400 text-xs font-semibold">{poc.detail}</span>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      </section>
 
-      {/* ── ROLES WE DEPLOY ── */}
-      <section className="px-6 py-24 max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
-          Roles We Deploy
-        </h2>
-        <p className="text-gray-400 mb-12 text-lg">
-          Every agent is custom-built and scoped for your specific business.
-          These are functions we&apos;ve already built and proven in production.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {agentTypes.map((a) => (
+        <div className="grid md:grid-cols-4 gap-4">
+          {dogFoodStats.map((stat) => (
             <div
-              key={a.name}
-              className="bg-[#111111] border border-gray-800 hover:border-gray-600 rounded-lg p-5 transition-colors"
+              key={stat.label}
+              className="bg-[#111111] border border-gray-800 rounded-lg p-5 flex flex-col justify-between gap-2"
             >
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 rounded-full bg-red-500 mt-2 shrink-0" />
-                <div>
-                  <div className="text-white font-semibold mb-1">{a.name}</div>
-                  <div className="text-gray-400 text-sm">{a.desc}</div>
-                </div>
-              </div>
+              <span className="text-gray-500 text-xs leading-tight">{stat.label}</span>
+              <span className="text-white font-black text-3xl">{stat.value}</span>
             </div>
           ))}
         </div>
       </section>
 
-      {/* ── QUICK PRICING ── */}
+      {/* ── HUMAN + AI TRANSPARENCY ── */}
       <section className="bg-[#111111] border-y border-gray-800 px-6 py-16">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="text-gray-400 font-bold text-sm uppercase tracking-widest mb-4">
+                Transparency. Not fine print.
+              </div>
+              <h2 className="text-3xl md:text-4xl font-black text-white mb-6 leading-tight">
+                We tell you exactly who you&apos;re talking to.
+              </h2>
+              <div className="space-y-3 text-gray-400 leading-relaxed">
+                <p>
+                  We are not anti-human. We are pro-human. We just believe humans should be
+                  doing the work only humans can do — not drowning in ops tasks an AI
+                  can handle better.
+                </p>
+                <p>
+                  When you book a call, you get Tomasz. A real person. No AI in the
+                  room pretending to be human. When you interact with an AI agent — we
+                  tell you. We label it. We don&apos;t blur the line.
+                </p>
+                <p className="text-white font-semibold">
+                  That&apos;s not a disclaimer. It&apos;s a design principle.
+                </p>
+              </div>
+            </div>
+            <div className="space-y-3">
+              {[
+                {
+                  label: "Book a consult",
+                  who: "Tomasz Wojewoda",
+                  badge: "Human",
+                  badgeColor: "bg-blue-500/10 border-blue-500/30 text-blue-400",
+                  desc: "Real founder. Actual conversation. No middleman.",
+                },
+                {
+                  label: "Talk to an agent",
+                  who: "AI Agent (labeled)",
+                  badge: "AI",
+                  badgeColor: "bg-red-500/10 border-red-500/30 text-red-400",
+                  desc: "Available 24/7. You always know what you're talking to.",
+                },
+                {
+                  label: "Read this website",
+                  who: "AI CMO",
+                  badge: "AI",
+                  badgeColor: "bg-red-500/10 border-red-500/30 text-red-400",
+                  desc: "Every word. Written by an AI. Approved by humans. Labeled upfront.",
+                },
+              ].map((item) => (
+                <div
+                  key={item.label}
+                  className="bg-[#0a0a0a] border border-gray-800 rounded-lg px-5 py-4 flex items-start gap-4"
+                >
+                  <div className="flex-1 min-w-0">
+                    <div className="text-gray-500 text-xs uppercase tracking-wider mb-0.5">
+                      {item.label}
+                    </div>
+                    <div className="text-white font-semibold text-sm">{item.who}</div>
+                    <div className="text-gray-500 text-xs mt-1">{item.desc}</div>
+                  </div>
+                  <span
+                    className={`shrink-0 text-xs font-bold border rounded px-2 py-1 ${item.badgeColor}`}
+                  >
+                    {item.badge}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── HOW IT WORKS ── */}
+      <section className="px-6 py-24 max-w-6xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
+          How We Hire Your Agent
+        </h2>
+        <p className="text-gray-400 mb-14 text-lg max-w-2xl">
+          This isn&apos;t software setup. It&apos;s onboarding. From first call to live
+          agent in under two weeks.
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
+          {steps.map((s) => (
+            <div key={s.n} className="flex flex-col">
+              <div className="text-red-500 font-black text-4xl mb-3">{s.n}</div>
+              <div className="text-white font-bold mb-2">{s.title}</div>
+              <div className="text-gray-400 text-sm leading-relaxed">{s.desc}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── ROLES WE DEPLOY ── */}
+      <section className="bg-[#111111] border-y border-gray-800 px-6 py-24">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
+            Roles We Deploy
+          </h2>
+          <p className="text-gray-400 mb-12 text-lg">
+            Every agent is custom-built and scoped for your specific business. These are
+            functions we&apos;ve already built and proven in production.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {agentTypes.map((a) => (
+              <div
+                key={a.name}
+                className="bg-[#0a0a0a] border border-gray-800 hover:border-gray-600 rounded-lg p-5 transition-colors"
+              >
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-red-500 mt-2 shrink-0" />
+                  <div>
+                    <div className="text-white font-semibold mb-1">{a.name}</div>
+                    <div className="text-gray-400 text-sm">{a.desc}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── QUICK PRICING ── */}
+      <section className="px-6 py-16 max-w-6xl mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 bg-[#111111] border border-gray-800 rounded-lg px-8 py-6">
           <div>
-            <h2 className="text-2xl font-black text-white mb-2">
-              Simple Pricing
-            </h2>
+            <h2 className="text-2xl font-black text-white mb-2">Simple Pricing</h2>
             <div className="flex flex-wrap gap-4 text-sm text-gray-400">
               <span className="text-white font-semibold">
                 $2,000 setup · $500/month per agent
@@ -445,32 +569,26 @@ export default function Home() {
             <div className="text-red-400 font-semibold text-sm mb-2 uppercase tracking-wider">
               Three Human Hires
             </div>
-            <div className="text-white font-black text-4xl mb-2">
-              ~$350K/yr
-            </div>
+            <div className="text-white font-black text-4xl mb-2">~$350K/yr</div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Legal + financial + sales. Salary, benefits, PTO, overhead,
-              recruiting. They work 8 hours a day, 5 days a week. They get
-              sick. They quit.
+              Legal + financial + sales. Salary, benefits, PTO, overhead, recruiting.
+              They work 8 hours a day, 5 days a week. They get sick. They quit.
             </p>
           </div>
           <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-6">
             <div className="text-green-400 font-semibold text-sm mb-2 uppercase tracking-wider">
               Three AI Employees
             </div>
-            <div className="text-white font-black text-4xl mb-2">
-              $19,400/yr
-            </div>
+            <div className="text-white font-black text-4xl mb-2">$19,400/yr</div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              $5,000 setup + $1,200/mo. Year 2+: $14,400/yr. They work 24
-              hours a day, 7 days a week. No PTO. No drama. No attrition.
+              $5,000 setup + $1,200/mo. Year 2+: $14,400/yr. They work 24 hours a day,
+              7 days a week. No PTO. No drama. No attrition.
             </p>
           </div>
         </div>
         <p className="text-xl text-gray-300 font-semibold">
           $330K saved.{" "}
-          <span className="text-white font-black">3x the coverage.</span> No HR
-          drama.
+          <span className="text-white font-black">3x the coverage.</span> No HR drama.
         </p>
       </section>
 
@@ -481,13 +599,13 @@ export default function Home() {
             AI or Die
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
-            The founders who figure this out first will be the ones who scale
+            The companies that figure this out first will be the ones that scale
             without burning out.
           </h2>
           <p className="text-gray-400 text-lg mb-10 leading-relaxed">
-            Free consult. No pitch deck. We&apos;ll scope your first agent role
-            and show you exactly what it would do in your specific business. If
-            it&apos;s not a fit, we&apos;ll tell you that too.
+            Free consult. No pitch deck. We&apos;ll scope your first agent role and show
+            you exactly what it would do inside your specific team. If it&apos;s not a fit,
+            we&apos;ll tell you that too.
           </p>
           <a
             href={CONSULT_URL}
@@ -505,7 +623,8 @@ export default function Home() {
             >
               (786) 998-9310
             </a>
-            {" "}— call to book or talk to our AI agent directly. Consult itself is with a real human.
+            {" "}— call to book, or to talk to our AI agent directly.
+            Consult itself is with a real human.
           </p>
         </div>
       </section>
