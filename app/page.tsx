@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import LiveFleetDashboard from "@/components/LiveFleetDashboard";
+import { BotIcon, CogIcon, TrapIcon, UserIcon } from "@/components/Icons";
 import OrgChart from "@/components/OrgChart";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -34,12 +35,20 @@ const organizationJsonLd = {
   description:
     "AI employees deployed as direct reports to existing leaders, so companies scale output without scaling headcount.",
   telephone: "+17869989310",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Miami",
-    addressRegion: "FL",
-    addressCountry: "US",
-  },
+  address: [
+    {
+      "@type": "PostalAddress",
+      addressLocality: "Miami",
+      addressRegion: "FL",
+      addressCountry: "US",
+    },
+    {
+      "@type": "PostalAddress",
+      addressLocality: "Seattle",
+      addressRegion: "WA",
+      addressCountry: "US",
+    },
+  ],
 };
 
 const caseStudies = [
@@ -225,7 +234,7 @@ export default function Home() {
 
           <ScrollReveal delayMs={120}>
             <div className="mt-12 flex items-start gap-5 rounded-2xl border-l-4 border-[var(--accent)] bg-[var(--bg-card)] px-6 py-6 shadow-[0_4px_24px_rgba(0,0,0,0.06)]">
-              <span className="mt-0.5 text-3xl shrink-0">🪤</span>
+              <TrapIcon className="mt-0.5 h-7 w-7 shrink-0 text-[var(--accent)]" />
               <div>
                 <p className="font-space-grotesk text-lg font-bold text-[var(--text-primary)] mb-1">
                   The Founder Trap
@@ -331,18 +340,22 @@ export default function Home() {
 
           <div className="grid gap-4 md:grid-cols-3">
             {[
-              { icon: "👤", title: "Human", text: "Consult call is with Tomasz, directly." },
-              { icon: "🤖", title: "AI", text: "Agent conversations are clearly marked AI." },
-              { icon: "⚙️", title: "AI", text: "Operational outputs are labeled by source agent." },
-            ].map((item, i) => (
-              <ScrollReveal key={item.title + i} delayMs={i * 70}>
-                <div className="rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5">
-                  <div className="mb-3 text-2xl">{item.icon}</div>
-                  <p className="font-space-grotesk text-xl font-bold text-[var(--text-primary)]">{item.title}</p>
-                  <p className="mt-1 text-sm text-[var(--text-secondary)]">{item.text}</p>
-                </div>
-              </ScrollReveal>
-            ))}
+              { icon: UserIcon, title: "Human", text: "Consult call is with Tomasz, directly." },
+              { icon: BotIcon, title: "AI", text: "Agent conversations are clearly marked AI." },
+              { icon: CogIcon, title: "AI", text: "Operational outputs are labeled by source agent." },
+            ].map((item, i) => {
+              const Icon = item.icon;
+
+              return (
+                <ScrollReveal key={item.title + i} delayMs={i * 70}>
+                  <div className="rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5">
+                    <Icon className="mb-3 h-6 w-6 text-[var(--accent)]" />
+                    <p className="font-space-grotesk text-xl font-bold text-[var(--text-primary)]">{item.title}</p>
+                    <p className="mt-1 text-sm text-[var(--text-secondary)]">{item.text}</p>
+                  </div>
+                </ScrollReveal>
+              );
+            })}
           </div>
         </div>
       </section>

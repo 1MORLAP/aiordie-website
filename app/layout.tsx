@@ -90,7 +90,7 @@ function Footer() {
             AI or Die
           </span>
           <span>·</span>
-          <span>Miami, FL</span>
+          <span>Miami, FL · Seattle, WA</span>
           <span>·</span>
           <a
             href="tel:+17869989310"

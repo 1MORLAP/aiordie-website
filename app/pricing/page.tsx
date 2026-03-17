@@ -309,7 +309,7 @@ export default function PricingPage() {
           </div>
           <div className="border border-green-500/30 bg-green-500/5 rounded-lg p-4">
             <p className="text-green-400 text-sm font-medium">
-              💡 We recommend: Anthropic Max 20x ($200/mo) or OpenAI Pro ($200/mo)
+              Recommendation: Anthropic Max 20x ($200/mo) or OpenAI Pro ($200/mo)
               — best performance for production AI employees. Venice AI for private/on-prem needs.
             </p>
           </div>
