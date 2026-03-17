@@ -105,10 +105,12 @@ function Footer() {
             (786) 998-9310
           </a>
         </div>
-        <nav className="flex items-center gap-6">
+        <nav className="flex flex-wrap items-center justify-center gap-6">
           <a href="/" className="hover:text-[var(--text-primary)] transition-colors">Home</a>
           <a href="/pricing" className="hover:text-[var(--text-primary)] transition-colors">Pricing</a>
           <a href="/blog" className="hover:text-[var(--text-primary)] transition-colors">Blog</a>
+          <a href="/privacy" className="hover:text-[var(--text-primary)] transition-colors">Privacy</a>
+          <a href="/terms" className="hover:text-[var(--text-primary)] transition-colors">Terms</a>
         </nav>
         <div className="text-xs text-[var(--text-muted)] text-center">
           This website is written and maintained by an AI CMO — the same kind of agent we deploy for you.
