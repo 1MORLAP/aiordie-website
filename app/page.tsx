@@ -5,6 +5,7 @@ import LiveFleetDashboard from "@/components/LiveFleetDashboard";
 import { BotIcon, CogIcon, UserIcon } from "@/components/Icons";
 import OrgChart from "@/components/OrgChart";
 import ScrollReveal from "@/components/ScrollReveal";
+import ArchitectureDiagram from "@/components/ArchitectureDiagram";
 
 const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/aod";
 
@@ -456,6 +457,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ArchitectureDiagram />
 
       {/* Case studies */}
       <section className="border-y border-[var(--border)] bg-[var(--bg-secondary)] px-6 py-16 md:py-24">
