@@ -129,6 +129,73 @@ const deploymentTiers = [
   },
 ] as const;
 
+const technologyProviders = [
+  {
+    name: "OpenClaw",
+    href: "https://openclaw.ai",
+    description: "Open-source AI agent framework. The foundation our entire agent fleet runs on.",
+    function: "open-source AI agent orchestration and deployment framework",
+  },
+  {
+    name: "Hermes Agent",
+    href: "https://hermes-agent.nousresearch.com",
+    description: "Self-improving AI agent with built-in learning loops. Gets smarter the longer it runs.",
+    function: "self-improving agent learning loops for continuous optimization",
+  },
+  {
+    name: "NVIDIA",
+    href: "https://nvidia.com",
+    description: "GPU infrastructure and AI models powering high-performance inference.",
+    function: "GPU infrastructure and high-performance AI inference",
+  },
+  {
+    name: "Venice AI",
+    href: "https://venice.ai",
+    description: "Private AI. API pay-per-use inference for privacy-first deployments.",
+    function: "private, pay-per-use inference for privacy-first deployments",
+  },
+  {
+    name: "OpenAI",
+    href: "https://openai.com",
+    description: "GPT models for cloud and enterprise AI employee deployments.",
+    function: "GPT model intelligence for enterprise AI employee deployments",
+  },
+  {
+    name: "Anthropic",
+    href: "https://anthropic.com",
+    description: "Claude models. Our recommended brain for production AI employees.",
+    function: "Claude model intelligence for production AI employees",
+  },
+  {
+    name: "Apple",
+    href: "https://apple.com",
+    description: "Apple Silicon and MLX for on-device AI inference.",
+    function: "Apple Silicon and MLX acceleration for on-device inference",
+  },
+  {
+    name: "EXO Labs",
+    href: "https://github.com/exo-explore/exo",
+    description: "Distributed AI inference across consumer hardware. Run frontier models locally.",
+    function: "distributed local inference across consumer hardware",
+  },
+] as const;
+
+const technologyPartnersJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "AI or Die Technology Partners",
+  itemListElement: technologyProviders.map((provider, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    item: {
+      "@type": "Organization",
+      name: provider.name,
+      url: provider.href,
+      description: provider.description,
+    },
+  })),
+};
+
 function DeploymentIcon({ kind }: { kind: "cloud" | "shield" | "server" }) {
   const base = {
     viewBox: "0 0 24 24",
@@ -171,6 +238,10 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(technologyPartnersJsonLd) }}
       />
 
       {/* Hero */}
@@ -344,6 +415,45 @@ export default function Home() {
               Our deployments follow the pattern you&apos;ve already established. If your data lives on Google Drive, we deploy in the cloud. If it lives in your data center, we deploy there. We match how you already run your business.
             </p>
           </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Powered by */}
+      <section className="border-y border-[var(--border)] bg-[var(--bg-secondary)] px-6 py-16 md:py-20">
+        <div className="mx-auto max-w-6xl">
+          <ScrollReveal>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
+              Powered By
+            </p>
+            <h2 className="font-space-grotesk mb-4 text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
+              The technology behind AI or Die&apos;s AI employee deployments
+            </h2>
+            <p className="max-w-3xl text-[var(--text-secondary)]">
+              We build on the best. These are the platforms, models, and infrastructure behind every AI or Die deployment.
+            </p>
+          </ScrollReveal>
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {technologyProviders.map((provider, idx) => (
+              <ScrollReveal key={provider.name} delayMs={idx * 70}>
+                <a
+                  href={provider.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`AI or Die uses ${provider.name} for ${provider.function}. Visit ${provider.name} website.`}
+                  className="group block h-full rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-border)] hover:shadow-[0_14px_34px_-24px_var(--accent)]"
+                >
+                  <h3 className="font-space-grotesk text-3xl font-bold tracking-tight text-[var(--text-primary)] transition-colors duration-300 group-hover:text-[var(--accent)]">
+                    {provider.name}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">{provider.description}</p>
+                  <p className="mt-5 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">
+                    Visit provider →
+                  </p>
+                </a>
+              </ScrollReveal>
+            ))}
+          </div>
         </div>
       </section>
 

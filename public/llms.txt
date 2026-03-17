@@ -23,6 +23,16 @@ AI or Die deploys AI employees into your business operations. Your CMO gets an A
   - Private Cloud (Private Models): dedicated private cloud deployment using Venice AI (private)
   - On-Premise: full on-hardware deployment using self-hosted open-source models or Venice AI on-prem
 
+## Technology Partners
+- OpenClaw: https://openclaw.ai
+- Hermes Agent (Nous Research): https://hermes-agent.nousresearch.com
+- NVIDIA: https://nvidia.com
+- Venice AI: https://venice.ai
+- OpenAI: https://openai.com
+- Anthropic: https://anthropic.com
+- Apple: https://apple.com
+- EXO Labs: https://github.com/exo-explore/exo
+
 ## Proof of Concept Portfolio
 - TomBot (realtom.bot): Zero-human company, 100% AI operated
 - NEXORA (nexora.build): HKEX-listed, scaling Web3 with AI

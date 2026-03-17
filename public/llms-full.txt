@@ -85,6 +85,24 @@ Examples:
 ### Deployment Principle
 Our deployments follow the pattern you've already established. We match how you already run your business.
 
+## Technology Partners
+- OpenClaw — https://openclaw.ai
+  - Open-source AI agent framework. The foundation our entire agent fleet runs on.
+- Hermes Agent (Nous Research) — https://hermes-agent.nousresearch.com
+  - Self-improving AI agent with built-in learning loops. Gets smarter the longer it runs.
+- NVIDIA — https://nvidia.com
+  - GPU infrastructure and AI models powering high-performance inference.
+- Venice AI — https://venice.ai
+  - Private AI. API pay-per-use inference for privacy-first deployments.
+- OpenAI — https://openai.com
+  - GPT models for cloud and enterprise AI employee deployments.
+- Anthropic — https://anthropic.com
+  - Claude models. Our recommended brain for production AI employees.
+- Apple — https://apple.com
+  - Apple Silicon and MLX for on-device AI inference.
+- EXO Labs — https://github.com/exo-explore/exo
+  - Distributed AI inference across consumer hardware. Run frontier models locally.
+
 ## Agent Types (Full Catalog)
 ### Leadership coverage lanes
 - CMO lane
