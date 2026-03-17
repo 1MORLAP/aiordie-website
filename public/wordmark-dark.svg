@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 100" width="600" height="100">
+    <defs>
+        <!-- Linear gradient for "Die" fade effect -->
+        <linearGradient id="dieFade" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#1C1C1E" stop-opacity="1"/>
+            <stop offset="35%" stop-color="#1C1C1E" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#1C1C1E" stop-opacity="0.12"/>
+        </linearGradient>
+        
+        <!-- Alternative gradient for dark backgrounds (white to transparent) -->
+        <linearGradient id="dieFadeWhite" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+            <stop offset="35%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.12"/>
+        </linearGradient>
+    </defs>
+    
+    <!-- Background (optional, for export) -->
+    <!-- <rect width="600" height="100" fill="#FAFAF8"/> -->
+    
+    <!-- Wordmark group -->
+    <g font-family="'Space Grotesk', 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" 
+       font-weight="700" 
+       font-size="48" 
+       letter-spacing="-0.02em">
+        
+        <!-- "AI" -->
+        <text x="50" y="65" fill="#1C1C1E">AI</text>
+        
+        <!-- "or" with orange underline -->
+        <text x="125" y="65" fill="#1C1C1E">or</text>
+        
+        <!-- Orange underline under "or" -->
+        <rect x="125" y="72" width="56" height="3" fill="#FF4C00" rx="1.5"/>
+        
+        <!-- "Die" with gradient fade -->
+        <text x="210" y="65" fill="url(#dieFade)">Die</text>
+    </g>
+</svg>

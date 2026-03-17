@@ -46,8 +46,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body className="bg-[#0a0a0a] text-gray-100 antialiased">
+    <html lang="en" className={inter.variable} suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function() {
+  try {
+    var theme = localStorage.getItem('theme');
+    if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    }
+  } catch(e) {}
+})();`,
+          }}
+        />
+      </head>
+      <body
+        className="bg-[var(--bg)] text-[var(--text-primary)] antialiased"
+        style={{ fontFamily: "var(--font-inter), sans-serif" }}
+      >
         <Nav />
         <main>{children}</main>
         <Footer />
@@ -59,26 +76,34 @@ export default function RootLayout({
 
 function Footer() {
   return (
-    <footer className="border-t border-gray-800 mt-24 py-10 px-6">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+    <footer className="border-t border-[var(--border)] mt-24 py-10 px-6">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-[var(--text-muted)]">
         <div className="flex flex-wrap items-center gap-2 justify-center md:justify-start">
-          <span className="text-red-500 font-bold text-base">AI or Die</span>
+          <span
+            className="font-bold text-base"
+            style={{ color: "var(--accent)" }}
+          >
+            AI or Die
+          </span>
           <span>·</span>
           <span>Miami, FL</span>
           <span>·</span>
-          <a href="tel:+17869989310" className="hover:text-gray-300 transition-colors">
+          <a
+            href="tel:+17869989310"
+            className="hover:text-[var(--text-primary)] transition-colors"
+          >
             (786) 998-9310
           </a>
           <span>·</span>
           <span>aiordie.now</span>
         </div>
-        <div className="text-xs text-gray-600 text-center md:text-right">
+        <div className="text-xs text-[var(--text-muted)] text-center md:text-right">
           This website is written and maintained by an AI CMO — the same kind of agent we deploy for you.
         </div>
         <nav className="flex items-center gap-6">
-          <a href="/" className="hover:text-gray-300 transition-colors">Home</a>
-          <a href="/pricing" className="hover:text-gray-300 transition-colors">Pricing</a>
-          <a href="/blog" className="hover:text-gray-300 transition-colors">Blog</a>
+          <a href="/" className="hover:text-[var(--text-primary)] transition-colors">Home</a>
+          <a href="/pricing" className="hover:text-[var(--text-primary)] transition-colors">Pricing</a>
+          <a href="/blog" className="hover:text-[var(--text-primary)] transition-colors">Blog</a>
         </nav>
       </div>
     </footer>
