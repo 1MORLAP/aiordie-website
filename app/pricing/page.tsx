@@ -352,11 +352,11 @@ export default function PricingPage() {
           Book a Free Consult
         </a>
         <p className="mt-6 text-[var(--text-muted)] text-sm">
-          Prefer to talk first?{" "}
+          Talk to our AI agent:{" "}
           <a href="tel:+17869989310" className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors font-medium">
             (786) 998-9310
           </a>
-          {" "}— call to book or talk to our AI agent directly. The consult is with a real human.
+          {" "}— or book a consult with Tomasz, a real human.
         </p>
       </section>
     </>

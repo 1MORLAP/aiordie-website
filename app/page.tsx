@@ -151,7 +151,7 @@ export default function Home() {
                   href="tel:+17869989310"
                   className="text-sm font-semibold text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
                 >
-                  (786) 998-9310
+                  Talk to AI · (786) 998-9310
                 </a>
               </div>
             </ScrollReveal>
