@@ -331,7 +331,7 @@ export default function Home() {
 
           <div className="grid gap-4 md:grid-cols-3">
             {[
-              { icon: UserIcon, title: "Human", text: "Consult call is with Tomasz, directly." },
+              { icon: UserIcon, title: "Human", text: "Consult call is with a real human, directly." },
               { icon: BotIcon, title: "AI", text: "Agent conversations are clearly marked AI." },
               { icon: CogIcon, title: "AI", text: "Operational outputs are labeled by source agent." },
             ].map((item, i) => {
@@ -451,7 +451,7 @@ export default function Home() {
               Scale now or get outpaced.
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-[var(--text-secondary)]">
-              Free consult with Tomasz. We&apos;ll map your first AI role and show exactly how it plugs into your current team.
+              Free consult with our human representative. We&apos;ll map your first AI role and show exactly how it plugs into your current team.
             </p>
             <div className="mt-8">
               <a
