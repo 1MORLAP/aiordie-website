@@ -60,9 +60,9 @@ const caseStudies = [
     href: "https://www.realtom.bot/",
   },
   {
-    name: "Nexora",
+    name: "NEXORA",
     badge: "Enterprise expansion",
-    line: "HK-listed Web3 infrastructure using AI teams to scale without proportional hiring.",
+    line: "HKEX-listed Web3 infrastructure using AI teams to scale without proportional hiring.",
     color: "#3B82F6",
     href: "https://nexora.build",
   },
@@ -193,7 +193,7 @@ export default function Home() {
 
             <ScrollReveal delayMs={140}>
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-[var(--text-secondary)]">
-                AI or Die deploys AI employees as direct reports to your CMO, CTO, Sales VP, and CFO.
+                AI or Die deploys AI employees as direct reports to your CMO, CTO, CRO, and CFO.
                 They execute 24/7 so your humans run strategy, not admin.
               </p>
             </ScrollReveal>
@@ -273,7 +273,7 @@ export default function Home() {
               This is not a mockup.
             </h2>
             <p className="mb-8 max-w-2xl text-[var(--text-secondary)]">
-              Six core agents shown below. 22 are live across four business units. This infrastructure runs every day before a single sales call.
+              Eight core agents shown below — including CPO and HRO. 22 are live across four business units. This infrastructure runs every day before a single sales call.
             </p>
           </ScrollReveal>
           <LiveFleetDashboard />
@@ -320,7 +320,7 @@ export default function Home() {
           <div className="mt-8 grid gap-4 md:grid-cols-3">
             {deploymentTiers.map((tier, idx) => (
               <ScrollReveal key={tier.name} delayMs={idx * 70}>
-                <article className={`rounded-2xl border p-6 ${tier.cardClass}`}>
+                <article className={`h-full rounded-2xl border p-6 ${tier.cardClass}`}>
                   <div className={`mb-3 flex items-center gap-2 ${tier.textClass}`}>
                     <DeploymentIcon kind={tier.icon} />
                     <h3 className="font-space-grotesk text-2xl font-bold">{tier.name}</h3>
@@ -366,7 +366,7 @@ export default function Home() {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group block rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-border)]"
+                  className="group block h-full rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-border)]"
                 >
                   <div className="mb-6 h-1.5 w-16 rounded-full" style={{ backgroundColor: item.color }} />
                   <div className="mb-3 flex items-start justify-between gap-3">

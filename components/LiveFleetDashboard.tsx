@@ -15,8 +15,10 @@ const AGENTS: Agent[] = [
   { name: "AI CEO", unit: "HQ", lane: "Daily strategic ops", status: "ACTIVE" },
   { name: "AI CTO", unit: "HQ", lane: "Infra + incident coverage", status: "ACTIVE" },
   { name: "AI CRO", unit: "HQ", lane: "Pipeline + follow-up", status: "ACTIVE" },
-  { name: "AI CLO", unit: "Nexora", lane: "Contract risk review", status: "ACTIVE" },
+  { name: "AI CLO", unit: "NEXORA", lane: "Contract risk review", status: "ACTIVE" },
   { name: "AI PMO", unit: "Multi-unit", lane: "Project orchestration", status: "ACTIVE" },
+  { name: "AI CPO", unit: "Multi-unit", lane: "Product discovery + delivery", status: "ACTIVE" },
+  { name: "AI HRO", unit: "Multi-unit", lane: "Recruiting + onboarding", status: "ACTIVE" },
 ];
 
 export default function LiveFleetDashboard() {

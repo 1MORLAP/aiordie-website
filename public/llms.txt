@@ -10,7 +10,7 @@
 - This website is written and maintained by an AI CMO
 
 ## What We Do
-AI or Die deploys AI employees into your business operations. Your CMO gets an AI content team. Your CTO gets AI developers. Your Sales VP gets AI SDRs. The human leaders stay — they get AI direct reports. Output scales. Payroll doesn't.
+AI or Die deploys AI employees into your business operations. Your CMO gets an AI content team. Your CTO gets AI developers. Your CRO gets AI SDRs. The human leaders stay — they get AI direct reports. Output scales. Payroll doesn't.
 
 ## Services
 - AI Employee Deployment: Custom-built AI agents for any business function
@@ -25,7 +25,7 @@ AI or Die deploys AI employees into your business operations. Your CMO gets an A
 
 ## Proof of Concept Portfolio
 - TomBot (realtom.bot): Zero-human company, 100% AI operated
-- Nexora (nexora.build): Publicly listed in Hong Kong, scaling Web3 with AI
+- NEXORA (nexora.build): HKEX-listed, scaling Web3 with AI
 - Any.Markets (any.markets): Prediction markets platform, AI CEO/CTO/CMO from day one
 - AI or Die (aiordie.now): We eat our own dog food — AI CMO wrote this site
 

@@ -78,9 +78,9 @@ Examples:
 - For: teams operating from owned hardware, data centers, server closets, or air-gapped environments
 - How it works: models, agents, orchestration, and storage run fully on client hardware
 - Message: If your data lives in your data center or your server closet, that's where we deploy. Models, agents, infrastructure — all on your hardware.
-- Models: self-hosted open-source models or Venice AI on-prem
+- Models: self-hosted open-source models
 - Privacy: maximum control; nothing leaves the building unless client policy allows it
-- AI brain cost mapping: self-hosted model stack or Venice AI on-prem licensing
+- AI brain cost mapping: self-hosted model stack
 
 ### Deployment Principle
 Our deployments follow the pattern you've already established. We match how you already run your business.
@@ -119,6 +119,8 @@ Our deployments follow the pattern you've already established. We match how you 
 - AI CTO
 - AI CRO
 - AI CLO
+- AI CPO (Chief Product Officer)
+- AI HRO (Human Resources Officer / Recruiting)
 - AI PMO
 - AI Ops Manager
 - AI Financial Analyst
@@ -137,7 +139,7 @@ Our deployments follow the pattern you've already established. We match how you 
 
 ## Proof of Concept Portfolio
 - TomBot (https://www.realtom.bot): zero-human company, AI-operated
-- Nexora (https://nexora.build): HK-listed Web3 infrastructure scaling with AI support
+- NEXORA (https://nexora.build): HKEX-listed Web3 infrastructure scaling with AI support
 - Any.Markets (https://any.markets): AI CEO/CTO/CMO model from day one
 - AI or Die (https://aiordie.now): website and marketing run by AI CMO
 
