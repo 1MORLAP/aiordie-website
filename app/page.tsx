@@ -84,13 +84,31 @@ const caseStudies = [
   },
 ];
 
-const topRoles = [
-  "AI CMO",
-  "AI SDR",
-  "AI Ops Manager",
-  "AI Financial Analyst",
-  "AI Legal Assistant",
-  "AI PMO",
+const featuredRoles = [
+  {
+    name: "AI Chief of Staff",
+    summary: "Coordinates cross-functional execution, daily priorities, and leadership-level blockers.",
+  },
+  {
+    name: "AI Content Writer",
+    summary: "Creates high-output blog, web, email, and social content in your exact brand voice.",
+  },
+  {
+    name: "AI SDR",
+    summary: "Prospects, personalizes outreach, qualifies leads, and fills your calendar with meetings.",
+  },
+  {
+    name: "AI Financial Analyst",
+    summary: "Builds forecasts, tracks burn, and turns numbers into board-ready decision support.",
+  },
+  {
+    name: "AI Developer",
+    summary: "Ships code, handles bug fixes, and accelerates product execution across your stack.",
+  },
+  {
+    name: "AI Customer Support Agent",
+    summary: "Handles tickets at scale, resolves common issues fast, and protects response-time SLAs.",
+  },
 ];
 
 const deploymentTiers = [
