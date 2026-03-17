@@ -152,7 +152,7 @@ const deploymentOptions = [
     models: "Self-hosted open-source models",
     privacy: "Maximum control. Nothing leaves your building unless you choose.",
     brainMap: "AI Brain Cost mapping: self-hosted model stack or Venice AI on-prem licensing.",
-    cardClass: "border-[var(--border)] bg-[#1C1C1E] text-[#FAFAF8]",
+    cardClass: "border-[var(--border)] bg-[var(--bg-card)]",
   },
 ] as const;
 
@@ -425,30 +425,28 @@ export default function PricingPage() {
           </ScrollReveal>
           <div className="grid gap-5 md:grid-cols-3">
             {deploymentOptions.map((option, idx) => {
-              const isOnPrem = option.icon === "server";
-
               return (
                 <ScrollReveal key={option.title} delayMs={idx * 75}>
                   <article className={`rounded-xl border p-6 ${option.cardClass}`}>
-                    <div className={`mb-3 flex items-center gap-2 ${isOnPrem ? "text-[#FAFAF8]" : "text-[var(--accent)]"}`}>
+                    <div className="mb-3 flex items-center gap-2 text-[var(--accent)]">
                       <DeploymentTierIcon kind={option.icon} />
-                      <h3 className={`font-space-grotesk text-2xl font-bold ${isOnPrem ? "text-[#FAFAF8]" : "text-[var(--text-primary)]"}`}>
+                      <h3 className="font-space-grotesk text-2xl font-bold text-[var(--text-primary)]">
                         {option.title}
                       </h3>
                     </div>
-                    <p className={`text-sm leading-relaxed ${isOnPrem ? "text-[#FAFAF8]/80" : "text-[var(--text-secondary)]"}`}>
+                    <p className="text-sm leading-relaxed text-[var(--text-secondary)]">
                       <span className="font-semibold">For:</span> {option.forWho}
                     </p>
-                    <p className={`mt-2 text-sm leading-relaxed ${isOnPrem ? "text-[#FAFAF8]/80" : "text-[var(--text-secondary)]"}`}>
+                    <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]">
                       <span className="font-semibold">How:</span> {option.how}
                     </p>
-                    <p className={`mt-2 text-sm leading-relaxed ${isOnPrem ? "text-[#FAFAF8]/80" : "text-[var(--text-secondary)]"}`}>
+                    <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]">
                       <span className="font-semibold">Models:</span> {option.models}
                     </p>
-                    <p className={`mt-2 text-sm leading-relaxed ${isOnPrem ? "text-[#FAFAF8]/80" : "text-[var(--text-secondary)]"}`}>
+                    <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]">
                       <span className="font-semibold">Privacy:</span> {option.privacy}
                     </p>
-                    <p className={`mt-3 rounded-lg border px-3 py-2 text-xs font-medium ${isOnPrem ? "border-[#FAFAF8]/20 bg-[#FAFAF8]/10 text-[#FAFAF8]" : "border-[var(--border)] bg-[var(--bg)] text-[var(--text-secondary)]"}`}>
+                    <p className="mt-3 rounded-lg border border-[var(--border)] bg-[var(--bg)] px-3 py-2 text-xs font-medium text-[var(--text-secondary)]">
                       {option.brainMap}
                     </p>
                   </article>
