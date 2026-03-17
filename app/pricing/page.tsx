@@ -195,6 +195,7 @@ function DeploymentTierIcon({ kind }: { kind: "cloud" | "shield" | "server" }) {
 const included = [
   "Custom-built for you",
   "Memory that works",
+  "Multilingual — every language, every currency",
   "Tool integrations",
   "5,400+ pre-built integrations (email, CRM, Slack, GitHub, and more)",
   "24/7 operation",
