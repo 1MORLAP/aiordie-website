@@ -144,12 +144,6 @@ const technologyProviders = [
     function: "self-improving agentic AI and open-source language models",
   },
   {
-    name: "NVIDIA",
-    href: "https://nvidia.com",
-    description: "GPU infrastructure and AI models powering high-performance inference.",
-    function: "GPU infrastructure and high-performance AI inference",
-  },
-  {
     name: "Venice AI",
     href: "https://venice.ai",
     description: "Private AI. API pay-per-use inference for privacy-first deployments.",
@@ -166,12 +160,6 @@ const technologyProviders = [
     href: "https://anthropic.com",
     description: "Claude models. Our recommended brain for production AI employees.",
     function: "Claude model intelligence for production AI employees",
-  },
-  {
-    name: "Apple",
-    href: "https://apple.com",
-    description: "Apple Silicon and MLX for on-device AI inference.",
-    function: "Apple Silicon and MLX acceleration for on-device inference",
   },
   {
     name: "EXO Labs",
