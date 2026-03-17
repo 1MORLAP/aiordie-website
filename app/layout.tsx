@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   },
   description:
     "We build, deploy, and manage AI employee teams for your business. Legal, finance, sales, marketing — all the roles you need, without the headcount.",
+  icons: {
+    icon: "/icon.svg",
+    apple: "/icon.svg",
+  },
   openGraph: {
     type: "website",
     title: "AI or Die — AI Employees That Actually Work",
