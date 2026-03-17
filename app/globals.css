@@ -373,3 +373,189 @@ body {
   padding: 0;
   font-size: 0.875rem;
 }
+
+/* Living org chart */
+.org-team-card {
+  --network-glow: rgba(255, 76, 0, 0.24);
+  --network-line: color-mix(in oklab, var(--accent) 74%, transparent);
+  --network-line-dim: color-mix(in oklab, var(--accent) 38%, transparent);
+  --network-glass: color-mix(in oklab, var(--bg-card) 88%, transparent);
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(110% 80% at 50% 0%, color-mix(in oklab, var(--accent) 10%, transparent), transparent 66%),
+    var(--bg-card);
+  transition: border-color 280ms ease, transform 280ms ease, box-shadow 280ms ease;
+}
+
+.org-team-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), transparent 35%);
+  opacity: 0.45;
+}
+
+.org-team-card:hover {
+  border-color: var(--accent-border);
+  transform: translateY(-2px);
+  box-shadow: 0 22px 60px -34px var(--network-glow);
+}
+
+.org-network {
+  position: relative;
+}
+
+.org-hub-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.org-hub {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.48rem;
+  min-width: 172px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0.56rem 1rem;
+  color: var(--text-primary);
+  background:
+    linear-gradient(var(--bg-card), var(--bg-card)) padding-box,
+    linear-gradient(120deg, color-mix(in oklab, var(--accent) 88%, white 12%), color-mix(in oklab, var(--accent) 40%, transparent)) border-box;
+  box-shadow:
+    inset 0 0 0 1px color-mix(in oklab, var(--accent) 20%, transparent),
+    0 0 18px rgba(255, 76, 0, 0.12);
+  animation: breathe 4.4s ease-in-out infinite;
+  transition: transform 260ms ease;
+}
+
+.org-hub-wrap:hover .org-hub {
+  transform: translateY(-2px) scale(1.01);
+}
+
+.org-hub-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.org-hub-label {
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.org-links {
+  position: relative;
+  padding-top: 0.4rem;
+}
+
+.org-trunk-flow {
+  width: 2px;
+  height: 28px;
+  margin: 0 auto;
+  border-radius: 999px;
+  background: linear-gradient(to bottom, transparent 0%, var(--network-line) 24%, var(--network-line-dim) 100%);
+  background-size: 100% 200%;
+  animation: flowDown 2.3s linear infinite;
+  opacity: 0.7;
+  transition: opacity 250ms ease, filter 250ms ease;
+}
+
+.org-rail-flow {
+  height: 2px;
+  margin: 0 12%;
+  border-radius: 999px;
+  background: linear-gradient(to right, transparent, var(--network-line), transparent);
+  background-size: 220% 100%;
+  animation: flowAcross 3.4s linear infinite;
+  opacity: 0.6;
+  transition: opacity 250ms ease, filter 250ms ease;
+}
+
+.org-report-wrap {
+  position: relative;
+}
+
+.org-report-flow {
+  position: absolute;
+  top: -1.15rem;
+  left: 50%;
+  width: 2px;
+  height: 1.15rem;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  background: linear-gradient(to bottom, var(--network-line), var(--network-line-dim));
+  background-size: 100% 200%;
+  animation: flowDown 1.9s linear infinite;
+  opacity: 0.42;
+  transition: opacity 240ms ease, filter 240ms ease;
+}
+
+.org-report-card {
+  border-radius: 0.9rem;
+  border: 1px solid color-mix(in oklab, var(--border) 82%, transparent);
+  background: linear-gradient(155deg, color-mix(in oklab, var(--network-glass) 85%, white 15%), color-mix(in oklab, var(--network-glass) 92%, transparent));
+  backdrop-filter: blur(8px);
+  padding: 0.65rem 0.45rem;
+  text-align: center;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  transition: transform 240ms ease, border-color 240ms ease, color 240ms ease, box-shadow 240ms ease;
+}
+
+.org-report-wrap:hover .org-report-card {
+  transform: translateY(-4px);
+  border-color: var(--accent-border);
+  color: var(--text-primary);
+  box-shadow: 0 12px 24px -18px rgba(255, 76, 0, 0.75);
+}
+
+.org-report-wrap:hover .org-report-flow {
+  opacity: 1;
+  filter: drop-shadow(0 0 8px rgba(255, 76, 0, 0.35));
+}
+
+.org-hub-wrap:hover + .org-links .org-report-card {
+  border-color: color-mix(in oklab, var(--accent) 44%, var(--border));
+  color: var(--text-primary);
+  box-shadow: 0 10px 25px -20px rgba(255, 76, 0, 0.8);
+}
+
+.org-hub-wrap:hover + .org-links .org-report-flow,
+.org-hub-wrap:hover + .org-links .org-trunk-flow,
+.org-hub-wrap:hover + .org-links .org-rail-flow {
+  opacity: 1;
+  filter: drop-shadow(0 0 10px rgba(255, 76, 0, 0.35));
+}
+
+.founder-trap-callout {
+  border: 1px solid color-mix(in oklab, var(--accent) 28%, var(--border));
+  border-left: 4px solid var(--accent);
+  background: linear-gradient(120deg, color-mix(in oklab, var(--accent) 10%, transparent), color-mix(in oklab, var(--bg-card) 95%, transparent));
+  box-shadow: 0 16px 40px -32px rgba(255, 76, 0, 0.7);
+}
+
+.dark .founder-trap-callout {
+  background: linear-gradient(120deg, color-mix(in oklab, var(--accent) 15%, transparent), color-mix(in oklab, var(--bg-card) 90%, transparent));
+}
+
+@keyframes flowDown {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 0% 200%; }
+}
+
+@keyframes breathe {
+  0%,
+  100% { box-shadow: 0 0 20px rgba(255, 76, 0, 0.15); }
+  50% { box-shadow: 0 0 35px rgba(255, 76, 0, 0.3); }
+}
+
+@keyframes flowAcross {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 200% 0%; }
+}
