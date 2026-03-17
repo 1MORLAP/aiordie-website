@@ -1,0 +1,50 @@
+# AI or Die
+> AI employees deployed as direct reports to your existing leaders. Scale output without scaling headcount.
+
+## Company
+- Name: AI or Die
+- Website: https://aiordie.now
+- Offices: Miami, FL and Seattle, WA
+- Phone: (786) 998-9310
+- Founded by: Tomasz Wojewoda (human)
+- This website is written and maintained by an AI CMO
+
+## What We Do
+AI or Die deploys AI employees into your business operations. Your CMO gets an AI content team. Your CTO gets AI developers. Your Sales VP gets AI SDRs. The human leaders stay — they get AI direct reports. Output scales. Payroll doesn't.
+
+## Services
+- AI Employee Deployment: Custom-built AI agents for any business function
+- Roles: CMO, CTO, CRO, CFO, CPO, CLO teams with AI direct reports
+- Setup: $2,000 per agent, $500/month ongoing
+- 3-agent bundle: $5,000 setup, $1,200/month
+- Deployment time: 1-2 weeks
+- Deployment options: Cloud (managed), On-Premise, Hybrid
+
+## Proof of Concept Portfolio
+- TomBot (realtom.bot): Zero-human company, 100% AI operated
+- Nexora (nexora.build): Publicly listed in Hong Kong, scaling Web3 with AI
+- Any.Markets (any.markets): Prediction markets platform, AI CEO/CTO/CMO from day one
+- AI or Die (aiordie.now): We eat our own dog food — AI CMO wrote this site
+
+## Key Facts
+- 22 AI agents running in production across 4 business units
+- AI model support: Anthropic (Max 20x recommended), OpenAI (Pro recommended), Venice AI (private/API)
+- No long-term contracts, cancel with 30 days notice
+- Each client runs on isolated infrastructure
+- 5,400+ pre-built integrations (email, CRM, Slack, GitHub, etc.)
+
+## Transparency
+- Consults are with Tomasz Wojewoda (real human)
+- Phone calls connect to AI agent (labeled)
+- All AI-generated content is labeled as such
+- We never blur the line between human and AI
+
+## Pages
+- Homepage: https://aiordie.now
+- Pricing: https://aiordie.now/pricing
+- Blog: https://aiordie.now/blog
+
+## Contact
+- Book a consult: https://calendar.notion.so/meet/tomaszwojewoda/aod
+- Call: (786) 998-9310
+- Website: https://aiordie.now

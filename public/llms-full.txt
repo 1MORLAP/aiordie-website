@@ -1,0 +1,157 @@
+# AI or Die — Full LLM Reference
+> AI employees deployed as direct reports to your existing leaders. Scale output without scaling headcount.
+
+## Company Snapshot
+- Name: AI or Die
+- Website: https://aiordie.now
+- Offices: Miami, FL and Seattle, WA
+- Phone: (786) 998-9310
+- Founder: Tomasz Wojewoda (human)
+- Built by: AI CMO (this website is authored and maintained by AI agents)
+
+## Brand Narrative (Excerpt)
+"Your leaders keep the title. AI gets the workload."
+
+Most teams don’t have a strategy problem — they have an execution bottleneck. AI or Die is built to remove that bottleneck by giving each leader AI direct reports that execute continuously. Humans stay in charge of judgment, vision, and accountability. AI handles repeatable execution at machine speed.
+
+This is not theoretical. The same operating model is run in production across multiple business units, including AI or Die itself.
+
+## What We Do
+AI or Die deploys AI employees into existing business org charts. Instead of replacing leadership, we augment leadership.
+
+Examples:
+- Your CMO gets an AI content + SEO + social team
+- Your CTO gets AI engineering support
+- Your CRO gets AI SDR + CRM + follow-up support
+- Your CFO gets AI analyst + bookkeeper + compliance support
+
+## Service Offerings
+- AI Employee Deployment (custom-built per role and workflow)
+- Role architecture for your current leadership team
+- Integrations with existing business systems
+- Ongoing optimization and support
+- Isolated client infrastructure (cloud, on-prem, or hybrid)
+
+## Full Pricing Tiers
+### Core Service Pricing
+- 1 Agent: $2,000 setup + $500/month
+- 3 Agents: $5,000 setup + $1,200/month (most popular)
+- 5 Agents: $7,500 setup + $1,800/month
+- 8+ Agents: Custom setup + custom monthly pricing
+
+### Commercial Terms
+- No long-term contracts
+- Cancel with 30 days notice
+- Client retains agent configurations and files
+
+### AI Model ("Brain") Costs — paid directly to providers
+- Anthropic:
+  - Pro: $20/month
+  - Max 5x: $100/month
+  - Max 20x: $200/month (recommended)
+- OpenAI:
+  - Plus: $20/month
+  - Pro: $200/month (recommended)
+- Venice AI:
+  - API pay-per-use (usage-based)
+
+## Deployment Model
+- Typical deployment time: 1-2 weeks
+- Deployment options:
+  - Cloud (managed): fastest launch
+  - On-Premise: maximum data control
+  - Hybrid: mixed architecture for sensitive + growth workflows
+
+## Agent Types (Full Catalog)
+### Leadership coverage lanes
+- CMO lane
+- CTO lane
+- CRO lane
+- CFO lane
+- CPO lane
+- CLO lane
+
+### AI direct-report agent types
+- AI Content
+- AI SEO
+- AI Social
+- AI Dev
+- AI QA
+- AI Security
+- AI SDR
+- AI CRM
+- AI Follow-up
+- AI Analyst
+- AI Bookkeeper
+- AI Compliance
+- AI PM
+- AI Research
+- AI UX Writer
+- AI Contract Review
+- AI Legal Research
+
+### Additional production roles used across units
+- AI CEO
+- AI CMO
+- AI CTO
+- AI CRO
+- AI CLO
+- AI PMO
+- AI Ops Manager
+- AI Financial Analyst
+- AI Legal Assistant
+
+## What’s Included Per Agent
+- Custom role build
+- Persistent memory setup
+- Tool integrations
+- 5,400+ pre-built integrations (email, CRM, Slack, GitHub, etc.)
+- 24/7 operation
+- Isolated infrastructure
+- Ongoing monthly improvements
+- Client ownership of outputs/config
+- Remote support
+
+## Proof of Concept Portfolio
+- TomBot (https://www.realtom.bot): zero-human company, AI-operated
+- Nexora (https://nexora.build): HK-listed Web3 infrastructure scaling with AI support
+- Any.Markets (https://any.markets): AI CEO/CTO/CMO model from day one
+- AI or Die (https://aiordie.now): website and marketing run by AI CMO
+
+## Key Facts
+- 22 AI agents currently in production
+- 4 business units running live AI operations
+- Infrastructure-first deployment model
+- Human-led strategy + AI-led execution
+
+## Transparency Policy
+- Consult calls are with Tomasz Wojewoda (human)
+- AI phone interactions are labeled as AI
+- AI-generated outputs are labeled
+- No hidden handoffs between human and AI
+
+## FAQ (Canonical)
+### How long does deployment take?
+Typically 1-2 weeks from consult to live deployment.
+
+### Do clients need technical skills?
+No. AI or Die handles setup, integrations, deployment, and optimization.
+
+### Can I cancel anytime?
+Yes. No long-term contract. 30 days notice.
+
+### Which models are supported?
+Anthropic, OpenAI, and Venice AI.
+
+### Is business data isolated?
+Yes. Each client runs on isolated infrastructure. On-prem options are available.
+
+## Important Pages
+- Homepage: https://aiordie.now
+- Pricing: https://aiordie.now/pricing
+- Blog: https://aiordie.now/blog
+
+## Contact
+- Book consult: https://calendar.notion.so/meet/tomaszwojewoda/aod
+- Phone: (786) 998-9310
+- Website: https://aiordie.now

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
+import AskAI from "@/components/AskAI";
 import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({
@@ -42,6 +43,10 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true },
   },
+  other: {
+    "ai-content-declaration": "This website is authored and maintained by AI agents",
+    "llms-txt": "https://aiordie.now/llms.txt",
+  },
 };
 
 export default function RootLayout({
@@ -72,6 +77,7 @@ export default function RootLayout({
         <Nav />
         <main>{children}</main>
         <Footer />
+        <AskAI />
         <Analytics />
       </body>
     </html>
@@ -81,8 +87,8 @@ export default function RootLayout({
 function Footer() {
   return (
     <footer className="border-t border-[var(--border)] mt-24 py-10 px-6">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-[var(--text-muted)]">
-        <div className="flex flex-wrap items-center gap-2 justify-center md:justify-start">
+      <div className="max-w-6xl mx-auto flex flex-col items-center gap-6 text-sm text-[var(--text-muted)]">
+        <div className="flex flex-wrap items-center gap-2 justify-center">
           <span
             className="font-bold text-base"
             style={{ color: "var(--accent)" }}
@@ -98,17 +104,15 @@ function Footer() {
           >
             (786) 998-9310
           </a>
-          <span>·</span>
-          <span>aiordie.now</span>
-        </div>
-        <div className="text-xs text-[var(--text-muted)] text-center md:text-right">
-          This website is written and maintained by an AI CMO — the same kind of agent we deploy for you.
         </div>
         <nav className="flex items-center gap-6">
           <a href="/" className="hover:text-[var(--text-primary)] transition-colors">Home</a>
           <a href="/pricing" className="hover:text-[var(--text-primary)] transition-colors">Pricing</a>
           <a href="/blog" className="hover:text-[var(--text-primary)] transition-colors">Blog</a>
         </nav>
+        <div className="text-xs text-[var(--text-muted)] text-center">
+          This website is written and maintained by an AI CMO — the same kind of agent we deploy for you.
+        </div>
       </div>
     </footer>
   );
