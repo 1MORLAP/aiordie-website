@@ -8,8 +8,8 @@ function WordmarkSVG({ className }: { className?: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 280 50"
-      width="180"
+      viewBox="0 0 160 50"
+      width="140"
       height="30"
       aria-label="AI or Die"
       className={className}
@@ -29,9 +29,9 @@ function WordmarkSVG({ className }: { className?: string }) {
         letterSpacing="-0.02em"
       >
         <text x="4" y="34" fill="currentColor">AI</text>
-        <text x="54" y="34" fill="currentColor">or</text>
-        <rect x="54" y="38" width="32" height="2" fill="#FF4C00" rx="1" />
-        <text x="104" y="34" fill="url(#navDieFade)">Die</text>
+        <text x="38" y="34" fill="currentColor">or</text>
+        <rect x="38" y="38" width="28" height="2" fill="#FF4C00" rx="1" />
+        <text x="72" y="34" fill="url(#navDieFade)">Die</text>
       </g>
     </svg>
   );
