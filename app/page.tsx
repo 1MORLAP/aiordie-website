@@ -422,7 +422,7 @@ export default function Home() {
             </p>
           </ScrollReveal>
 
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {technologyProviders.map((provider, idx) => (
               <ScrollReveal key={provider.name} delayMs={idx * 70}>
                 <a
