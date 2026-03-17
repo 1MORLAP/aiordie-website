@@ -147,7 +147,7 @@ const deploymentOptions = [
   {
     title: "On-Premise",
     icon: "server",
-    forWho: "Teams operating from their own hardware, data centers, or air-gapped environments.",
+    forWho: "Teams running in own data centers.",
     how: "Everything runs on your infrastructure: models, agents, storage, and orchestration.",
     models: "Self-hosted open-source models or Venice AI on-prem",
     privacy: "Maximum control. Nothing leaves your building unless you choose.",

@@ -121,7 +121,7 @@ const deploymentTiers = [
   {
     name: "On-Premise",
     icon: "server",
-    forWho: "For teams running on data centers, server closets, or air-gapped environments.",
+    forWho: "For teams running in own data centers.",
     how: "Models, agents, and infrastructure run fully on your own hardware.",
     models: "Self-hosted open-source models or Venice AI on-prem",
     cardClass: "border-[var(--text-primary)] bg-[var(--text-primary)]",
