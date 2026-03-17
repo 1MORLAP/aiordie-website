@@ -224,11 +224,16 @@ export default function Home() {
           <OrgChart />
 
           <ScrollReveal delayMs={120}>
-            <div className="mt-8 rounded-2xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] p-5">
-              <p className="text-sm leading-relaxed text-[var(--text-secondary)]">
-                <span className="font-semibold text-[var(--text-primary)]">Founder trap:</span> high-value leaders drowning in low-value tasks.
-                The fix is not another expensive hire. It&apos;s giving each leader AI direct reports that execute without sleep, attrition, or lag.
-              </p>
+            <div className="mt-12 flex items-start gap-5 rounded-2xl border-l-4 border-[var(--accent)] bg-gradient-to-r from-[var(--accent-subtle)] to-transparent px-6 py-6">
+              <span className="mt-0.5 text-3xl shrink-0">🪤</span>
+              <div>
+                <p className="font-space-grotesk text-lg font-bold text-[var(--text-primary)] mb-1">
+                  The Founder Trap
+                </p>
+                <p className="text-base leading-relaxed text-[var(--text-secondary)]">
+                  High-value leaders drowning in low-value tasks. The fix isn&apos;t another expensive hire — it&apos;s giving each leader AI direct reports that execute without sleep, attrition, or lag.
+                </p>
+              </div>
             </div>
           </ScrollReveal>
         </div>
