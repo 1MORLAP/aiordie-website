@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
-// AskAI widget removed — header bar with ChatGPT/Claude/Perplexity links is the AI experience
+import AskAI from "@/components/AskAI";
 import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({
