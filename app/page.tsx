@@ -6,6 +6,7 @@ import { BotIcon, CogIcon, UserIcon } from "@/components/Icons";
 import OrgChart from "@/components/OrgChart";
 import ScrollReveal from "@/components/ScrollReveal";
 import ArchitectureDiagram from "@/components/ArchitectureDiagram";
+import AnimatedTimeline from "@/components/AnimatedTimeline";
 
 const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/aod";
 
@@ -81,14 +82,6 @@ const caseStudies = [
     color: "#10B981",
     href: "https://aiordie.now",
   },
-];
-
-const timeline = [
-  "Free consult",
-  "Role architecture",
-  "Agent build",
-  "Stack integration",
-  "Go live + optimize",
 ];
 
 const topRoles = [
@@ -358,7 +351,7 @@ export default function Home() {
           <OrgChart />
 
           <ScrollReveal delayMs={120}>
-            <p className="mt-10 text-[var(--text-secondary)]">
+            <p className="mt-10 max-w-3xl text-[var(--text-secondary)]">
               High-value leaders drowning in low-value tasks — that&apos;s the founder trap. The fix isn&apos;t another expensive hire. It&apos;s giving each leader AI direct reports that execute without sleep, attrition, or lag.
             </p>
           </ScrollReveal>
@@ -605,19 +598,7 @@ export default function Home() {
             <p className="mb-10 text-[var(--text-secondary)]">Five steps from consult to full deployment.</p>
           </ScrollReveal>
 
-          <div className="relative">
-            <div className="timeline-track" />
-            <div className="grid gap-7 md:grid-cols-5">
-              {timeline.map((step, idx) => (
-                <ScrollReveal key={step} delayMs={idx * 65}>
-                  <div className={`timeline-node ${idx === 1 ? "active" : ""}`}>
-                    <div className="timeline-dot">{idx + 1}</div>
-                    <p className="mt-3 text-center text-sm font-medium text-[var(--text-secondary)]">{step}</p>
-                  </div>
-                </ScrollReveal>
-              ))}
-            </div>
-          </div>
+          <AnimatedTimeline />
         </div>
       </section>
 
