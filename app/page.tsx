@@ -224,7 +224,7 @@ export default function Home() {
           <OrgChart />
 
           <ScrollReveal delayMs={120}>
-            <div className="mt-12 flex items-start gap-5 rounded-2xl border-l-4 border-[var(--accent)] bg-gradient-to-r from-[var(--accent-subtle)] to-transparent px-6 py-6">
+            <div className="mt-12 flex items-start gap-5 rounded-2xl border-l-4 border-[var(--accent)] bg-[var(--bg-card)] px-6 py-6 shadow-[0_4px_24px_rgba(0,0,0,0.06)]">
               <span className="mt-0.5 text-3xl shrink-0">🪤</span>
               <div>
                 <p className="font-space-grotesk text-lg font-bold text-[var(--text-primary)] mb-1">
@@ -460,7 +460,7 @@ export default function Home() {
               </a>
             </div>
             <p className="mt-4 text-sm text-[var(--text-muted)]">
-              Prefer a call? <a href="tel:+17869989310" className="font-semibold text-[var(--text-secondary)] hover:text-[var(--text-primary)]">(786) 998-9310</a>
+              Talk to our AI agent: <a href="tel:+17869989310" className="font-semibold text-[var(--text-secondary)] hover:text-[var(--text-primary)]">(786) 998-9310</a>
             </p>
           </ScrollReveal>
         </div>
