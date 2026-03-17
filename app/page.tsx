@@ -124,8 +124,8 @@ const deploymentTiers = [
     forWho: "For teams running in own data centers.",
     how: "Models, agents, and infrastructure run fully on your own hardware.",
     models: "Self-hosted open-source models",
-    cardClass: "border-[var(--text-primary)] bg-[var(--text-primary)]",
-    textClass: "text-[var(--bg)]",
+    cardClass: "border-[var(--border)] bg-[#1C1C1E]",
+    textClass: "text-[#FAFAF8]",
   },
 ] as const;
 
