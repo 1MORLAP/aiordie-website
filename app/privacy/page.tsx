@@ -120,9 +120,7 @@ export default function PrivacyPage() {
             <article className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-7">
               <h2 className="font-space-grotesk text-2xl font-bold text-[var(--text-primary)]">SMS disclosures</h2>
               <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                If you text our number, standard message and data rates may apply. Message frequency
-                varies based on your interaction with us. You can text <strong>STOP</strong> to opt out
-                of SMS messages and text <strong>HELP</strong> for help.
+                AI or Die may send you a one-time SMS message containing booking or scheduling information after you provide verbal consent during a phone call with our AI receptionist. We collect your phone number from caller ID or as provided by you during the call. No recurring or marketing messages are sent. Standard message and data rates may apply. Text <strong>STOP</strong> to opt out of future messages. Text <strong>HELP</strong> for assistance.
               </p>
             </article>
           </ScrollReveal>

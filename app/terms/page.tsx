@@ -94,9 +94,7 @@ export default function TermsPage() {
             <article className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-7">
               <h2 className="font-space-grotesk text-2xl font-bold text-[var(--text-primary)]">SMS terms</h2>
               <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                Message and data rates may apply. Message frequency varies based on your interaction
-                with AI or Die. Text <strong>STOP</strong> to cancel SMS messages. Text <strong>HELP</strong> for help.
-                For SMS support, contact <a className="text-[var(--accent)] hover:underline" href="tel:+17869989310">(786) 998-9310</a>.
+                AI or Die sends one-time transactional SMS messages (booking links, meeting confirmations) only after receiving verbal consent during a phone call with our AI receptionist. No recurring or promotional messages are sent. Message and data rates may apply. Text <strong>STOP</strong> to cancel SMS messages at any time. Text <strong>HELP</strong> for help. For SMS support, contact <a className="text-[var(--accent)] hover:underline" href="tel:+17869989310">(786) 998-9310</a>.
               </p>
             </article>
           </ScrollReveal>
