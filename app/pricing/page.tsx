@@ -235,7 +235,7 @@ export default function PricingPage() {
           </ScrollReveal>
           <ScrollReveal delayMs={200}>
             <div className="mt-7 inline-flex rounded-full border border-[var(--accent-border)] bg-[var(--accent-subtle)] px-4 py-2 text-sm font-semibold text-[var(--accent)]">
-              Save $330K/yr with 3 AI employees
+              Your team does $330K of work AI handles for $19,400
             </div>
           </ScrollReveal>
         </div>

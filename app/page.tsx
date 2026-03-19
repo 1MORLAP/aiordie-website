@@ -370,7 +370,7 @@ export default function Home() {
 
           <ScrollReveal delayMs={120}>
             <p className="mt-10 max-w-3xl text-[var(--text-secondary)]">
-              High-value leaders drowning in low-value tasks — that&apos;s the founder trap. The fix isn&apos;t another expensive hire. It&apos;s giving each leader AI direct reports that execute without sleep, attrition, or lag.
+              High-value leaders drowning in low-value tasks — that&apos;s the founder trap. Your team is doing $330,000 worth of work that AI could handle for $19,400. Most business owners don&apos;t realize the gap until they price it out.
             </p>
           </ScrollReveal>
         </div>
@@ -704,7 +704,7 @@ export default function Home() {
               Scale now or get outpaced.
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-[var(--text-secondary)]">
-              Free consult with our human representative. We&apos;ll map your first AI role and show exactly how it plugs into your current team.
+              Free consult. We&apos;ll price out the gap for your specific business — and show exactly which roles your team could hand off today.
             </p>
             <div className="mt-8">
               <a
