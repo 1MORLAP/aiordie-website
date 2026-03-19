@@ -80,7 +80,7 @@ export default function OrgChart() {
                   <div className="org-trunk-flow" />
                   <div className="org-rail-flow" />
 
-                  <div className="org-report-grid grid grid-cols-3 gap-2.5 pt-9 md:pt-10">
+                  <div className="org-report-grid grid grid-cols-3 gap-2.5 pt-20 md:pt-16">
                     {team.reports.map((report, reportIdx) => (
                       <ScrollReveal key={report} delayMs={teamIdx * 100 + reportIdx * 80}>
                         <div className="org-report-wrap">

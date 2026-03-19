@@ -5,16 +5,16 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Pricing — AI or Die",
   description:
-    "Simple, transparent pricing for AI employees. $2,000 setup + $500/mo per agent. Volume bundles from $1,200/mo. No contracts, cancel anytime.",
+    "Transparent pricing for AI direct reports. $2,000 setup + $500/mo per agent. Volume bundles from $1,200/mo. No contracts, cancel anytime.",
   openGraph: {
-    title: "AI Employee Pricing — AI or Die",
+    title: "AI Direct Report Pricing — AI or Die",
     description:
       "$2,000 setup + $500/mo per agent. Volume bundles from $1,200/mo. No contracts, cancel anytime.",
     url: "https://aiordie.now/pricing",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Employee Pricing — AI or Die",
+    title: "AI Direct Report Pricing — AI or Die",
     description: "$2,000 setup + $500/mo per agent. No contracts, cancel anytime.",
   },
   alternates: { canonical: "https://aiordie.now/pricing" },
@@ -26,43 +26,63 @@ const faqJsonLd = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "How long does it take to get started with an AI employee?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Typically 1-2 weeks from your initial consult to a live deployed agent. We handle all configuration, integrations, and testing.",
-      },
+      name: "What's the difference between an AI direct report and just using ChatGPT?",
+      acceptedAnswer: { "@type": "Answer", text: "ChatGPT is a general-purpose tool — it knows nothing about your business, has no memory, and requires you to prompt it every time. An AI direct report is configured specifically for your role, integrated into your tools and data, and operates autonomously. You're not the operator; you're the manager." },
     },
     {
       "@type": "Question",
-      name: "Do I need technical knowledge to use AI employees?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "None. We handle all setup, deployment, and ongoing management. You interact with your agents just like you would a human employee — through chat, email, or Slack.",
-      },
+      name: "How long does setup take?",
+      acceptedAnswer: { "@type": "Answer", text: "Typically 1–2 weeks from your first consult to a live deployed agent. We handle all configuration, integrations, and testing." },
     },
     {
       "@type": "Question",
-      name: "Can I cancel my AI employee subscription?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. No long-term contracts. Cancel with 30 days notice. You keep all your agent configurations and files — zero lock-in.",
-      },
+      name: "Do I need technical knowledge?",
+      acceptedAnswer: { "@type": "Answer", text: "None. You interact with your agents the same way you'd work with a human team member — through chat, email, or Slack. We handle all setup and ongoing management." },
+    },
+    {
+      "@type": "Question",
+      name: "What roles are available?",
+      acceptedAnswer: { "@type": "Answer", text: "We deploy 34 roles across 8 departments — marketing, sales, finance, legal, engineering, operations, customer success, and IT/security. See the full list at aiordie.now/roles." },
+    },
+    {
+      "@type": "Question",
+      name: "Do agents work in languages other than English?",
+      acceptedAnswer: { "@type": "Answer", text: "Yes. All agents are multilingual by default — any language in, any language out, any currency. Our phone agent at (786) 998-9310 handles any language too." },
+    },
+    {
+      "@type": "Question",
+      name: "Can agents learn and improve over time?",
+      acceptedAnswer: { "@type": "Answer", text: "Yes. Agents build memory of your business, preferences, and processes. Monthly optimization ensures they stay current with new model releases and your evolving needs." },
+    },
+    {
+      "@type": "Question",
+      name: "What does the $2,000 setup actually cover?",
+      acceptedAnswer: { "@type": "Answer", text: "Full configuration and integration into your specific business — your tools, your data, your knowledge base, your processes. This is what turns a general-purpose AI into a specialist who knows your business." },
+    },
+    {
+      "@type": "Question",
+      name: "Can I cancel?",
+      acceptedAnswer: { "@type": "Answer", text: "Yes. No long-term contracts. Cancel with 30 days notice. You keep all your agent configurations and files — zero lock-in." },
     },
     {
       "@type": "Question",
       name: "What AI models do the agents use?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We recommend Anthropic Max 20x ($200/mo) or OpenAI Pro ($200/mo) for best performance. We also support Venice AI (private AI, API pay-per-use). You choose and subscribe directly — we never upcharge on model costs.",
-      },
+      acceptedAnswer: { "@type": "Answer", text: "We recommend Anthropic Max 5x ($100/mo) or Max 20x ($200/mo) and OpenAI Pro ($200/mo) for best performance. Venice AI is available for private deployments. You subscribe directly — we never mark up model costs." },
     },
     {
       "@type": "Question",
-      name: "Is my business data safe with AI employees?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. Each client runs on isolated infrastructure — no shared environments between clients. Your data never mixes with other businesses. We also offer on-premise deployment for maximum data control.",
-      },
+      name: "What integrations are supported?",
+      acceptedAnswer: { "@type": "Answer", text: "Email, CRM, Slack, GitHub, Google Workspace, Notion, and 5,400+ more via pre-built integrations. We scope exact requirements during your consult." },
+    },
+    {
+      "@type": "Question",
+      name: "How is my data protected?",
+      acceptedAnswer: { "@type": "Answer", text: "Each client runs on isolated infrastructure — your data never mixes with other businesses. We also offer Private Cloud and On-Premise deployment for maximum control." },
+    },
+    {
+      "@type": "Question",
+      name: "What are the deployment options?",
+      acceptedAnswer: { "@type": "Answer", text: "Three tiers: Cloud (Anthropic/OpenAI), Private Cloud (Venice AI — data stays private), and On-Premise (everything runs on your infrastructure). We match your existing security posture." },
     },
   ],
 };
@@ -105,7 +125,6 @@ const brainCosts = [
   {
     provider: "Anthropic",
     tiers: [
-      { name: "Pro", price: "$20/mo" },
       { name: "Max 5x", price: "$100/mo" },
       { name: "Max 20x", price: "$200/mo", rec: true },
     ],
@@ -113,7 +132,6 @@ const brainCosts = [
   {
     provider: "OpenAI",
     tiers: [
-      { name: "Plus", price: "$20/mo" },
       { name: "Pro", price: "$200/mo", rec: true },
     ],
   },
@@ -125,24 +143,24 @@ const brainCosts = [
 
 const deploymentOptions = [
   {
-    title: "Cloud (Public Models)",
+    title: "Cloud",
     icon: "cloud",
     forWho: "Cloud-centric teams using Google Drive, Dropbox, cloud CRMs, and SaaS tools.",
     how: "Hosted AI agents run in the cloud with public model providers.",
     models: "Anthropic (Claude), OpenAI",
     privacy: "Standard cloud security. Data is processed by public AI providers.",
-    brainMap: "AI Brain Cost mapping: Anthropic Pro/Max or OpenAI Plus/Pro subscriptions.",
+    brainMap: "AI Brain Cost mapping: Anthropic Max 5x/20x or OpenAI Pro subscriptions.",
     cardClass: "border-[var(--border)] bg-[var(--bg-card)]",
   },
   {
-    title: "Private Cloud (Private Models)",
+    title: "Private Cloud",
     icon: "shield",
     forWho: "Privacy-conscious cloud teams in regulated or sensitive industries.",
     how: "Agents and models are deployed on dedicated private cloud infrastructure.",
     models: "Venice AI (private)",
     privacy: "Data never touches public AI providers; it stays in your private environment.",
     brainMap: "AI Brain Cost mapping: Venice AI private deployment (usage-based).",
-    cardClass: "border-[var(--accent-border)] bg-[var(--accent-subtle)]",
+    cardClass: "border-[var(--accent-border)] bg-[var(--bg-secondary)]",
   },
   {
     title: "On-Premise",
@@ -151,8 +169,8 @@ const deploymentOptions = [
     how: "Everything runs on your infrastructure: models, agents, storage, and orchestration.",
     models: "Self-hosted open-source models",
     privacy: "Maximum control. Nothing leaves your building unless you choose.",
-    brainMap: "AI Brain Cost mapping: self-hosted model stack or Venice AI on-prem licensing.",
-    cardClass: "border-[var(--border)] bg-[var(--bg-card)]",
+    brainMap: "AI Brain Cost mapping: self-hosted model stack, no external subscriptions required.",
+    cardClass: "border-[var(--border)] bg-[var(--bg-card)] shadow-inner",
   },
 ] as const;
 
@@ -166,7 +184,6 @@ function DeploymentTierIcon({ kind }: { kind: "cloud" | "shield" | "server" }) {
     strokeLinejoin: "round" as const,
     "aria-hidden": true,
   };
-
   if (kind === "cloud") {
     return (
       <svg className="h-6 w-6" {...base}>
@@ -174,7 +191,6 @@ function DeploymentTierIcon({ kind }: { kind: "cloud" | "shield" | "server" }) {
       </svg>
     );
   }
-
   if (kind === "shield") {
     return (
       <svg className="h-6 w-6" {...base}>
@@ -183,7 +199,6 @@ function DeploymentTierIcon({ kind }: { kind: "cloud" | "shield" | "server" }) {
       </svg>
     );
   }
-
   return (
     <svg className="h-6 w-6" {...base}>
       <rect x="3" y="5" width="18" height="14" rx="2.5" />
@@ -192,18 +207,20 @@ function DeploymentTierIcon({ kind }: { kind: "cloud" | "shield" | "server" }) {
   );
 }
 
-const included = [
-  "Custom-built for you",
-  "Memory that works",
-  "Multilingual — every language, every currency",
-  "Tool integrations",
-  "5,400+ pre-built integrations (email, CRM, Slack, GitHub, and more)",
-  "24/7 operation",
-  "Isolated infrastructure",
-  "Monthly improvements",
-  "You own everything",
-  "Remote support included",
-];
+type FeatureIconKind = "wrench" | "brain" | "globe" | "plug" | "grid" | "clock" | "shield" | "arrow-up" | "key" | "headset";
+function FeatureIcon({ kind }: { kind: FeatureIconKind }) {
+  const base = { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 1.8, strokeLinecap: "round" as const, strokeLinejoin: "round" as const, className: "h-5 w-5", "aria-hidden": true };
+  if (kind === "wrench") return <svg {...base}><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>;
+  if (kind === "brain") return <svg {...base}><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/></svg>;
+  if (kind === "globe") return <svg {...base}><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>;
+  if (kind === "plug") return <svg {...base}><path d="M12 22v-5"/><path d="M9 8V2"/><path d="M15 8V2"/><path d="M18 8H6a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2z"/></svg>;
+  if (kind === "grid") return <svg {...base}><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>;
+  if (kind === "clock") return <svg {...base}><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>;
+  if (kind === "shield") return <svg {...base}><path d="M12 3 5.5 6v5.3c0 4.2 2.7 7.9 6.5 9.7 3.8-1.8 6.5-5.5 6.5-9.7V6L12 3Z"/><path d="m9.2 12 1.8 1.8 3.8-3.8"/></svg>;
+  if (kind === "arrow-up") return <svg {...base}><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>;
+  if (kind === "key") return <svg {...base}><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></svg>;
+  return <svg {...base}><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>;
+}
 
 export default function PricingPage() {
   return (
@@ -229,8 +246,8 @@ export default function PricingPage() {
           </ScrollReveal>
           <ScrollReveal delayMs={140}>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-[var(--text-secondary)]">
-              Transparent pricing, no lock-in contracts, and deployment in 1–2
-              weeks. You pay for execution, not overhead.
+              You&apos;re not buying access to an AI. You&apos;re hiring a specialist — configured
+              for your business, integrated into your tools, and upgraded continuously.
             </p>
           </ScrollReveal>
           <ScrollReveal delayMs={200}>
@@ -251,13 +268,10 @@ export default function PricingPage() {
               Same outcomes, completely different cost structure.
             </p>
           </ScrollReveal>
-
           <div className="grid gap-5 md:grid-cols-2">
             <ScrollReveal>
               <article className="rounded-2xl border border-[var(--danger-border)] bg-[var(--danger-subtle)] p-8">
-                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-[var(--danger)]">
-                  Old way
-                </p>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-[var(--danger)]">Old way</p>
                 <div className="font-space-grotesk text-5xl font-bold text-[var(--text-primary)]">
                   $<AnimatedCounter to={350000} />
                 </div>
@@ -266,17 +280,14 @@ export default function PricingPage() {
                 </p>
               </article>
             </ScrollReveal>
-
             <ScrollReveal delayMs={100}>
               <article className="rounded-2xl border border-[var(--success-border)] bg-[var(--success-subtle)] p-8">
-                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-[var(--success)]">
-                  AI or Die model
-                </p>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-[var(--success)]">AI or Die model</p>
                 <div className="font-space-grotesk text-5xl font-bold text-[var(--text-primary)]">
                   $<AnimatedCounter to={19400} />
                 </div>
                 <p className="mt-3 text-sm text-[var(--text-secondary)]">
-                  3 AI employees/year with 24/7 coverage and ongoing optimization.
+                  3 AI direct reports/year with 24/7 coverage and ongoing optimization.
                 </p>
               </article>
             </ScrollReveal>
@@ -291,7 +302,6 @@ export default function PricingPage() {
               Choose your team size
             </h2>
           </ScrollReveal>
-
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {tiers.map((t, idx) => (
               <ScrollReveal key={t.name} delayMs={idx * 70}>
@@ -307,16 +317,10 @@ export default function PricingPage() {
                       {t.badge}
                     </div>
                   )}
-                  <p className="mb-2 text-sm font-semibold text-[var(--text-secondary)]">
-                    {t.name}
-                  </p>
-                  <p className="font-space-grotesk text-3xl font-bold text-[var(--text-primary)]">
-                    {t.monthly}
-                  </p>
+                  <p className="mb-2 text-sm font-semibold text-[var(--text-secondary)]">{t.name}</p>
+                  <p className="font-space-grotesk text-3xl font-bold text-[var(--text-primary)]">{t.monthly}</p>
                   <p className="mb-4 text-sm text-[var(--text-muted)]">{t.setup} setup</p>
-                  <p className="flex-1 text-sm leading-relaxed text-[var(--text-secondary)]">
-                    {t.desc}
-                  </p>
+                  <p className="flex-1 text-sm leading-relaxed text-[var(--text-secondary)]">{t.desc}</p>
                   <a
                     href={CONSULT_URL}
                     target="_blank"
@@ -333,6 +337,78 @@ export default function PricingPage() {
               </ScrollReveal>
             ))}
           </div>
+          <ScrollReveal delayMs={120}>
+            <p className="mt-6 max-w-3xl text-sm leading-relaxed text-[var(--text-secondary)]">
+              Each tier includes full custom configuration, tool integration, and ongoing
+              optimization. This is not a SaaS subscription — it&apos;s a deployed specialist.
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      <section className="px-6 pb-16 md:pb-20">
+        <div className="mx-auto max-w-6xl">
+          <ScrollReveal>
+            <h2 className="font-space-grotesk text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
+              Not a generic agent. A configured expert.
+            </h2>
+            <p className="mt-3 max-w-4xl text-[var(--text-secondary)]">
+              The difference between a generic AI and a deployed AI or Die agent is the
+              difference between hiring someone off the street and hiring a PhD specialist
+              who already knows your business.
+            </p>
+          </ScrollReveal>
+          <div className="mt-8 grid gap-5 md:grid-cols-2">
+            <ScrollReveal delayMs={60}>
+              <article className="flex h-full flex-col rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6">
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">Generic AI</p>
+                <h3 className="font-space-grotesk mt-2 text-2xl font-bold text-[var(--text-primary)]">ChatGPT/Claude out of the box</h3>
+                <ul className="mt-4 flex-1 space-y-2.5 text-sm text-[var(--text-secondary)]">
+                  <li className="flex items-start gap-2"><span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />Knows nothing about your business</li>
+                  <li className="flex items-start gap-2"><span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />No memory of past interactions</li>
+                  <li className="flex items-start gap-2"><span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />No integration with your tools</li>
+                  <li className="flex items-start gap-2"><span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />Requires constant prompting</li>
+                  <li className="flex items-start gap-2"><span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />Same as everyone else&apos;s setup</li>
+                </ul>
+              </article>
+            </ScrollReveal>
+            <ScrollReveal delayMs={120}>
+              <article className="flex h-full flex-col rounded-2xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] p-6 shadow-[0_24px_60px_-44px_var(--accent)]">
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">AI or Die Agent</p>
+                <h3 className="font-space-grotesk mt-2 text-2xl font-bold text-[var(--text-primary)]">Deployed specialist for your business</h3>
+                <ul className="mt-4 flex-1 space-y-2.5 text-sm text-[var(--text-secondary)]">
+                  <li className="flex items-start gap-2"><span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />Embedded into your apps, data, and processes</li>
+                  <li className="flex items-start gap-2"><span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />Knows your brand voice, your clients, your SOPs</li>
+                  <li className="flex items-start gap-2"><span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />Integrated with your CRM, email, Slack, and workflow tools</li>
+                  <li className="flex items-start gap-2"><span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />Learns and improves continuously</li>
+                  <li className="flex items-start gap-2"><span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />Upgraded with the latest models automatically</li>
+                </ul>
+              </article>
+            </ScrollReveal>
+          </div>
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            <ScrollReveal delayMs={160}>
+              <article className="rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5">
+                <h3 className="font-space-grotesk text-xl font-bold text-[var(--text-primary)]">The $2,000 setup delivers</h3>
+                <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]">
+                  A customized agent embedded into your specific business — your tools, your
+                  data, your knowledge base, your processes. This is the configuration,
+                  training, and integration that turns a general-purpose AI into a specialist
+                  who knows your business.
+                </p>
+              </article>
+            </ScrollReveal>
+            <ScrollReveal delayMs={210}>
+              <article className="rounded-xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] p-5">
+                <h3 className="font-space-grotesk text-xl font-bold text-[var(--text-primary)]">The $500/month ensures</h3>
+                <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]">
+                  Your agent stays current. New model releases, performance improvements, and
+                  ongoing optimization. Think of it as the retainer for a consultant who
+                  never stops learning — and never needs to be reminded to stay sharp.
+                </p>
+              </article>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 
@@ -348,17 +424,15 @@ export default function PricingPage() {
               </span>
             </div>
             <p className="mb-9 max-w-2xl text-sm leading-relaxed text-[var(--text-secondary)]">
-              AI agents need a model subscription. You pay providers directly —
-              zero markup from us.
+              AI agents need a model subscription. You pay providers directly — zero markup from us.
             </p>
           </ScrollReveal>
-
           <div className="mb-7 grid gap-5 md:grid-cols-3">
             {brainCosts.map((b, idx) => (
               <ScrollReveal key={b.provider} delayMs={idx * 70}>
-                <article className="rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5">
+                <article className="flex h-full flex-col rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5">
                   <h3 className="mb-4 font-semibold text-[var(--text-primary)]">{b.provider}</h3>
-                  <div className="space-y-2">
+                  <div className="flex-1 space-y-2">
                     {b.tiers.map((tier) => (
                       <div
                         key={tier.name}
@@ -382,7 +456,6 @@ export default function PricingPage() {
               </ScrollReveal>
             ))}
           </div>
-
           <ScrollReveal>
             <div className="rounded-xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] p-4">
               <p className="text-sm font-medium text-[var(--text-primary)]">
@@ -394,6 +467,38 @@ export default function PricingPage() {
         </div>
       </section>
 
+      <section className="px-6 pb-16 pt-16">
+        <div className="mx-auto max-w-6xl">
+          <ScrollReveal>
+            <h2 className="font-space-grotesk text-2xl font-bold text-[var(--text-primary)] mb-2">Tool &amp; API costs vary by deployment</h2>
+            <p className="text-sm text-[var(--text-secondary)] mb-6 max-w-2xl">Every implementation uses a different stack. These are common tools our agents integrate with — you pay providers directly, no markup from us.</p>
+          </ScrollReveal>
+          <ScrollReveal delayMs={60}>
+            <div className="flex flex-wrap gap-3">
+              {[
+                { name: "APIFY", range: "$5–49/mo" },
+                { name: "Twilio", range: "Usage-based" },
+                { name: "Firecrawl", range: "$16/mo" },
+                { name: "PhantomBuster", range: "$56/mo" },
+                { name: "Brave Search", range: "$3/mo" },
+                { name: "Vercel", range: "$20/mo" },
+                { name: "AgentMail", range: "$10/mo" },
+                { name: "GitHub", range: "$4/mo" },
+                { name: "Tailscale", range: "$6/mo" },
+                { name: "Pinata", range: "$20/mo" },
+                { name: "Notion", range: "$10/mo" },
+              ].map((tool) => (
+                <div key={tool.name} className="rounded-full border border-[var(--border)] bg-[var(--bg-card)] px-4 py-2 text-sm">
+                  <span className="font-semibold text-[var(--text-primary)]">{tool.name}</span>
+                  <span className="ml-2 text-[var(--text-muted)]">{tool.range}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-4 text-xs text-[var(--text-muted)]">Not every agent needs all tools. We scope exact requirements during your consult.</p>
+          </ScrollReveal>
+        </div>
+      </section>
+
       <section className="px-6 py-16 md:py-24">
         <div className="mx-auto max-w-6xl">
           <ScrollReveal>
@@ -401,12 +506,26 @@ export default function PricingPage() {
               What every agent comes with
             </h2>
           </ScrollReveal>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-            {included.map((item, idx) => (
-              <ScrollReveal key={item} delayMs={idx * 45}>
-                <div className="flex items-center gap-3 rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-5 py-4">
-                  <div className="h-2 w-2 shrink-0 rounded-full bg-[var(--accent)]" />
-                  <span className="text-sm font-medium text-[var(--text-secondary)]">{item}</span>
+          <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-5">
+            {([
+              { icon: "wrench", name: "Custom-built for you", desc: "Configured to your business, tools, and processes" },
+              { icon: "brain", name: "Memory that works", desc: "Remembers context, learns over time" },
+              { icon: "globe", name: "Every language", desc: "Any language in, any language out, any currency" },
+              { icon: "plug", name: "Tool integrations", desc: "Connects to the apps you already use" },
+              { icon: "grid", name: "5,400+ integrations", desc: "Email, CRM, Slack, GitHub, and more" },
+              { icon: "clock", name: "24/7 operation", desc: "No sick days, no time zones, no lag" },
+              { icon: "shield", name: "Isolated infrastructure", desc: "Your data never mixes with other clients" },
+              { icon: "arrow-up", name: "Monthly improvements", desc: "New models, better performance, ongoing tuning" },
+              { icon: "key", name: "You own everything", desc: "All configs, data, and outputs belong to you" },
+              { icon: "headset", name: "Remote support", desc: "Real humans available when you need them" },
+            ] as { icon: FeatureIconKind; name: string; desc: string }[]).map((feature, idx) => (
+              <ScrollReveal key={feature.name} delayMs={idx * 40}>
+                <div className="group flex h-full flex-col items-center rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-border)] hover:shadow-[0_16px_40px_-20px_var(--accent)]">
+                  <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--bg-secondary)] text-[var(--accent)]">
+                    <FeatureIcon kind={feature.icon} />
+                  </div>
+                  <p className="font-space-grotesk text-sm font-bold text-[var(--text-primary)]">{feature.name}</p>
+                  <p className="mt-1 text-xs leading-relaxed text-[var(--text-muted)]">{feature.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -421,39 +540,37 @@ export default function PricingPage() {
               Deployment options
             </h2>
             <p className="mb-10 max-w-3xl text-[var(--text-secondary)]">
-              Our deployments follow the pattern you&apos;ve already established. We match how you already run your business.
+              We match how you already run your business.
             </p>
           </ScrollReveal>
           <div className="grid gap-5 md:grid-cols-3">
-            {deploymentOptions.map((option, idx) => {
-              return (
-                <ScrollReveal key={option.title} delayMs={idx * 75}>
-                  <article className={`rounded-xl border p-6 ${option.cardClass}`}>
-                    <div className="mb-3 flex items-center gap-2 text-[var(--accent)]">
-                      <DeploymentTierIcon kind={option.icon} />
-                      <h3 className="font-space-grotesk text-2xl font-bold text-[var(--text-primary)]">
-                        {option.title}
-                      </h3>
-                    </div>
-                    <p className="text-sm leading-relaxed text-[var(--text-secondary)]">
-                      <span className="font-semibold">For:</span> {option.forWho}
-                    </p>
-                    <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]">
-                      <span className="font-semibold">How:</span> {option.how}
-                    </p>
-                    <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]">
-                      <span className="font-semibold">Models:</span> {option.models}
-                    </p>
-                    <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]">
-                      <span className="font-semibold">Privacy:</span> {option.privacy}
-                    </p>
-                    <p className="mt-3 rounded-lg border border-[var(--border)] bg-[var(--bg)] px-3 py-2 text-xs font-medium text-[var(--text-secondary)]">
-                      {option.brainMap}
-                    </p>
-                  </article>
-                </ScrollReveal>
-              );
-            })}
+            {deploymentOptions.map((option, idx) => (
+              <ScrollReveal key={option.title} delayMs={idx * 75}>
+                <article className={`flex h-full flex-col rounded-xl border p-6 ${option.cardClass}`}>
+                  <div className="mb-3 flex items-center gap-2 text-[var(--accent)]">
+                    <DeploymentTierIcon kind={option.icon} />
+                    <h3 className="font-space-grotesk text-2xl font-bold text-[var(--text-primary)]">
+                      {option.title}
+                    </h3>
+                  </div>
+                  <p className="text-sm leading-relaxed text-[var(--text-secondary)]">
+                    <span className="font-semibold">For:</span> {option.forWho}
+                  </p>
+                  <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]">
+                    <span className="font-semibold">How:</span> {option.how}
+                  </p>
+                  <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]">
+                    <span className="font-semibold">Models:</span> {option.models}
+                  </p>
+                  <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]">
+                    <span className="font-semibold">Privacy:</span> {option.privacy}
+                  </p>
+                  <p className="mt-auto pt-3 rounded-lg border border-[var(--border)] bg-[var(--bg)] px-3 py-2 text-xs font-medium text-[var(--text-secondary)]">
+                    {option.brainMap}
+                  </p>
+                </article>
+              </ScrollReveal>
+            ))}
           </div>
         </div>
       </section>
@@ -462,26 +579,52 @@ export default function PricingPage() {
         <div className="mx-auto max-w-4xl">
           <ScrollReveal>
             <h2 className="font-space-grotesk mb-10 text-center text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
-              FAQ
+              Questions we actually get
             </h2>
           </ScrollReveal>
-
-          <div className="space-y-3">
-            {faqJsonLd.mainEntity.map((item, idx) => (
-              <ScrollReveal key={item.name} delayMs={idx * 60}>
-                <details className="group rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-5 py-4">
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-[var(--text-primary)] marker:content-none">
-                    <span>{item.name}</span>
-                    <span className="text-[var(--accent)] transition-transform duration-300 group-open:rotate-45">
-                      +
-                    </span>
-                  </summary>
-                  <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                    {item.acceptedAnswer.text}
-                  </p>
-                </details>
-              </ScrollReveal>
-            ))}
+          <div className="grid gap-8 md:grid-cols-2">
+            <div className="space-y-8">
+              {[
+                { label: "Getting Started", indices: [0, 1, 2] },
+                { label: "Roles & Capabilities", indices: [3, 4, 5] },
+              ].map((group) => (
+                <div key={group.label}>
+                  <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">{group.label}</p>
+                  <div className="space-y-2">
+                    {group.indices.map((i) => (
+                      <details key={i} className="group rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-5 py-4">
+                        <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-[var(--text-primary)] marker:content-none">
+                          <span>{faqJsonLd.mainEntity[i].name}</span>
+                          <span className="text-[var(--accent)] transition-transform duration-300 group-open:rotate-45">+</span>
+                        </summary>
+                        <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">{faqJsonLd.mainEntity[i].acceptedAnswer.text}</p>
+                      </details>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="space-y-8">
+              {[
+                { label: "Pricing & Contracts", indices: [6, 7, 8] },
+                { label: "Technical & Security", indices: [9, 10, 11] },
+              ].map((group) => (
+                <div key={group.label}>
+                  <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">{group.label}</p>
+                  <div className="space-y-2">
+                    {group.indices.map((i) => (
+                      <details key={i} className="group rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-5 py-4">
+                        <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-[var(--text-primary)] marker:content-none">
+                          <span>{faqJsonLd.mainEntity[i].name}</span>
+                          <span className="text-[var(--accent)] transition-transform duration-300 group-open:rotate-45">+</span>
+                        </summary>
+                        <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">{faqJsonLd.mainEntity[i].acceptedAnswer.text}</p>
+                      </details>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -489,15 +632,12 @@ export default function PricingPage() {
       <section className="mesh-bg border-t border-[var(--border)] px-6 py-20 text-center md:py-24">
         <div className="mx-auto max-w-3xl">
           <ScrollReveal>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">
-              AI or Die
-            </p>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">AI or Die</p>
             <h2 className="font-space-grotesk text-balance text-4xl font-bold tracking-tight text-[var(--text-primary)] md:text-6xl">
-              Ready to deploy your first AI employee?
+              Ready to deploy your first AI direct report?
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-[var(--text-secondary)]">
-              Free consult, no pressure. We&apos;ll scope the first role, map integrations,
-              and show exactly what gets automated.
+              Free consult. We&apos;ll price out the gap for your specific business — and show exactly which roles your team could hand off today.
             </p>
             <div className="mt-8">
               <a

@@ -496,10 +496,10 @@ body {
 
 .org-report-flow {
   position: absolute;
-  top: -1.15rem;
+  top: -2.75rem;
   left: 50%;
   width: 2px;
-  height: 1.15rem;
+  height: 0.75rem;
   transform: translateX(-50%);
   border-radius: 999px;
   background: linear-gradient(to bottom, var(--network-line), var(--network-line-dim));
