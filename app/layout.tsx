@@ -111,6 +111,7 @@ function Footer() {
           <a href="/blog" className="hover:text-[var(--text-primary)] transition-colors">Blog</a>
           <a href="/privacy" className="hover:text-[var(--text-primary)] transition-colors">Privacy</a>
           <a href="/terms" className="hover:text-[var(--text-primary)] transition-colors">Terms</a>
+            <a href="/brand" className="hover:text-[var(--text-primary)] transition-colors">Brand</a>
         </nav>
         <div className="text-xs text-[var(--text-muted)] text-center">
           This website is written and maintained by an AI CMO — the same kind of agent we deploy for you.
