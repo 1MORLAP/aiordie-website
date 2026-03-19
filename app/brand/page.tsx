@@ -7,17 +7,17 @@ export const metadata: Metadata = {
 }
 
 const wordmarks = [
-  { name: 'Charcoal (Primary)', file: '/brand/wordmark-charcoal.svg', bg: 'bg-[#FAFAF8]', border: 'border-[#E5E0D8]', label: 'On Light' },
-  { name: 'White', file: '/brand/wordmark-white.svg', bg: 'bg-[#1C1C1E]', border: 'border-[#333]', label: 'On Dark' },
-  { name: 'Orange', file: '/brand/wordmark-orange.svg', bg: 'bg-[#1C1C1E]', border: 'border-[#333]', label: 'On Dark' },
-  { name: 'Orange on Light', file: '/brand/wordmark-orange-light.svg', bg: 'bg-[#FAFAF8]', border: 'border-[#E5E0D8]', label: 'On Light' },
+  { name: 'Charcoal (Primary)', file: '/brand/wordmark-charcoal', bg: 'bg-[#FAFAF8]', border: 'border-[#E5E0D8]', label: 'On Light' },
+  { name: 'White', file: '/brand/wordmark-white', bg: 'bg-[#1C1C1E]', border: 'border-[#333]', label: 'On Dark' },
+  { name: 'Orange', file: '/brand/wordmark-orange', bg: 'bg-[#1C1C1E]', border: 'border-[#333]', label: 'On Dark' },
+  { name: 'Orange on Light', file: '/brand/wordmark-orange-light', bg: 'bg-[#FAFAF8]', border: 'border-[#E5E0D8]', label: 'On Light' },
 ]
 
 const circleMarks = [
-  { name: 'Orange (Primary)', file: '/brand/circle-mark-orange.svg', bg: 'bg-[#1C1C1E]', border: 'border-[#333]' },
-  { name: 'Dark', file: '/brand/circle-mark-dark.svg', bg: 'bg-[#FAFAF8]', border: 'border-[#E5E0D8]' },
-  { name: 'Light', file: '/brand/circle-mark-light.svg', bg: 'bg-[#1C1C1E]', border: 'border-[#333]' },
-  { name: 'Accent', file: '/brand/circle-mark-accent.svg', bg: 'bg-[#1C1C1E]', border: 'border-[#333]' },
+  { name: 'Orange (Primary)', file: '/brand/circle-mark-orange', bg: 'bg-[#1C1C1E]', border: 'border-[#333]' },
+  { name: 'Dark', file: '/brand/circle-mark-dark', bg: 'bg-[#FAFAF8]', border: 'border-[#E5E0D8]' },
+  { name: 'Light', file: '/brand/circle-mark-light', bg: 'bg-[#1C1C1E]', border: 'border-[#333]' },
+  { name: 'Accent', file: '/brand/circle-mark-accent', bg: 'bg-[#1C1C1E]', border: 'border-[#333]' },
 ]
 
 const colors = [
@@ -26,6 +26,17 @@ const colors = [
   { name: 'Off-White', hex: '#FAFAF8', swatch: 'bg-[#FAFAF8] border border-[#E5E0D8]' },
   { name: 'Warm Sand', hex: '#F0EDE8', swatch: 'bg-[#F0EDE8]' },
 ]
+
+function DownloadLinks({ file }: { file: string }) {
+  return (
+    <div className="flex items-center gap-3 text-xs font-semibold">
+      <span className="text-[var(--text-muted)]">Download:</span>
+      <a href={`${file}.svg`} download className="text-[var(--accent)] hover:underline">SVG</a>
+      <span className="text-[var(--text-muted)]">|</span>
+      <a href={`${file}.png`} download className="text-[var(--accent)] hover:underline">PNG</a>
+    </div>
+  )
+}
 
 export default function BrandPage() {
   return (
@@ -38,35 +49,35 @@ export default function BrandPage() {
           <p className="max-w-2xl text-[var(--text-secondary)]">Official logos, wordmarks, and color palette. Use when referencing AI or Die in press, partnerships, or integrations.</p>
         </div>
 
-        {/* Wordmarks — 4 variants */}
+        {/* Wordmarks */}
         <section className="mb-16">
           <h2 className="font-space-grotesk mb-6 text-2xl font-bold">Wordmark</h2>
           <div className="grid gap-4 md:grid-cols-2">
             {wordmarks.map((wm) => (
               <div key={wm.name} className={`rounded-2xl border p-10 ${wm.bg} ${wm.border}`}>
-                <img src={wm.file} alt={wm.name} className="h-12 w-auto" />
+                <img src={`${wm.file}.svg`} alt={wm.name} className="h-12 w-auto" />
                 <div className="mt-4 flex items-center justify-between">
                   <div>
                     <span className="text-xs font-semibold text-[var(--text-muted)]">{wm.name}</span>
                     <span className="ml-2 text-xs text-[var(--text-muted)] opacity-60">{wm.label}</span>
                   </div>
-                  <a href={wm.file} download className="text-xs font-semibold text-[var(--accent)] hover:underline">Download SVG →</a>
+                  <DownloadLinks file={wm.file} />
                 </div>
               </div>
             ))}
           </div>
         </section>
 
-        {/* Circle Marks — 4 variants */}
+        {/* Circle Marks */}
         <section className="mb-16">
           <h2 className="font-space-grotesk mb-6 text-2xl font-bold">Circle Mark</h2>
           <div className="grid gap-4 grid-cols-2 md:grid-cols-4">
             {circleMarks.map((mark) => (
               <div key={mark.name} className={`rounded-2xl border p-8 flex flex-col items-center gap-4 ${mark.bg} ${mark.border}`}>
-                <img src={mark.file} alt={mark.name} className="h-16 w-16" />
+                <img src={`${mark.file}.svg`} alt={mark.name} className="h-16 w-16" />
                 <div className="text-center">
-                  <p className="text-xs font-semibold text-[var(--text-muted)]">{mark.name}</p>
-                  <a href={mark.file} download className="mt-1 block text-xs font-semibold text-[var(--accent)] hover:underline">Download →</a>
+                  <p className="text-xs font-semibold text-[var(--text-muted)] mb-2">{mark.name}</p>
+                  <DownloadLinks file={mark.file} />
                 </div>
               </div>
             ))}
