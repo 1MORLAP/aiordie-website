@@ -487,6 +487,92 @@ export default function PricingPage() {
             </ScrollReveal>
           </div>
 
+          {/* Skills IP block */}
+          <ScrollReveal delayMs={60}>
+            <div className="mt-8 overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--bg-card)]">
+              <div className="px-6 pt-6 pb-5 md:px-8 md:pt-8">
+                <div className="flex flex-wrap items-start justify-between gap-5">
+                  <div className="flex-1 min-w-[240px]">
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Our IP. Your advantage.</p>
+                    <h3 className="font-space-grotesk mt-2 text-2xl font-bold text-[var(--text-primary)] md:text-3xl">
+                      Every agent ships with skills.
+                    </h3>
+                    <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[var(--text-secondary)]">
+                      Think of it like hiring someone out of college vs. hiring a PhD who&apos;s spent years
+                      mastering exactly your field. Our agents come pre-loaded with skills we&apos;ve built,
+                      tested, and refined in live operations. When you hire an AI or Die agent, you get
+                      our IP — not a blank slate you have to educate from scratch.
+                    </p>
+                  </div>
+                  <div className="shrink-0 rounded-2xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] px-6 py-4 text-center">
+                    <p className="font-space-grotesk text-xl font-bold text-[var(--text-primary)] leading-tight">24/7 PhD hire</p>
+                    <p className="mt-1 text-sm font-medium text-[var(--accent)]">for the price of lunch</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Education analogy ladder */}
+              <div className="grid grid-cols-1 divide-y divide-[var(--border)] border-t border-[var(--border)] sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+                <div className="px-6 py-5">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--text-muted)]">ChatGPT / Claude</p>
+                  <p className="mt-1.5 font-space-grotesk text-base font-bold text-[var(--text-secondary)]">General knowledge, no specialty</p>
+                  <p className="mt-2 text-xs leading-relaxed text-[var(--text-muted)]">
+                    Knows everything about everything. Knows nothing about you.
+                    Like asking a stranger for advice — smart, but zero context.
+                  </p>
+                </div>
+                <div className="px-6 py-5">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--text-muted)]">Generic Agent Platform</p>
+                  <p className="mt-1.5 font-space-grotesk text-base font-bold text-[var(--text-secondary)]">Potential, but you supply the training</p>
+                  <p className="mt-2 text-xs leading-relaxed text-[var(--text-muted)]">
+                    The raw intelligence is there. But you&apos;re the professor.
+                    You build the curriculum, run the lessons, grade the output.
+                    Most businesses burn out before they graduate it.
+                  </p>
+                </div>
+                <div className="bg-[var(--accent-subtle)] px-6 py-5">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--accent)]">AI or Die Agent</p>
+                  <p className="mt-1.5 font-space-grotesk text-base font-bold text-[var(--text-primary)]">Pre-loaded with our skills library</p>
+                  <p className="mt-2 text-xs leading-relaxed text-[var(--text-secondary)]">
+                    Arrives already trained. Our proprietary skills — honed across real deployments —
+                    are embedded from day one. You customize the specifics. We supply the expertise.
+                  </p>
+                </div>
+              </div>
+
+              {/* Skills pill list */}
+              <div className="border-t border-[var(--border)] px-6 py-5 md:px-8">
+                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">Skills included in every deployment</p>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    "Legal contract review",
+                    "Financial reporting",
+                    "Lead qualification",
+                    "Customer support triage",
+                    "Email & calendar management",
+                    "Competitive research",
+                    "Invoice processing",
+                    "Multi-language communication",
+                    "CRM data hygiene",
+                    "Meeting prep & follow-up",
+                    "Risk flagging",
+                    "Document summarization",
+                  ].map((skill) => (
+                    <span
+                      key={skill}
+                      className="rounded-full border border-[var(--border)] bg-[var(--bg-secondary)] px-3 py-1 text-xs font-medium text-[var(--text-secondary)]"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                  <span className="rounded-full border border-[var(--accent-border)] bg-[var(--accent-subtle)] px-3 py-1 text-xs font-semibold text-[var(--accent)]">
+                    + role-specific skills
+                  </span>
+                </div>
+              </div>
+            </div>
+          </ScrollReveal>
+
           {/* Why the price gap */}
           <ScrollReveal delayMs={80}>
             <div className="mt-8 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8">
