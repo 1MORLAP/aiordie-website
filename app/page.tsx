@@ -637,6 +637,45 @@ export default function Home() {
               See all 34 roles →
             </Link>
           </div>
+
+          {/* Super-agent callout */}
+          <div className="mb-8 rounded-2xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] p-6 md:p-8">
+            <div className="flex flex-wrap items-start gap-5">
+              <div className="flex-1 min-w-[240px]">
+                <p className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--accent)]">The agent advantage</p>
+                <h3 className="font-space-grotesk mt-2 text-xl font-bold text-[var(--text-primary)] md:text-2xl">
+                  One agent. Multiple roles.
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
+                  With people, you hire a CFO or a lawyer. Never both. Skills don&apos;t stack like that.
+                  With agents, they do. We regularly deploy single agents that cover finance <em>and</em> legal,
+                  or marketing <em>and</em> sales — because there&apos;s no cognitive overhead, no context-switching cost,
+                  no divided attention. One agent, configured across multiple disciplines, running everything simultaneously.
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
+                  We call these super-agents. When we scope your deployment, we&apos;ll tell you exactly
+                  where combining roles saves you money without sacrificing output quality.
+                </p>
+              </div>
+              <div className="shrink-0 rounded-xl border border-[var(--accent-border)] bg-[var(--bg)] p-5 min-w-[180px]">
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">Common combos</p>
+                <ul className="mt-3 space-y-2 text-sm text-[var(--text-secondary)]">
+                  {[
+                    "Finance + Legal",
+                    "Marketing + Sales",
+                    "Design + Engineering",
+                    "Ops + Customer Success",
+                    "Research + Content",
+                  ].map((combo) => (
+                    <li key={combo} className="flex items-center gap-2">
+                      <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
+                      {combo}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {featuredRoles.map((role, idx) => (
               <ScrollReveal key={role.name} delayMs={idx * 60}>
