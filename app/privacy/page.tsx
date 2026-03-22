@@ -73,7 +73,7 @@ export default function PrivacyPage() {
             <article className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-7">
               <h2 className="font-space-grotesk text-2xl font-bold text-[var(--text-primary)]">How we use your data</h2>
               <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed text-[var(--text-secondary)]">
-                <li>To provide AI employee deployment and management services</li>
+                <li>To provide AI direct report deployment and management services</li>
                 <li>To communicate with you about your account, service status, and support</li>
                 <li>To improve our services, reliability, and client outcomes</li>
               </ul>

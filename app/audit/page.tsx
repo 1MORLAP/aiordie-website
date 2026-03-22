@@ -8,14 +8,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Get Your Free AI Audit — AI or Die",
     description:
-      "Find out which roles in your business should be AI employees. Free 30-minute audit + written Agent Readiness Report.",
+      "Find out which roles in your business should be AI direct reports. Free 30-minute audit + written Agent Readiness Report.",
     url: "https://aiordie.now/audit",
   },
   twitter: {
     card: "summary_large_image",
     title: "Free AI Audit — AI or Die",
     description:
-      "Find out which roles in your business should be AI employees. Free 30-minute audit.",
+      "Find out which roles in your business should be AI direct reports. Free 30-minute audit.",
   },
   alternates: { canonical: "https://aiordie.now/audit" },
 };
@@ -209,7 +209,7 @@ export default function AuditPage() {
             We Eat Our Own Cooking
           </h2>
           <p className="text-gray-400 mb-12 text-lg max-w-2xl">
-            We don&apos;t sell theory. Every agent type we recommend, we run internally. This website, our outreach, our ops — all of it is run by AI employees.
+            We don&apos;t sell theory. Every agent type we recommend, we run internally. This website, our outreach, our ops — all of it is run by AI direct reports.
           </p>
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
             {[

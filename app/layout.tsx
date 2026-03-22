@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s — AI or Die",
   },
   description:
-    "We build, deploy, and manage AI employee teams for your business. Legal, finance, sales, marketing — all the roles you need, without the headcount.",
+    "We build, deploy, and manage AI direct report teams for your business. Legal, finance, sales, marketing — all the roles you need, without the headcount.",
   icons: {
     icon: "/icon.svg",
     apple: "/icon.svg",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "AI or Die — AI Employees That Actually Work",
     description:
-      "We build, deploy, and manage AI employee teams for your business. Grow without hiring.",
+      "We build, deploy, and manage AI direct report teams for your business. Grow without hiring.",
     url: "https://aiordie.now",
     siteName: "AI or Die",
     locale: "en_US",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AI or Die — AI Employees That Actually Work",
     description:
-      "We build, deploy, and manage AI employee teams for your business. Grow without hiring.",
+      "We build, deploy, and manage AI direct report teams for your business. Grow without hiring.",
     site: "@aiordie",
   },
   robots: {

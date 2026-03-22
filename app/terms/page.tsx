@@ -61,7 +61,7 @@ export default function TermsPage() {
             <article className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-7">
               <h2 className="font-space-grotesk text-2xl font-bold text-[var(--text-primary)]">Services</h2>
               <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                AI or Die provides AI employee (direct report) deployment and management services,
+                AI or Die provides AI direct report deployment and management services,
                 including setup, integration, optimization, and ongoing support.
               </p>
             </article>
