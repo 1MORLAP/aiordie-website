@@ -976,56 +976,59 @@ export default function PricingPage() {
         </div>
       </section>
 
-      <section className="px-6 py-16 md:py-24">
-        <div className="mx-auto max-w-4xl">
+      <section className="bg-[var(--bg-secondary)] border-y border-[var(--border)] px-6 py-16 md:py-24">
+        <div className="mx-auto max-w-5xl">
           <ScrollReveal>
-            <h2 className="font-space-grotesk mb-10 text-center text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
-              Questions we actually get
-            </h2>
+            <div className="mb-12 flex flex-col items-center text-center">
+              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">FAQ</p>
+              <h2 className="font-space-grotesk text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
+                Questions we actually get
+              </h2>
+              <p className="mt-3 max-w-xl text-[var(--text-secondary)]">No fluff. Just the things people actually ask before signing.</p>
+            </div>
           </ScrollReveal>
-          <div className="grid gap-8 md:grid-cols-2">
-            <div className="space-y-8">
-              {[
-                { label: "Getting Started", indices: [0, 1, 2] },
-                { label: "Roles & Capabilities", indices: [3, 4, 5] },
-              ].map((group) => (
-                <div key={group.label}>
-                  <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">{group.label}</p>
+
+          <div className="grid gap-x-8 gap-y-10 md:grid-cols-2">
+            {([
+              { label: "Getting Started", indices: [0, 1, 2] },
+              { label: "Pricing & Contracts", indices: [6, 7, 8] },
+              { label: "Roles & Capabilities", indices: [3, 4, 5] },
+              { label: "Technical & Security", indices: [9, 10, 11] },
+            ] as { label: string; indices: number[] }[]).map((group, gi) => (
+              <ScrollReveal key={group.label} delayMs={gi * 50}>
+                <div>
+                  <div className="mb-4 flex items-center gap-3">
+                    <p className="text-xs font-bold uppercase tracking-[0.18em] text-[var(--accent)]">{group.label}</p>
+                    <div className="h-px flex-1 bg-[var(--border)]" />
+                  </div>
                   <div className="space-y-2">
                     {group.indices.map((i) => (
-                      <details key={i} className="group rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-5 py-4">
-                        <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-[var(--text-primary)] marker:content-none">
-                          <span>{faqJsonLd.mainEntity[i].name}</span>
-                          <span className="text-[var(--accent)] transition-transform duration-300 group-open:rotate-45">+</span>
+                      <details key={i} className="group rounded-xl border border-[var(--border)] bg-[var(--bg-card)] transition-colors duration-200 open:border-[var(--accent-border)] open:bg-[var(--accent-subtle)]">
+                        <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 marker:content-none">
+                          <span className="font-semibold leading-snug text-[var(--text-primary)]">{faqJsonLd.mainEntity[i].name}</span>
+                          <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            aria-hidden
+                            className="h-4 w-4 shrink-0 text-[var(--accent)] transition-transform duration-300 group-open:rotate-180"
+                          >
+                            <path d="m6 9 6 6 6-6" />
+                          </svg>
                         </summary>
-                        <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">{faqJsonLd.mainEntity[i].acceptedAnswer.text}</p>
+                        <div className="px-5 pb-5">
+                          <div className="h-px w-full bg-[var(--accent-border)] mb-4 opacity-40" />
+                          <p className="text-sm leading-relaxed text-[var(--text-secondary)]">{faqJsonLd.mainEntity[i].acceptedAnswer.text}</p>
+                        </div>
                       </details>
                     ))}
                   </div>
                 </div>
-              ))}
-            </div>
-            <div className="space-y-8">
-              {[
-                { label: "Pricing & Contracts", indices: [6, 7, 8] },
-                { label: "Technical & Security", indices: [9, 10, 11] },
-              ].map((group) => (
-                <div key={group.label}>
-                  <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">{group.label}</p>
-                  <div className="space-y-2">
-                    {group.indices.map((i) => (
-                      <details key={i} className="group rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-5 py-4">
-                        <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-[var(--text-primary)] marker:content-none">
-                          <span>{faqJsonLd.mainEntity[i].name}</span>
-                          <span className="text-[var(--accent)] transition-transform duration-300 group-open:rotate-45">+</span>
-                        </summary>
-                        <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">{faqJsonLd.mainEntity[i].acceptedAnswer.text}</p>
-                      </details>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
+              </ScrollReveal>
+            ))}
           </div>
         </div>
       </section>
