@@ -586,6 +586,13 @@ export default function PricingPage() {
                 and quietly abandon it. The platform isn&apos;t the product. The configured, deployed,
                 running specialist is the product.
               </p>
+              <blockquote className="my-5 rounded-xl border-l-4 border-[var(--accent)] bg-[var(--accent-subtle)] py-4 pl-5 pr-4">
+                <p className="text-sm font-semibold italic leading-relaxed text-[var(--text-primary)]">
+                  &ldquo;You could spin up OpenClaw yourself in an afternoon — but your agent won&apos;t know your business, your clients, or your SOPs. That part takes weeks.&rdquo;
+                </p>
+                <p className="mt-2 text-xs font-semibold text-[var(--accent)]">What a DIY deploy actually looks like</p>
+              </blockquote>
+
               <p className="mt-3 max-w-4xl text-sm leading-relaxed text-[var(--text-secondary)]">
                 The $2,000 setup is us doing that months-long work in two weeks. The $500/month
                 keeps the agent current — new model releases, performance improvements, and ongoing
