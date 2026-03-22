@@ -273,10 +273,10 @@ export default function PricingPage() {
               <article className="rounded-2xl border border-[var(--danger-border)] bg-[var(--danger-subtle)] p-8">
                 <p className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-[var(--danger)]">Old way</p>
                 <div className="font-space-grotesk text-5xl font-bold text-[var(--text-primary)]">
-                  $<AnimatedCounter to={350000} />
+                  $<AnimatedCounter to={330000} />
                 </div>
                 <p className="mt-3 text-sm text-[var(--text-secondary)]">
-                  3 human hires/year with salary, benefits, downtime, and recruiting drag.
+                  3 human direct reports/year with salary, benefits, downtime, and recruiting drag.
                 </p>
               </article>
             </ScrollReveal>
