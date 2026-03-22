@@ -715,25 +715,58 @@ export default function PricingPage() {
 
             <div className="space-y-8">
 
-              {/* Step 1 */}
+              {/* Step 00 */}
               <ScrollReveal delayMs={40}>
                 <div className="relative flex gap-6">
                   <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--accent)] bg-[var(--bg)] text-center">
-                    <span className="font-space-grotesk text-xs font-bold text-[var(--accent)] leading-none">01</span>
+                    <span className="font-space-grotesk text-xs font-bold text-[var(--accent)] leading-none">00</span>
+                  </div>
+                  <div className="flex-1 rounded-2xl border border-[var(--accent-border)] bg-[var(--bg-card)] p-6 md:p-8">
+                    <div className="flex flex-wrap items-start justify-between gap-3">
+                      <div>
+                        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Start here</p>
+                        <h3 className="font-space-grotesk mt-1 text-xl font-bold text-[var(--text-primary)]">Quick Intro Call</h3>
+                      </div>
+                      <span className="rounded-full border border-[var(--border)] bg-[var(--bg-secondary)] px-3 py-1 text-xs font-semibold text-[var(--text-muted)]">15 min · Free</span>
+                    </div>
+                    <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
+                      No decks, no pitch. A short call to make sure we&apos;re a fit —
+                      what you&apos;re running, where the friction is, and whether an AI direct report
+                      is the right move right now. If it is, we schedule the Design Session and get moving.
+                    </p>
+                    <div className="mt-5">
+                      <a
+                        href={CONSULT_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block rounded-lg bg-[var(--accent)] px-5 py-2.5 text-sm font-bold text-[var(--text-on-accent)] transition-all hover:bg-[var(--accent-hover)]"
+                      >
+                        Schedule the intro call
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </ScrollReveal>
+
+              {/* Step 01 */}
+              <ScrollReveal delayMs={60}>
+                <div className="relative flex gap-6">
+                  <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--border)] bg-[var(--bg)] text-center">
+                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">01</span>
                   </div>
                   <div className="flex-1 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8">
                     <div className="flex flex-wrap items-start justify-between gap-3">
                       <div>
-                        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Week 1 — Day 1</p>
+                        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">Free · Week 1, Day 1</p>
                         <h3 className="font-space-grotesk mt-1 text-xl font-bold text-[var(--text-primary)]">Design Session</h3>
                       </div>
                       <span className="rounded-full border border-[var(--border)] bg-[var(--bg-secondary)] px-3 py-1 text-xs font-semibold text-[var(--text-muted)]">1 hour · Human-led, AI-assisted</span>
                     </div>
                     <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                      We start with a live session — you talk, we map. A human consultant runs the call
-                      while AI structures everything in real time: your workflows, your bottlenecks, your
-                      highest-leverage roles. By the end, we know exactly which agent to build first and
-                      what it needs to do.
+                      You talk, we map. A human consultant runs the call while AI structures everything
+                      in real time: your workflows, your bottlenecks, your highest-leverage roles.
+                      By the end, we know exactly which agent to build first, what it needs to do,
+                      and what it&apos;ll cost. No obligation — just clarity.
                     </p>
                     <div className="mt-4 flex flex-wrap gap-2">
                       {["Role scoping", "Workflow mapping", "Tool inventory", "Priority ranking"].map((tag) => (
@@ -744,7 +777,7 @@ export default function PricingPage() {
                 </div>
               </ScrollReveal>
 
-              {/* Step 2 */}
+              {/* Step 02 */}
               <ScrollReveal delayMs={80}>
                 <div className="relative flex gap-6">
                   <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--border)] bg-[var(--bg)] text-center">
@@ -753,16 +786,44 @@ export default function PricingPage() {
                   <div className="flex-1 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8">
                     <div className="flex flex-wrap items-start justify-between gap-3">
                       <div>
-                        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">Week 1 — Days 2–5</p>
+                        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">Week 1 — Days 2–3</p>
+                        <h3 className="font-space-grotesk mt-1 text-xl font-bold text-[var(--text-primary)]">Proposal &amp; Kickoff</h3>
+                      </div>
+                      <span className="rounded-full border border-[var(--border)] bg-[var(--bg-secondary)] px-3 py-1 text-xs font-semibold text-[var(--text-muted)]">Async · 24–48 hrs</span>
+                    </div>
+                    <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
+                      We send a scoped proposal — the exact agent we&apos;ll build, what it covers,
+                      the integrations required, and the total cost. No surprises, no vague estimates.
+                      Once you sign off, setup begins immediately and your custom questionnaire arrives within the day.
+                    </p>
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {["Scoped deliverables", "Fixed pricing", "Integration plan", "Questionnaire unlocked"].map((tag) => (
+                        <span key={tag} className="rounded-full bg-[var(--bg-secondary)] border border-[var(--border)] px-3 py-1 text-xs text-[var(--text-muted)]">{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </ScrollReveal>
+
+              {/* Step 03 — was old step 2 */}
+              <ScrollReveal delayMs={100}>
+                <div className="relative flex gap-6">
+                  <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--border)] bg-[var(--bg)] text-center">
+                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">03</span>
+                  </div>
+                  <div className="flex-1 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8">
+                    <div className="flex flex-wrap items-start justify-between gap-3">
+                      <div>
+                        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">Week 1 — Days 3–5</p>
                         <h3 className="font-space-grotesk mt-1 text-xl font-bold text-[var(--text-primary)]">Custom Configuration Questionnaire</h3>
                       </div>
                       <span className="rounded-full border border-[var(--border)] bg-[var(--bg-secondary)] px-3 py-1 text-xs font-semibold text-[var(--text-muted)]">Async · AI-generated, human-reviewed</span>
                     </div>
                     <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                      Based on your design session, we generate a detailed questionnaire built specifically
-                      for your business and the role we&apos;re deploying. Not a generic intake form —
-                      a deep-dive into your brand voice, your clients, your edge cases, your SOPs.
-                      You fill it on your time. We use it to train your agent with precision.
+                      A detailed questionnaire built specifically for your business and the role we&apos;re
+                      deploying — not a generic intake form. We dig into your brand voice, your clients,
+                      your edge cases, your SOPs. You fill it on your schedule.
+                      We use it to train your agent with precision.
                     </p>
                     <div className="mt-4 flex flex-wrap gap-2">
                       {["Brand voice & tone", "Client personas", "Standard procedures", "Edge cases & exceptions", "Tool credentials"].map((tag) => (
@@ -773,11 +834,11 @@ export default function PricingPage() {
                 </div>
               </ScrollReveal>
 
-              {/* Step 3 */}
+              {/* Step 04 */}
               <ScrollReveal delayMs={120}>
                 <div className="relative flex gap-6">
                   <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--border)] bg-[var(--bg)] text-center">
-                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">03</span>
+                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">04</span>
                   </div>
                   <div className="flex-1 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8">
                     <div className="flex flex-wrap items-start justify-between gap-3">
@@ -802,11 +863,11 @@ export default function PricingPage() {
                 </div>
               </ScrollReveal>
 
-              {/* Step 4 */}
+              {/* Step 05 */}
               <ScrollReveal delayMs={160}>
                 <div className="relative flex gap-6">
                   <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--border)] bg-[var(--bg)] text-center">
-                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">04</span>
+                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">05</span>
                   </div>
                   <div className="flex-1 rounded-2xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] p-6 md:p-8">
                     <div className="flex flex-wrap items-start justify-between gap-3">
