@@ -695,7 +695,148 @@ export default function PricingPage() {
         </div>
       </section>
 
-      <section className="px-6 py-16 md:py-24">
+      <section className="bg-[var(--bg-secondary)] border-y border-[var(--border)] px-6 py-16 md:py-24">
+        <div className="mx-auto max-w-6xl">
+          <ScrollReveal>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">How it works</p>
+            <h2 className="font-space-grotesk text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
+              From signed to live in two weeks.
+            </h2>
+            <p className="mt-3 max-w-3xl text-[var(--text-secondary)]">
+              Every deployment is human-led. We don&apos;t hand you a login and disappear.
+              A real person runs you through every step — AI handles the heavy lifting,
+              humans make sure it&apos;s right.
+            </p>
+          </ScrollReveal>
+
+          <div className="mt-12 relative">
+            {/* Vertical connector line — desktop only */}
+            <div className="absolute left-[27px] top-10 hidden h-[calc(100%-5rem)] w-px bg-[var(--border)] md:block" />
+
+            <div className="space-y-8">
+
+              {/* Step 1 */}
+              <ScrollReveal delayMs={40}>
+                <div className="relative flex gap-6">
+                  <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--accent)] bg-[var(--bg)] text-center">
+                    <span className="font-space-grotesk text-xs font-bold text-[var(--accent)] leading-none">01</span>
+                  </div>
+                  <div className="flex-1 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8">
+                    <div className="flex flex-wrap items-start justify-between gap-3">
+                      <div>
+                        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Week 1 — Day 1</p>
+                        <h3 className="font-space-grotesk mt-1 text-xl font-bold text-[var(--text-primary)]">Design Session</h3>
+                      </div>
+                      <span className="rounded-full border border-[var(--border)] bg-[var(--bg-secondary)] px-3 py-1 text-xs font-semibold text-[var(--text-muted)]">1 hour · Human-led, AI-assisted</span>
+                    </div>
+                    <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
+                      We start with a live session — you talk, we map. A human consultant runs the call
+                      while AI structures everything in real time: your workflows, your bottlenecks, your
+                      highest-leverage roles. By the end, we know exactly which agent to build first and
+                      what it needs to do.
+                    </p>
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {["Role scoping", "Workflow mapping", "Tool inventory", "Priority ranking"].map((tag) => (
+                        <span key={tag} className="rounded-full bg-[var(--bg-secondary)] border border-[var(--border)] px-3 py-1 text-xs text-[var(--text-muted)]">{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </ScrollReveal>
+
+              {/* Step 2 */}
+              <ScrollReveal delayMs={80}>
+                <div className="relative flex gap-6">
+                  <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--border)] bg-[var(--bg)] text-center">
+                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">02</span>
+                  </div>
+                  <div className="flex-1 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8">
+                    <div className="flex flex-wrap items-start justify-between gap-3">
+                      <div>
+                        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">Week 1 — Days 2–5</p>
+                        <h3 className="font-space-grotesk mt-1 text-xl font-bold text-[var(--text-primary)]">Custom Configuration Questionnaire</h3>
+                      </div>
+                      <span className="rounded-full border border-[var(--border)] bg-[var(--bg-secondary)] px-3 py-1 text-xs font-semibold text-[var(--text-muted)]">Async · AI-generated, human-reviewed</span>
+                    </div>
+                    <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
+                      Based on your design session, we generate a detailed questionnaire built specifically
+                      for your business and the role we&apos;re deploying. Not a generic intake form —
+                      a deep-dive into your brand voice, your clients, your edge cases, your SOPs.
+                      You fill it on your time. We use it to train your agent with precision.
+                    </p>
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {["Brand voice & tone", "Client personas", "Standard procedures", "Edge cases & exceptions", "Tool credentials"].map((tag) => (
+                        <span key={tag} className="rounded-full bg-[var(--bg-secondary)] border border-[var(--border)] px-3 py-1 text-xs text-[var(--text-muted)]">{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </ScrollReveal>
+
+              {/* Step 3 */}
+              <ScrollReveal delayMs={120}>
+                <div className="relative flex gap-6">
+                  <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--border)] bg-[var(--bg)] text-center">
+                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">03</span>
+                  </div>
+                  <div className="flex-1 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8">
+                    <div className="flex flex-wrap items-start justify-between gap-3">
+                      <div>
+                        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">Week 2</p>
+                        <h3 className="font-space-grotesk mt-1 text-xl font-bold text-[var(--text-primary)]">Deployment &amp; Training Session</h3>
+                      </div>
+                      <span className="rounded-full border border-[var(--border)] bg-[var(--bg-secondary)] px-3 py-1 text-xs font-semibold text-[var(--text-muted)]">1 hour · Human-led, AI-assisted</span>
+                    </div>
+                    <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
+                      Your agent is live. We walk you through it together — a human consultant shows
+                      you exactly how it works, what it can handle, where to push it, and how to get
+                      the most out of it from day one. No documentation to wade through.
+                      A real person walks you through your actual agent.
+                    </p>
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {["Live walkthrough", "Integration testing", "Edge case review", "Handoff protocol"].map((tag) => (
+                        <span key={tag} className="rounded-full bg-[var(--bg-secondary)] border border-[var(--border)] px-3 py-1 text-xs text-[var(--text-muted)]">{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </ScrollReveal>
+
+              {/* Step 4 */}
+              <ScrollReveal delayMs={160}>
+                <div className="relative flex gap-6">
+                  <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--border)] bg-[var(--bg)] text-center">
+                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">04</span>
+                  </div>
+                  <div className="flex-1 rounded-2xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] p-6 md:p-8">
+                    <div className="flex flex-wrap items-start justify-between gap-3">
+                      <div>
+                        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Ongoing</p>
+                        <h3 className="font-space-grotesk mt-1 text-xl font-bold text-[var(--text-primary)]">Support, Optimization &amp; Upgrades</h3>
+                      </div>
+                      <span className="rounded-full border border-[var(--accent-border)] bg-[var(--bg)] px-3 py-1 text-xs font-semibold text-[var(--accent)]">AI + human · Included in $500/mo</span>
+                    </div>
+                    <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
+                      You&apos;re never on your own. Your agent is monitored, improved, and kept current —
+                      new model releases applied automatically, performance tuned monthly, and a human
+                      available when you need one. Support is AI-first for speed, human-backed for
+                      anything that matters.
+                    </p>
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {["Monthly optimization", "Model upgrades", "AI support 24/7", "Human escalation", "Expansion planning"].map((tag) => (
+                        <span key={tag} className="rounded-full bg-[var(--bg)] border border-[var(--accent-border)] px-3 py-1 text-xs text-[var(--text-secondary)]">{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </ScrollReveal>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+            <section className="px-6 py-16 md:py-24">
         <div className="mx-auto max-w-6xl">
           <ScrollReveal>
             <h2 className="font-space-grotesk mb-10 text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
