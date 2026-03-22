@@ -268,25 +268,25 @@ export default function PricingPage() {
               Same outcomes, completely different cost structure.
             </p>
           </ScrollReveal>
-          <div className="grid gap-5 md:grid-cols-2">
-            <ScrollReveal>
-              <article className="rounded-2xl border border-[var(--danger-border)] bg-[var(--danger-subtle)] p-8">
+          <div className="grid items-stretch gap-5 md:grid-cols-2">
+            <ScrollReveal className="h-full">
+              <article className="flex h-full flex-col rounded-2xl border border-[var(--danger-border)] bg-[var(--danger-subtle)] p-6">
                 <p className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-[var(--danger)]">Old way</p>
                 <div className="font-space-grotesk text-5xl font-bold text-[var(--text-primary)]">
                   $<AnimatedCounter to={330000} />
                 </div>
-                <p className="mt-3 text-sm text-[var(--text-secondary)]">
+                <p className="mt-3 flex-1 text-sm text-[var(--text-secondary)]">
                   3 human direct reports/year with salary, benefits, downtime, and recruiting drag.
                 </p>
               </article>
             </ScrollReveal>
-            <ScrollReveal delayMs={100}>
-              <article className="rounded-2xl border border-[var(--success-border)] bg-[var(--success-subtle)] p-8">
+            <ScrollReveal delayMs={100} className="h-full">
+              <article className="flex h-full flex-col rounded-2xl border border-[var(--success-border)] bg-[var(--success-subtle)] p-6">
                 <p className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-[var(--success)]">AI or Die model</p>
                 <div className="font-space-grotesk text-5xl font-bold text-[var(--text-primary)]">
                   $<AnimatedCounter to={19400} />
                 </div>
-                <p className="mt-3 text-sm text-[var(--text-secondary)]">
+                <p className="mt-3 flex-1 text-sm text-[var(--text-secondary)]">
                   3 AI direct reports/year with 24/7 coverage and ongoing optimization.
                 </p>
               </article>
