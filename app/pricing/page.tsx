@@ -160,7 +160,7 @@ const deploymentOptions = [
     models: "Venice AI (private)",
     privacy: "Data never touches public AI providers; it stays in your private environment.",
     brainMap: "AI Brain Cost mapping: Venice AI private deployment (usage-based).",
-    cardClass: "border-[var(--accent-border)] bg-[var(--bg-secondary)]",
+    cardClass: "border-[var(--accent-border)] bg-[var(--accent-subtle)]",
   },
   {
     title: "On-Premise",
@@ -170,7 +170,7 @@ const deploymentOptions = [
     models: "Self-hosted open-source models",
     privacy: "Maximum control. Nothing leaves your building unless you choose.",
     brainMap: "AI Brain Cost mapping: self-hosted model stack, no external subscriptions required.",
-    cardClass: "border-[var(--border)] bg-[var(--bg-card)] shadow-inner",
+    cardClass: "border-[var(--accent-border)] bg-[var(--bg-secondary)] shadow-[inset_0_2px_12px_0_var(--accent-subtle)]",
   },
 ] as const;
 
@@ -353,62 +353,172 @@ export default function PricingPage() {
               Not a generic agent. A configured expert.
             </h2>
             <p className="mt-3 max-w-4xl text-[var(--text-secondary)]">
-              The difference between a generic AI and a deployed AI or Die agent is the
-              difference between hiring someone off the street and hiring a PhD specialist
-              who already knows your business.
+              Most people start with ChatGPT. Then they discover agents. Then they realize
+              agents alone aren&apos;t enough. Here&apos;s the full picture.
             </p>
           </ScrollReveal>
-          <div className="mt-8 grid gap-5 md:grid-cols-2">
-            <ScrollReveal delayMs={60}>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {/* Column 1: ChatGPT */}
+            <ScrollReveal delayMs={40}>
               <article className="flex h-full flex-col rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6">
-                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">Generic AI</p>
-                <h3 className="font-space-grotesk mt-2 text-2xl font-bold text-[var(--text-primary)]">ChatGPT/Claude out of the box</h3>
-                <ul className="mt-4 flex-1 space-y-2.5 text-sm text-[var(--text-secondary)]">
-                  <li className="flex items-start gap-2"><span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />Knows nothing about your business</li>
-                  <li className="flex items-start gap-2"><span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />No memory of past interactions</li>
-                  <li className="flex items-start gap-2"><span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />No integration with your tools</li>
-                  <li className="flex items-start gap-2"><span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />Requires constant prompting</li>
-                  <li className="flex items-start gap-2"><span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />Same as everyone else&apos;s setup</li>
+                <div className="mb-4">
+                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">Tier 1 — AI Assistant</p>
+                  <h3 className="font-space-grotesk mt-2 text-xl font-bold text-[var(--text-primary)]">ChatGPT / Claude</h3>
+                  <p className="mt-1 text-xs font-semibold text-[var(--text-muted)]">~$20–200/mo, direct from provider</p>
+                </div>
+                <p className="mb-4 text-sm leading-relaxed text-[var(--text-secondary)]">
+                  A chat interface. Brilliant at answering questions, drafting text, summarizing documents.
+                  But the moment you close the tab, it&apos;s gone. No memory. No initiative.
+                  It only works when you work.
+                </p>
+                <ul className="flex-1 space-y-2.5 text-sm text-[var(--text-secondary)]">
+                  <li className="flex items-start gap-2">
+                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />
+                    Starts fresh every conversation — no memory of your business
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />
+                    Can&apos;t take action — it answers, but doesn&apos;t do
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />
+                    Stops the second you step away from the screen
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />
+                    No integrations — copy/paste is the workflow
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />
+                    You are the operator. Always.
+                  </li>
                 </ul>
+                <div className="mt-6 rounded-lg border border-[var(--border)] bg-[var(--bg-secondary)] px-4 py-3">
+                  <p className="text-xs font-semibold text-[var(--text-muted)]">Best for</p>
+                  <p className="mt-1 text-sm text-[var(--text-secondary)]">One-off tasks, research, drafts. Not for running a business.</p>
+                </div>
               </article>
             </ScrollReveal>
-            <ScrollReveal delayMs={120}>
-              <article className="flex h-full flex-col rounded-2xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] p-6 shadow-[0_24px_60px_-44px_var(--accent)]">
-                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">AI or Die Agent</p>
-                <h3 className="font-space-grotesk mt-2 text-2xl font-bold text-[var(--text-primary)]">Deployed specialist for your business</h3>
-                <ul className="mt-4 flex-1 space-y-2.5 text-sm text-[var(--text-secondary)]">
-                  <li className="flex items-start gap-2"><span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />Embedded into your apps, data, and processes</li>
-                  <li className="flex items-start gap-2"><span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />Knows your brand voice, your clients, your SOPs</li>
-                  <li className="flex items-start gap-2"><span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />Integrated with your CRM, email, Slack, and workflow tools</li>
-                  <li className="flex items-start gap-2"><span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />Learns and improves continuously</li>
-                  <li className="flex items-start gap-2"><span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />Upgraded with the latest models automatically</li>
+
+            {/* Column 2: Generic Agent (OpenClaw) */}
+            <ScrollReveal delayMs={100}>
+              <article className="flex h-full flex-col rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6">
+                <div className="mb-4">
+                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">Tier 2 — Generic Agent</p>
+                  <h3 className="font-space-grotesk mt-2 text-xl font-bold text-[var(--text-primary)]">OpenClaw &amp; similar platforms</h3>
+                  <p className="mt-1 text-xs font-semibold text-[var(--text-muted)]">~$5–50/mo, self-serve</p>
+                </div>
+                <p className="mb-4 text-sm leading-relaxed text-[var(--text-secondary)]">
+                  A step up — the agent can take actions, run autonomously, and connect to tools.
+                  But it&apos;s a blank slate. You configure it, you prompt it, you manage it.
+                  The platform gives you a car. You still have to build the engine.
+                </p>
+                <ul className="flex-1 space-y-2.5 text-sm text-[var(--text-secondary)]">
+                  <li className="flex items-start gap-2">
+                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />
+                    Knows nothing about your business until you teach it — and that takes weeks
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />
+                    No persistent memory across sessions by default
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />
+                    Integrations require technical setup — each one is a project
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />
+                    You&apos;re the prompt engineer, the QA, and the manager
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />
+                    Generic by design — same setup as every other customer
+                  </li>
                 </ul>
+                <div className="mt-6 rounded-lg border border-[var(--border)] bg-[var(--bg-secondary)] px-4 py-3">
+                  <p className="text-xs font-semibold text-[var(--text-muted)]">Best for</p>
+                  <p className="mt-1 text-sm text-[var(--text-secondary)]">Technical teams who want to build their own agent. A toolkit, not a hire.</p>
+                </div>
               </article>
             </ScrollReveal>
-          </div>
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
+
+            {/* Column 3: AI or Die */}
             <ScrollReveal delayMs={160}>
-              <article className="rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5">
-                <h3 className="font-space-grotesk text-xl font-bold text-[var(--text-primary)]">The $2,000 setup delivers</h3>
-                <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]">
-                  A customized agent embedded into your specific business — your tools, your
-                  data, your knowledge base, your processes. This is the configuration,
-                  training, and integration that turns a general-purpose AI into a specialist
-                  who knows your business.
+              <article className="flex h-full flex-col rounded-2xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] p-6 shadow-[0_24px_60px_-44px_var(--accent)]">
+                <div className="mb-4">
+                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Tier 3 — Deployed Specialist</p>
+                  <h3 className="font-space-grotesk mt-2 text-xl font-bold text-[var(--text-primary)]">AI or Die Agent</h3>
+                  <p className="mt-1 text-xs font-semibold text-[var(--accent)]">$500/mo + $2,000 setup</p>
+                </div>
+                <p className="mb-4 text-sm leading-relaxed text-[var(--text-secondary)]">
+                  Built on OpenClaw — but configured end-to-end for your business by our team.
+                  We do the months of setup work so you don&apos;t have to.
+                  You get a specialist who already knows your clients, your tone, your tools,
+                  and your goals. You manage outcomes, not prompts.
                 </p>
-              </article>
-            </ScrollReveal>
-            <ScrollReveal delayMs={210}>
-              <article className="rounded-xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] p-5">
-                <h3 className="font-space-grotesk text-xl font-bold text-[var(--text-primary)]">The $500/month ensures</h3>
-                <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]">
-                  Your agent stays current. New model releases, performance improvements, and
-                  ongoing optimization. Think of it as the retainer for a consultant who
-                  never stops learning — and never needs to be reminded to stay sharp.
-                </p>
+                <ul className="flex-1 space-y-2.5 text-sm text-[var(--text-secondary)]">
+                  <li className="flex items-start gap-2">
+                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
+                    Embedded into your CRM, email, Slack, and tools from day one
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
+                    Knows your brand voice, your clients, your SOPs — trained on your data
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
+                    Persistent memory — builds context across every interaction
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
+                    Operates 24/7 without you — handles tasks, not just questions
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
+                    Upgraded continuously — new models, better performance, no effort from you
+                  </li>
+                </ul>
+                <div className="mt-6 rounded-lg border border-[var(--accent-border)] bg-[var(--bg)] px-4 py-3">
+                  <p className="text-xs font-semibold text-[var(--accent)]">Best for</p>
+                  <p className="mt-1 text-sm text-[var(--text-secondary)]">Business owners who want to hand off a role — not build a system.</p>
+                </div>
               </article>
             </ScrollReveal>
           </div>
+
+          {/* Why the price gap */}
+          <ScrollReveal delayMs={80}>
+            <div className="mt-8 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8">
+              <h3 className="font-space-grotesk text-xl font-bold text-[var(--text-primary)] md:text-2xl">
+                Why $500/mo vs $5/mo?
+              </h3>
+              <p className="mt-3 max-w-4xl text-sm leading-relaxed text-[var(--text-secondary)]">
+                OpenClaw costs $5/month because it gives you the raw platform and you do all the work.
+                You spend weeks — realistically months — configuring prompts, wiring up integrations,
+                training it on your business, and debugging failures. Most businesses start, stall,
+                and quietly abandon it. The platform isn&apos;t the product. The configured, deployed,
+                running specialist is the product.
+              </p>
+              <p className="mt-3 max-w-4xl text-sm leading-relaxed text-[var(--text-secondary)]">
+                The $2,000 setup is us doing that months-long work in two weeks. The $500/month
+                keeps the agent current — new model releases, performance improvements, and ongoing
+                tuning as your business evolves. You&apos;re not paying for software. You&apos;re paying
+                for a specialist who shows up every day and never drops the ball.
+              </p>
+              <div className="mt-6 flex flex-wrap items-center gap-4 text-sm">
+                <div className="flex items-center gap-2">
+                  <span className="font-semibold text-[var(--text-muted)]">OpenClaw DIY:</span>
+                  <span className="text-[var(--text-secondary)]">$5/mo + 200+ hours of your time</span>
+                </div>
+                <span className="text-[var(--text-muted)]">vs</span>
+                <div className="flex items-center gap-2">
+                  <span className="font-semibold text-[var(--accent)]">AI or Die:</span>
+                  <span className="text-[var(--text-secondary)]">$500/mo + live in 2 weeks</span>
+                </div>
+              </div>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -565,9 +675,12 @@ export default function PricingPage() {
                   <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]">
                     <span className="font-semibold">Privacy:</span> {option.privacy}
                   </p>
-                  <p className="mt-auto pt-3 rounded-lg border border-[var(--border)] bg-[var(--bg)] px-3 py-2 text-xs font-medium text-[var(--text-secondary)]">
-                    {option.brainMap}
-                  </p>
+                  <div className="mt-auto pt-6">
+                    <div className="h-px w-full bg-[var(--border)] mb-4" />
+                    <p className="rounded-lg border border-[var(--border)] bg-[var(--bg)] px-3 py-2 text-xs font-medium text-[var(--text-secondary)]">
+                      {option.brainMap}
+                    </p>
+                  </div>
                 </article>
               </ScrollReveal>
             ))}
