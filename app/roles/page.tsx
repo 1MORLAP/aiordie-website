@@ -7,18 +7,18 @@ const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/aod";
 export const metadata: Metadata = {
   title: "AI Direct Report Roles — AI or Die",
   description:
-    "34 AI direct report roles across marketing, sales, legal, finance, engineering, HR, and more. Custom-built for your business.",
+    "34 Super Agent roles across marketing, sales, legal, finance, engineering, HR, and more. Custom-built for your business.",
   openGraph: {
     title: "AI Direct Report Roles — AI or Die",
     description:
-      "34 AI direct report roles across marketing, sales, legal, finance, engineering, HR, and more. Custom-built for your business.",
+      "34 Super Agent roles across marketing, sales, legal, finance, engineering, HR, and more. Custom-built for your business.",
     url: "https://aiordie.now/roles",
   },
   twitter: {
     card: "summary_large_image",
     title: "AI Direct Report Roles — AI or Die",
     description:
-      "34 AI direct report roles across marketing, sales, legal, finance, engineering, HR, and more. Custom-built for your business.",
+      "34 Super Agent roles across marketing, sales, legal, finance, engineering, HR, and more. Custom-built for your business.",
   },
   alternates: { canonical: "https://aiordie.now/roles" },
 };
@@ -276,7 +276,7 @@ export default function RolesPage() {
 
           <ScrollReveal delayMs={140}>
             <p className="mt-5 max-w-4xl text-lg leading-relaxed text-[var(--text-secondary)]">
-              34 AI direct report roles across every business function. Every agent is custom-built for your business. Backed by 5,400+ skills from the OpenClaw ecosystem.
+              34 Super Agent roles across every business function. Every Super Agent is custom-built for your business. Backed by 5,400+ skills from the OpenClaw ecosystem.
             </p>
           </ScrollReveal>
 

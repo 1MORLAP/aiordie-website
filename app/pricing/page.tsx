@@ -5,16 +5,16 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Pricing — AI or Die",
   description:
-    "Transparent pricing for AI direct reports. $2,000 setup + $500/mo per agent. Volume bundles from $1,200/mo. No contracts, cancel anytime.",
+    "Transparent pricing for AI or Die Super Agents. $2,000 setup + $500/mo per agent. Volume bundles from $1,200/mo. No contracts, cancel anytime.",
   openGraph: {
-    title: "AI Direct Report Pricing — AI or Die",
+    title: "AI or Die Super Agent Pricing — AI or Die",
     description:
       "$2,000 setup + $500/mo per agent. Volume bundles from $1,200/mo. No contracts, cancel anytime.",
     url: "https://aiordie.now/pricing",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Direct Report Pricing — AI or Die",
+    title: "AI or Die Super Agent Pricing — AI or Die",
     description: "$2,000 setup + $500/mo per agent. No contracts, cancel anytime.",
   },
   alternates: { canonical: "https://aiordie.now/pricing" },
@@ -26,8 +26,8 @@ const faqJsonLd = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "What's the difference between an AI direct report and just using ChatGPT?",
-      acceptedAnswer: { "@type": "Answer", text: "ChatGPT is a general-purpose tool — it knows nothing about your business, has no memory, and requires you to prompt it every time. An AI direct report is configured specifically for your role, integrated into your tools and data, and operates autonomously. You're not the operator; you're the manager." },
+      name: "What's the difference between an AI or Die Super Agent and just using ChatGPT?",
+      acceptedAnswer: { "@type": "Answer", text: "ChatGPT is a general-purpose tool — it knows nothing about your business, has no memory, and requires you to prompt it every time. An AI or Die Super Agent is configured specifically for your role, integrated into your tools and data, and operates autonomously. You're not the operator; you're the manager." },
     },
     {
       "@type": "Question",
@@ -287,7 +287,7 @@ export default function PricingPage() {
                   $<AnimatedCounter to={19400} />
                 </div>
                 <p className="mt-3 flex-1 text-sm text-[var(--text-secondary)]">
-                  3 AI direct reports/year with 24/7 coverage and ongoing optimization.
+                  3 AI or Die Super Agents/year with 24/7 coverage and ongoing optimization.
                 </p>
               </article>
             </ScrollReveal>
@@ -738,7 +738,7 @@ export default function PricingPage() {
                     </div>
                     <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
                       No decks, no pitch. A short call to make sure we&apos;re a fit —
-                      what you&apos;re running, where the friction is, and whether an AI direct report
+                      what you&apos;re running, where the friction is, and whether an AI or Die Super Agent
                       is the right move right now. If it is, we schedule the Design Session and get moving.
                     </p>
                     <div className="mt-5">
@@ -908,7 +908,7 @@ export default function PricingPage() {
         <div className="mx-auto max-w-6xl">
           <ScrollReveal>
             <h2 className="font-space-grotesk mb-10 text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
-              What every agent comes with
+              What every Super Agent comes with
             </h2>
           </ScrollReveal>
           <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-5">
@@ -1045,7 +1045,7 @@ export default function PricingPage() {
           <ScrollReveal>
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">AI or Die</p>
             <h2 className="font-space-grotesk text-balance text-4xl font-bold tracking-tight text-[var(--text-primary)] md:text-6xl">
-              Ready to deploy your first AI direct report?
+              Ready to deploy your first AI or Die Super Agent?
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-[var(--text-secondary)]">
               Free consult. We&apos;ll price out the gap for your specific business — and show exactly which roles your team could hand off today.

@@ -13,7 +13,7 @@ const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/aod";
 export const metadata: Metadata = {
   title: "AI or Die — Scale Leaders With AI Teams",
   description:
-    "Give every exec AI direct reports. AI or Die deploys AI employees for marketing, sales, finance, and ops in 1–2 weeks.",
+    "Give every exec AI or Die Super Agents. AI or Die deploys Super Agents for marketing, sales, finance, and ops in 1–2 weeks.",
   openGraph: {
     title: "AI or Die — Scale Leaders With AI Teams",
     description:
@@ -35,7 +35,7 @@ const organizationJsonLd = {
   name: "AI or Die",
   url: "https://aiordie.now",
   description:
-    "AI employees deployed as direct reports to existing leaders, so companies scale output without scaling headcount.",
+    "AI or Die Super Agents deployed as direct reports to existing leaders, so companies scale output without scaling headcount.",
   telephone: "+17869989310",
   address: [
     {
@@ -57,7 +57,7 @@ const caseStudies = [
   {
     name: "TomBot",
     badge: "Zero-human operations",
-    line: "A full company run by AI agents across leadership, execution, and reporting.",
+    line: "A full company run by AI or Die Super Agents across leadership, execution, and reporting.",
     color: "#FF4C00",
     href: "https://www.realtom.bot/",
   },
@@ -78,7 +78,7 @@ const caseStudies = [
   {
     name: "AI or Die",
     badge: "Dog-fooded daily",
-    line: "Our own site, strategy, and output are operated by the same AI employee model.",
+    line: "Our own site, strategy, and output are operated by the same Super Agent model.",
     color: "#10B981",
     href: "https://aiordie.now",
   },
@@ -163,14 +163,14 @@ const technologyProviders = [
   {
     name: "OpenAI",
     href: "https://openai.com",
-    description: "GPT models for cloud and production AI direct report deployments.",
-    function: "GPT model intelligence for production AI direct report deployments",
+    description: "GPT models for cloud and production Super Agent deployments.",
+    function: "GPT model intelligence for production Super Agent deployments",
   },
   {
     name: "Anthropic",
     href: "https://anthropic.com",
-    description: "Claude models. Our recommended brain for production AI employees.",
-    function: "Claude model intelligence for production AI employees",
+    description: "Claude models. Our recommended brain for production Super Agents.",
+    function: "Claude model intelligence for production Super Agents",
   },
   {
     name: "EXO Labs",
@@ -264,7 +264,7 @@ export default function Home() {
 
             <ScrollReveal delayMs={140}>
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-[var(--text-secondary)]">
-                AI or Die deploys AI employees as direct reports to your CMO, CTO, CRO, and CFO.
+                AI or Die deploys Super Agents as direct reports to your CMO, CTO, CRO, and CFO.
                 They execute 24/7 so your humans run strategy, not admin.
               </p>
             </ScrollReveal>
@@ -426,7 +426,7 @@ export default function Home() {
               Powered By
             </p>
             <h2 className="font-space-grotesk mb-4 text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
-              The technology behind AI or Die&apos;s AI employee deployments
+              The technology behind AI or Die&apos;s Super Agent deployments
             </h2>
             <p className="max-w-3xl text-[var(--text-secondary)]">
               We build on the best. These are the platforms, models, and infrastructure behind every AI or Die deployment.
@@ -577,12 +577,12 @@ export default function Home() {
               Every Language. Every Currency.
             </p>
             <h2 className="font-space-grotesk mb-4 text-3xl font-bold tracking-tight md:text-5xl">
-              Your agents speak every language your business does.
+              Your Super Agents speak every language your business does.
             </h2>
           </ScrollReveal>
           <ScrollReveal delayMs={80}>
             <p className="max-w-3xl text-[var(--text-secondary)]">
-              AI employees are multilingual by default. Documents, invoices, and research can be submitted in any language and any currency — the output comes back in whatever language you need. If your team works in Spanish but reports need to be in English, done. If a client sends contracts in German, your AI Legal Counsel reads them natively.
+              AI or Die Super Agents are multilingual by default. Documents, invoices, and research can be submitted in any language and any currency — the output comes back in whatever language you need. If your team works in Spanish but reports need to be in English, done. If a client sends contracts in German, your AI Legal Counsel reads them natively.
             </p>
           </ScrollReveal>
           <div className="mt-8 grid gap-4 md:grid-cols-3">
@@ -725,7 +725,7 @@ export default function Home() {
                 <div className="font-space-grotesk text-5xl font-bold text-[var(--text-primary)]">
                   $<AnimatedCounter to={19.4} decimals={1} suffix="K" />
                 </div>
-                <p className="mt-3 text-sm text-[var(--text-secondary)]">Equivalent coverage with AI employees running full-time, all year.</p>
+                <p className="mt-3 text-sm text-[var(--text-secondary)]">Equivalent coverage with Super Agents running full-time, all year.</p>
               </article>
             </ScrollReveal>
           </div>
