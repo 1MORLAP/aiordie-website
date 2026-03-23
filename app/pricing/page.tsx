@@ -756,10 +756,38 @@ export default function PricingPage() {
               </ScrollReveal>
 
               {/* Step 01 */}
-              <ScrollReveal delayMs={60}>
+              <ScrollReveal delayMs={55}>
                 <div className="relative flex gap-6">
                   <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--border)] bg-[var(--bg)] text-center">
                     <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">01</span>
+                  </div>
+                  <div className="flex-1 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8">
+                    <div className="flex flex-wrap items-start justify-between gap-3">
+                      <div>
+                        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">Async · 5 minutes</p>
+                        <h3 className="font-space-grotesk mt-1 text-xl font-bold text-[var(--text-primary)]">Pre-Session Questionnaire</h3>
+                      </div>
+                      <span className="rounded-full border border-[var(--border)] bg-[var(--bg-secondary)] px-3 py-1 text-xs font-semibold text-[var(--text-muted)]">Short · AI-reviewed before your call</span>
+                    </div>
+                    <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
+                      Before your Design Session, we send a short questionnaire — 10 questions, 5 minutes.
+                      Your answers let us show up prepared: no time wasted on basics, no generic suggestions.
+                      We already know your business before the call starts.
+                    </p>
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {["Business type & size", "Current team structure", "Biggest bottlenecks", "Tools you use today", "Budget range"].map((tag) => (
+                        <span key={tag} className="rounded-full bg-[var(--bg-secondary)] border border-[var(--border)] px-3 py-1 text-xs text-[var(--text-muted)]">{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </ScrollReveal>
+
+              {/* Step 02 */}
+              <ScrollReveal delayMs={60}>
+                <div className="relative flex gap-6">
+                  <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--border)] bg-[var(--bg)] text-center">
+                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">02</span>
                   </div>
                   <div className="flex-1 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8">
                     <div className="flex flex-wrap items-start justify-between gap-3">
@@ -784,11 +812,11 @@ export default function PricingPage() {
                 </div>
               </ScrollReveal>
 
-              {/* Step 02 */}
+              {/* Step 03 */}
               <ScrollReveal delayMs={80}>
                 <div className="relative flex gap-6">
                   <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--border)] bg-[var(--bg)] text-center">
-                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">02</span>
+                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">03</span>
                   </div>
                   <div className="flex-1 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8">
                     <div className="flex flex-wrap items-start justify-between gap-3">
@@ -812,11 +840,11 @@ export default function PricingPage() {
                 </div>
               </ScrollReveal>
 
-              {/* Step 03 — was old step 2 */}
+              {/* Step 04 */}
               <ScrollReveal delayMs={100}>
                 <div className="relative flex gap-6">
                   <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--border)] bg-[var(--bg)] text-center">
-                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">03</span>
+                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">04</span>
                   </div>
                   <div className="flex-1 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8">
                     <div className="flex flex-wrap items-start justify-between gap-3">
@@ -841,11 +869,11 @@ export default function PricingPage() {
                 </div>
               </ScrollReveal>
 
-              {/* Step 04 */}
+              {/* Step 05 */}
               <ScrollReveal delayMs={120}>
                 <div className="relative flex gap-6">
                   <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--border)] bg-[var(--bg)] text-center">
-                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">04</span>
+                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">05</span>
                   </div>
                   <div className="flex-1 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8">
                     <div className="flex flex-wrap items-start justify-between gap-3">
@@ -870,11 +898,11 @@ export default function PricingPage() {
                 </div>
               </ScrollReveal>
 
-              {/* Step 05 */}
+              {/* Step 06 */}
               <ScrollReveal delayMs={160}>
                 <div className="relative flex gap-6">
                   <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--border)] bg-[var(--bg)] text-center">
-                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">05</span>
+                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">06</span>
                   </div>
                   <div className="flex-1 rounded-2xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] p-6 md:p-8">
                     <div className="flex flex-wrap items-start justify-between gap-3">
