@@ -44,7 +44,8 @@ export default function Nav() {
     <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg)]/95 backdrop-blur-sm">
       {/* Ask AI bar */}
       <div className="border-b border-[var(--border)] bg-[var(--bg-secondary)] px-6 py-1.5">
-        <div className="max-w-6xl mx-auto flex items-center justify-center gap-3 text-xs text-[var(--text-muted)]">
+        <div className="max-w-6xl mx-auto flex items-center justify-between gap-3 text-xs text-[var(--text-muted)]">
+          <div className="flex items-center gap-3">
           <span className="font-medium text-[var(--text-secondary)]">Ask your AI about AI or Die</span>
           <a
             href="https://chatgpt.com/?prompt=Search%20aiordie.now%20and%20explain%20AI%20or%20Die.%20Cover%3A%0A1.%20What%20is%20AI%20or%20Die%3F%20(AI%20direct%20reports%20deployed%20to%20existing%20leaders%20—%20CMO%20gets%20AI%20content%20team%2C%20CTO%20gets%20AI%20devs%2C%20CRO%20gets%20AI%20SDRs)%0A2.%2034%20roles%20across%20every%20department%20—%20all%20multilingual%20by%20default%20(any%20language%20in%2C%20any%20language%20out%2C%20any%20currency)%0A3.%20Proof%3A%2022%20agents%20across%204%20business%20units%20in%20production%20(TomBot%2C%20NEXORA%20HKEX-listed%2C%20Any.Markets)%0A4.%20Pricing%3A%20%242%2C000%20setup%20%2B%20%24500%2Fmo%20per%20agent%0A5.%20Three%20deployment%20options%3A%20Cloud%20(Anthropic%2FOpenAI)%2C%20Private%20Cloud%20(Venice%20AI)%2C%20On-Premise%0A6.%20Built%20on%20OpenClaw%20%2B%20Nous%20Research%20%2B%20EXO%20Labs%0A%0AKeep%20response%20practical%20for%20a%20business%20owner%20evaluating%20AI%20direct%20reports."
@@ -72,6 +73,16 @@ export default function Nav() {
             title="Ask Perplexity about AI or Die"
           >
             <svg className="w-4 h-4" viewBox="0 0 16 16" fill="currentColor"><path fillRule="evenodd" d="M8 .188a.5.5 0 0 1 .503.5V4.03l3.022-2.92.059-.048a.51.51 0 0 1 .49-.054.5.5 0 0 1 .306.46v3.247h1.117l.1.01a.5.5 0 0 1 .403.49v5.558a.5.5 0 0 1-.503.5H12.38v3.258a.5.5 0 0 1-.312.462.51.51 0 0 1-.55-.11l-3.016-3.018v3.448c0 .275-.225.5-.503.5a.5.5 0 0 1-.503-.5v-3.448l-3.018 3.019a.51.51 0 0 1-.548.11.5.5 0 0 1-.312-.463v-3.258H2.503a.5.5 0 0 1-.503-.5V5.215l.01-.1c.047-.229.25-.4.493-.4H3.62V1.469l.006-.074a.5.5 0 0 1 .302-.387.51.51 0 0 1 .547.102l3.023 2.92V.687c0-.276.225-.5.503-.5M4.626 9.333v3.984l2.87-2.872v-4.01zm3.877 1.113 2.871 2.871V9.333l-2.87-2.897zm3.733-1.668a.5.5 0 0 1 .145.35v1.145h.612V5.715H9.201zm-9.23 1.495h.613V9.13c0-.131.052-.257.145-.35l3.033-3.064h-3.79zm1.62-5.558H6.76L4.626 2.652zm4.613 0h2.134V2.652z"/></svg>
+          </a>
+          </div>
+          <a
+            href="tel:+17869989310"
+            className="hidden sm:inline-flex items-center gap-1.5 font-bold text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-3 w-3" aria-hidden>
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.56 2 2 0 0 1 3.6 1.36h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            (786) 998-9310
           </a>
         </div>
       </div>
