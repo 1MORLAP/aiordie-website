@@ -100,7 +100,7 @@ function Footer() {
           <span>·</span>
           <a
             href="tel:+17869989310"
-            className="hover:text-[var(--text-primary)] transition-colors"
+            className="font-bold text-[var(--accent)] text-base hover:text-[var(--accent-hover)] transition-colors"
           >
             (786) 998-9310
           </a>

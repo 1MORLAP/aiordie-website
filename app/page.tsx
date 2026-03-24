@@ -295,9 +295,9 @@ export default function Home() {
                 </a>
                 <a
                   href="tel:+17869989310"
-                  className="text-sm font-semibold text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
+                  className="inline-flex items-center gap-2 text-base font-bold text-[var(--accent)] transition-colors hover:text-[var(--accent-hover)]"
                 >
-                  Talk to AI in any language · (786) 998-9310
+                  <span>Talk to AI in any language</span><span className="opacity-40">·</span><span>(786) 998-9310</span>
                 </a>
               </div>
             </ScrollReveal>
@@ -756,7 +756,7 @@ export default function Home() {
               </a>
             </div>
             <p className="mt-4 text-sm text-[var(--text-muted)]">
-              Talk to our AI agent in any language: <a href="tel:+17869989310" className="font-semibold text-[var(--text-secondary)] hover:text-[var(--text-primary)]">(786) 998-9310</a>
+              Talk to our AI agent in any language: <a href="tel:+17869989310" className="font-bold text-[var(--accent)] text-base hover:text-[var(--accent-hover)]">(786) 998-9310</a>
             </p>
             <p className="mt-2 text-xs text-[var(--text-muted)]">
               Speak in your native language or try any language just for fun. Our agents understand all of them.

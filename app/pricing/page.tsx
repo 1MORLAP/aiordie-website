@@ -1089,7 +1089,7 @@ export default function PricingPage() {
               </a>
             </div>
             <p className="mt-5 text-sm text-[var(--text-muted)]">
-              Talk to our AI agent: <a href="tel:+17869989310" className="font-semibold text-[var(--text-secondary)] hover:text-[var(--text-primary)]">(786) 998-9310</a>
+              Talk to our AI agent: <a href="tel:+17869989310" className="font-bold text-[var(--accent)] text-base hover:text-[var(--accent-hover)]">(786) 998-9310</a>
             </p>
           </ScrollReveal>
         </div>
