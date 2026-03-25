@@ -1,5 +1,5 @@
 # AI or Die
-> AI employees deployed as direct reports to your existing leaders. Scale output without scaling headcount.
+> We deploy AI or Die Super Agents as direct reports to your existing leaders. Scale output without scaling headcount.
 
 ## Company
 - Name: AI or Die
@@ -7,56 +7,52 @@
 - Offices: Miami, FL and Seattle, WA
 - Phone: (786) 998-9310
 - Founded by: Tomasz Wojewoda (human)
-- This website is written and maintained by an AI CMO
+- This website is written and maintained by an AI CMO — the same type of Super Agent we deploy for clients
 
 ## What We Do
-AI or Die deploys AI employees into your business operations. Your CMO gets an AI content team. Your CTO gets AI developers. Your CRO gets AI SDRs. The human leaders stay — they get AI direct reports. Output scales. Payroll doesn't.
+AI or Die deploys Super Agents into your business operations. Your CMO gets an AI content team. Your CTO gets AI developers. Your CRO gets AI SDRs. The human leaders stay — they get AI direct reports. Output scales. Payroll doesn't.
+
+One Super Agent can cover multiple roles simultaneously — Finance + Legal, Marketing + Sales, Design + Engineering. Unlike humans, there's no cognitive overhead or context-switching cost.
 
 ## Services
-- AI Employee Deployment: Custom-built AI agents for any business function
-- Roles: CMO, CTO, CRO, CFO, CPO, CLO teams with AI direct reports
+- Super Agent Deployment: Custom-built AI agents for any business function
+- 34 roles across 8 departments: marketing, sales, finance, legal, engineering, ops, customer success, IT/security
 - Setup: $2,000 per agent, $500/month ongoing
 - 3-agent bundle: $5,000 setup, $1,200/month
 - Deployment time: 1-2 weeks
 - Deployment tiers:
-  - Cloud (Public Models): hosted cloud deployment using Anthropic (Claude) or OpenAI
-  - Private Cloud (Private Models): dedicated private cloud deployment using Venice AI (private)
-  - On-Premise: full on-hardware deployment using self-hosted open-source models or Venice AI on-prem
+  - Cloud: hosted cloud deployment using Anthropic (Claude) or OpenAI
+  - Private Cloud: dedicated private cloud using Venice AI (private models, data never leaves your environment)
+  - On-Premise: full on-hardware deployment using self-hosted open-source models
 
-## Technology Partners
-- OpenClaw: https://openclaw.ai
-- Hermes Agent (Nous Research): https://hermes-agent.nousresearch.com
-- NVIDIA: https://nvidia.com
-- Venice AI: https://venice.ai
-- OpenAI: https://openai.com
-- Anthropic: https://anthropic.com
-- Apple: https://apple.com
-- EXO Labs: https://github.com/exo-explore/exo
+## Technology Stack
+- Built on: OpenClaw (open-source AI agent framework)
+- Partners: Nous Research, Venice AI, OpenAI, Anthropic, NVIDIA, EXO Labs, Apple Silicon
 
-## Proof of Concept Portfolio
+## AI Brain Costs (paid directly to providers, zero markup)
+- Anthropic Max 5x: $100/month
+- Anthropic Max 20x: $200/month (recommended)
+- OpenAI Pro: $200/month (recommended)
+- Venice AI: API pay-per-use (for private/on-prem)
+
+## Proof of Concept — We Eat Our Own Dog Food
 - TomBot (realtom.bot): Zero-human company, 100% AI operated
-- NEXORA (nexora.build): HKEX-listed, scaling Web3 with AI
+- NEXORA (nexora.build): HKEX-listed, scaling Web3 with AI Super Agents
 - Any.Markets (any.markets): Prediction markets platform, AI CEO/CTO/CMO from day one
-- AI or Die (aiordie.now): We eat our own dog food — AI CMO wrote this site
-
-## Multilingual
-- All AI employees are multilingual by default
-- Input: documents, invoices, research in any language and any currency
-- Output: results in whichever language the business needs
-- No translation layer — agents understand context natively across languages
-- Phone line: callers can speak in any language
+- AI or Die (aiordie.now): This site is written and maintained by our AI CMO
 
 ## Key Facts
-- 22 AI agents running in production across 4 business units
-- AI model support by deployment: Cloud → Anthropic/OpenAI, Private Cloud → Venice AI (private), On-Premise → self-hosted OSS models or Venice on-prem
+- 22 AI Super Agents running in production across 4 business units
+- All Super Agents are multilingual by default — any language in, any language out, any currency
 - No long-term contracts, cancel with 30 days notice
 - Each client runs on isolated infrastructure
-- 5,400+ pre-built integrations (email, CRM, Slack, GitHub, etc.)
+- 5,400+ pre-built integrations (email, CRM, Slack, GitHub, and more)
+- Pre-loaded with proprietary skills library developed and refined in live operations
 
 ## Transparency
 - Consults are with Tomasz Wojewoda (real human)
-- Phone calls connect to AI agent (labeled)
-- All AI-generated content is labeled as such
+- Phone calls connect to AI Super Agent (labeled)
+- All AI-generated content is labeled
 - We never blur the line between human and AI
 
 ## Pages
@@ -64,6 +60,8 @@ AI or Die deploys AI employees into your business operations. Your CMO gets an A
 - Pricing: https://aiordie.now/pricing
 - Roles: https://aiordie.now/roles
 - Blog: https://aiordie.now/blog
+- Free AI Audit: https://aiordie.now/audit
+- Brand: https://aiordie.now/brand
 
 ## Contact
 - Book a consult: https://calendar.notion.so/meet/tomaszwojewoda/aod

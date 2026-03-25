@@ -1,5 +1,5 @@
 # AI or Die — Full LLM Reference
-> AI employees deployed as direct reports to your existing leaders. Scale output without scaling headcount.
+> AI or Die Super Agents deployed as direct reports to your existing leaders. Scale output without scaling headcount.
 
 ## Company Snapshot
 - Name: AI or Die
@@ -17,7 +17,9 @@ Most teams don’t have a strategy problem — they have an execution bottleneck
 This is not theoretical. The same operating model is run in production across multiple business units, including AI or Die itself.
 
 ## What We Do
-AI or Die deploys AI employees into existing business org charts. Instead of replacing leadership, we augment leadership.
+AI or Die deploys Super Agents into existing business org charts.
+
+Unlike humans, one Super Agent can cover multiple roles simultaneously — Finance + Legal, Marketing + Sales, Design + Engineering. No cognitive overhead, no context-switching cost. We call these super-agents, and we scope them per deployment. Instead of replacing leadership, we augment leadership.
 
 Examples:
 - Your CMO gets an AI content + SEO + social team
@@ -44,16 +46,14 @@ Examples:
 - Cancel with 30 days notice
 - Client retains agent configurations and files
 
-### AI Model ("Brain") Costs — paid directly to providers
+### AI Model ("Brain") Costs — paid directly to providers, zero markup
 - Anthropic:
-  - Pro: $20/month
   - Max 5x: $100/month
   - Max 20x: $200/month (recommended)
 - OpenAI:
-  - Plus: $20/month
   - Pro: $200/month (recommended)
 - Venice AI:
-  - API pay-per-use (usage-based)
+  - API pay-per-use (for private/on-prem deployments)
 
 ## Deployment Models
 - Typical deployment time: 1-2 weeks
@@ -95,9 +95,9 @@ Our deployments follow the pattern you've already established. We match how you 
 - Venice AI — https://venice.ai
   - Private AI. API pay-per-use inference for privacy-first deployments.
 - OpenAI — https://openai.com
-  - GPT models for cloud and enterprise AI employee deployments.
+  - GPT models for cloud and enterprise AI or Die Super Agent deployments.
 - Anthropic — https://anthropic.com
-  - Claude models. Our recommended brain for production AI employees.
+  - Claude models. Our recommended brain for production AI or Die Super Agents.
 - Apple — https://apple.com
   - Apple Silicon and MLX for on-device AI inference.
 - EXO Labs — https://github.com/exo-explore/exo

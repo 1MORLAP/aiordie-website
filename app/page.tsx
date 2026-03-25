@@ -233,8 +233,31 @@ function DeploymentIcon({ kind }: { kind: "cloud" | "shield" | "server" }) {
 }
 
 export default function Home() {
+  const orgJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AI or Die",
+    "url": "https://aiordie.now",
+    "logo": "https://aiordie.now/brand/circle-mark-orange.svg",
+    "description": "AI or Die deploys AI Super Agents as direct reports to existing business leaders. 34 roles across every department. Deployed in 1-2 weeks.",
+    "telephone": "+17869989310",
+    "address": [
+      { "@type": "PostalAddress", "addressLocality": "Miami", "addressRegion": "FL", "addressCountry": "US" },
+      { "@type": "PostalAddress", "addressLocality": "Seattle", "addressRegion": "WA", "addressCountry": "US" }
+    ],
+    "sameAs": ["https://aiordie.now"],
+    "offers": {
+      "@type": "Offer",
+      "name": "AI Super Agent Deployment",
+      "price": "500",
+      "priceCurrency": "USD",
+      "description": "$2,000 setup + $500/month per agent. Deployed in 1-2 weeks."
+    }
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
