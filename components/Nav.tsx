@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import ThemeToggle from "./ThemeToggle";
+import LanguageSwitcher from './LanguageSwitcher';
 
 function WordmarkSVG({ className }: { className?: string }) {
   return (
@@ -107,6 +108,7 @@ export default function Nav() {
             Blog
           </Link>
           <ThemeToggle />
+          <LanguageSwitcher />
           <a
             href="tel:+17869989310"
             className="hidden lg:inline-flex items-center gap-1.5 text-sm font-bold text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors"
