@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { CSSProperties } from "react";
 import ScrollReveal from "@/components/ScrollReveal";
-import {getTranslations} from "next-intl/server";
+import {getTranslations, setRequestLocale} from "next-intl/server";
 
 const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/aod";
 
@@ -258,7 +258,9 @@ const departments: Department[] = [
 
 const totalRoles = departments.reduce((sum, dept) => sum + dept.roles.length, 0);
 
-export default async function RolesPage() {
+export default async function RolesPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations();
   return (
     <>
