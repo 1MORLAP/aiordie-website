@@ -8,6 +8,7 @@ import OrgChart from "@/components/OrgChart";
 import ScrollReveal from "@/components/ScrollReveal";
 import ArchitectureDiagram from "@/components/ArchitectureDiagram";
 import AnimatedTimeline from "@/components/AnimatedTimeline";
+import TextTransition from "@/components/TextTransition";
 
 const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/aod";
 
@@ -281,16 +282,16 @@ export default function Home() {
 
             <ScrollReveal delayMs={80}>
               <h1 className="font-space-grotesk text-balance text-5xl font-extrabold tracking-tight text-[var(--text-primary)] md:text-7xl">
-                {t('hero.headline_1')}
+                <TextTransition as="span">{t('hero.headline_1')}</TextTransition>
                 <br />
                 <span className="text-[var(--accent)]">{t('hero.headline_2')}</span>
               </h1>
             </ScrollReveal>
 
             <ScrollReveal delayMs={140}>
-              <p className="mt-5 max-w-xl text-lg leading-relaxed text-[var(--text-secondary)]">
+              <TextTransition as="p" className="mt-5 max-w-xl text-lg leading-relaxed text-[var(--text-secondary)]">
                 {t('hero.subhead')}
-              </p>
+              </TextTransition>
             </ScrollReveal>
 
             <ScrollReveal delayMs={220}>

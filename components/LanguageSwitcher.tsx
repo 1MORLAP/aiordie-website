@@ -1,6 +1,6 @@
 'use client';
 
-import { useLocale, useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 import { useRouter, usePathname } from '@/i18n/navigation';
 import { useState, useRef, useEffect } from 'react';
 
@@ -16,7 +16,6 @@ export default function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
-  const [animating, setAnimating] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const isNonEnglish = locale !== 'en';
 
@@ -31,18 +30,14 @@ export default function LanguageSwitcher() {
   }, []);
 
   function switchLocale(newLocale: string) {
-    if (newLocale === locale) { setOpen(false); return; }
-    setAnimating(true);
-    // Fade out, switch, fade in
-    document.body.style.opacity = '0.7';
-    document.body.style.transition = 'opacity 0.15s ease';
-    setTimeout(() => {
-      localStorage.setItem('aod-locale', newLocale);
-      router.replace(pathname, { locale: newLocale });
+    if (newLocale === locale) {
       setOpen(false);
-      document.body.style.opacity = '1';
-      setAnimating(false);
-    }, 150);
+      return;
+    }
+
+    localStorage.setItem('aod-locale', newLocale);
+    router.replace(pathname, { locale: newLocale });
+    setOpen(false);
   }
 
   const current = LOCALES.find(l => l.code === locale) || LOCALES[0];
