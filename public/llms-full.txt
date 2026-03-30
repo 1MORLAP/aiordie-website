@@ -28,7 +28,8 @@ Examples:
 - Your CFO gets AI analyst + bookkeeper + compliance support
 
 ## Service Offerings
-- AI Employee Deployment (custom-built per role and workflow)
+- Super Agent Deployment (custom-built per role and workflow)
+- 34 roles across 8 departments: Executive & Leadership; Marketing & Content; Sales & Revenue; Finance, Legal & Compliance; Engineering & Product; Operations & HR; Customer Success & Support; Research, IT & Security
 - Role architecture for your current leadership team
 - Integrations with existing business systems
 - Ongoing optimization and support

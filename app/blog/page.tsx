@@ -79,7 +79,7 @@ export default function BlogPage() {
               <div className="grid gap-6 md:grid-cols-2">
                 {remainingPosts.map((post, idx) => (
                   <ScrollReveal key={post.slug} delayMs={idx * 70}>
-                    <article className="group h-full rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-border)] hover:shadow-[0_20px_60px_-46px_var(--accent)]">
+                    <article className="group flex h-full flex-col rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-border)] hover:shadow-[0_20px_60px_-46px_var(--accent)]">
                       <p className="mb-3 text-sm font-semibold text-[var(--accent)]">
                         {new Date(post.date).toLocaleDateString("en-US", {
                           year: "numeric",
@@ -90,7 +90,7 @@ export default function BlogPage() {
                       <h2 className="mb-3 text-2xl font-bold leading-tight text-[var(--text-primary)] transition-colors group-hover:text-[var(--accent)]">
                         <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                       </h2>
-                      <p className="mb-4 text-sm leading-relaxed text-[var(--text-secondary)]">
+                      <p className="mb-4 flex-1 text-sm leading-relaxed text-[var(--text-secondary)]">
                         {post.excerpt}
                       </p>
                       <Link

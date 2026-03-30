@@ -16,7 +16,7 @@ One Super Agent can cover multiple roles simultaneously — Finance + Legal, Mar
 
 ## Services
 - Super Agent Deployment: Custom-built AI agents for any business function
-- 34 roles across 8 departments: marketing, sales, finance, legal, engineering, ops, customer success, IT/security
+- 34 roles across 8 departments: Executive & Leadership; Marketing & Content; Sales & Revenue; Finance, Legal & Compliance; Engineering & Product; Operations & HR; Customer Success & Support; Research, IT & Security
 - Setup: $2,000 per agent, $500/month ongoing
 - 3-agent bundle: $5,000 setup, $1,200/month
 - Deployment time: 1-2 weeks
