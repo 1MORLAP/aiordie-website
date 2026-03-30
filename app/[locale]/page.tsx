@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import {getTranslations, setRequestLocale} from "next-intl/server";
+import {useTranslations} from 'next-intl';
 import AnimatedCounter from "@/components/AnimatedCounter";
 import LiveFleetDashboard from "@/components/LiveFleetDashboard";
 import { BotIcon, CogIcon, UserIcon } from "@/components/Icons";
@@ -233,10 +233,8 @@ function DeploymentIcon({ kind }: { kind: "cloud" | "shield" | "server" }) {
   );
 }
 
-export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations();
+export default function Home() {
+  const t = useTranslations();
   const orgJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",

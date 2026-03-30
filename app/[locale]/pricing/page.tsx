@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import ScrollReveal from "@/components/ScrollReveal";
-import {getTranslations, setRequestLocale} from "next-intl/server";
+import {getTranslations} from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "Pricing — AI or Die",
@@ -225,7 +225,6 @@ function FeatureIcon({ kind }: { kind: FeatureIconKind }) {
 
 export default async function PricingPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  setRequestLocale(locale);
   const t = await getTranslations();
   return (
     <>
