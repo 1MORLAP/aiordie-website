@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import Nav from "@/components/Nav";
 import { Analytics } from "@vercel/analytics/react";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
@@ -69,6 +69,7 @@ export default async function LocaleLayout({
   }
 
   const messages = await getMessages();
+  const t = await getTranslations();
 
   return (
     <html lang={locale} className={inter.variable} suppressHydrationWarning>
@@ -93,7 +94,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <Nav />
           <main>{children}</main>
-          <Footer />
+          <Footer t={t} />
           <Analytics />
         </NextIntlClientProvider>
       </body>
@@ -101,7 +102,7 @@ export default async function LocaleLayout({
   );
 }
 
-function Footer() {
+function Footer({ t }: { t: (key: string) => string }) {
   return (
     <footer className="border-t border-[var(--border)] mt-24 py-10 px-6">
       <div className="max-w-6xl mx-auto flex flex-col items-center gap-6 text-sm text-[var(--text-muted)]">
@@ -113,7 +114,7 @@ function Footer() {
             AI or Die
           </span>
           <span>·</span>
-          <span>Miami, FL · Seattle, WA</span>
+          <span>{t('footer.location')}</span>
           <span>·</span>
           <a
             href="tel:+17869989310"
@@ -126,12 +127,12 @@ function Footer() {
           <a href="/" className="hover:text-[var(--text-primary)] transition-colors">Home</a>
           <a href="/pricing" className="hover:text-[var(--text-primary)] transition-colors">Pricing</a>
           <a href="/blog" className="hover:text-[var(--text-primary)] transition-colors">Blog</a>
-          <a href="/privacy" className="hover:text-[var(--text-primary)] transition-colors">Privacy</a>
-          <a href="/terms" className="hover:text-[var(--text-primary)] transition-colors">Terms</a>
-          <a href="/brand" className="hover:text-[var(--text-primary)] transition-colors">Brand</a>
+          <a href="/privacy" className="hover:text-[var(--text-primary)] transition-colors">{t('footer.privacy')}</a>
+          <a href="/terms" className="hover:text-[var(--text-primary)] transition-colors">{t('footer.terms')}</a>
+          <a href="/brand" className="hover:text-[var(--text-primary)] transition-colors">{t('footer.brand')}</a>
         </nav>
         <div className="text-xs text-[var(--text-muted)] text-center">
-          This website is written and maintained by an AI CMO — the same kind of agent we deploy for you.
+          {t('footer.ai_attribution')}
         </div>
       </div>
     </footer>

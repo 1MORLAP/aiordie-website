@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { CSSProperties } from "react";
 import ScrollReveal from "@/components/ScrollReveal";
+import {getTranslations} from "next-intl/server";
 
 const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/aod";
 
@@ -257,7 +258,8 @@ const departments: Department[] = [
 
 const totalRoles = departments.reduce((sum, dept) => sum + dept.roles.length, 0);
 
-export default function RolesPage() {
+export default async function RolesPage() {
+  const t = await getTranslations();
   return (
     <>
       <section className="grain-overlay mesh-bg relative overflow-hidden border-b border-[var(--border)] px-6 pb-16 pt-12 sm:pt-20">
@@ -270,13 +272,13 @@ export default function RolesPage() {
 
           <ScrollReveal delayMs={80}>
             <h1 className="font-space-grotesk text-balance text-5xl font-extrabold tracking-tight text-[var(--text-primary)] md:text-7xl">
-              Roles We Deploy
+              {t('roles.headline')}
             </h1>
           </ScrollReveal>
 
           <ScrollReveal delayMs={140}>
             <p className="mt-5 max-w-4xl text-lg leading-relaxed text-[var(--text-secondary)]">
-              34 Super Agent roles across every business function. Every Super Agent is custom-built for your business. Backed by 5,400+ skills from the OpenClaw ecosystem.
+              {t('roles.subhead')}
             </p>
           </ScrollReveal>
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import ScrollReveal from "@/components/ScrollReveal";
+import {getTranslations} from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "Pricing — AI or Die",
@@ -222,7 +223,8 @@ function FeatureIcon({ kind }: { kind: FeatureIconKind }) {
   return <svg {...base}><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>;
 }
 
-export default function PricingPage() {
+export default async function PricingPage() {
+  const t = await getTranslations();
   return (
     <>
       <script
@@ -234,25 +236,24 @@ export default function PricingPage() {
         <div className="relative z-10 mx-auto max-w-6xl">
           <ScrollReveal>
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
-              Transparent Pricing
+              {t('pricing.hero.eyebrow')}
             </p>
           </ScrollReveal>
           <ScrollReveal delayMs={80}>
             <h1 className="font-space-grotesk text-balance text-5xl font-extrabold tracking-tight text-[var(--text-primary)] md:text-7xl">
-              Build your AI team
+              {t('pricing.hero.headline_1')}
               <br />
-              without building headcount.
+              {t('pricing.hero.headline_2')}
             </h1>
           </ScrollReveal>
           <ScrollReveal delayMs={140}>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-[var(--text-secondary)]">
-              You&apos;re not buying access to an AI. You&apos;re hiring a specialist — configured
-              for your business, integrated into your tools, and upgraded continuously.
+              {t('pricing.hero.subhead')}
             </p>
           </ScrollReveal>
           <ScrollReveal delayMs={200}>
             <div className="mt-7 inline-flex rounded-full border border-[var(--accent-border)] bg-[var(--accent-subtle)] px-4 py-2 text-sm font-semibold text-[var(--accent)]">
-              Your team does $330K of work AI handles for $19,400
+              {t('pricing.hero.badge')}
             </div>
           </ScrollReveal>
         </div>
@@ -299,7 +300,7 @@ export default function PricingPage() {
         <div className="mx-auto max-w-6xl">
           <ScrollReveal>
             <h2 className="font-space-grotesk mb-10 text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
-              Choose your team size
+              {t('pricing.tiers.headline')}
             </h2>
           </ScrollReveal>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -331,7 +332,7 @@ export default function PricingPage() {
                         : "border border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--accent-border)] hover:text-[var(--accent)]"
                     }`}
                   >
-                    Get Started
+                    {t('pricing.tiers.cta')}
                   </a>
                 </div>
               </ScrollReveal>
@@ -350,7 +351,7 @@ export default function PricingPage() {
         <div className="mx-auto max-w-6xl">
           <ScrollReveal>
             <h2 className="font-space-grotesk text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
-              Not a generic agent. A configured expert.
+              {t('pricing.comparison.headline')}
             </h2>
             <p className="mt-3 max-w-4xl text-[var(--text-secondary)]">
               Most people start with ChatGPT. Then they discover agents. Then they realize
@@ -936,7 +937,7 @@ export default function PricingPage() {
         <div className="mx-auto max-w-6xl">
           <ScrollReveal>
             <h2 className="font-space-grotesk mb-10 text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
-              What every Super Agent comes with
+              {t('pricing.features.headline')}
             </h2>
           </ScrollReveal>
           <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-5">
@@ -970,7 +971,7 @@ export default function PricingPage() {
         <div className="mx-auto max-w-6xl">
           <ScrollReveal>
             <h2 className="font-space-grotesk mb-3 text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
-              Deployment options
+              {t('pricing.deployment.headline')}
             </h2>
             <p className="mb-10 max-w-3xl text-[var(--text-secondary)]">
               We match how you already run your business.
@@ -1017,7 +1018,7 @@ export default function PricingPage() {
             <div className="mb-12 flex flex-col items-center text-center">
               <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">FAQ</p>
               <h2 className="font-space-grotesk text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
-                Questions we actually get
+                {t('pricing.faq.headline')}
               </h2>
               <p className="mt-3 max-w-xl text-[var(--text-secondary)]">No fluff. Just the things people actually ask before signing.</p>
             </div>
@@ -1073,7 +1074,7 @@ export default function PricingPage() {
           <ScrollReveal>
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">AI or Die</p>
             <h2 className="font-space-grotesk text-balance text-4xl font-bold tracking-tight text-[var(--text-primary)] md:text-6xl">
-              Ready to deploy your first AI or Die Super Agent?
+              {t('pricing.cta.headline')}
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-[var(--text-secondary)]">
               Free consult. We&apos;ll price out the gap for your specific business — and show exactly which roles your team could hand off today.
@@ -1085,7 +1086,7 @@ export default function PricingPage() {
                 rel="noopener noreferrer"
                 className="btn-accent inline-block rounded-xl px-10 py-4 text-lg font-bold"
               >
-                Book a Free Consult
+                {t('pricing.cta.book')}
               </a>
               <a
                 href="tel:+17869989310"

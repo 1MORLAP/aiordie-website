@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import {useTranslations} from "next-intl";
 import ThemeToggle from "./ThemeToggle";
 import LanguageSwitcher from './LanguageSwitcher';
 
@@ -40,6 +41,7 @@ function WordmarkSVG({ className }: { className?: string }) {
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const t = useTranslations();
 
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg)]/95 backdrop-blur-sm">
@@ -87,25 +89,25 @@ export default function Nav() {
             href="/"
             className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
           >
-            Home
+            {t('nav.home')}
           </Link>
           <Link
             href="/pricing"
             className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
           >
-            Pricing
+            {t('nav.pricing')}
           </Link>
           <Link
             href="/roles"
             className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
           >
-            Roles
+            {t('nav.roles')}
           </Link>
           <Link
             href="/blog"
             className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
           >
-            Blog
+            {t('nav.blog')}
           </Link>
           <ThemeToggle />
           <LanguageSwitcher />
@@ -116,7 +118,7 @@ export default function Nav() {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5" aria-hidden>
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.56 2 2 0 0 1 3.6 1.36h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
             </svg>
-            (786) 998-9310
+            {t('nav.call_us')}
           </a>
           <a
             href="https://calendar.notion.so/meet/tomaszwojewoda/aod"
@@ -124,7 +126,7 @@ export default function Nav() {
             rel="noopener noreferrer"
             className="btn-accent px-4 py-2 rounded font-semibold text-sm"
           >
-            Book a Consult
+            {t('nav.book_consult')}
           </a>
         </nav>
 
@@ -172,28 +174,28 @@ export default function Nav() {
             className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
             onClick={() => setOpen(false)}
           >
-            Home
+            {t('nav.home')}
           </Link>
           <Link
             href="/pricing"
             className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
             onClick={() => setOpen(false)}
           >
-            Pricing
+            {t('nav.pricing')}
           </Link>
           <Link
             href="/roles"
             className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
             onClick={() => setOpen(false)}
           >
-            Roles
+            {t('nav.roles')}
           </Link>
           <Link
             href="/blog"
             className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
             onClick={() => setOpen(false)}
           >
-            Blog
+            {t('nav.blog')}
           </Link>
           <a
             href="https://calendar.notion.so/meet/tomaszwojewoda/aod"
@@ -202,7 +204,7 @@ export default function Nav() {
             className="btn-accent px-4 py-2 rounded font-semibold text-sm text-center"
             onClick={() => setOpen(false)}
           >
-            Book a Consult
+            {t('nav.book_consult')}
           </a>
         </div>
       )}

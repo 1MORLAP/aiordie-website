@@ -640,7 +640,7 @@ export default async function Home() {
       <section className="px-6 py-16 md:py-24">
         <div className="mx-auto max-w-6xl">
           <ScrollReveal>
-            <h2 className="font-space-grotesk mb-2 text-3xl font-bold tracking-tight md:text-5xl">How it works</h2>
+            <h2 className="font-space-grotesk mb-2 text-3xl font-bold tracking-tight md:text-5xl">{t('how.headline')}</h2>
             <p className="mb-10 text-[var(--text-secondary)]">Five steps from consult to full deployment.</p>
           </ScrollReveal>
 
@@ -653,7 +653,7 @@ export default async function Home() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-7 flex flex-wrap items-end justify-between gap-4">
             <div>
-              <h2 className="font-space-grotesk text-3xl font-bold tracking-tight md:text-4xl">Roles We Deploy</h2>
+              <h2 className="font-space-grotesk text-3xl font-bold tracking-tight md:text-4xl">{t('roles.headline')}</h2>
               <p className="mt-2 text-sm text-[var(--text-secondary)]">
                 Six featured roles below. Full role library covers every major business function.
               </p>
@@ -733,13 +733,13 @@ export default async function Home() {
       <section className="px-6 py-10 pb-20 md:pb-24">
         <div className="mx-auto max-w-6xl">
           <ScrollReveal>
-            <h2 className="font-space-grotesk mb-8 text-center text-3xl font-bold tracking-tight md:text-5xl">The Math</h2>
+            <h2 className="font-space-grotesk mb-8 text-center text-3xl font-bold tracking-tight md:text-5xl">{t('math.headline')}</h2>
           </ScrollReveal>
 
           <div className="grid gap-5 md:grid-cols-2">
             <ScrollReveal>
               <article className="rounded-2xl border border-rose-500/35 bg-rose-500/10 p-8">
-                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-rose-700 dark:text-rose-300">Old way</p>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-rose-700 dark:text-rose-300">{t('math.old_label')}</p>
                 <div className="font-space-grotesk text-5xl font-bold text-[var(--text-primary)]">
                   $<AnimatedCounter to={350} suffix="K" />
                 </div>
@@ -749,7 +749,7 @@ export default async function Home() {
 
             <ScrollReveal delayMs={90}>
               <article className="rounded-2xl border border-emerald-500/35 bg-emerald-500/10 p-8">
-                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-emerald-700 dark:text-emerald-300">AI or Die model</p>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-emerald-700 dark:text-emerald-300">{t('math.new_label')}</p>
                 <div className="font-space-grotesk text-5xl font-bold text-[var(--text-primary)]">
                   $<AnimatedCounter to={19.4} decimals={1} suffix="K" />
                 </div>
@@ -768,10 +768,10 @@ export default async function Home() {
           <ScrollReveal>
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">AI or Die</p>
             <h2 className="font-space-grotesk text-balance text-4xl font-bold tracking-tight md:text-6xl">
-              Scale now or get outpaced.
+              {t('cta.headline')}
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-[var(--text-secondary)]">
-              Free consult. We&apos;ll price out the gap for your specific business — and show exactly which roles your team could hand off today.
+              {t('cta.subhead')}
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
@@ -780,7 +780,7 @@ export default async function Home() {
                 rel="noopener noreferrer"
                 className="btn-accent inline-block rounded-xl px-10 py-4 text-lg font-bold"
               >
-                Book a Free Consult
+                {t('cta.book')}
               </a>
               <a
                 href="tel:+17869989310"
@@ -789,11 +789,11 @@ export default async function Home() {
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5" aria-hidden>
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.56 2 2 0 0 1 3.6 1.36h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
                 </svg>
-                Call Us
+                {t('nav.call_us')}
               </a>
             </div>
             <p className="mt-2 text-xs text-[var(--text-muted)]">
-              Speak in your native language or try any language just for fun. Our agents understand all of them.
+              {t('cta.phone_label')}
             </p>
           </ScrollReveal>
         </div>
