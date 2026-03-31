@@ -1,0 +1,221 @@
+{
+  "lang": "de",
+  "lang_label": "Deutsch",
+  "lang_translated_by": "Von KI übersetzt",
+  "lang_translated_tooltip": "Diese Seite wird von unserem AI CMO übersetzt und gepflegt — derselbe Super Agent-Typ, den wir für Sie einsetzen.",
+  "nav": {
+    "home": "Startseite",
+    "pricing": "Preise",
+    "roles": "Rollen",
+    "blog": "Blog",
+    "book_consult": "Kostenloses Erstgespräch buchen",
+    "call_us": "Anrufen",
+    "ask_ai_bar": "Fragen Sie Ihre KI nach AI or Die"
+  },
+  "footer": {
+    "location": "Miami, FL · Seattle, WA",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "brand": "Marke",
+    "ai_attribution": "Diese Website wird von einem AI CMO geschrieben und gepflegt — derselbe Super Agent-Typ, den wir für Sie einsetzen."
+  },
+  "hero": {
+    "eyebrow": "AI or Die Super Agents",
+    "headline_1": "Ihre Führungskräfte behalten den Titel.",
+    "headline_2": "Die KI übernimmt die Arbeitslast.",
+    "subhead": "AI or Die setzt Super Agents als direkte Reports für Ihre bestehenden Führungskräfte ein — damit Unternehmen Output skalieren, ohne Personal aufzubauen.",
+    "cta_consult": "Kostenloses Erstgespräch buchen",
+    "cta_call": "Anrufen",
+    "phone_label": "Sprechen Sie mit KI in jeder Sprache"
+  },
+  "math": {
+    "headline": "Die Rechnung",
+    "subhead": "Gleiche Ergebnisse, komplett andere Kostenstruktur.",
+    "old_label": "Alter Ansatz",
+    "old_desc": "3 menschliche Neueinstellungen/Jahr mit Gehalt, Benefits, Ausfallzeiten und Recruiting-Aufwand.",
+    "new_label": "AI or Die-Modell",
+    "new_desc": "3 AI or Die Super Agents/Jahr mit 24/7-Abdeckung und laufender Optimierung."
+  },
+  "roles": {
+    "headline": "Rollen, die wir einsetzen",
+    "subhead": "Unten finden Sie sechs zentrale Rollen. Unsere vollständige Rollenbibliothek deckt jede wichtige Unternehmensfunktion ab.",
+    "see_all": "Alle 34 Rollen ansehen →",
+    "super_agent_eyebrow": "Der Agenten-Vorteil",
+    "super_agent_headline": "Ein Agent. Mehrere Rollen.",
+    "super_agent_body": "Bei Menschen stellen Sie einen CFO oder einen Juristen ein. Nie beides. Kompetenzen lassen sich so nicht stapeln. Bei Super Agents schon. Wir setzen regelmäßig einzelne Agents ein, die Finanzen und Recht oder Marketing und Vertrieb abdecken — ohne kognitive Overhead-Kosten, ohne Kontextwechsel-Kosten, ohne geteilte Aufmerksamkeit.",
+    "super_agent_body2": "Wir nennen das Super Agents. Wenn wir Ihr Deployment planen, zeigen wir Ihnen genau, wo kombinierte Rollen Geld sparen, ohne die Qualität zu senken.",
+    "combos_label": "Häufige Kombinationen"
+  },
+  "multilingual": {
+    "headline": "Ihre Agents sprechen jede Sprache, die Ihr Unternehmen spricht.",
+    "body": "Super Agents sind standardmäßig mehrsprachig. Dokumente, Rechnungen und Recherchen können in jeder Sprache und jeder Währung eingereicht werden — das Ergebnis kommt in der Sprache zurück, die Sie benötigen.",
+    "input_label": "Eingabe",
+    "process_label": "Prozess",
+    "output_label": "Ausgabe",
+    "phone_label": "Sprechen Sie in jeder Sprache mit unserem KI-Agenten"
+  },
+  "stats": {
+    "agents_label": "Agents live",
+    "units_label": "Geschäftseinheiten",
+    "ftes_label": "Entlastete FTE-Last",
+    "deployment_label": "Erstes Deployment",
+    "coverage_label": "Entsprechende Abdeckung mit Super Agents im Vollzeitbetrieb, das ganze Jahr."
+  },
+  "dogfood": {
+    "eyebrow": "Wir leben, was wir verkaufen",
+    "headline": "Wir haben es gebaut. Wir betreiben es. Sie setzen es ein."
+  },
+  "how": {
+    "headline": "So funktioniert es",
+    "subhead": "Fünf Schritte vom Erstgespräch bis zum vollständigen Deployment."
+  },
+  "cta": {
+    "eyebrow": "AI or Die",
+    "headline": "Bereit, Ihren ersten AI or Die Super Agent einzusetzen?",
+    "subhead": "Kostenloses Erstgespräch. Wir berechnen die Lücke für Ihr konkretes Unternehmen — und zeigen exakt, welche Rollen Ihr Team heute abgeben kann.",
+    "book": "Kostenloses Erstgespräch buchen",
+    "phone_label": "Sprechen Sie in jeder Sprache mit unserem KI-Agenten"
+  },
+  "pricing": {
+    "hero": {
+      "eyebrow": "Transparente Preise",
+      "headline_1": "Bauen Sie Ihr KI-Team auf",
+      "headline_2": "ohne Personalaufbau.",
+      "subhead": "Sie kaufen keinen Zugriff auf eine KI. Sie stellen einen Spezialisten ein — für Ihr Unternehmen konfiguriert, in Ihre Tools integriert und kontinuierlich verbessert.",
+      "badge": "Ihr Team leistet $330K Arbeit, die KI für $19,400 übernimmt"
+    },
+    "tiers": {
+      "headline": "Wählen Sie Ihre Teamgröße",
+      "note": "Jede Stufe umfasst vollständige Individualkonfiguration, Tool-Integration und laufende Optimierung. Das ist kein SaaS-Abo — das ist ein eingesetzter Spezialist.",
+      "cta": "Jetzt starten",
+      "setup_suffix": "Einrichtung",
+      "badge_popular": "Am beliebtesten"
+    },
+    "comparison": {
+      "headline": "Kein generischer Agent. Ein konfigurierter Experte.",
+      "subhead": "Die meisten starten mit ChatGPT. Dann entdecken sie Agents. Dann merken sie: Agents allein reichen nicht. Hier ist das Gesamtbild.",
+      "tier1_label": "Stufe 1 — KI-Assistent",
+      "tier1_name": "ChatGPT / Claude",
+      "tier1_price": "~$20–200/Monat, direkt vom Anbieter",
+      "tier1_desc": "Eine Chat-Oberfläche. Stark beim Beantworten von Fragen, beim Entwerfen von Texten und beim Zusammenfassen von Dokumenten. Aber sobald Sie den Tab schließen, ist alles weg. Kein Gedächtnis. Keine Initiative. Funktioniert nur, wenn Sie arbeiten.",
+      "tier1_best": "Einzelaufgaben, Recherche, Entwürfe. Nicht fürs Führen eines Unternehmens.",
+      "tier2_label": "Stufe 2 — Generischer Agent",
+      "tier2_name": "OpenClaw & ähnliche Plattformen",
+      "tier2_price": "~$5–50/Monat, Self-Service",
+      "tier2_desc": "Ein Schritt weiter — der Agent kann Aktionen ausführen, autonom arbeiten und sich mit Tools verbinden. Aber er ist ein Blanko-Setup. Sie konfigurieren ihn, Sie prompten ihn, Sie managen ihn. Die Plattform gibt Ihnen ein Auto. Den Motor müssen Sie selbst bauen.",
+      "tier2_best": "Technische Teams, die ihren eigenen Agent bauen wollen. Ein Toolkit, keine Einstellung.",
+      "tier3_label": "Stufe 3 — Eingesetzter Spezialist",
+      "tier3_name": "AI or Die Super Agent",
+      "tier3_price": "$500/Monat + $2,000 Einrichtung",
+      "tier3_desc": "Basiert auf OpenClaw — aber von unserem Team Ende-zu-Ende für Ihr Unternehmen konfiguriert. Wir übernehmen die monatelange Setup-Arbeit, damit Sie es nicht tun müssen. Sie erhalten einen Spezialisten, der Ihre Kunden, Ihren Ton, Ihre Tools und Ihre Ziele bereits kennt. Sie steuern Ergebnisse, nicht Prompts.",
+      "tier3_best": "Unternehmer, die eine Rolle abgeben wollen — nicht ein System bauen.",
+      "best_for": "Ideal für",
+      "diy_why": "Warum $500/Monat statt $5/Monat?",
+      "diy_p1": "OpenClaw kostet $5/Monat, weil Sie die rohe Plattform bekommen und die gesamte Arbeit selbst erledigen. Sie verbringen Wochen — realistisch Monate — mit Prompt-Konfiguration, Integrationen, Training auf Ihr Geschäft und dem Debuggen von Fehlern. Die meisten Unternehmen starten, geraten ins Stocken und lassen es stillschweigend wieder fallen. Die Plattform ist nicht das Produkt. Der konfigurierte, eingesetzte, laufende Spezialist ist das Produkt.",
+      "diy_p2": "Die $2,000 Einrichtung bedeutet: Wir erledigen diese monatelange Arbeit in zwei Wochen. Die $500/Monat halten den Agent aktuell — neue Modell-Releases, Leistungsverbesserungen und laufendes Tuning, während sich Ihr Geschäft weiterentwickelt. Sie zahlen nicht für Software. Sie zahlen für einen Spezialisten, der jeden Tag liefert und nie den Ball fallen lässt.",
+      "diy_quote": "\"Sie können OpenClaw selbst an einem Nachmittag aufsetzen — aber Ihr Agent kennt dann weder Ihr Geschäft noch Ihre Kunden oder SOPs. Dieser Teil dauert Wochen.\"",
+      "diy_quote_label": "So sieht ein echtes DIY-Deployment aus",
+      "diy_vs_label": "OpenClaw DIY:",
+      "diy_vs_value": "$5/Monat + 200+ Stunden Ihrer Zeit",
+      "aod_label": "AI or Die:",
+      "aod_value": "$500/Monat + live in 2 Wochen"
+    },
+    "skills": {
+      "eyebrow": "Unser IP. Ihr Vorteil.",
+      "headline": "Jeder Agent wird mit Skills ausgeliefert.",
+      "body": "Stellen Sie sich den Unterschied vor zwischen jemandem direkt von der Uni und einem PhD, der Jahre genau Ihr Feld gemeistert hat. Unsere Agents kommen mit Skills, die wir im Live-Betrieb entwickelt, getestet und verfeinert haben. Wenn Sie einen AI or Die Super Agent einstellen, bekommen Sie unser IP — kein Blanko-System, das Sie von Grund auf schulen müssen.",
+      "badge_headline": "24/7 PhD-Einstellung",
+      "badge_sub": "zum Preis eines Mittagessens",
+      "tier1_label": "ChatGPT / Claude",
+      "tier1_title": "Allgemeinwissen, keine Spezialisierung",
+      "tier1_desc": "Weiß alles über alles. Weiß nichts über Sie. Wie einen Fremden um Rat fragen — klug, aber ohne Kontext.",
+      "tier2_label": "Generische Agent-Plattform",
+      "tier2_title": "Potenzial, aber Sie liefern das Training",
+      "tier2_desc": "Die Rohintelligenz ist da. Aber Sie sind der Professor. Sie bauen das Curriculum, führen die Lektionen durch, bewerten den Output. Die meisten Unternehmen brennen aus, bevor der Agent einsatzreif ist.",
+      "tier3_label": "AI or Die Super Agent",
+      "tier3_title": "Vorgeladen mit unserer Skills-Bibliothek",
+      "tier3_desc": "Kommt bereits trainiert an. Unsere proprietären Skills — geschärft in realen Deployments — sind ab Tag eins integriert. Sie passen die Details an. Wir liefern die Expertise.",
+      "included_label": "In jedem Deployment enthaltene Skills"
+    },
+    "methodology": {
+      "eyebrow": "So funktioniert es",
+      "headline": "Von unterschrieben bis live in zwei Wochen.",
+      "subhead": "Jedes Deployment wird von Menschen geführt. Wir geben Ihnen keinen Login und tauchen ab. Eine echte Person begleitet Sie durch jeden Schritt — die KI übernimmt die Schwerstarbeit, Menschen sichern die Qualität.",
+      "step00_eyebrow": "Start hier",
+      "step00_title": "Kurzer Intro-Call",
+      "step00_badge": "15 Min · Kostenlos",
+      "step00_desc": "Keine Folien, kein Pitch. Ein kurzer Call, um sicherzustellen, dass wir zusammenpassen — was Sie betreiben, wo die Reibung sitzt und ob ein AI-Direct-Report jetzt der richtige Schritt ist. Wenn ja, planen wir die Design Session und starten.",
+      "step00_cta": "Intro-Call planen",
+      "step01_eyebrow": "Asynchron · 5 Minuten",
+      "step01_title": "Fragebogen vor der Session",
+      "step01_badge": "Kurz · Vor Ihrem Call KI-geprüft",
+      "step01_desc": "Vor Ihrer Design Session senden wir einen kurzen Fragebogen — 10 Fragen, 5 Minuten. Ihre Antworten sorgen dafür, dass wir vorbereitet erscheinen: keine Zeit für Basics verschwenden, keine generischen Vorschläge. Wir kennen Ihr Geschäft bereits, bevor der Call startet.",
+      "step02_eyebrow": "Kostenlos · Woche 1, Tag 1",
+      "step02_title": "Design Session",
+      "step02_badge": "1 Stunde · Menschlich geführt, KI-unterstützt",
+      "step02_desc": "Sie sprechen, wir strukturieren. Ein menschlicher Berater führt das Gespräch, während KI in Echtzeit alles aufbereitet: Ihre Workflows, Ihre Engpässe, Ihre Rollen mit dem größten Hebel. Am Ende wissen wir exakt, welchen Agent wir zuerst bauen, was er leisten muss und was es kostet. Keine Verpflichtung — nur Klarheit.",
+      "step03_eyebrow": "Woche 1 — Tage 2–3",
+      "step03_title": "Angebot & Kickoff",
+      "step03_badge": "Asynchron · 24–48 Std.",
+      "step03_desc": "Wir senden ein klar abgegrenztes Angebot — den exakten Agent, den wir bauen, seinen Leistungsumfang, die nötigen Integrationen und die Gesamtkosten. Keine Überraschungen, keine vagen Schätzungen. Sobald Sie freigeben, startet das Setup sofort und Ihr individueller Fragebogen kommt noch am selben Tag.",
+      "step04_eyebrow": "Woche 1 — Tage 3–5",
+      "step04_title": "Individueller Konfigurationsfragebogen",
+      "step04_badge": "Asynchron · KI-generiert, menschlich geprüft",
+      "step04_desc": "Ein detaillierter Fragebogen, speziell für Ihr Unternehmen und die Rolle, die wir ausrollen — kein generisches Intake-Formular. Wir gehen tief in Markenstimme, Kunden, Sonderfälle und SOPs. Sie füllen ihn in Ihrem Tempo aus. Wir nutzen ihn, um Ihren Super Agent präzise zu trainieren.",
+      "step05_eyebrow": "Woche 2",
+      "step05_title": "Deployment- & Training-Session",
+      "step05_badge": "1 Stunde · Menschlich geführt, KI-unterstützt",
+      "step05_desc": "Ihr Super Agent ist live. Wir gehen alles gemeinsam durch — ein menschlicher Berater zeigt Ihnen genau, wie er funktioniert, was er übernehmen kann, wo Sie mehr Druck geben können und wie Sie ab Tag eins maximalen Nutzen erzielen. Keine Doku-Wüste. Eine echte Person führt Sie durch Ihren echten Agent.",
+      "step06_eyebrow": "Laufend",
+      "step06_title": "Support, Optimierung & Upgrades",
+      "step06_badge": "KI + Mensch · In $500/Monat enthalten",
+      "step06_desc": "Sie sind nie auf sich allein gestellt. Ihr Super Agent wird überwacht, verbessert und aktuell gehalten — neue Modell-Releases werden automatisch übernommen, die Leistung monatlich optimiert und bei Bedarf ist ein Mensch verfügbar. Support ist KI-first für Geschwindigkeit, menschlich abgesichert für alles, was zählt."
+    },
+    "features": {
+      "headline": "Was jeder Super Agent mitbringt"
+    },
+    "deployment": {
+      "headline": "Deployment-Optionen",
+      "subhead": "Wir richten uns nach der Art, wie Sie Ihr Unternehmen bereits führen.",
+      "for": "Für",
+      "how": "Wie",
+      "models": "Modelle",
+      "privacy": "Datenschutz"
+    },
+    "faq": {
+      "headline": "Fragen, die wir tatsächlich bekommen",
+      "subhead": "Kein Fluff. Nur die Fragen, die vor der Unterschrift wirklich gestellt werden.",
+      "group1": "Erste Schritte",
+      "group2": "Preise & Verträge",
+      "group3": "Rollen & Fähigkeiten",
+      "group4": "Technik & Sicherheit"
+    },
+    "cta": {
+      "headline": "Bereit, Ihren ersten AI or Die Super Agent einzusetzen?",
+      "subhead": "Kostenloses Erstgespräch. Wir berechnen die Lücke für Ihr konkretes Unternehmen — und zeigen exakt, welche Rollen Ihr Team heute abgeben kann.",
+      "book": "Kostenloses Erstgespräch buchen",
+      "phone_label": "Sprechen Sie mit unserem KI-Agenten"
+    }
+  },
+  "audit": {
+    "headline": "Kostenloser KI-Readiness-Audit",
+    "book_label": "Sie buchen einen Termin",
+    "map_label": "Wir analysieren Ihre Abläufe",
+    "report_label": "Agent-Readiness-Report"
+  },
+  "common": {
+    "learn_more": "Mehr erfahren",
+    "get_started": "Jetzt starten",
+    "read_more": "Mehr lesen →",
+    "read_full": "Vollständigen Beitrag lesen →",
+    "see_all_roles": "Alle 34 Rollen ansehen →",
+    "recommended": "Empfohlen",
+    "most_popular": "Am beliebtesten",
+    "latest_post": "Neuester Beitrag",
+    "free": "Kostenlos",
+    "custom": "Individuell",
+    "usage_based": "Nutzungsbasiert",
+    "not_included": "Nicht in den Servicepreisen enthalten",
+    "zero_markup": "Sie zahlen Anbieter direkt — ohne Aufschlag von uns."
+  }
+}
