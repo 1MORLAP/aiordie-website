@@ -288,7 +288,7 @@ export default function Home() {
             </ScrollReveal>
 
             <ScrollReveal delayMs={140}>
-              <p className="mt-5 max-w-xl text-lg leading-relaxed text-[var(--text-secondary)]">{t(\'hero.subhead\')}</p>
+              <p className="mt-5 max-w-xl text-lg leading-relaxed text-[var(--text-secondary)]">{t('hero.subhead')}</p>
             </ScrollReveal>
 
             <ScrollReveal delayMs={220}>

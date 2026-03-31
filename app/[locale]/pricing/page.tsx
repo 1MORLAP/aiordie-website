@@ -305,30 +305,30 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
             </h2>
           </ScrollReveal>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {tiers.map((t, idx) => (
-              <ScrollReveal key={t.name} delayMs={idx * 70}>
+            {tiers.map((tier, idx) => (
+              <ScrollReveal key={tier.name} delayMs={idx * 70}>
                 <div
                   className={`group relative flex h-full flex-col rounded-2xl border p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-border)] hover:shadow-[0_24px_70px_-46px_var(--accent)] ${
-                    t.highlight
+                    tier.highlight
                       ? "border-[var(--accent-border)] bg-[var(--accent-subtle)] shadow-[0_26px_70px_-50px_var(--accent)]"
                       : "border-[var(--border)] bg-[var(--bg-card)]"
                   }`}
                 >
-                  {t.badge && (
+                  {tier.badge && (
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[var(--accent)] px-3 py-1 text-xs font-bold text-[var(--text-on-accent)] whitespace-nowrap">
-                      {t.badge}
+                      {tier.badge}
                     </div>
                   )}
-                  <p className="mb-2 text-sm font-semibold text-[var(--text-secondary)]">{t.name}</p>
-                  <p className="font-space-grotesk text-3xl font-bold text-[var(--text-primary)]">{t.monthly}</p>
-                  <p className="mb-4 text-sm text-[var(--text-muted)]">{t.setup} setup</p>
-                  <p className="flex-1 text-sm leading-relaxed text-[var(--text-secondary)]">{t.desc}</p>
+                  <p className="mb-2 text-sm font-semibold text-[var(--text-secondary)]">{tier.name}</p>
+                  <p className="font-space-grotesk text-3xl font-bold text-[var(--text-primary)]">{tier.monthly}</p>
+                  <p className="mb-4 text-sm text-[var(--text-muted)]">{tier.setup} setup</p>
+                  <p className="flex-1 text-sm leading-relaxed text-[var(--text-secondary)]">{tier.desc}</p>
                   <a
                     href={CONSULT_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`mt-6 block rounded-lg py-3 text-center text-sm font-semibold transition-all ${
-                      t.highlight
+                      tier.highlight
                         ? "bg-[var(--accent)] text-[var(--text-on-accent)] hover:bg-[var(--accent-hover)]"
                         : "border border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--accent-border)] hover:text-[var(--accent)]"
                     }`}

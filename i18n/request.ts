@@ -8,11 +8,8 @@ export default getRequestConfig(async ({requestLocale}) => {
     locale = routing.defaultLocale;
   }
 
-  // Dynamic import of messages - Vercel must bundle these at build time
-  const messages = (await import(\`../messages/\${locale}.json\`)).default;
-  
   return {
     locale,
-    messages
+    messages: (await import(`../messages/${locale}.json`)).default
   };
 });
