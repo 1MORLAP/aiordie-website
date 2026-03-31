@@ -1,0 +1,221 @@
+{
+  "lang": "fr",
+  "lang_label": "Français",
+  "lang_translated_by": "Traduit par IA",
+  "lang_translated_tooltip": "Cette page est traduite et maintenue par notre CMO IA — le même type de Super Agent que nous déployons pour vous.",
+  "nav": {
+    "home": "Accueil",
+    "pricing": "Tarifs",
+    "roles": "Rôles",
+    "blog": "Blog",
+    "book_consult": "Réserver un entretien",
+    "call_us": "Appelez-nous",
+    "ask_ai_bar": "Demandez à votre IA à propos de AI or Die"
+  },
+  "footer": {
+    "location": "Miami, FL · Seattle, WA",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "brand": "Marque",
+    "ai_attribution": "Ce site web est rédigé et maintenu par un CMO IA — le même type de Super Agent que nous déployons pour vous."
+  },
+  "hero": {
+    "eyebrow": "Super Agents AI or Die",
+    "headline_1": "Vos dirigeants gardent leur titre.",
+    "headline_2": "L'IA prend la charge de travail.",
+    "subhead": "AI or Die déploie des Super Agents comme collaborateurs directs de vos dirigeants actuels — pour permettre aux entreprises d'augmenter leur production sans augmenter leurs effectifs.",
+    "cta_consult": "Réserver un entretien gratuit",
+    "cta_call": "Appelez-nous",
+    "phone_label": "Parlez à l'IA dans n'importe quelle langue"
+  },
+  "math": {
+    "headline": "Le calcul",
+    "subhead": "Les mêmes résultats, avec une structure de coûts totalement différente.",
+    "old_label": "Ancienne méthode",
+    "old_desc": "3 recrutements humains/an avec salaire, avantages, temps mort et lenteurs de recrutement.",
+    "new_label": "Modèle AI or Die",
+    "new_desc": "3 Super Agents AI or Die/an avec couverture 24/7 et optimisation continue."
+  },
+  "roles": {
+    "headline": "Rôles que nous déployons",
+    "subhead": "Six rôles présentés ci-dessous. La bibliothèque complète couvre toutes les fonctions clés de l'entreprise.",
+    "see_all": "Voir les 34 rôles →",
+    "super_agent_eyebrow": "L'avantage agent",
+    "super_agent_headline": "Un agent. Plusieurs rôles.",
+    "super_agent_body": "Avec des humains, vous recrutez un CFO ou un juriste. Jamais les deux. Les compétences ne s'additionnent pas ainsi. Avec les Super Agents, si. Nous déployons régulièrement des agents uniques qui couvrent finance et juridique, ou marketing et ventes — car il n'y a ni surcharge cognitive, ni coût de changement de contexte, ni attention divisée.",
+    "super_agent_body2": "Nous appelons cela des super-agents. Lors du cadrage de votre déploiement, nous vous montrons précisément où la combinaison de rôles vous fait économiser sans sacrifier la qualité des résultats.",
+    "combos_label": "Combinaisons fréquentes"
+  },
+  "multilingual": {
+    "headline": "Vos agents parlent toutes les langues de votre activité.",
+    "body": "Les Super Agents sont multilingues par défaut. Documents, factures et recherches peuvent être soumis dans n'importe quelle langue et devise — la sortie revient dans la langue dont vous avez besoin.",
+    "input_label": "Entrée",
+    "process_label": "Traitement",
+    "output_label": "Sortie",
+    "phone_label": "Parlez à notre agent IA dans n'importe quelle langue"
+  },
+  "stats": {
+    "agents_label": "Agents en production",
+    "units_label": "Unités métier",
+    "ftes_label": "Charge ETP supprimée",
+    "deployment_label": "Premier déploiement",
+    "coverage_label": "Couverture équivalente avec des Super Agents opérant à temps plein, toute l'année."
+  },
+  "dogfood": {
+    "eyebrow": "Nous appliquons ce que nous vendons",
+    "headline": "Nous l'avons construit. Nous l'exploitons. Vous le recrutez."
+  },
+  "how": {
+    "headline": "Comment ça marche",
+    "subhead": "Cinq étapes de l'entretien au déploiement complet."
+  },
+  "cta": {
+    "eyebrow": "AI or Die",
+    "headline": "Prêt à déployer votre premier Super Agent AI or Die ?",
+    "subhead": "Entretien gratuit. Nous chiffrons l'écart pour votre entreprise — et montrons exactement quels rôles votre équipe peut déléguer dès aujourd'hui.",
+    "book": "Réserver un entretien gratuit",
+    "phone_label": "Parlez à notre agent IA dans n'importe quelle langue"
+  },
+  "pricing": {
+    "hero": {
+      "eyebrow": "Tarification transparente",
+      "headline_1": "Construisez votre équipe IA",
+      "headline_2": "sans augmenter vos effectifs.",
+      "subhead": "Vous n'achetez pas un accès à une IA. Vous recrutez un spécialiste — configuré pour votre entreprise, intégré à vos outils et amélioré en continu.",
+      "badge": "Votre équipe réalise 330K$ de travail que l'IA gère pour 19,400$"
+    },
+    "tiers": {
+      "headline": "Choisissez la taille de votre équipe",
+      "note": "Chaque offre inclut une configuration sur mesure complète, l'intégration d'outils et une optimisation continue. Ce n'est pas un abonnement SaaS — c'est un spécialiste déployé.",
+      "cta": "Commencer",
+      "setup_suffix": "mise en place",
+      "badge_popular": "Le plus populaire"
+    },
+    "comparison": {
+      "headline": "Pas un agent générique. Un expert configuré.",
+      "subhead": "La plupart commencent avec ChatGPT. Puis découvrent les agents. Puis réalisent que les agents seuls ne suffisent pas. Voici le tableau complet.",
+      "tier1_label": "Niveau 1 — Assistant IA",
+      "tier1_name": "ChatGPT / Claude",
+      "tier1_price": "~20–200$/mois, en direct du fournisseur",
+      "tier1_desc": "Une interface de chat. Excellente pour répondre aux questions, rédiger des textes, résumer des documents. Mais dès que vous fermez l'onglet, c'est terminé. Pas de mémoire. Pas d'initiative. Elle fonctionne seulement quand vous travaillez.",
+      "tier1_best": "Tâches ponctuelles, recherche, brouillons. Pas pour piloter une entreprise.",
+      "tier2_label": "Niveau 2 — Agent générique",
+      "tier2_name": "OpenClaw et plateformes similaires",
+      "tier2_price": "~5–50$/mois, en self-service",
+      "tier2_desc": "Un cran au-dessus — l'agent peut agir, fonctionner de manière autonome et se connecter aux outils. Mais c'est une page blanche. Vous le configurez, vous le guidez, vous le gérez. La plateforme vous donne une voiture. Vous devez encore construire le moteur.",
+      "tier2_best": "Équipes techniques qui veulent construire leur propre agent. Une boîte à outils, pas un recrutement.",
+      "tier3_label": "Niveau 3 — Spécialiste déployé",
+      "tier3_name": "Super Agent AI or Die",
+      "tier3_price": "500$/mois + 2,000$ de mise en place",
+      "tier3_desc": "Construit sur OpenClaw — mais configuré de bout en bout pour votre entreprise par notre équipe. Nous faisons les mois de configuration à votre place. Vous obtenez un spécialiste qui connaît déjà vos clients, votre ton, vos outils et vos objectifs. Vous pilotez les résultats, pas les prompts.",
+      "tier3_best": "Dirigeants qui veulent déléguer un rôle — pas construire un système.",
+      "best_for": "Idéal pour",
+      "diy_why": "Pourquoi 500$/mois au lieu de 5$/mois ?",
+      "diy_p1": "OpenClaw coûte 5$/mois parce qu'il fournit la plateforme brute et vous faites tout le travail. Vous passez des semaines — en réalité des mois — à configurer les prompts, connecter les intégrations, l'entraîner sur votre activité et corriger les échecs. La plupart des entreprises commencent, bloquent, puis abandonnent en silence. La plateforme n'est pas le produit. Le spécialiste configuré, déployé et opérationnel est le produit.",
+      "diy_p2": "La mise en place à 2,000$ correspond à ce travail de plusieurs mois que nous réalisons en deux semaines. Les 500$/mois maintiennent l'agent à jour — nouvelles versions de modèles, améliorations de performance et réglages continus à mesure que votre entreprise évolue. Vous ne payez pas un logiciel. Vous payez un spécialiste qui est présent chaque jour et ne laisse jamais tomber.",
+      "diy_quote": "\"Vous pouvez lancer OpenClaw vous-même en un après-midi — mais votre agent ne connaîtra ni votre entreprise, ni vos clients, ni vos SOP. Cette partie prend des semaines.\"",
+      "diy_quote_label": "À quoi ressemble vraiment un déploiement DIY",
+      "diy_vs_label": "OpenClaw DIY :",
+      "diy_vs_value": "5$/mois + 200+ heures de votre temps",
+      "aod_label": "AI or Die :",
+      "aod_value": "500$/mois + en production en 2 semaines"
+    },
+    "skills": {
+      "eyebrow": "Notre propriété intellectuelle. Votre avantage.",
+      "headline": "Chaque agent est livré avec des compétences.",
+      "body": "C'est la différence entre recruter un jeune diplômé et recruter un PhD qui a passé des années à maîtriser précisément votre domaine. Nos agents arrivent préchargés avec des compétences que nous avons construites, testées et affinées en opérations réelles. Quand vous recrutez un Super Agent AI or Die, vous obtenez notre IP — pas une page blanche à former depuis zéro.",
+      "badge_headline": "Recrutement PhD 24/7",
+      "badge_sub": "au prix d'un déjeuner",
+      "tier1_label": "ChatGPT / Claude",
+      "tier1_title": "Culture générale, pas de spécialité",
+      "tier1_desc": "Sait tout sur tout. Ne sait rien de vous. Comme demander un conseil à un inconnu — intelligent, mais sans contexte.",
+      "tier2_label": "Plateforme d'agent générique",
+      "tier2_title": "Du potentiel, mais vous fournissez la formation",
+      "tier2_desc": "L'intelligence brute est là. Mais vous êtes le professeur. Vous construisez le programme, animez les leçons, évaluez les sorties. La plupart des entreprises s'épuisent avant la remise de diplôme.",
+      "tier3_label": "Super Agent AI or Die",
+      "tier3_title": "Préchargé avec notre bibliothèque de compétences",
+      "tier3_desc": "Arrive déjà entraîné. Nos compétences propriétaires — affinées sur des déploiements réels — sont intégrées dès le premier jour. Vous personnalisez les spécificités. Nous apportons l'expertise.",
+      "included_label": "Compétences incluses dans chaque déploiement"
+    },
+    "methodology": {
+      "eyebrow": "Comment ça marche",
+      "headline": "De la signature à la mise en production en deux semaines.",
+      "subhead": "Chaque déploiement est piloté par des humains. Nous ne vous donnons pas un identifiant avant de disparaître. Une vraie personne vous accompagne à chaque étape — l'IA fait le gros du travail, les humains garantissent la qualité.",
+      "step00_eyebrow": "Commencez ici",
+      "step00_title": "Appel d'introduction rapide",
+      "step00_badge": "15 min · Gratuit",
+      "step00_desc": "Pas de présentation, pas de pitch. Un appel court pour vérifier l'adéquation — ce que vous opérez, où sont les frictions, et si un collaborateur IA direct est la bonne décision maintenant. Si oui, nous planifions la session de design et nous avançons.",
+      "step00_cta": "Planifier l'appel d'introduction",
+      "step01_eyebrow": "Asynchrone · 5 minutes",
+      "step01_title": "Questionnaire pré-session",
+      "step01_badge": "Court · Relu par IA avant votre appel",
+      "step01_desc": "Avant votre session de design, nous envoyons un questionnaire court — 10 questions, 5 minutes. Vos réponses nous permettent d'arriver préparés : pas de temps perdu sur les bases, pas de recommandations génériques. Nous connaissons déjà votre activité avant le début de l'appel.",
+      "step02_eyebrow": "Gratuit · Semaine 1, jour 1",
+      "step02_title": "Session de design",
+      "step02_badge": "1 heure · Pilotée par un humain, assistée par IA",
+      "step02_desc": "Vous parlez, nous cartographions. Un consultant humain dirige l'appel pendant que l'IA structure tout en temps réel : vos workflows, vos goulots d'étranglement, vos rôles à plus fort levier. À la fin, nous savons exactement quel agent construire d'abord, ce qu'il doit faire et ce qu'il coûtera. Sans engagement — uniquement de la clarté.",
+      "step03_eyebrow": "Semaine 1 — Jours 2–3",
+      "step03_title": "Proposition & lancement",
+      "step03_badge": "Asynchrone · 24–48 h",
+      "step03_desc": "Nous envoyons une proposition cadrée — l'agent exact que nous allons construire, son périmètre, les intégrations requises et le coût total. Pas de surprise, pas d'estimation floue. Dès validation, la mise en place commence immédiatement et votre questionnaire personnalisé arrive dans la journée.",
+      "step04_eyebrow": "Semaine 1 — Jours 3–5",
+      "step04_title": "Questionnaire de configuration sur mesure",
+      "step04_badge": "Asynchrone · Généré par IA, relu par un humain",
+      "step04_desc": "Un questionnaire détaillé construit spécifiquement pour votre entreprise et le rôle déployé — pas un formulaire d'accueil générique. Nous couvrons votre voix de marque, vos clients, vos cas limites, vos SOP. Vous le remplissez à votre rythme. Nous l'utilisons pour entraîner votre Super Agent avec précision.",
+      "step05_eyebrow": "Semaine 2",
+      "step05_title": "Déploiement & session de formation",
+      "step05_badge": "1 heure · Pilotée par un humain, assistée par IA",
+      "step05_desc": "Votre Super Agent est en production. Nous vous l'expliquons ensemble — un consultant humain vous montre exactement comment il fonctionne, ce qu'il peut prendre en charge, où le pousser et comment en tirer le maximum dès le premier jour. Pas de documentation interminable. Une vraie personne vous guide sur votre agent réel.",
+      "step06_eyebrow": "En continu",
+      "step06_title": "Support, optimisation & mises à niveau",
+      "step06_badge": "IA + humain · Inclus dans les 500$/mois",
+      "step06_desc": "Vous n'êtes jamais seul. Votre Super Agent est surveillé, amélioré et maintenu à jour — nouvelles versions de modèles appliquées automatiquement, performances optimisées chaque mois et un humain disponible quand vous en avez besoin. Support IA d'abord pour la vitesse, appui humain pour tout ce qui compte."
+    },
+    "features": {
+      "headline": "Ce que comprend chaque Super Agent"
+    },
+    "deployment": {
+      "headline": "Options de déploiement",
+      "subhead": "Nous nous adaptons à votre mode de fonctionnement actuel.",
+      "for": "Pour",
+      "how": "Comment",
+      "models": "Modèles",
+      "privacy": "Confidentialité"
+    },
+    "faq": {
+      "headline": "Les questions qu'on nous pose vraiment",
+      "subhead": "Sans blabla. Juste les vraies questions avant de signer.",
+      "group1": "Démarrage",
+      "group2": "Tarifs & contrats",
+      "group3": "Rôles & capacités",
+      "group4": "Technique & sécurité"
+    },
+    "cta": {
+      "headline": "Prêt à déployer votre premier Super Agent AI or Die ?",
+      "subhead": "Entretien gratuit. Nous chiffrons l'écart pour votre entreprise — et montrons exactement quels rôles votre équipe peut déléguer dès aujourd'hui.",
+      "book": "Réserver un entretien gratuit",
+      "phone_label": "Parlez à notre agent IA"
+    }
+  },
+  "audit": {
+    "headline": "Audit gratuit de préparation à l'IA",
+    "book_label": "Vous réservez un créneau",
+    "map_label": "Nous cartographions vos opérations",
+    "report_label": "Rapport de préparation des agents"
+  },
+  "common": {
+    "learn_more": "En savoir plus",
+    "get_started": "Commencer",
+    "read_more": "Lire plus →",
+    "read_full": "Lire l'article complet →",
+    "see_all_roles": "Voir les 34 rôles →",
+    "recommended": "Recommandé",
+    "most_popular": "Le plus populaire",
+    "latest_post": "Dernier article",
+    "free": "Gratuit",
+    "custom": "Sur mesure",
+    "usage_based": "Basé sur l'usage",
+    "not_included": "Non inclus dans le prix du service",
+    "zero_markup": "Vous payez les fournisseurs directement — zéro marge de notre part."
+  }
+}
