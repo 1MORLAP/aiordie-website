@@ -264,32 +264,32 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
         <div className="mx-auto max-w-6xl">
           <ScrollReveal>
             <h2 className="font-space-grotesk mb-2 text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
-              The Math
+              {t('math.headline')}
             </h2>
             <p className="mb-8 max-w-2xl text-[var(--text-secondary)]">
-              Same outcomes, completely different cost structure.
+              {t('math.subhead')}
             </p>
           </ScrollReveal>
           <div className="grid items-stretch gap-5 md:grid-cols-2">
             <ScrollReveal className="h-full">
               <article className="flex h-full flex-col rounded-2xl border border-[var(--danger-border)] bg-[var(--danger-subtle)] p-6">
-                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-[var(--danger)]">Old way</p>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-[var(--danger)]">{t('math.old_label')}</p>
                 <div className="font-space-grotesk text-5xl font-bold text-[var(--text-primary)]">
                   $<AnimatedCounter to={330000} />
                 </div>
                 <p className="mt-3 flex-1 text-sm text-[var(--text-secondary)]">
-                  3 human direct reports/year with salary, benefits, downtime, and recruiting drag.
+                  {t('math.old_desc')}
                 </p>
               </article>
             </ScrollReveal>
             <ScrollReveal delayMs={100} className="h-full">
               <article className="flex h-full flex-col rounded-2xl border border-[var(--success-border)] bg-[var(--success-subtle)] p-6">
-                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-[var(--success)]">AI or Die model</p>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-[var(--success)]">{t('math.new_label')}</p>
                 <div className="font-space-grotesk text-5xl font-bold text-[var(--text-primary)]">
                   $<AnimatedCounter to={19400} />
                 </div>
                 <p className="mt-3 flex-1 text-sm text-[var(--text-secondary)]">
-                  3 AI or Die Super Agents/year with 24/7 coverage and ongoing optimization.
+                  {t('math.new_desc')}
                 </p>
               </article>
             </ScrollReveal>
@@ -355,8 +355,7 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
               {t('pricing.comparison.headline')}
             </h2>
             <p className="mt-3 max-w-4xl text-[var(--text-secondary)]">
-              Most people start with ChatGPT. Then they discover agents. Then they realize
-              agents alone aren&apos;t enough. Here&apos;s the full picture.
+              {t('pricing.comparison.subhead')}
             </p>
           </ScrollReveal>
 
@@ -365,14 +364,12 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
             <ScrollReveal delayMs={40}>
               <article className="flex h-full flex-col rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6">
                 <div className="mb-4">
-                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">Tier 1 — AI Assistant</p>
-                  <h3 className="font-space-grotesk mt-2 text-xl font-bold text-[var(--text-primary)]">ChatGPT / Claude</h3>
-                  <p className="mt-1 text-xs font-semibold text-[var(--text-muted)]">~$20–200/mo, direct from provider</p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">{t('pricing.comparison.tier1_label')}</p>
+                  <h3 className="font-space-grotesk mt-2 text-xl font-bold text-[var(--text-primary)]">{t('pricing.comparison.tier1_name')}</h3>
+                  <p className="mt-1 text-xs font-semibold text-[var(--text-muted)]">{t('pricing.comparison.tier1_price')}</p>
                 </div>
                 <p className="mb-4 text-sm leading-relaxed text-[var(--text-secondary)]">
-                  A chat interface. Brilliant at answering questions, drafting text, summarizing documents.
-                  But the moment you close the tab, it&apos;s gone. No memory. No initiative.
-                  It only works when you work.
+                  {t('pricing.comparison.tier1_desc')}
                 </p>
                 <ul className="flex-1 space-y-2.5 text-sm text-[var(--text-secondary)]">
                   <li className="flex items-start gap-2">
@@ -397,8 +394,8 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
                   </li>
                 </ul>
                 <div className="mt-6 rounded-lg border border-[var(--border)] bg-[var(--bg-secondary)] px-4 py-3">
-                  <p className="text-xs font-semibold text-[var(--text-muted)]">Best for</p>
-                  <p className="mt-1 text-sm text-[var(--text-secondary)]">One-off tasks, research, drafts. Not for running a business.</p>
+                  <p className="text-xs font-semibold text-[var(--text-muted)]">{t('pricing.comparison.best_for')}</p>
+                  <p className="mt-1 text-sm text-[var(--text-secondary)]">{t('pricing.comparison.tier1_best')}</p>
                 </div>
               </article>
             </ScrollReveal>
@@ -407,14 +404,12 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
             <ScrollReveal delayMs={100}>
               <article className="flex h-full flex-col rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6">
                 <div className="mb-4">
-                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">Tier 2 — Generic Agent</p>
-                  <h3 className="font-space-grotesk mt-2 text-xl font-bold text-[var(--text-primary)]">OpenClaw &amp; similar platforms</h3>
-                  <p className="mt-1 text-xs font-semibold text-[var(--text-muted)]">~$5–50/mo, self-serve</p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">{t('pricing.comparison.tier2_label')}</p>
+                  <h3 className="font-space-grotesk mt-2 text-xl font-bold text-[var(--text-primary)]">{t('pricing.comparison.tier2_name')}</h3>
+                  <p className="mt-1 text-xs font-semibold text-[var(--text-muted)]">{t('pricing.comparison.tier2_price')}</p>
                 </div>
                 <p className="mb-4 text-sm leading-relaxed text-[var(--text-secondary)]">
-                  A step up — the agent can take actions, run autonomously, and connect to tools.
-                  But it&apos;s a blank slate. You configure it, you prompt it, you manage it.
-                  The platform gives you a car. You still have to build the engine.
+                  {t('pricing.comparison.tier2_desc')}
                 </p>
                 <ul className="flex-1 space-y-2.5 text-sm text-[var(--text-secondary)]">
                   <li className="flex items-start gap-2">
@@ -439,8 +434,8 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
                   </li>
                 </ul>
                 <div className="mt-6 rounded-lg border border-[var(--border)] bg-[var(--bg-secondary)] px-4 py-3">
-                  <p className="text-xs font-semibold text-[var(--text-muted)]">Best for</p>
-                  <p className="mt-1 text-sm text-[var(--text-secondary)]">Technical teams who want to build their own agent. A toolkit, not a hire.</p>
+                  <p className="text-xs font-semibold text-[var(--text-muted)]">{t('pricing.comparison.best_for')}</p>
+                  <p className="mt-1 text-sm text-[var(--text-secondary)]">{t('pricing.comparison.tier2_best')}</p>
                 </div>
               </article>
             </ScrollReveal>
@@ -449,15 +444,12 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
             <ScrollReveal delayMs={160}>
               <article className="flex h-full flex-col rounded-2xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] p-6 shadow-[0_24px_60px_-44px_var(--accent)]">
                 <div className="mb-4">
-                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Tier 3 — Deployed Specialist</p>
-                  <h3 className="font-space-grotesk mt-2 text-xl font-bold text-[var(--text-primary)]">AI or Die Agent</h3>
-                  <p className="mt-1 text-xs font-semibold text-[var(--accent)]">$500/mo + $2,000 setup</p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">{t('pricing.comparison.tier3_label')}</p>
+                  <h3 className="font-space-grotesk mt-2 text-xl font-bold text-[var(--text-primary)]">{t('pricing.comparison.tier3_name')}</h3>
+                  <p className="mt-1 text-xs font-semibold text-[var(--accent)]">{t('pricing.comparison.tier3_price')}</p>
                 </div>
                 <p className="mb-4 text-sm leading-relaxed text-[var(--text-secondary)]">
-                  Built on OpenClaw — but configured end-to-end for your business by our team.
-                  We do the months of setup work so you don&apos;t have to.
-                  You get a specialist who already knows your clients, your tone, your tools,
-                  and your goals. You manage outcomes, not prompts.
+                  {t('pricing.comparison.tier3_desc')}
                 </p>
                 <ul className="flex-1 space-y-2.5 text-sm text-[var(--text-secondary)]">
                   <li className="flex items-start gap-2">
@@ -482,8 +474,8 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
                   </li>
                 </ul>
                 <div className="mt-6 rounded-lg border border-[var(--accent-border)] bg-[var(--bg)] px-4 py-3">
-                  <p className="text-xs font-semibold text-[var(--accent)]">Best for</p>
-                  <p className="mt-1 text-sm text-[var(--text-secondary)]">Business owners who want to hand off a role — not build a system.</p>
+                  <p className="text-xs font-semibold text-[var(--accent)]">{t('pricing.comparison.best_for')}</p>
+                  <p className="mt-1 text-sm text-[var(--text-secondary)]">{t('pricing.comparison.tier3_best')}</p>
                 </div>
               </article>
             </ScrollReveal>
@@ -495,20 +487,15 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
               <div className="px-6 pt-6 pb-5 md:px-8 md:pt-8">
                 <div className="flex flex-wrap items-start justify-between gap-5">
                   <div className="flex-1 min-w-[240px]">
-                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Our IP. Your advantage.</p>
-                    <h3 className="font-space-grotesk mt-2 text-2xl font-bold text-[var(--text-primary)] md:text-3xl">
-                      Every agent ships with skills.
-                    </h3>
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">{t('pricing.skills.eyebrow')}</p>
+                    <h3 className="font-space-grotesk mt-2 text-2xl font-bold text-[var(--text-primary)] md:text-3xl">{t('pricing.skills.headline')}</h3>
                     <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[var(--text-secondary)]">
-                      Think of it like hiring someone out of college vs. hiring a PhD who&apos;s spent years
-                      mastering exactly your field. Our agents come pre-loaded with skills we&apos;ve built,
-                      tested, and refined in live operations. When you hire an AI or Die agent, you get
-                      our IP — not a blank slate you have to educate from scratch.
+                      {t('pricing.skills.body')}
                     </p>
                   </div>
                   <div className="shrink-0 rounded-2xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] px-6 py-4 text-center">
-                    <p className="font-space-grotesk text-xl font-bold text-[var(--text-primary)] leading-tight">24/7 PhD hire</p>
-                    <p className="mt-1 text-sm font-medium text-[var(--accent)]">for the price of lunch</p>
+                    <p className="font-space-grotesk text-xl font-bold text-[var(--text-primary)] leading-tight">{t('pricing.skills.badge_headline')}</p>
+                    <p className="mt-1 text-sm font-medium text-[var(--accent)]">{t('pricing.skills.badge_sub')}</p>
                   </div>
                 </div>
               </div>
@@ -516,35 +503,31 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
               {/* Education analogy ladder */}
               <div className="grid grid-cols-1 divide-y divide-[var(--border)] border-t border-[var(--border)] sm:grid-cols-3 sm:divide-x sm:divide-y-0">
                 <div className="px-6 py-5">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--text-muted)]">ChatGPT / Claude</p>
-                  <p className="mt-1.5 font-space-grotesk text-base font-bold text-[var(--text-secondary)]">General knowledge, no specialty</p>
+                  <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--text-muted)]">{t('pricing.skills.tier1_label')}</p>
+                  <p className="mt-1.5 font-space-grotesk text-base font-bold text-[var(--text-secondary)]">{t('pricing.skills.tier1_title')}</p>
                   <p className="mt-2 text-xs leading-relaxed text-[var(--text-muted)]">
-                    Knows everything about everything. Knows nothing about you.
-                    Like asking a stranger for advice — smart, but zero context.
+                    {t('pricing.skills.tier1_desc')}
                   </p>
                 </div>
                 <div className="px-6 py-5">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--text-muted)]">Generic Agent Platform</p>
-                  <p className="mt-1.5 font-space-grotesk text-base font-bold text-[var(--text-secondary)]">Potential, but you supply the training</p>
+                  <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--text-muted)]">{t('pricing.skills.tier2_label')}</p>
+                  <p className="mt-1.5 font-space-grotesk text-base font-bold text-[var(--text-secondary)]">{t('pricing.skills.tier2_title')}</p>
                   <p className="mt-2 text-xs leading-relaxed text-[var(--text-muted)]">
-                    The raw intelligence is there. But you&apos;re the professor.
-                    You build the curriculum, run the lessons, grade the output.
-                    Most businesses burn out before they graduate it.
+                    {t('pricing.skills.tier2_desc')}
                   </p>
                 </div>
                 <div className="bg-[var(--accent-subtle)] px-6 py-5">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--accent)]">AI or Die Agent</p>
-                  <p className="mt-1.5 font-space-grotesk text-base font-bold text-[var(--text-primary)]">Pre-loaded with our skills library</p>
+                  <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--accent)]">{t('pricing.skills.tier3_label')}</p>
+                  <p className="mt-1.5 font-space-grotesk text-base font-bold text-[var(--text-primary)]">{t('pricing.skills.tier3_title')}</p>
                   <p className="mt-2 text-xs leading-relaxed text-[var(--text-secondary)]">
-                    Arrives already trained. Our proprietary skills — honed across real deployments —
-                    are embedded from day one. You customize the specifics. We supply the expertise.
+                    {t('pricing.skills.tier3_desc')}
                   </p>
                 </div>
               </div>
 
               {/* Skills pill list */}
               <div className="border-t border-[var(--border)] px-6 py-5 md:px-8">
-                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">Skills included in every deployment</p>
+                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">{t('pricing.skills.included_label')}</p>
                 <div className="flex flex-wrap gap-2">
                   {[
                     "Legal contract review",
@@ -579,37 +562,30 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
           <ScrollReveal delayMs={80}>
             <div className="mt-8 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8">
               <h3 className="font-space-grotesk text-xl font-bold text-[var(--text-primary)] md:text-2xl">
-                Why $500/mo vs $5/mo?
+                {t('pricing.comparison.diy_why')}
               </h3>
               <p className="mt-3 max-w-4xl text-sm leading-relaxed text-[var(--text-secondary)]">
-                OpenClaw costs $5/month because it gives you the raw platform and you do all the work.
-                You spend weeks — realistically months — configuring prompts, wiring up integrations,
-                training it on your business, and debugging failures. Most businesses start, stall,
-                and quietly abandon it. The platform isn&apos;t the product. The configured, deployed,
-                running specialist is the product.
+                {t('pricing.comparison.diy_p1')}
               </p>
               <blockquote className="my-5 rounded-xl border-l-4 border-[var(--accent)] bg-[var(--accent-subtle)] py-4 pl-5 pr-4">
                 <p className="text-sm font-semibold italic leading-relaxed text-[var(--text-primary)]">
-                  &ldquo;You could spin up OpenClaw yourself in an afternoon — but your agent won&apos;t know your business, your clients, or your SOPs. That part takes weeks.&rdquo;
+                  {t('pricing.comparison.diy_quote')}
                 </p>
-                <p className="mt-2 text-xs font-semibold text-[var(--accent)]">What a DIY deploy actually looks like</p>
+                <p className="mt-2 text-xs font-semibold text-[var(--accent)]">{t('pricing.comparison.diy_quote_label')}</p>
               </blockquote>
 
               <p className="mt-3 max-w-4xl text-sm leading-relaxed text-[var(--text-secondary)]">
-                The $2,000 setup is us doing that months-long work in two weeks. The $500/month
-                keeps the agent current — new model releases, performance improvements, and ongoing
-                tuning as your business evolves. You&apos;re not paying for software. You&apos;re paying
-                for a specialist who shows up every day and never drops the ball.
+                {t('pricing.comparison.diy_p2')}
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-4 text-sm">
                 <div className="flex items-center gap-2">
-                  <span className="font-semibold text-[var(--text-muted)]">OpenClaw DIY:</span>
-                  <span className="text-[var(--text-secondary)]">$5/mo + 200+ hours of your time</span>
+                  <span className="font-semibold text-[var(--text-muted)]">{t('pricing.comparison.diy_vs_label')}</span>
+                  <span className="text-[var(--text-secondary)]">{t('pricing.comparison.diy_vs_value')}</span>
                 </div>
                 <span className="text-[var(--text-muted)]">vs</span>
                 <div className="flex items-center gap-2">
-                  <span className="font-semibold text-[var(--accent)]">AI or Die:</span>
-                  <span className="text-[var(--text-secondary)]">$500/mo + live in 2 weeks</span>
+                  <span className="font-semibold text-[var(--accent)]">{t('pricing.comparison.aod_label')}</span>
+                  <span className="text-[var(--text-secondary)]">{t('pricing.comparison.aod_value')}</span>
                 </div>
               </div>
             </div>
@@ -707,14 +683,12 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
       <section className="bg-[var(--bg-secondary)] border-y border-[var(--border)] px-6 py-16 md:py-24">
         <div className="mx-auto max-w-6xl">
           <ScrollReveal>
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">How it works</p>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">{t('pricing.methodology.eyebrow')}</p>
             <h2 className="font-space-grotesk text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
-              From signed to live in two weeks.
+              {t('pricing.methodology.headline')}
             </h2>
             <p className="mt-3 max-w-3xl text-[var(--text-secondary)]">
-              Every deployment is human-led. We don&apos;t hand you a login and disappear.
-              A real person runs you through every step — AI handles the heavy lifting,
-              humans make sure it&apos;s right.
+              {t('pricing.methodology.subhead')}
             </p>
           </ScrollReveal>
 
@@ -975,7 +949,7 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
               {t('pricing.deployment.headline')}
             </h2>
             <p className="mb-10 max-w-3xl text-[var(--text-secondary)]">
-              We match how you already run your business.
+              {t('pricing.deployment.subhead')}
             </p>
           </ScrollReveal>
           <div className="grid gap-5 md:grid-cols-3">
