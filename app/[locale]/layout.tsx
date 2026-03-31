@@ -124,9 +124,9 @@ function Footer({ t }: { t: (key: string) => string }) {
           </a>
         </div>
         <nav className="flex flex-wrap items-center justify-center gap-6">
-          <a href="/" className="hover:text-[var(--text-primary)] transition-colors">Home</a>
-          <a href="/pricing" className="hover:text-[var(--text-primary)] transition-colors">Pricing</a>
-          <a href="/blog" className="hover:text-[var(--text-primary)] transition-colors">Blog</a>
+          <a href="/" className="hover:text-[var(--text-primary)] transition-colors">{t('nav.home')}</a>
+          <a href="/pricing" className="hover:text-[var(--text-primary)] transition-colors">{t('nav.pricing')}</a>
+          <a href="/blog" className="hover:text-[var(--text-primary)] transition-colors">{t('nav.blog')}</a>
           <a href="/privacy" className="hover:text-[var(--text-primary)] transition-colors">{t('footer.privacy')}</a>
           <a href="/terms" className="hover:text-[var(--text-primary)] transition-colors">{t('footer.terms')}</a>
           <a href="/brand" className="hover:text-[var(--text-primary)] transition-colors">{t('footer.brand')}</a>

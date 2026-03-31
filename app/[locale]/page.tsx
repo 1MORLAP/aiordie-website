@@ -652,14 +652,14 @@ export default function Home() {
             <div>
               <h2 className="font-space-grotesk text-3xl font-bold tracking-tight md:text-4xl">{t('roles.headline')}</h2>
               <p className="mt-2 text-sm text-[var(--text-secondary)]">
-                Six featured roles below. Full role library covers every major business function.
+                {t('roles.subhead')}
               </p>
             </div>
             <Link
               href="/roles"
               className="rounded-full border border-[var(--accent-border)] bg-[var(--accent-subtle)] px-4 py-2 text-sm font-semibold text-[var(--accent)] transition-all hover:-translate-y-0.5 hover:border-[var(--accent)]"
             >
-              See all 34 roles →
+              {t('roles.see_all')}
             </Link>
           </div>
 
@@ -765,7 +765,7 @@ export default function Home() {
           <ScrollReveal>
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">AI or Die</p>
             <h2 className="font-space-grotesk text-balance text-4xl font-bold tracking-tight md:text-6xl">
-              {t('cta.headline')}
+              Scale now or get outpaced.
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-[var(--text-secondary)]">
               {t('cta.subhead')}
