@@ -718,7 +718,7 @@ export default function Home() {
       <section className="px-6 py-12">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] px-6 py-5">
           <p className="text-sm font-semibold text-[var(--text-primary)]">
-            Pricing: $2,000 setup + $2,500/month per agent · 3-agent bundle from $6,000/month
+            Pricing: $2,000 setup + $2,500/mo retainer · 3-agent bundle from $6,000/mo
           </p>
           <Link href="/pricing" className="text-sm font-semibold text-[var(--accent)] hover:underline">
             Full pricing →

@@ -6,17 +6,17 @@ import {getTranslations} from "next-intl/server";
 export const metadata: Metadata = {
   title: "Pricing — AI or Die",
   description:
-    "Transparent pricing for AI or Die Super Agents. $2,000 setup + $2,500/mo per agent. Volume bundles from $6,000/mo. No contracts, cancel anytime.",
+    "Retainer-based pricing for AI or Die Super Agents. $2,000 setup + $2,500/mo retainer per agent. Monthly reviews, model upgrades, strategic access. No contracts.",
   openGraph: {
     title: "AI or Die Super Agent Pricing — AI or Die",
     description:
-      "$2,000 setup + $2,500/mo per agent. Volume bundles from $6,000/mo. No contracts, cancel anytime.",
+      "$2,000 setup + $2,500/mo retainer. Monthly reviews, model upgrades, strategic access included.",
     url: "https://aiordie.now/pricing",
   },
   twitter: {
     card: "summary_large_image",
     title: "AI or Die Super Agent Pricing — AI or Die",
-    description: "$2,000 setup + $2,500/mo per agent. No contracts, cancel anytime.",
+    description: "$2,000 setup + $2,500/mo retainer. No contracts.",
   },
   alternates: { canonical: "https://aiordie.now/pricing" },
 };
@@ -96,7 +96,7 @@ const tiers = [
     setup: "$2,000",
     monthly: "$2,500/mo",
     highlight: false,
-    desc: "Perfect for a single high-impact role — start with legal, finance, or sales.",
+    desc: "One Super Agent running continuously. Monthly retainer includes optimization, model upgrades, and strategic access to our team.",
   },
   {
     name: "3 Agents",
@@ -104,21 +104,21 @@ const tiers = [
     monthly: "$6,000/mo",
     highlight: true,
     badge: "Most Popular",
-    desc: "A full AI team. Legal + financial + sales running in parallel, 24/7.",
+    desc: "Three Super Agents running in parallel. Full retainer — monthly reviews, upgrades, and guidance on expanding your AI team.",
   },
   {
     name: "5 Agents",
     setup: "$7,500",
     monthly: "$9,000/mo",
     highlight: false,
-    desc: "Expand into marketing, HR, and project management.",
+    desc: "Five Super Agents across multiple functions. Priority retainer access and strategic roadmapping for your AI operations.",
   },
   {
     name: "8+ Agents",
     setup: "Custom",
     monthly: "Custom",
     highlight: false,
-    desc: "Full AI workforce. Custom pricing based on scope and complexity.",
+    desc: "Full AI workforce. Custom retainer based on scope, complexity, and strategic advisory requirements.",
   },
 ];
 
