@@ -8,7 +8,7 @@
     "pricing": "Pricing",
     "roles": "Roles",
     "blog": "Blog",
-    "book_consult": "Book a Consult",
+    "book_consult": "Deploy your AI team",
     "call_us": "Call Us",
     "ask_ai_bar": "Ask your AI about AI or Die"
   },
@@ -21,9 +21,9 @@
   },
   "hero": {
     "eyebrow": "AI or Die Super Agents",
-    "headline_1": "Your leaders keep the title.",
-    "headline_2": "AI gets the workload.",
-    "subhead": "AI or Die deploys Super Agents as direct reports to your existing leaders — so companies scale output without scaling headcount.",
+    "headline_1": "Your AI team.",
+    "headline_2": "Your infrastructure. Your control. We just build it.",
+    "subhead": "AI support is free. Human support is premium.",
     "cta_consult": "Book a Free Consult",
     "cta_call": "Call Us",
     "phone_label": "Talk to AI in any language"
@@ -34,7 +34,7 @@
     "old_label": "Old way",
     "old_desc": "3 human hires/year with salary, benefits, downtime, and recruiting drag.",
     "new_label": "AI or Die model",
-    "new_desc": "3 AI or Die Super Agents/year with 24/7 coverage and ongoing optimization."
+    "new_desc": "3 AI or Die Super Agents/year with 24/7 coverage."
   },
   "roles": {
     "headline": "Roles We Deploy",
@@ -72,7 +72,7 @@
   "cta": {
     "eyebrow": "AI or Die",
     "headline": "Ready to deploy your first AI or Die Super Agent?",
-    "subhead": "Free consult. We'll price out the gap for your specific business — and show exactly which roles your team could hand off today.",
+    "subhead": "AI support is free. Human support is premium.",
     "book": "Book a Free Consult",
     "phone_label": "Talk to our AI agent in any language"
   },
@@ -86,8 +86,8 @@
     },
     "tiers": {
       "headline": "Choose your team size",
-      "note": "Each tier includes full custom configuration, tool integration, and ongoing optimization. This is not a SaaS subscription — it's a deployed specialist.",
-      "cta": "Get Started",
+      "note": "Each tier includes discovery, design, deployment on your infrastructure, training, runbook, and 5 advisory hours.",
+      "cta": "Deploy your AI team",
       "setup_suffix": "setup",
       "badge_popular": "Most Popular"
     },
@@ -193,7 +193,7 @@
     "cta": {
       "headline": "Ready to deploy your first AI or Die Super Agent?",
       "subhead": "Free consult. We'll price out the gap for your specific business — and show exactly which roles your team could hand off today.",
-      "book": "Book a Free Consult",
+      "book": "Deploy your AI team",
       "phone_label": "Talk to our AI agent"
     }
   },

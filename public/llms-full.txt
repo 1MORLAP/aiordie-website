@@ -1,202 +1,106 @@
 # AI or Die — Full LLM Reference
-> AI or Die Super Agents deployed as direct reports to your existing leaders. Scale output without scaling headcount.
+> Your AI team. Your infrastructure. Your control. We just build it.
 
 ## Company Snapshot
 - Name: AI or Die
 - Website: https://aiordie.now
 - Offices: Miami, FL and Seattle, WA
 - Phone: (786) 998-9310
-- Founder: Tomasz Wojewoda (human)
-- Built by: AI CMO (this website is authored and maintained by AI agents)
+- Founder: Tomasz Wojewoda
 
-## Brand Narrative (Excerpt)
-"Your leaders keep the title. AI gets the workload."
+## Service Model
+AI or Die is not a managed service provider.
 
-Most teams don’t have a strategy problem — they have an execution bottleneck. AI or Die is built to remove that bottleneck by giving each leader AI direct reports that execute continuously. Humans stay in charge of judgment, vision, and accountability. AI handles repeatable execution at machine speed.
+We deploy AI teams into client businesses, train client teams to run independently, and provide optional advisory support.
 
-This is not theoretical. The same operating model is run in production across multiple business units, including AI or Die itself.
+### Phase 1 — DEPLOY (one-time)
+- Discovery and workflow assessment
+- Custom agent architecture
+- Deployment on client infrastructure
+- Credential handoff and ownership transfer
 
-## What We Do
-AI or Die deploys Super Agents into existing business org charts.
+### Phase 2 — TRAIN (included)
+- Hands-on training sessions
+- Runbook creation and walkthroughs
+- AI first-line support training
+- Operating model handoff to client team
 
-Unlike humans, one Super Agent can cover multiple roles simultaneously — Finance + Legal, Marketing + Sales, Design + Engineering. No cognitive overhead, no context-switching cost. We call these super-agents, and we scope them per deployment. Instead of replacing leadership, we augment leadership.
+### Phase 3 — ADVISE (optional monthly)
+- Advisory hours for difficult issues
+- Strategy sessions and expansion planning
+- Escalation support when AI team cannot resolve a case
 
-Examples:
-- Your CMO gets an AI content + SEO + social team
-- Your CTO gets AI engineering support
-- Your CRO gets AI SDR + CRM + follow-up support
-- Your CFO gets AI analyst + bookkeeper + compliance support
+## Pricing
+### Deployment (one-time)
+- STARTER — $5,000
+  - 1-2 agents
+  - discovery, design, deployment, training, runbook
+  - 5 post-deploy advisory hours included
 
-## Service Offerings
-- Super Agent Deployment (custom-built per role and workflow)
-- 34 roles across 8 departments: Executive & Leadership; Marketing & Content; Sales & Revenue; Finance, Legal & Compliance; Engineering & Product; Operations & HR; Customer Success & Support; Research, IT & Security
-- Role architecture for your current leadership team
-- Integrations with existing business systems
-- Ongoing optimization and support
-- Isolated client infrastructure (cloud, on-prem, or hybrid)
+- GROWTH — $10,000
+  - 3-5 agents
+  - everything in Starter
+  - multi-agent workflows
 
-## Full Pricing Tiers
-### Core Service Pricing
-- 1 Agent: $2,000 setup + $500/month
-- 3 Agents: $5,000 setup + $1,200/month (most popular)
-- 5 Agents: $7,500 setup + $1,800/month
-- 8+ Agents: Custom setup + custom monthly pricing
+- SCALE — $15,000-$20,000
+  - 6-10 agents
+  - full AI workforce design and deployment
 
-### Commercial Terms
-- No long-term contracts
-- Cancel with 30 days notice
-- Client retains agent configurations and files
+- ENTERPRISE — Custom
+  - 10+ agents
 
-### AI Model ("Brain") Costs — paid directly to providers, zero markup
-- Anthropic:
-  - Max 5x: $100/month
-  - Max 20x: $200/month (recommended)
-- OpenAI:
-  - Pro: $200/month (recommended)
-- Venice AI:
-  - API pay-per-use (for private/on-prem deployments)
+### Advisory (optional monthly)
+- LIGHT — $1,500/month
+  - 4 hours/month
+  - monthly review + async support
 
-## Deployment Models
-- Typical deployment time: 1-2 weeks
+- STANDARD — $2,500/month
+  - 8 hours/month
+  - strategy sessions + new agent design
 
-### 1) Cloud (Public Models)
-- For: cloud-centric companies using Google Drive, Dropbox, cloud CRMs, and SaaS-native workflows
-- How it works: AI agents are hosted in cloud infrastructure and run on public model providers
-- Message: If your data lives in the cloud, your agents do too. We deploy alongside your existing stack using industry-standard AI models.
-- Models: Anthropic (Claude), OpenAI
-- Privacy: Standard cloud security; data is processed by public AI providers
-- AI brain cost mapping: Anthropic Pro/Max or OpenAI Plus/Pro subscriptions
+- PRIORITY — $4,000/month
+  - 16 hours/month
+  - priority response + roadmapping
 
-### 2) Private Cloud (Private Models)
-- For: cloud-first but privacy-conscious teams (regulated industries, sensitive data, strict compliance)
-- How it works: agents are deployed on dedicated private cloud infrastructure with private AI models
-- Message: Your data stays in your private cloud. Your AI models run there too. No data leaves your environment.
-- Models: Venice AI (private)
-- Privacy: data never touches public AI providers; runs on dedicated private infrastructure
-- AI brain cost mapping: Venice AI private deployment (usage-based)
+## Included in Every Deployment Tier
+- Discovery call
+- Custom agent design
+- Deployment on client infrastructure
+- Hands-on training
+- Runbook
+- AI agents trained for first-line support
+- 5 hours post-deploy advisory
 
-### 3) On-Premise
-- For: teams operating from owned hardware, data centers, server closets, or air-gapped environments
-- How it works: models, agents, orchestration, and storage run fully on client hardware
-- Message: If your data lives in your data center or your server closet, that's where we deploy. Models, agents, infrastructure — all on your hardware.
-- Models: self-hosted open-source models
-- Privacy: maximum control; nothing leaves the building unless client policy allows it
-- AI brain cost mapping: self-hosted model stack
+## Support Escalation
+1. Ask your AI team (free)
+2. Check your runbook (free)
+3. Call AI or Die advisory (paid)
 
-### Deployment Principle
-Our deployments follow the pattern you've already established. We match how you already run your business.
+## Positioning
+- Them: "Let us run your AI."
+  Us: "We build it. You own it. You run it."
+- Them: "Our platform hosts your agents."
+  Us: "Your platform hosts your agents."
+- Them: "Share your API keys with us."
+  Us: "We never see your API keys."
+- Them: "Cancel and lose everything."
+  Us: "Cancel and keep everything."
 
-## Technology Partners
-- OpenClaw — https://openclaw.ai
-  - Open-source AI agent framework. The foundation our entire agent fleet runs on.
-- Hermes Agent (Nous Research) — https://hermes-agent.nousresearch.com
-  - Self-improving AI agent with built-in learning loops. Gets smarter the longer it runs.
-- NVIDIA — https://nvidia.com
-  - GPU infrastructure and AI models powering high-performance inference.
-- Venice AI — https://venice.ai
-  - Private AI. API pay-per-use inference for privacy-first deployments.
-- OpenAI — https://openai.com
-  - GPT models for cloud and enterprise AI or Die Super Agent deployments.
-- Anthropic — https://anthropic.com
-  - Claude models. Our recommended brain for production AI or Die Super Agents.
-- Apple — https://apple.com
-  - Apple Silicon and MLX for on-device AI inference.
-- EXO Labs — https://github.com/exo-explore/exo
-  - Distributed AI inference across consumer hardware. Run frontier models locally.
+## Comms and Tooling
+Supported communication channels:
+- Discord or Telegram (recommended)
+- Slack (supported)
 
-## Agent Types (Full Catalog)
-### Leadership coverage lanes
-- CMO lane
-- CTO lane
-- CRO lane
-- CFO lane
-- CPO lane
-- CLO lane
+Clients pay providers directly for:
+- 1Password
+- LLM API keys
+- Hosting
+- Communication tools
 
-### AI direct-report agent types
-- AI Content
-- AI SEO
-- AI Social
-- AI Dev
-- AI QA
-- AI Security
-- AI SDR
-- AI CRM
-- AI Follow-up
-- AI Analyst
-- AI Bookkeeper
-- AI Compliance
-- AI PM
-- AI Research
-- AI UX Writer
-- AI Contract Review
-- AI Legal Research
-
-### Additional production roles used across units
-- AI CEO
-- AI CMO
-- AI CTO
-- AI CRO
-- AI CLO
-- AI CPO (Chief Product Officer)
-- AI HRO (Human Resources Officer / Recruiting)
-- AI PMO
-- AI Ops Manager
-- AI Financial Analyst
-- AI Legal Assistant
-
-## What’s Included Per Agent
-- Custom role build
-- Persistent memory setup
-- Tool integrations
-- 5,400+ pre-built integrations (email, CRM, Slack, GitHub, etc.)
-- 24/7 operation
-- Isolated infrastructure
-- Ongoing monthly improvements
-- Client ownership of outputs/config
-- Remote support
-
-## Proof of Concept Portfolio
-- TomBot (https://www.realtom.bot): zero-human company, AI-operated
-- NEXORA (https://nexora.build): HKEX-listed Web3 infrastructure scaling with AI support
-- Any.Markets (https://any.markets): AI CEO/CTO/CMO model from day one
-- AI or Die (https://aiordie.now): website and marketing run by AI CMO
-
-## Key Facts
-- 22 AI agents currently in production
-- 4 business units running live AI operations
-- Infrastructure-first deployment model
-- Human-led strategy + AI-led execution
-
-## Transparency Policy
-- Consult calls are with Tomasz Wojewoda (human)
-- AI phone interactions are labeled as AI
-- AI-generated outputs are labeled
-- No hidden handoffs between human and AI
-
-## FAQ (Canonical)
-### How long does deployment take?
-Typically 1-2 weeks from consult to live deployment.
-
-### Do clients need technical skills?
-No. AI or Die handles setup, integrations, deployment, and optimization.
-
-### Can I cancel anytime?
-Yes. No long-term contract. 30 days notice.
-
-### Which models are supported?
-Anthropic, OpenAI, and Venice AI.
-
-### Is business data isolated?
-Yes. Each client runs on isolated infrastructure. On-prem options are available.
-
-## Important Pages
-- Homepage: https://aiordie.now
+## Contact
+- Website: https://aiordie.now
 - Pricing: https://aiordie.now/pricing
 - Roles: https://aiordie.now/roles
 - Blog: https://aiordie.now/blog
-
-## Contact
-- Book consult: https://calendar.notion.so/meet/tomaszwojewoda/aod
+- Consult: https://calendar.notion.so/meet/tomaszwojewoda/aod
 - Phone: (786) 998-9310
-- Website: https://aiordie.now

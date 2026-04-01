@@ -8,7 +8,7 @@
     "pricing": "Cennik",
     "roles": "Role",
     "blog": "Blog",
-    "book_consult": "Zarezerwuj bezpłatną konsultację",
+    "book_consult": "Wdróż swój zespół AI",
     "call_us": "Zadzwoń do nas",
     "ask_ai_bar": "Zapytaj swoje AI o AI or Die"
   },
@@ -21,9 +21,9 @@
   },
   "hero": {
     "eyebrow": "AI or Die Super Agents",
-    "headline_1": "Twoi liderzy zachowują stanowiska.",
-    "headline_2": "AI przejmuje obciążenie pracą.",
-    "subhead": "AI or Die wdraża Super Agents jako bezpośrednich podwładnych Twoich obecnych liderów — dzięki temu firmy skalują efekty bez zwiększania zatrudnienia.",
+    "headline_1": "Twój zespół AI.",
+    "headline_2": "Twoja infrastruktura. Twoja kontrola. My tylko to budujemy.",
+    "subhead": "Wsparcie AI jest bezpłatne. Wsparcie ludzi jest premium.",
     "cta_consult": "Zarezerwuj bezpłatną konsultację",
     "cta_call": "Zadzwoń do nas",
     "phone_label": "Porozmawiaj z AI w dowolnym języku"
@@ -34,7 +34,7 @@
     "old_label": "Stary model",
     "old_desc": "3 zatrudnienia rocznie: pensje, benefity, przestoje i kosztowna rekrutacja.",
     "new_label": "Model AI or Die",
-    "new_desc": "3 Super Agents AI or Die rocznie z dostępnością 24/7 i stałą optymalizacją."
+    "new_desc": "3 Super Agenty AI or Die rocznie z obsługą 24/7."
   },
   "roles": {
     "headline": "Role, które wdrażamy",
@@ -72,7 +72,7 @@
   "cta": {
     "eyebrow": "AI or Die",
     "headline": "Gotowy, aby wdrożyć pierwszego AI or Die Super Agent?",
-    "subhead": "Bezpłatna konsultacja. Wycenimy lukę dla Twojego konkretnego biznesu — i pokażemy dokładnie, które role Twój zespół może przekazać już dziś.",
+    "subhead": "Wsparcie AI jest bezpłatne. Wsparcie ludzi jest premium.",
     "book": "Zarezerwuj bezpłatną konsultację",
     "phone_label": "Porozmawiaj z naszym agentem AI w dowolnym języku"
   },
@@ -86,8 +86,8 @@
     },
     "tiers": {
       "headline": "Wybierz wielkość zespołu",
-      "note": "Każdy pakiet obejmuje pełną konfigurację, integrację narzędzi i stałą optymalizację. To nie subskrypcja SaaS — to wdrożony specjalista.",
-      "cta": "Zacznij",
+      "note": "Każdy pakiet obejmuje discovery, projekt, wdrożenie na Twojej infrastrukturze, szkolenie, runbook i 5 godzin doradztwa.",
+      "cta": "Wdróż swój zespół AI",
       "setup_suffix": "wdrożenie",
       "badge_popular": "Najpopularniejszy"
     },
@@ -193,7 +193,7 @@
     "cta": {
       "headline": "Gotowy, aby wdrożyć pierwszego AI or Die Super Agent?",
       "subhead": "Bezpłatna konsultacja. Wycenimy lukę dla Twojego konkretnego biznesu — i pokażemy dokładnie, które role Twój zespół może przekazać już dziś.",
-      "book": "Zarezerwuj bezpłatną konsultację",
+      "book": "Wdróż swój zespół AI",
       "phone_label": "Porozmawiaj z naszym agentem AI"
     }
   },

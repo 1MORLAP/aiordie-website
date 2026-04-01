@@ -15,29 +15,29 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://aiordie.now"),
   title: {
-    default: "AI or Die — AI Employees That Actually Work",
+    default: "AI or Die — Deploy + Train + Advise",
     template: "%s — AI or Die",
   },
   description:
-    "We build, deploy, and manage AI or Die Super Agent teams for your business. Legal, finance, sales, marketing — all the roles you need, without the headcount.",
+    "Your AI team. Your infrastructure. Your control. We just build it.",
   icons: {
     icon: "/icon.svg",
     apple: "/icon.svg",
   },
   openGraph: {
     type: "website",
-    title: "AI or Die — AI Employees That Actually Work",
+    title: "AI or Die — Deploy + Train + Advise",
     description:
-      "We build, deploy, and manage AI or Die Super Agent teams for your business. Grow without hiring.",
+      "We deploy AI teams on your infrastructure, train your people, and offer optional advisory.",
     url: "https://aiordie.now",
     siteName: "AI or Die",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI or Die — AI Employees That Actually Work",
+    title: "AI or Die — Deploy + Train + Advise",
     description:
-      "We build, deploy, and manage AI or Die Super Agent teams for your business. Grow without hiring.",
+      "Your AI team. Your infrastructure. Your control. We just build it.",
     site: "@aiordie",
   },
   robots: {

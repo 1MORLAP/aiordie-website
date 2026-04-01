@@ -8,7 +8,7 @@
     "pricing": "Preise",
     "roles": "Rollen",
     "blog": "Blog",
-    "book_consult": "Kostenloses Erstgespräch buchen",
+    "book_consult": "Ihr KI-Team bereitstellen",
     "call_us": "Anrufen",
     "ask_ai_bar": "Fragen Sie Ihre KI nach AI or Die"
   },
@@ -21,9 +21,9 @@
   },
   "hero": {
     "eyebrow": "AI or Die Super Agents",
-    "headline_1": "Ihre Führungskräfte behalten den Titel.",
-    "headline_2": "Die KI übernimmt die Arbeitslast.",
-    "subhead": "AI or Die setzt Super Agents als direkte Reports für Ihre bestehenden Führungskräfte ein — damit Unternehmen Output skalieren, ohne Personal aufzubauen.",
+    "headline_1": "Ihr KI-Team.",
+    "headline_2": "Ihre Infrastruktur. Ihre Kontrolle. Wir bauen es nur.",
+    "subhead": "KI-Support ist kostenlos. Menschlicher Support ist Premium.",
     "cta_consult": "Kostenloses Erstgespräch buchen",
     "cta_call": "Anrufen",
     "phone_label": "Sprechen Sie mit KI in jeder Sprache"
@@ -34,7 +34,7 @@
     "old_label": "Alter Ansatz",
     "old_desc": "3 menschliche Neueinstellungen/Jahr mit Gehalt, Benefits, Ausfallzeiten und Recruiting-Aufwand.",
     "new_label": "AI or Die-Modell",
-    "new_desc": "3 AI or Die Super Agents/Jahr mit 24/7-Abdeckung und laufender Optimierung."
+    "new_desc": "3 AI or Die Super Agents pro Jahr mit 24/7-Abdeckung."
   },
   "roles": {
     "headline": "Rollen, die wir einsetzen",
@@ -72,7 +72,7 @@
   "cta": {
     "eyebrow": "AI or Die",
     "headline": "Bereit, Ihren ersten AI or Die Super Agent einzusetzen?",
-    "subhead": "Kostenloses Erstgespräch. Wir berechnen die Lücke für Ihr konkretes Unternehmen — und zeigen exakt, welche Rollen Ihr Team heute abgeben kann.",
+    "subhead": "KI-Support ist kostenlos. Menschlicher Support ist Premium.",
     "book": "Kostenloses Erstgespräch buchen",
     "phone_label": "Sprechen Sie in jeder Sprache mit unserem KI-Agenten"
   },
@@ -86,8 +86,8 @@
     },
     "tiers": {
       "headline": "Wählen Sie Ihre Teamgröße",
-      "note": "Jede Stufe umfasst vollständige Individualkonfiguration, Tool-Integration und laufende Optimierung. Das ist kein SaaS-Abo — das ist ein eingesetzter Spezialist.",
-      "cta": "Jetzt starten",
+      "note": "Jede Stufe enthält Discovery, Design, Bereitstellung auf Ihrer Infrastruktur, Training, Runbook und 5 Beratungsstunden.",
+      "cta": "Ihr KI-Team bereitstellen",
       "setup_suffix": "Einrichtung",
       "badge_popular": "Am beliebtesten"
     },
@@ -193,7 +193,7 @@
     "cta": {
       "headline": "Bereit, Ihren ersten AI or Die Super Agent einzusetzen?",
       "subhead": "Kostenloses Erstgespräch. Wir berechnen die Lücke für Ihr konkretes Unternehmen — und zeigen exakt, welche Rollen Ihr Team heute abgeben kann.",
-      "book": "Kostenloses Erstgespräch buchen",
+      "book": "Ihr KI-Team bereitstellen",
       "phone_label": "Sprechen Sie mit unserem KI-Agenten"
     }
   },

@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
-import AnimatedCounter from "@/components/AnimatedCounter";
 import ScrollReveal from "@/components/ScrollReveal";
-import {getTranslations} from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 
 export const metadata: Metadata = {
-  title: "Pricing — AI or Die",
+  title: "Pricing — Deploy + Train + Advise",
   description:
-    "Retainer-based pricing for AI or Die Super Agents. $2,000 setup + $2,500/mo retainer per agent. Monthly reviews, model upgrades, strategic access. No contracts.",
+    "One-time deployment pricing for AI teams you own. Training is included. Advisory is optional.",
   openGraph: {
-    title: "AI or Die Super Agent Pricing — AI or Die",
+    title: "AI or Die Pricing — Deploy + Train + Advise",
     description:
-      "$2,000 setup + $2,500/mo retainer. Monthly reviews, model upgrades, strategic access included.",
+      "We build it. You own it. You run it. One-time deployment plus optional advisory.",
     url: "https://aiordie.now/pricing",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI or Die Super Agent Pricing — AI or Die",
-    description: "$2,000 setup + $2,500/mo retainer. No contracts.",
+    title: "AI or Die Pricing — Deploy + Train + Advise",
+    description:
+      "Your AI team. Your infrastructure. Your control. We just build it.",
   },
   alternates: { canonical: "https://aiordie.now/pricing" },
 };
@@ -27,1020 +27,253 @@ const faqJsonLd = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "What's the difference between an AI or Die Super Agent and just using ChatGPT?",
-      acceptedAnswer: { "@type": "Answer", text: "ChatGPT is a general-purpose tool — it knows nothing about your business, has no memory, and requires you to prompt it every time. An AI or Die Super Agent is configured specifically for your role, integrated into your tools and data, and operates autonomously. You're not the operator; you're the manager." },
+      name: "Do you run the agents after deployment?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. We deploy on your infrastructure, hand over access, and train your team to run it independently.",
+      },
     },
     {
       "@type": "Question",
-      name: "How long does setup take?",
-      acceptedAnswer: { "@type": "Answer", text: "Typically 1–2 weeks from your first consult to a live deployed agent. We handle all configuration, integrations, and testing." },
+      name: "Do you hold our API keys?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. You pay providers directly and keep your own credentials. We never see your API keys.",
+      },
     },
     {
       "@type": "Question",
-      name: "Do I need technical knowledge?",
-      acceptedAnswer: { "@type": "Answer", text: "None. You interact with your agents the same way you'd work with a human team member — through chat, email, or Slack. We handle all setup and ongoing management." },
+      name: "What is included in every deployment tier?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Discovery call, custom agent design, deployment on your infrastructure, hands-on training, runbook, AI first-line support training, and 5 hours of post-deploy advisory.",
+      },
     },
     {
       "@type": "Question",
-      name: "What roles are available?",
-      acceptedAnswer: { "@type": "Answer", text: "We deploy 34 roles across 8 departments — marketing, sales, finance, legal, engineering, operations, customer success, and IT/security. See the full list at aiordie.now/roles." },
-    },
-    {
-      "@type": "Question",
-      name: "Do agents work in languages other than English?",
-      acceptedAnswer: { "@type": "Answer", text: "Yes. All agents are multilingual by default — any language in, any language out, any currency. Our phone agent at (786) 998-9310 handles any language too." },
-    },
-    {
-      "@type": "Question",
-      name: "Can agents learn and improve over time?",
-      acceptedAnswer: { "@type": "Answer", text: "Yes. Agents build memory of your business, preferences, and processes. Monthly optimization ensures they stay current with new model releases and your evolving needs." },
-    },
-    {
-      "@type": "Question",
-      name: "What does the $2,000 setup actually cover?",
-      acceptedAnswer: { "@type": "Answer", text: "Full configuration and integration into your specific business — your tools, your data, your knowledge base, your processes. This is what turns a general-purpose AI into a specialist who knows your business." },
-    },
-    {
-      "@type": "Question",
-      name: "Can I cancel?",
-      acceptedAnswer: { "@type": "Answer", text: "Yes. No long-term contracts. Cancel with 30 days notice. You keep all your agent configurations and files — zero lock-in." },
-    },
-    {
-      "@type": "Question",
-      name: "What AI models do the agents use?",
-      acceptedAnswer: { "@type": "Answer", text: "We recommend Anthropic Max 5x ($100/mo) or Max 20x ($200/mo) and OpenAI Pro ($200/mo) for best performance. Venice AI is available for private deployments. You subscribe directly — we never mark up model costs." },
-    },
-    {
-      "@type": "Question",
-      name: "What integrations are supported?",
-      acceptedAnswer: { "@type": "Answer", text: "Email, CRM, Slack, GitHub, Google Workspace, Notion, and 5,400+ more via pre-built integrations. We scope exact requirements during your consult." },
-    },
-    {
-      "@type": "Question",
-      name: "How is my data protected?",
-      acceptedAnswer: { "@type": "Answer", text: "Each client runs on isolated infrastructure — your data never mixes with other businesses. We also offer Private Cloud and On-Premise deployment for maximum control." },
-    },
-    {
-      "@type": "Question",
-      name: "What are the deployment options?",
-      acceptedAnswer: { "@type": "Answer", text: "Three tiers: Cloud (Anthropic/OpenAI), Private Cloud (Venice AI — data stays private), and On-Premise (everything runs on your infrastructure). We match your existing security posture." },
+      name: "How does support escalation work?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Step 1: ask your AI team (free). Step 2: check your runbook (free). Step 3: call us through optional advisory hours.",
+      },
     },
   ],
 };
 
 const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/aod";
 
-const tiers = [
+const deploymentTiers = [
   {
-    name: "1 Agent",
-    setup: "$2,000",
-    monthly: "$2,500/mo",
-    highlight: false,
-    desc: "One Super Agent running continuously. Monthly retainer includes optimization, model upgrades, and strategic access to our team.",
-  },
-  {
-    name: "3 Agents",
-    setup: "$5,000",
-    monthly: "$6,000/mo",
-    highlight: true,
-    badge: "Most Popular",
-    desc: "Three Super Agents running in parallel. Full retainer — monthly reviews, upgrades, and guidance on expanding your AI team.",
-  },
-  {
-    name: "5 Agents",
-    setup: "$7,500",
-    monthly: "$9,000/mo",
-    highlight: false,
-    desc: "Five Super Agents across multiple functions. Priority retainer access and strategic roadmapping for your AI operations.",
-  },
-  {
-    name: "8+ Agents",
-    setup: "Custom",
-    monthly: "Custom",
-    highlight: false,
-    desc: "Full AI workforce. Custom retainer based on scope, complexity, and strategic advisory requirements.",
-  },
-];
-
-const brainCosts = [
-  {
-    provider: "Anthropic",
-    tiers: [
-      { name: "Max 5x", price: "$100/mo" },
-      { name: "Max 20x", price: "$200/mo", rec: true },
+    name: "STARTER",
+    price: "$5,000",
+    detail: "1-2 agents",
+    points: [
+      "Discovery + design",
+      "Deployment on your infrastructure",
+      "Hands-on training + runbook",
+      "5 hours post-deploy advisory",
     ],
   },
   {
-    provider: "OpenAI",
-    tiers: [
-      { name: "Pro", price: "$200/mo", rec: true },
+    name: "GROWTH",
+    price: "$10,000",
+    detail: "3-5 agents",
+    points: [
+      "Everything in Starter",
+      "Multi-agent workflows",
+      "Cross-team orchestration",
+      "5 hours post-deploy advisory",
     ],
   },
   {
-    provider: "Venice AI — Private AI",
-    tiers: [{ name: "API Pay-per-use", price: "Usage-based" }],
+    name: "SCALE",
+    price: "$15,000–$20,000",
+    detail: "6-10 agents",
+    points: [
+      "Full AI workforce design",
+      "Workflow architecture",
+      "Hands-on leadership training",
+      "5 hours post-deploy advisory",
+    ],
+  },
+  {
+    name: "ENTERPRISE",
+    price: "Custom",
+    detail: "10+ agents",
+    points: [
+      "Enterprise-wide rollouts",
+      "Custom governance patterns",
+      "Dedicated solution design",
+      "Executive enablement",
+    ],
   },
 ];
 
-const deploymentOptions = [
+const advisoryTiers = [
   {
-    title: "Cloud",
-    icon: "cloud",
-    forWho: "Cloud-centric teams using Google Drive, Dropbox, cloud CRMs, and SaaS tools.",
-    how: "Hosted AI agents run in the cloud with public model providers.",
-    models: "Anthropic (Claude), OpenAI",
-    privacy: "Standard cloud security. Data is processed by public AI providers.",
-    brainMap: "AI Brain Cost mapping: Anthropic Max 5x/20x or OpenAI Pro subscriptions.",
-    cardClass: "border-[var(--border)] bg-[var(--bg-card)]",
+    name: "LIGHT",
+    price: "$1,500/mo",
+    detail: "4 hours / month",
+    points: ["Monthly review", "Async support", "Problem-solving sessions"],
   },
   {
-    title: "Private Cloud",
-    icon: "shield",
-    forWho: "Privacy-conscious cloud teams in regulated or sensitive industries.",
-    how: "Agents and models are deployed on dedicated private cloud infrastructure.",
-    models: "Venice AI (private)",
-    privacy: "Data never touches public AI providers; it stays in your private environment.",
-    brainMap: "AI Brain Cost mapping: Venice AI private deployment (usage-based).",
-    cardClass: "border-[var(--accent-border)] bg-[var(--accent-subtle)]",
+    name: "STANDARD",
+    price: "$2,500/mo",
+    detail: "8 hours / month",
+    points: ["Strategy sessions", "New agent design", "Priority advisory queue"],
   },
   {
-    title: "On-Premise",
-    icon: "server",
-    forWho: "Teams running in own data centers.",
-    how: "Everything runs on your infrastructure: models, agents, storage, and orchestration.",
-    models: "Self-hosted open-source models",
-    privacy: "Maximum control. Nothing leaves your building unless you choose.",
-    brainMap: "AI Brain Cost mapping: self-hosted model stack, no external subscriptions required.",
-    cardClass: "border-[var(--accent-border)] bg-[var(--bg-secondary)] shadow-[inset_0_2px_12px_0_var(--accent-subtle)]",
+    name: "PRIORITY",
+    price: "$4,000/mo",
+    detail: "16 hours / month",
+    points: ["Priority response", "Roadmapping", "High-frequency advisory access"],
   },
-] as const;
+];
 
-function DeploymentTierIcon({ kind }: { kind: "cloud" | "shield" | "server" }) {
-  const base = {
-    viewBox: "0 0 24 24",
-    fill: "none",
-    stroke: "currentColor",
-    strokeWidth: 1.8,
-    strokeLinecap: "round" as const,
-    strokeLinejoin: "round" as const,
-    "aria-hidden": true,
-  };
-  if (kind === "cloud") {
-    return (
-      <svg className="h-6 w-6" {...base}>
-        <path d="M7.5 18h8.8a4.2 4.2 0 0 0 .3-8.4A5.8 5.8 0 0 0 6 8.7 4.6 4.6 0 0 0 7.5 18Z" />
-      </svg>
-    );
-  }
-  if (kind === "shield") {
-    return (
-      <svg className="h-6 w-6" {...base}>
-        <path d="M12 3 5.5 6v5.3c0 4.2 2.7 7.9 6.5 9.7 3.8-1.8 6.5-5.5 6.5-9.7V6L12 3Z" />
-        <path d="m9.2 12 1.8 1.8 3.8-3.8" />
-      </svg>
-    );
-  }
-  return (
-    <svg className="h-6 w-6" {...base}>
-      <rect x="3" y="5" width="18" height="14" rx="2.5" />
-      <path d="M7 9h10M7 13h6M9 19v2M15 19v2" />
-    </svg>
-  );
-}
-
-type FeatureIconKind = "wrench" | "brain" | "globe" | "plug" | "grid" | "clock" | "shield" | "arrow-up" | "key" | "headset";
-function FeatureIcon({ kind }: { kind: FeatureIconKind }) {
-  const base = { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 1.8, strokeLinecap: "round" as const, strokeLinejoin: "round" as const, className: "h-5 w-5", "aria-hidden": true };
-  if (kind === "wrench") return <svg {...base}><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>;
-  if (kind === "brain") return <svg {...base}><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/></svg>;
-  if (kind === "globe") return <svg {...base}><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>;
-  if (kind === "plug") return <svg {...base}><path d="M12 22v-5"/><path d="M9 8V2"/><path d="M15 8V2"/><path d="M18 8H6a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2z"/></svg>;
-  if (kind === "grid") return <svg {...base}><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>;
-  if (kind === "clock") return <svg {...base}><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>;
-  if (kind === "shield") return <svg {...base}><path d="M12 3 5.5 6v5.3c0 4.2 2.7 7.9 6.5 9.7 3.8-1.8 6.5-5.5 6.5-9.7V6L12 3Z"/><path d="m9.2 12 1.8 1.8 3.8-3.8"/></svg>;
-  if (kind === "arrow-up") return <svg {...base}><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>;
-  if (kind === "key") return <svg {...base}><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></svg>;
-  return <svg {...base}><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>;
-}
-
-export default async function PricingPage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
+export default async function PricingPage() {
   const t = await getTranslations();
+
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       <section className="grain-overlay mesh-bg border-b border-[var(--border)] px-6 pb-16 pt-12 sm:pt-20">
-        <div className="relative z-10 mx-auto max-w-6xl">
+        <div className="mx-auto max-w-6xl">
           <ScrollReveal>
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
-              {t('pricing.hero.eyebrow')}
-            </p>
-          </ScrollReveal>
-          <ScrollReveal delayMs={80}>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">Pricing</p>
             <h1 className="font-space-grotesk text-balance text-5xl font-extrabold tracking-tight text-[var(--text-primary)] md:text-7xl">
-              {t('pricing.hero.headline_1')}
-              <br />
-              {t('pricing.hero.headline_2')}
+              Deploy + Train + Advise
             </h1>
-          </ScrollReveal>
-          <ScrollReveal delayMs={140}>
-            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-[var(--text-secondary)]">
-              {t('pricing.hero.subhead')}
+            <p className="mt-5 max-w-3xl text-lg leading-relaxed text-[var(--text-secondary)]">
+              One-time deployment. Included training. Optional advisory. We build your AI team on your infrastructure,
+              then hand over control.
             </p>
-          </ScrollReveal>
-          <ScrollReveal delayMs={200}>
-            <div className="mt-7 inline-flex rounded-full border border-[var(--accent-border)] bg-[var(--accent-subtle)] px-4 py-2 text-sm font-semibold text-[var(--accent)]">
-              {t('pricing.hero.badge')}
+            <div className="mt-6 inline-flex rounded-full border border-[var(--accent-border)] bg-[var(--accent-subtle)] px-4 py-2 text-sm font-semibold text-[var(--accent)]">
+              AI support is free. Human support is premium.
             </div>
           </ScrollReveal>
         </div>
       </section>
 
-      <section className="bg-[var(--bg-secondary)] border-y border-[var(--border)] px-6 py-16 md:py-20">
+      <section className="px-6 py-16 md:py-20">
         <div className="mx-auto max-w-6xl">
           <ScrollReveal>
-            <h2 className="font-space-grotesk mb-2 text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
-              {t('math.headline')}
-            </h2>
-            <p className="mb-8 max-w-2xl text-[var(--text-secondary)]">
-              {t('math.subhead')}
-            </p>
+            <h2 className="font-space-grotesk mb-8 text-3xl font-bold tracking-tight md:text-5xl">Deployment (one-time)</h2>
           </ScrollReveal>
-          <div className="grid items-stretch gap-5 md:grid-cols-2">
-            <ScrollReveal className="h-full">
-              <article className="flex h-full flex-col rounded-2xl border border-[var(--danger-border)] bg-[var(--danger-subtle)] p-6">
-                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-[var(--danger)]">{t('math.old_label')}</p>
-                <div className="font-space-grotesk text-5xl font-bold text-[var(--text-primary)]">
-                  $<AnimatedCounter to={330000} />
-                </div>
-                <p className="mt-3 flex-1 text-sm text-[var(--text-secondary)]">
-                  {t('math.old_desc')}
-                </p>
-              </article>
-            </ScrollReveal>
-            <ScrollReveal delayMs={100} className="h-full">
-              <article className="flex h-full flex-col rounded-2xl border border-[var(--success-border)] bg-[var(--success-subtle)] p-6">
-                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-[var(--success)]">{t('math.new_label')}</p>
-                <div className="font-space-grotesk text-5xl font-bold text-[var(--text-primary)]">
-                  $<AnimatedCounter to={19400} />
-                </div>
-                <p className="mt-3 flex-1 text-sm text-[var(--text-secondary)]">
-                  {t('math.new_desc')}
-                </p>
-              </article>
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
-
-      <section className="px-6 py-16 md:py-24">
-        <div className="mx-auto max-w-6xl">
-          <ScrollReveal>
-            <h2 className="font-space-grotesk mb-10 text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
-              {t('pricing.tiers.headline')}
-            </h2>
-          </ScrollReveal>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {tiers.map((tier, idx) => (
-              <ScrollReveal key={tier.name} delayMs={idx * 70}>
-                <div
-                  className={`group relative flex h-full flex-col rounded-2xl border p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-border)] hover:shadow-[0_24px_70px_-46px_var(--accent)] ${
-                    tier.highlight
-                      ? "border-[var(--accent-border)] bg-[var(--accent-subtle)] shadow-[0_26px_70px_-50px_var(--accent)]"
-                      : "border-[var(--border)] bg-[var(--bg-card)]"
-                  }`}
-                >
-                  {tier.badge && (
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[var(--accent)] px-3 py-1 text-xs font-bold text-[var(--text-on-accent)] whitespace-nowrap">
-                      {tier.badge}
-                    </div>
-                  )}
-                  <p className="mb-2 text-sm font-semibold text-[var(--text-secondary)]">{tier.name}</p>
-                  <p className="font-space-grotesk text-3xl font-bold text-[var(--text-primary)]">{tier.monthly}</p>
-                  <p className="mb-4 text-sm text-[var(--text-muted)]">{tier.setup} setup</p>
-                  <p className="flex-1 text-sm leading-relaxed text-[var(--text-secondary)]">{tier.desc}</p>
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            {deploymentTiers.map((tier, idx) => (
+              <ScrollReveal key={tier.name} delayMs={idx * 60}>
+                <article className="flex h-full flex-col rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6">
+                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">{tier.name}</p>
+                  <p className="mt-2 font-space-grotesk text-3xl font-bold text-[var(--text-primary)]">{tier.price}</p>
+                  <p className="mt-1 text-sm text-[var(--text-secondary)]">{tier.detail}</p>
+                  <ul className="mt-5 flex-1 space-y-2 text-sm text-[var(--text-secondary)]">
+                    {tier.points.map((point) => (
+                      <li key={point} className="flex items-start gap-2">
+                        <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
                   <a
                     href={CONSULT_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`mt-6 block rounded-lg py-3 text-center text-sm font-semibold transition-all ${
-                      tier.highlight
-                        ? "bg-[var(--accent)] text-[var(--text-on-accent)] hover:bg-[var(--accent-hover)]"
-                        : "border border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--accent-border)] hover:text-[var(--accent)]"
-                    }`}
+                    className="mt-6 rounded-lg border border-[var(--accent-border)] bg-[var(--accent-subtle)] px-4 py-2 text-center text-sm font-semibold text-[var(--accent)]"
                   >
-                    {t('pricing.tiers.cta')}
+                    Deploy your AI team
                   </a>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-          <ScrollReveal delayMs={120}>
-            <p className="mt-6 max-w-3xl text-sm leading-relaxed text-[var(--text-secondary)]">
-              Each tier includes full custom configuration, tool integration, and ongoing
-              optimization. This is not a SaaS subscription — it&apos;s a deployed specialist.
-            </p>
-          </ScrollReveal>
-        </div>
-      </section>
-
-      <section className="px-6 pb-16 md:pb-20">
-        <div className="mx-auto max-w-6xl">
-          <ScrollReveal>
-            <h2 className="font-space-grotesk text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
-              {t('pricing.comparison.headline')}
-            </h2>
-            <p className="mt-3 max-w-4xl text-[var(--text-secondary)]">
-              {t('pricing.comparison.subhead')}
-            </p>
-          </ScrollReveal>
-
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
-            {/* Column 1: ChatGPT */}
-            <ScrollReveal delayMs={40}>
-              <article className="flex h-full flex-col rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6">
-                <div className="mb-4">
-                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">{t('pricing.comparison.tier1_label')}</p>
-                  <h3 className="font-space-grotesk mt-2 text-xl font-bold text-[var(--text-primary)]">{t('pricing.comparison.tier1_name')}</h3>
-                  <p className="mt-1 text-xs font-semibold text-[var(--text-muted)]">{t('pricing.comparison.tier1_price')}</p>
-                </div>
-                <p className="mb-4 text-sm leading-relaxed text-[var(--text-secondary)]">
-                  {t('pricing.comparison.tier1_desc')}
-                </p>
-                <ul className="flex-1 space-y-2.5 text-sm text-[var(--text-secondary)]">
-                  <li className="flex items-start gap-2">
-                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />
-                    Starts fresh every conversation — no memory of your business
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />
-                    Can&apos;t take action — it answers, but doesn&apos;t do
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />
-                    Stops the second you step away from the screen
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />
-                    No integrations — copy/paste is the workflow
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />
-                    You are the operator. Always.
-                  </li>
-                </ul>
-                <div className="mt-6 rounded-lg border border-[var(--border)] bg-[var(--bg-secondary)] px-4 py-3">
-                  <p className="text-xs font-semibold text-[var(--text-muted)]">{t('pricing.comparison.best_for')}</p>
-                  <p className="mt-1 text-sm text-[var(--text-secondary)]">{t('pricing.comparison.tier1_best')}</p>
-                </div>
-              </article>
-            </ScrollReveal>
-
-            {/* Column 2: Generic Agent (OpenClaw) */}
-            <ScrollReveal delayMs={100}>
-              <article className="flex h-full flex-col rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6">
-                <div className="mb-4">
-                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">{t('pricing.comparison.tier2_label')}</p>
-                  <h3 className="font-space-grotesk mt-2 text-xl font-bold text-[var(--text-primary)]">{t('pricing.comparison.tier2_name')}</h3>
-                  <p className="mt-1 text-xs font-semibold text-[var(--text-muted)]">{t('pricing.comparison.tier2_price')}</p>
-                </div>
-                <p className="mb-4 text-sm leading-relaxed text-[var(--text-secondary)]">
-                  {t('pricing.comparison.tier2_desc')}
-                </p>
-                <ul className="flex-1 space-y-2.5 text-sm text-[var(--text-secondary)]">
-                  <li className="flex items-start gap-2">
-                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />
-                    Knows nothing about your business until you teach it — and that takes weeks
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />
-                    No persistent memory across sessions by default
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />
-                    Integrations require technical setup — each one is a project
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />
-                    You&apos;re the prompt engineer, the QA, and the manager
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--text-muted)]" />
-                    Generic by design — same setup as every other customer
-                  </li>
-                </ul>
-                <div className="mt-6 rounded-lg border border-[var(--border)] bg-[var(--bg-secondary)] px-4 py-3">
-                  <p className="text-xs font-semibold text-[var(--text-muted)]">{t('pricing.comparison.best_for')}</p>
-                  <p className="mt-1 text-sm text-[var(--text-secondary)]">{t('pricing.comparison.tier2_best')}</p>
-                </div>
-              </article>
-            </ScrollReveal>
-
-            {/* Column 3: AI or Die */}
-            <ScrollReveal delayMs={160}>
-              <article className="flex h-full flex-col rounded-2xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] p-6 shadow-[0_24px_60px_-44px_var(--accent)]">
-                <div className="mb-4">
-                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">{t('pricing.comparison.tier3_label')}</p>
-                  <h3 className="font-space-grotesk mt-2 text-xl font-bold text-[var(--text-primary)]">{t('pricing.comparison.tier3_name')}</h3>
-                  <p className="mt-1 text-xs font-semibold text-[var(--accent)]">{t('pricing.comparison.tier3_price')}</p>
-                </div>
-                <p className="mb-4 text-sm leading-relaxed text-[var(--text-secondary)]">
-                  {t('pricing.comparison.tier3_desc')}
-                </p>
-                <ul className="flex-1 space-y-2.5 text-sm text-[var(--text-secondary)]">
-                  <li className="flex items-start gap-2">
-                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
-                    Embedded into your CRM, email, Slack, and tools from day one
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
-                    Knows your brand voice, your clients, your SOPs — trained on your data
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
-                    Persistent memory — builds context across every interaction
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
-                    Operates 24/7 without you — handles tasks, not just questions
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
-                    Upgraded continuously — new models, better performance, no effort from you
-                  </li>
-                </ul>
-                <div className="mt-6 rounded-lg border border-[var(--accent-border)] bg-[var(--bg)] px-4 py-3">
-                  <p className="text-xs font-semibold text-[var(--accent)]">{t('pricing.comparison.best_for')}</p>
-                  <p className="mt-1 text-sm text-[var(--text-secondary)]">{t('pricing.comparison.tier3_best')}</p>
-                </div>
-              </article>
-            </ScrollReveal>
-          </div>
-
-          {/* Skills IP block */}
-          <ScrollReveal delayMs={60}>
-            <div className="mt-8 overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--bg-card)]">
-              <div className="px-6 pt-6 pb-5 md:px-8 md:pt-8">
-                <div className="flex flex-wrap items-start justify-between gap-5">
-                  <div className="flex-1 min-w-[240px]">
-                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">{t('pricing.skills.eyebrow')}</p>
-                    <h3 className="font-space-grotesk mt-2 text-2xl font-bold text-[var(--text-primary)] md:text-3xl">{t('pricing.skills.headline')}</h3>
-                    <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[var(--text-secondary)]">
-                      {t('pricing.skills.body')}
-                    </p>
-                  </div>
-                  <div className="shrink-0 rounded-2xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] px-6 py-4 text-center">
-                    <p className="font-space-grotesk text-xl font-bold text-[var(--text-primary)] leading-tight">{t('pricing.skills.badge_headline')}</p>
-                    <p className="mt-1 text-sm font-medium text-[var(--accent)]">{t('pricing.skills.badge_sub')}</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Education analogy ladder */}
-              <div className="grid grid-cols-1 divide-y divide-[var(--border)] border-t border-[var(--border)] sm:grid-cols-3 sm:divide-x sm:divide-y-0">
-                <div className="px-6 py-5">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--text-muted)]">{t('pricing.skills.tier1_label')}</p>
-                  <p className="mt-1.5 font-space-grotesk text-base font-bold text-[var(--text-secondary)]">{t('pricing.skills.tier1_title')}</p>
-                  <p className="mt-2 text-xs leading-relaxed text-[var(--text-muted)]">
-                    {t('pricing.skills.tier1_desc')}
-                  </p>
-                </div>
-                <div className="px-6 py-5">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--text-muted)]">{t('pricing.skills.tier2_label')}</p>
-                  <p className="mt-1.5 font-space-grotesk text-base font-bold text-[var(--text-secondary)]">{t('pricing.skills.tier2_title')}</p>
-                  <p className="mt-2 text-xs leading-relaxed text-[var(--text-muted)]">
-                    {t('pricing.skills.tier2_desc')}
-                  </p>
-                </div>
-                <div className="bg-[var(--accent-subtle)] px-6 py-5">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--accent)]">{t('pricing.skills.tier3_label')}</p>
-                  <p className="mt-1.5 font-space-grotesk text-base font-bold text-[var(--text-primary)]">{t('pricing.skills.tier3_title')}</p>
-                  <p className="mt-2 text-xs leading-relaxed text-[var(--text-secondary)]">
-                    {t('pricing.skills.tier3_desc')}
-                  </p>
-                </div>
-              </div>
-
-              {/* Skills pill list */}
-              <div className="border-t border-[var(--border)] px-6 py-5 md:px-8">
-                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">{t('pricing.skills.included_label')}</p>
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    "Legal contract review",
-                    "Financial reporting",
-                    "Lead qualification",
-                    "Customer support triage",
-                    "Email & calendar management",
-                    "Competitive research",
-                    "Invoice processing",
-                    "Multi-language communication",
-                    "CRM data hygiene",
-                    "Meeting prep & follow-up",
-                    "Risk flagging",
-                    "Document summarization",
-                  ].map((skill) => (
-                    <span
-                      key={skill}
-                      className="rounded-full border border-[var(--border)] bg-[var(--bg-secondary)] px-3 py-1 text-xs font-medium text-[var(--text-secondary)]"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                  <span className="rounded-full border border-[var(--accent-border)] bg-[var(--accent-subtle)] px-3 py-1 text-xs font-semibold text-[var(--accent)]">
-                    + role-specific skills
-                  </span>
-                </div>
-              </div>
-            </div>
-          </ScrollReveal>
-
-          {/* Why the price gap */}
-          <ScrollReveal delayMs={80}>
-            <div className="mt-8 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8">
-              <h3 className="font-space-grotesk text-xl font-bold text-[var(--text-primary)] md:text-2xl">
-                {t('pricing.comparison.diy_why')}
-              </h3>
-              <p className="mt-3 max-w-4xl text-sm leading-relaxed text-[var(--text-secondary)]">
-                {t('pricing.comparison.diy_p1')}
-              </p>
-              <blockquote className="my-5 rounded-xl border-l-4 border-[var(--accent)] bg-[var(--accent-subtle)] py-4 pl-5 pr-4">
-                <p className="text-sm font-semibold italic leading-relaxed text-[var(--text-primary)]">
-                  {t('pricing.comparison.diy_quote')}
-                </p>
-                <p className="mt-2 text-xs font-semibold text-[var(--accent)]">{t('pricing.comparison.diy_quote_label')}</p>
-              </blockquote>
-
-              <p className="mt-3 max-w-4xl text-sm leading-relaxed text-[var(--text-secondary)]">
-                {t('pricing.comparison.diy_p2')}
-              </p>
-              <div className="mt-6 flex flex-wrap items-center gap-4 text-sm">
-                <div className="flex items-center gap-2">
-                  <span className="font-semibold text-[var(--text-muted)]">{t('pricing.comparison.diy_vs_label')}</span>
-                  <span className="text-[var(--text-secondary)]">{t('pricing.comparison.diy_vs_value')}</span>
-                </div>
-                <span className="text-[var(--text-muted)]">vs</span>
-                <div className="flex items-center gap-2">
-                  <span className="font-semibold text-[var(--accent)]">{t('pricing.comparison.aod_label')}</span>
-                  <span className="text-[var(--text-secondary)]">{t('pricing.comparison.aod_value')}</span>
-                </div>
-              </div>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
-
-      <section className="bg-[var(--bg-secondary)] border-y border-[var(--border)] px-6 py-16">
-        <div className="mx-auto max-w-6xl">
-          <ScrollReveal>
-            <div className="mb-2 flex flex-wrap items-center gap-3">
-              <h2 className="font-space-grotesk text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-4xl">
-                AI brain costs
-              </h2>
-              <span className="rounded-full border border-[var(--border)] bg-[var(--bg-card)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.08em] text-[var(--text-muted)]">
-                Not included in service pricing
-              </span>
-            </div>
-            <p className="mb-9 max-w-2xl text-sm leading-relaxed text-[var(--text-secondary)]">
-              AI agents need a model subscription. You pay providers directly — zero markup from us.
-            </p>
-          </ScrollReveal>
-          <div className="mb-7 grid gap-5 md:grid-cols-3">
-            {brainCosts.map((b, idx) => (
-              <ScrollReveal key={b.provider} delayMs={idx * 70}>
-                <article className="flex h-full flex-col rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5">
-                  <h3 className="mb-4 font-semibold text-[var(--text-primary)]">{b.provider}</h3>
-                  <div className="flex-1 space-y-2">
-                    {b.tiers.map((tier) => (
-                      <div
-                        key={tier.name}
-                        className={`flex items-center justify-between text-sm ${
-                          tier.rec ? "font-semibold text-[var(--accent)]" : "text-[var(--text-secondary)]"
-                        }`}
-                      >
-                        <span>
-                          {tier.name}
-                          {tier.rec && (
-                            <span className="ml-2 rounded-full border border-[var(--accent-border)] bg-[var(--accent-subtle)] px-2 py-0.5 text-[10px] uppercase tracking-[0.08em]">
-                              Recommended
-                            </span>
-                          )}
-                        </span>
-                        <span>{tier.price}</span>
-                      </div>
-                    ))}
-                  </div>
                 </article>
               </ScrollReveal>
             ))}
           </div>
-          <ScrollReveal>
-            <div className="rounded-xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] p-4">
-              <p className="text-sm font-medium text-[var(--text-primary)]">
-                Recommendation: Anthropic Max 20x ($200/mo) or OpenAI Pro ($200/mo) for
-                production-grade performance. Choose Venice AI for private/on-prem workflows.
-              </p>
-            </div>
-          </ScrollReveal>
         </div>
       </section>
 
-      <section className="px-6 pb-16 pt-16">
+      <section className="border-y border-[var(--border)] bg-[var(--bg-secondary)] px-6 py-16 md:py-20">
         <div className="mx-auto max-w-6xl">
           <ScrollReveal>
-            <h2 className="font-space-grotesk text-2xl font-bold text-[var(--text-primary)] mb-2">Tool &amp; API costs vary by deployment</h2>
-            <p className="text-sm text-[var(--text-secondary)] mb-6 max-w-2xl">Every implementation uses a different stack. These are common tools our agents integrate with — you pay providers directly, no markup from us.</p>
+            <h2 className="font-space-grotesk mb-8 text-3xl font-bold tracking-tight md:text-5xl">Advisory (optional monthly)</h2>
           </ScrollReveal>
-          <ScrollReveal delayMs={60}>
-            <div className="flex flex-wrap gap-3">
-              {[
-                { name: "APIFY", range: "$5–49/mo" },
-                { name: "Twilio", range: "Usage-based" },
-                { name: "Firecrawl", range: "$16/mo" },
-                { name: "PhantomBuster", range: "$56/mo" },
-                { name: "Brave Search", range: "$3/mo" },
-                { name: "Vercel", range: "$20/mo" },
-                { name: "AgentMail", range: "$10/mo" },
-                { name: "GitHub", range: "$4/mo" },
-                { name: "Tailscale", range: "$6/mo" },
-                { name: "Pinata", range: "$20/mo" },
-                { name: "Notion", range: "$10/mo" },
-              ].map((tool) => (
-                <div key={tool.name} className="rounded-full border border-[var(--border)] bg-[var(--bg-card)] px-4 py-2 text-sm">
-                  <span className="font-semibold text-[var(--text-primary)]">{tool.name}</span>
-                  <span className="ml-2 text-[var(--text-muted)]">{tool.range}</span>
-                </div>
-              ))}
-            </div>
-            <p className="mt-4 text-xs text-[var(--text-muted)]">Not every agent needs all tools. We scope exact requirements during your consult.</p>
-          </ScrollReveal>
-        </div>
-      </section>
-
-      <section className="bg-[var(--bg-secondary)] border-y border-[var(--border)] px-6 py-16 md:py-24">
-        <div className="mx-auto max-w-6xl">
-          <ScrollReveal>
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">{t('pricing.methodology.eyebrow')}</p>
-            <h2 className="font-space-grotesk text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
-              {t('pricing.methodology.headline')}
-            </h2>
-            <p className="mt-3 max-w-3xl text-[var(--text-secondary)]">
-              {t('pricing.methodology.subhead')}
-            </p>
-          </ScrollReveal>
-
-          <div className="mt-12 relative">
-            {/* Vertical connector line — desktop only */}
-            <div className="absolute left-[27px] top-10 hidden h-[calc(100%-5rem)] w-px bg-[var(--border)] md:block" />
-
-            <div className="space-y-8">
-
-              {/* Step 00 */}
-              <ScrollReveal delayMs={40}>
-                <div className="relative flex gap-6">
-                  <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--accent)] bg-[var(--bg)] text-center">
-                    <span className="font-space-grotesk text-xs font-bold text-[var(--accent)] leading-none">00</span>
-                  </div>
-                  <div className="flex-1 rounded-2xl border border-[var(--accent-border)] bg-[var(--bg-card)] p-6 md:p-8">
-                    <div className="flex flex-wrap items-start justify-between gap-3">
-                      <div>
-                        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Start here</p>
-                        <h3 className="font-space-grotesk mt-1 text-xl font-bold text-[var(--text-primary)]">Quick Intro Call</h3>
-                      </div>
-                      <span className="rounded-full border border-[var(--border)] bg-[var(--bg-secondary)] px-3 py-1 text-xs font-semibold text-[var(--text-muted)]">15 min · Free</span>
-                    </div>
-                    <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                      No decks, no pitch. A short call to make sure we&apos;re a fit —
-                      what you&apos;re running, where the friction is, and whether an AI or Die Super Agent
-                      is the right move right now. If it is, we schedule the Design Session and get moving.
-                    </p>
-                    <div className="mt-5">
-                      <a
-                        href={CONSULT_URL}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block rounded-lg bg-[var(--accent)] px-5 py-2.5 text-sm font-bold text-[var(--text-on-accent)] transition-all hover:bg-[var(--accent-hover)]"
-                      >
-                        Schedule the intro call
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </ScrollReveal>
-
-              {/* Step 01 */}
-              <ScrollReveal delayMs={55}>
-                <div className="relative flex gap-6">
-                  <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--border)] bg-[var(--bg)] text-center">
-                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">01</span>
-                  </div>
-                  <div className="flex-1 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8">
-                    <div className="flex flex-wrap items-start justify-between gap-3">
-                      <div>
-                        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">Async · 5 minutes</p>
-                        <h3 className="font-space-grotesk mt-1 text-xl font-bold text-[var(--text-primary)]">Pre-Session Questionnaire</h3>
-                      </div>
-                      <span className="rounded-full border border-[var(--border)] bg-[var(--bg-secondary)] px-3 py-1 text-xs font-semibold text-[var(--text-muted)]">Short · AI-reviewed before your call</span>
-                    </div>
-                    <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                      Before your Design Session, we send a short questionnaire — 10 questions, 5 minutes.
-                      Your answers let us show up prepared: no time wasted on basics, no generic suggestions.
-                      We already know your business before the call starts.
-                    </p>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {["Business type & size", "Current team structure", "Biggest bottlenecks", "Tools you use today", "Budget range"].map((tag) => (
-                        <span key={tag} className="rounded-full bg-[var(--bg-secondary)] border border-[var(--border)] px-3 py-1 text-xs text-[var(--text-muted)]">{tag}</span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </ScrollReveal>
-
-              {/* Step 02 */}
-              <ScrollReveal delayMs={60}>
-                <div className="relative flex gap-6">
-                  <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--border)] bg-[var(--bg)] text-center">
-                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">02</span>
-                  </div>
-                  <div className="flex-1 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8">
-                    <div className="flex flex-wrap items-start justify-between gap-3">
-                      <div>
-                        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">Free · Week 1, Day 1</p>
-                        <h3 className="font-space-grotesk mt-1 text-xl font-bold text-[var(--text-primary)]">Design Session</h3>
-                      </div>
-                      <span className="rounded-full border border-[var(--border)] bg-[var(--bg-secondary)] px-3 py-1 text-xs font-semibold text-[var(--text-muted)]">1 hour · Human-led, AI-assisted</span>
-                    </div>
-                    <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                      You talk, we map. A human consultant runs the call while AI structures everything
-                      in real time: your workflows, your bottlenecks, your highest-leverage roles.
-                      By the end, we know exactly which agent to build first, what it needs to do,
-                      and what it&apos;ll cost. No obligation — just clarity.
-                    </p>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {["Role scoping", "Workflow mapping", "Tool inventory", "Priority ranking"].map((tag) => (
-                        <span key={tag} className="rounded-full bg-[var(--bg-secondary)] border border-[var(--border)] px-3 py-1 text-xs text-[var(--text-muted)]">{tag}</span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </ScrollReveal>
-
-              {/* Step 03 */}
-              <ScrollReveal delayMs={80}>
-                <div className="relative flex gap-6">
-                  <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--border)] bg-[var(--bg)] text-center">
-                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">03</span>
-                  </div>
-                  <div className="flex-1 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8">
-                    <div className="flex flex-wrap items-start justify-between gap-3">
-                      <div>
-                        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">Week 1 — Days 2–3</p>
-                        <h3 className="font-space-grotesk mt-1 text-xl font-bold text-[var(--text-primary)]">Proposal &amp; Kickoff</h3>
-                      </div>
-                      <span className="rounded-full border border-[var(--border)] bg-[var(--bg-secondary)] px-3 py-1 text-xs font-semibold text-[var(--text-muted)]">Async · 24–48 hrs</span>
-                    </div>
-                    <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                      We send a scoped proposal — the exact agent we&apos;ll build, what it covers,
-                      the integrations required, and the total cost. No surprises, no vague estimates.
-                      Once you sign off, setup begins immediately and your custom questionnaire arrives within the day.
-                    </p>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {["Scoped deliverables", "Fixed pricing", "Integration plan", "Questionnaire unlocked"].map((tag) => (
-                        <span key={tag} className="rounded-full bg-[var(--bg-secondary)] border border-[var(--border)] px-3 py-1 text-xs text-[var(--text-muted)]">{tag}</span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </ScrollReveal>
-
-              {/* Step 04 */}
-              <ScrollReveal delayMs={100}>
-                <div className="relative flex gap-6">
-                  <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--border)] bg-[var(--bg)] text-center">
-                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">04</span>
-                  </div>
-                  <div className="flex-1 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8">
-                    <div className="flex flex-wrap items-start justify-between gap-3">
-                      <div>
-                        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">Week 1 — Days 3–5</p>
-                        <h3 className="font-space-grotesk mt-1 text-xl font-bold text-[var(--text-primary)]">Custom Configuration Questionnaire</h3>
-                      </div>
-                      <span className="rounded-full border border-[var(--border)] bg-[var(--bg-secondary)] px-3 py-1 text-xs font-semibold text-[var(--text-muted)]">Async · AI-generated, human-reviewed</span>
-                    </div>
-                    <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                      A detailed questionnaire built specifically for your business and the role we&apos;re
-                      deploying — not a generic intake form. We dig into your brand voice, your clients,
-                      your edge cases, your SOPs. You fill it on your schedule.
-                      We use it to train your agent with precision.
-                    </p>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {["Brand voice & tone", "Client personas", "Standard procedures", "Edge cases & exceptions", "Tool credentials"].map((tag) => (
-                        <span key={tag} className="rounded-full bg-[var(--bg-secondary)] border border-[var(--border)] px-3 py-1 text-xs text-[var(--text-muted)]">{tag}</span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </ScrollReveal>
-
-              {/* Step 05 */}
-              <ScrollReveal delayMs={120}>
-                <div className="relative flex gap-6">
-                  <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--border)] bg-[var(--bg)] text-center">
-                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">05</span>
-                  </div>
-                  <div className="flex-1 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-8">
-                    <div className="flex flex-wrap items-start justify-between gap-3">
-                      <div>
-                        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">Week 2</p>
-                        <h3 className="font-space-grotesk mt-1 text-xl font-bold text-[var(--text-primary)]">Deployment &amp; Training Session</h3>
-                      </div>
-                      <span className="rounded-full border border-[var(--border)] bg-[var(--bg-secondary)] px-3 py-1 text-xs font-semibold text-[var(--text-muted)]">1 hour · Human-led, AI-assisted</span>
-                    </div>
-                    <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                      Your agent is live. We walk you through it together — a human consultant shows
-                      you exactly how it works, what it can handle, where to push it, and how to get
-                      the most out of it from day one. No documentation to wade through.
-                      A real person walks you through your actual agent.
-                    </p>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {["Live walkthrough", "Integration testing", "Edge case review", "Handoff protocol"].map((tag) => (
-                        <span key={tag} className="rounded-full bg-[var(--bg-secondary)] border border-[var(--border)] px-3 py-1 text-xs text-[var(--text-muted)]">{tag}</span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </ScrollReveal>
-
-              {/* Step 06 */}
-              <ScrollReveal delayMs={160}>
-                <div className="relative flex gap-6">
-                  <div className="relative z-10 flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-2xl border-2 border-[var(--border)] bg-[var(--bg)] text-center">
-                    <span className="font-space-grotesk text-xs font-bold text-[var(--text-secondary)] leading-none">06</span>
-                  </div>
-                  <div className="flex-1 rounded-2xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] p-6 md:p-8">
-                    <div className="flex flex-wrap items-start justify-between gap-3">
-                      <div>
-                        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Ongoing</p>
-                        <h3 className="font-space-grotesk mt-1 text-xl font-bold text-[var(--text-primary)]">Support, Optimization &amp; Upgrades</h3>
-                      </div>
-                      <span className="rounded-full border border-[var(--accent-border)] bg-[var(--bg)] px-3 py-1 text-xs font-semibold text-[var(--accent)]">AI + human · Included in $2,500/mo</span>
-                    </div>
-                    <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                      You&apos;re never on your own. Your agent is monitored, improved, and kept current —
-                      new model releases applied automatically, performance tuned monthly, and a human
-                      available when you need one. Support is AI-first for speed, human-backed for
-                      anything that matters.
-                    </p>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {["Monthly optimization", "Model upgrades", "AI support 24/7", "Human escalation", "Expansion planning"].map((tag) => (
-                        <span key={tag} className="rounded-full bg-[var(--bg)] border border-[var(--accent-border)] px-3 py-1 text-xs text-[var(--text-secondary)]">{tag}</span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </ScrollReveal>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-            <section className="px-6 py-16 md:py-24">
-        <div className="mx-auto max-w-6xl">
-          <ScrollReveal>
-            <h2 className="font-space-grotesk mb-10 text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
-              {t('pricing.features.headline')}
-            </h2>
-          </ScrollReveal>
-          <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-5">
-            {([
-              { icon: "wrench", name: "Custom-built for you", desc: "Configured to your business, tools, and processes" },
-              { icon: "brain", name: "Memory that works", desc: "Remembers context, learns over time" },
-              { icon: "globe", name: "Every language", desc: "Any language in, any language out, any currency" },
-              { icon: "plug", name: "Tool integrations", desc: "Connects to the apps you already use" },
-              { icon: "grid", name: "5,400+ integrations", desc: "Email, CRM, Slack, GitHub, and more" },
-              { icon: "clock", name: "24/7 operation", desc: "No sick days, no time zones, no lag" },
-              { icon: "shield", name: "Isolated infrastructure", desc: "Your data never mixes with other clients" },
-              { icon: "arrow-up", name: "Monthly improvements", desc: "New models, better performance, ongoing tuning" },
-              { icon: "key", name: "You own everything", desc: "All configs, data, and outputs belong to you" },
-              { icon: "headset", name: "Remote support", desc: "Real humans available when you need them" },
-            ] as { icon: FeatureIconKind; name: string; desc: string }[]).map((feature, idx) => (
-              <ScrollReveal key={feature.name} delayMs={idx * 40}>
-                <div className="group flex h-full flex-col items-center rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-border)] hover:shadow-[0_16px_40px_-20px_var(--accent)]">
-                  <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--bg-secondary)] text-[var(--accent)]">
-                    <FeatureIcon kind={feature.icon} />
-                  </div>
-                  <p className="font-space-grotesk text-sm font-bold text-[var(--text-primary)]">{feature.name}</p>
-                  <p className="mt-1 text-xs leading-relaxed text-[var(--text-muted)]">{feature.desc}</p>
-                </div>
+          <div className="grid gap-5 md:grid-cols-3">
+            {advisoryTiers.map((tier, idx) => (
+              <ScrollReveal key={tier.name} delayMs={idx * 60}>
+                <article className="flex h-full flex-col rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6">
+                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]">{tier.name}</p>
+                  <p className="mt-2 font-space-grotesk text-3xl font-bold text-[var(--text-primary)]">{tier.price}</p>
+                  <p className="mt-1 text-sm text-[var(--text-secondary)]">{tier.detail}</p>
+                  <ul className="mt-5 flex-1 space-y-2 text-sm text-[var(--text-secondary)]">
+                    {tier.points.map((point) => (
+                      <li key={point} className="flex items-start gap-2">
+                        <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                  <a
+                    href={CONSULT_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 rounded-lg border border-[var(--border)] px-4 py-2 text-center text-sm font-semibold text-[var(--text-primary)]"
+                  >
+                    Book advisory hours
+                  </a>
+                </article>
               </ScrollReveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-16 md:py-20">
+        <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2">
+          <ScrollReveal>
+            <article className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Service model</p>
+              <h3 className="font-space-grotesk mt-2 text-2xl font-bold text-[var(--text-primary)]">Three phases</h3>
+              <ul className="mt-4 space-y-3 text-sm text-[var(--text-secondary)]">
+                <li><strong>1. DEPLOY:</strong> assess, design, build, deploy on your infrastructure, hand over access.</li>
+                <li><strong>2. TRAIN:</strong> train your team, deliver runbooks, teach ownership workflows.</li>
+                <li><strong>3. ADVISE:</strong> optional expert support for edge cases and new initiatives.</li>
+              </ul>
+            </article>
+          </ScrollReveal>
+
+          <ScrollReveal delayMs={80}>
+            <article className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Support escalation</p>
+              <h3 className="font-space-grotesk mt-2 text-2xl font-bold text-[var(--text-primary)]">Free first. Advisory last.</h3>
+              <ul className="mt-4 space-y-3 text-sm text-[var(--text-secondary)]">
+                <li><strong>Step 1:</strong> Ask your AI team (free)</li>
+                <li><strong>Step 2:</strong> Check your runbook (free)</li>
+                <li><strong>Step 3:</strong> Call us (advisory)</li>
+              </ul>
+            </article>
+          </ScrollReveal>
         </div>
       </section>
 
       <section className="border-y border-[var(--border)] bg-[var(--bg-secondary)] px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <ScrollReveal>
-            <h2 className="font-space-grotesk mb-3 text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
-              {t('pricing.deployment.headline')}
-            </h2>
-            <p className="mb-10 max-w-3xl text-[var(--text-secondary)]">
-              {t('pricing.deployment.subhead')}
-            </p>
+            <h2 className="font-space-grotesk mb-6 text-3xl font-bold tracking-tight md:text-5xl">How we differ</h2>
           </ScrollReveal>
-          <div className="grid gap-5 md:grid-cols-3">
-            {deploymentOptions.map((option, idx) => (
-              <ScrollReveal key={option.title} delayMs={idx * 75}>
-                <article className={`flex h-full flex-col rounded-xl border p-6 ${option.cardClass}`}>
-                  <div className="mb-3 flex items-center gap-2 text-[var(--accent)]">
-                    <DeploymentTierIcon kind={option.icon} />
-                    <h3 className="font-space-grotesk text-2xl font-bold text-[var(--text-primary)]">
-                      {option.title}
-                    </h3>
-                  </div>
-                  <p className="text-sm leading-relaxed text-[var(--text-secondary)]">
-                    <span className="font-semibold">For:</span> {option.forWho}
-                  </p>
-                  <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]">
-                    <span className="font-semibold">How:</span> {option.how}
-                  </p>
-                  <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]">
-                    <span className="font-semibold">Models:</span> {option.models}
-                  </p>
-                  <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]">
-                    <span className="font-semibold">Privacy:</span> {option.privacy}
-                  </p>
-                  <div className="mt-auto pt-6">
-                    <div className="h-px w-full bg-[var(--border)] mb-4" />
-                    <p className="rounded-lg border border-[var(--border)] bg-[var(--bg)] px-3 py-2 text-xs font-medium text-[var(--text-secondary)]">
-                      {option.brainMap}
-                    </p>
-                  </div>
-                </article>
-              </ScrollReveal>
+          <div className="grid gap-4 md:grid-cols-2">
+            {[
+              ["Them: Let us run your AI.", "Us: We build it. You own it. You run it."],
+              ["Them: Our platform hosts your agents.", "Us: Your platform hosts your agents."],
+              ["Them: Share your API keys with us.", "Us: We never see your API keys."],
+              ["Them: Cancel and lose everything.", "Us: Cancel and keep everything."],
+            ].map((pair) => (
+              <div key={pair[0]} className="rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5">
+                <p className="text-sm text-[var(--text-muted)]">{pair[0]}</p>
+                <p className="mt-2 text-sm font-semibold text-[var(--text-primary)]">{pair[1]}</p>
+              </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="bg-[var(--bg-secondary)] border-y border-[var(--border)] px-6 py-16 md:py-24">
-        <div className="mx-auto max-w-5xl">
-          <ScrollReveal>
-            <div className="mb-12 flex flex-col items-center text-center">
-              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">FAQ</p>
-              <h2 className="font-space-grotesk text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
-                {t('pricing.faq.headline')}
-              </h2>
-              <p className="mt-3 max-w-xl text-[var(--text-secondary)]">{t('pricing.faq.subhead')}</p>
-            </div>
-          </ScrollReveal>
-
-          <div className="grid gap-x-8 gap-y-10 md:grid-cols-2">
-            {([
-              { label: "Getting Started", indices: [0, 1, 2] },
-              { label: "Pricing & Contracts", indices: [6, 7, 8] },
-              { label: "Roles & Capabilities", indices: [3, 4, 5] },
-              { label: "Technical & Security", indices: [9, 10, 11] },
-            ] as { label: string; indices: number[] }[]).map((group, gi) => (
-              <ScrollReveal key={group.label} delayMs={gi * 50}>
-                <div>
-                  <div className="mb-4 flex items-center gap-3">
-                    <p className="text-xs font-bold uppercase tracking-[0.18em] text-[var(--accent)]">{group.label}</p>
-                    <div className="h-px flex-1 bg-[var(--border)]" />
-                  </div>
-                  <div className="space-y-2">
-                    {group.indices.map((i) => (
-                      <details key={i} className="group rounded-xl border border-[var(--border)] bg-[var(--bg-card)] transition-colors duration-200 open:border-[var(--accent-border)] open:bg-[var(--accent-subtle)]">
-                        <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 marker:content-none">
-                          <span className="font-semibold leading-snug text-[var(--text-primary)]">{faqJsonLd.mainEntity[i].name}</span>
-                          <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            aria-hidden
-                            className="h-4 w-4 shrink-0 text-[var(--accent)] transition-transform duration-300 group-open:rotate-180"
-                          >
-                            <path d="m6 9 6 6 6-6" />
-                          </svg>
-                        </summary>
-                        <div className="px-5 pb-5">
-                          <div className="h-px w-full bg-[var(--accent-border)] mb-4 opacity-40" />
-                          <p className="text-sm leading-relaxed text-[var(--text-secondary)]">{faqJsonLd.mainEntity[i].acceptedAnswer.text}</p>
-                        </div>
-                      </details>
-                    ))}
-                  </div>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
+          <p className="mt-6 text-sm text-[var(--text-secondary)]">
+            Clients pay providers directly for 1Password, LLM API keys, hosting, and Discord or Telegram workflows. Slack is supported.
+          </p>
         </div>
       </section>
 
@@ -1049,11 +282,8 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
           <ScrollReveal>
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">AI or Die</p>
             <h2 className="font-space-grotesk text-balance text-4xl font-bold tracking-tight text-[var(--text-primary)] md:text-6xl">
-              {t('pricing.cta.headline')}
+              We deploy AI employees into your business. You own them. We&apos;re here if you need us.
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-[var(--text-secondary)]">
-              Free consult. We&apos;ll price out the gap for your specific business — and show exactly which roles your team could hand off today.
-            </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
                 href={CONSULT_URL}
@@ -1061,16 +291,13 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
                 rel="noopener noreferrer"
                 className="btn-accent inline-block rounded-xl px-10 py-4 text-lg font-bold"
               >
-                {t('pricing.cta.book')}
+                Deploy your AI team
               </a>
               <a
                 href="tel:+17869989310"
-                className="inline-flex items-center gap-2 rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-10 py-4 text-lg font-bold text-[var(--text-primary)] transition-all hover:border-[var(--accent-border)] hover:text-[var(--accent)]"
+                className="inline-flex items-center gap-2 rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-10 py-4 text-lg font-bold text-[var(--text-primary)]"
               >
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5" aria-hidden>
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.56 2 2 0 0 1 3.6 1.36h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-                </svg>
-                {t('nav.call_us')}
+                {t("nav.call_us")}
               </a>
             </div>
           </ScrollReveal>

@@ -8,7 +8,7 @@
     "pricing": "Precios",
     "roles": "Roles",
     "blog": "Blog",
-    "book_consult": "Agenda una consultoría",
+    "book_consult": "Despliega tu equipo de IA",
     "call_us": "Llámanos",
     "ask_ai_bar": "Pregúntale a tu IA sobre AI or Die"
   },
@@ -21,9 +21,9 @@
   },
   "hero": {
     "eyebrow": "AI or Die Super Agents",
-    "headline_1": "Tus líderes se quedan con el título.",
-    "headline_2": "La IA se queda con la carga de trabajo.",
-    "subhead": "AI or Die implementa Super Agents como reportes directos de tus líderes actuales — para que tu empresa escale resultados sin escalar la nómina.",
+    "headline_1": "Tu equipo de IA.",
+    "headline_2": "Tu infraestructura. Tu control. Nosotros solo lo construimos.",
+    "subhead": "El soporte de IA es gratis. El soporte humano es premium.",
     "cta_consult": "Agenda una consultoría gratis",
     "cta_call": "Llámanos",
     "phone_label": "Habla con IA en cualquier idioma"
@@ -34,7 +34,7 @@
     "old_label": "Forma antigua",
     "old_desc": "3 contrataciones humanas/año con sueldo, prestaciones, tiempos muertos y fricción de reclutamiento.",
     "new_label": "Modelo AI or Die",
-    "new_desc": "3 Super Agents de AI or Die/año con cobertura 24/7 y optimización continua."
+    "new_desc": "3 Super Agents de AI or Die al año con cobertura 24/7."
   },
   "roles": {
     "headline": "Roles que implementamos",
@@ -72,7 +72,7 @@
   "cta": {
     "eyebrow": "AI or Die",
     "headline": "¿Listo para implementar tu primer AI or Die Super Agent?",
-    "subhead": "Consultoría gratis. Vamos a calcular la brecha para tu negocio específico — y mostrarte exactamente qué roles tu equipo puede delegar hoy.",
+    "subhead": "El soporte de IA es gratis. El soporte humano es premium.",
     "book": "Agenda una consultoría gratis",
     "phone_label": "Habla con nuestro agente de IA en cualquier idioma"
   },
@@ -86,8 +86,8 @@
     },
     "tiers": {
       "headline": "Elige el tamaño de tu equipo",
-      "note": "Cada plan incluye configuración personalizada completa, integración de herramientas y optimización continua. Esto no es una suscripción SaaS — es un especialista ya implementado.",
-      "cta": "Comenzar",
+      "note": "Cada nivel incluye discovery, diseño, despliegue en tu infraestructura, capacitación, runbook y 5 horas de asesoría.",
+      "cta": "Despliega tu equipo de IA",
       "setup_suffix": "setup",
       "badge_popular": "Más popular"
     },
@@ -193,7 +193,7 @@
     "cta": {
       "headline": "¿Listo para implementar tu primer AI or Die Super Agent?",
       "subhead": "Consultoría gratis. Vamos a calcular la brecha para tu negocio específico — y mostrarte exactamente qué roles tu equipo puede delegar hoy.",
-      "book": "Agenda una consultoría gratis",
+      "book": "Despliega tu equipo de IA",
       "phone_label": "Habla con nuestro agente de IA"
     }
   },

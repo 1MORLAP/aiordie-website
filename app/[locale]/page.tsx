@@ -7,25 +7,24 @@ import { BotIcon, CogIcon, UserIcon } from "@/components/Icons";
 import OrgChart from "@/components/OrgChart";
 import ScrollReveal from "@/components/ScrollReveal";
 import ArchitectureDiagram from "@/components/ArchitectureDiagram";
-import AnimatedTimeline from "@/components/AnimatedTimeline";
 
 const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/aod";
 
 export const metadata: Metadata = {
-  title: "AI or Die — Scale Leaders With AI Teams",
+  title: "AI or Die — Deploy + Train + Advise",
   description:
-    "Give every exec AI or Die Super Agents. AI or Die deploys Super Agents for marketing, sales, finance, and ops in 1–2 weeks.",
+    "Your AI team. Your infrastructure. Your control. We just build it.",
   openGraph: {
-    title: "AI or Die — Scale Leaders With AI Teams",
+    title: "AI or Die — Deploy + Train + Advise",
     description:
-      "22 agents live across 4 business units. We deploy the same system into your company.",
+      "We build your AI team on your infrastructure, train your people, then hand over control.",
     url: "https://aiordie.now",
   },
   twitter: {
     card: "summary_large_image",
     title: "AI or Die — Scale Leaders With AI Teams",
     description:
-      "This website is run by the same AI CMO model we deploy for clients.",
+      "AI support is free. Human support is premium.",
   },
   alternates: { canonical: "https://aiordie.now" },
 };
@@ -241,7 +240,7 @@ export default function Home() {
     "name": "AI or Die",
     "url": "https://aiordie.now",
     "logo": "https://aiordie.now/brand/circle-mark-orange.svg",
-    "description": "AI or Die deploys AI Super Agents as direct reports to existing business leaders. 34 roles across every department. Deployed in 1-2 weeks.",
+    "description": "AI or Die deploys AI teams on client infrastructure, trains client teams to run independently, and offers optional advisory support.",
     "telephone": "+17869989310",
     "address": [
       { "@type": "PostalAddress", "addressLocality": "Miami", "addressRegion": "FL", "addressCountry": "US" },
@@ -250,10 +249,10 @@ export default function Home() {
     "sameAs": ["https://aiordie.now"],
     "offers": {
       "@type": "Offer",
-      "name": "AI Super Agent Deployment",
-      "price": "500",
+      "name": "AI Team Deployment",
+      "price": "5000",
       "priceCurrency": "USD",
-      "description": "$2,000 setup + $2,500/month per agent. Deployed in 1-2 weeks."
+      "description": "One-time deployment model. Training included. Optional advisory."
     }
   };
 
@@ -633,15 +632,44 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How it works */}
+      {/* Service model */}
       <section className="px-6 py-16 md:py-24">
         <div className="mx-auto max-w-6xl">
           <ScrollReveal>
-            <h2 className="font-space-grotesk mb-2 text-3xl font-bold tracking-tight md:text-5xl">{t('how.headline')}</h2>
-            <p className="mb-10 text-[var(--text-secondary)]">Five steps from consult to full deployment.</p>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
+              Deploy + Train + Advise
+            </p>
+            <h2 className="font-space-grotesk mb-2 text-3xl font-bold tracking-tight md:text-5xl">
+              We build it. You own it. You run it.
+            </h2>
+            <p className="mb-10 text-[var(--text-secondary)]">AI support is free. Human support is premium.</p>
           </ScrollReveal>
-
-          <AnimatedTimeline />
+          <div className="grid gap-4 md:grid-cols-3">
+            {[
+              {
+                title: "1. DEPLOY",
+                text: "Assess, design, build, and deploy on your infrastructure. Then we hand over access.",
+              },
+              {
+                title: "2. TRAIN",
+                text: "Hands-on training and runbooks so your team runs independently from day one.",
+              },
+              {
+                title: "3. ADVISE",
+                text: "Optional advisory hours for edge cases your AI team cannot solve alone.",
+              },
+            ].map((item) => (
+              <div key={item.title} className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6">
+                <h3 className="font-space-grotesk text-xl font-bold text-[var(--text-primary)]">{item.title}</h3>
+                <p className="mt-2 text-sm text-[var(--text-secondary)]">{item.text}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6">
+            <p className="text-sm text-[var(--text-secondary)]">
+              <span className="font-semibold text-[var(--text-primary)]">Support escalation:</span> Step 1 ask your AI team (free), Step 2 check your runbook (free), Step 3 call us (advisory).
+            </p>
+          </div>
         </div>
       </section>
 
@@ -718,10 +746,10 @@ export default function Home() {
       <section className="px-6 py-12">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] px-6 py-5">
           <p className="text-sm font-semibold text-[var(--text-primary)]">
-            Pricing: $2,000 setup + $2,500/mo retainer · 3-agent bundle from $6,000/mo
+            Deployment pricing starts at $5,000 one-time. Training included. Advisory optional.
           </p>
           <Link href="/pricing" className="text-sm font-semibold text-[var(--accent)] hover:underline">
-            Full pricing →
+            Deploy your AI team →
           </Link>
         </div>
       </section>
@@ -765,7 +793,7 @@ export default function Home() {
           <ScrollReveal>
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">AI or Die</p>
             <h2 className="font-space-grotesk text-balance text-4xl font-bold tracking-tight md:text-6xl">
-              Scale now or get outpaced.
+              We deploy AI employees into your business. You own them. We&apos;re here if you need us.
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-[var(--text-secondary)]">
               {t('cta.subhead')}

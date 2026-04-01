@@ -8,7 +8,7 @@
     "pricing": "Tarifs",
     "roles": "Rôles",
     "blog": "Blog",
-    "book_consult": "Réserver un entretien",
+    "book_consult": "Déployer votre équipe IA",
     "call_us": "Appelez-nous",
     "ask_ai_bar": "Demandez à votre IA à propos de AI or Die"
   },
@@ -21,9 +21,9 @@
   },
   "hero": {
     "eyebrow": "Super Agents AI or Die",
-    "headline_1": "Vos dirigeants gardent leur titre.",
-    "headline_2": "L'IA prend la charge de travail.",
-    "subhead": "AI or Die déploie des Super Agents comme collaborateurs directs de vos dirigeants actuels — pour permettre aux entreprises d'augmenter leur production sans augmenter leurs effectifs.",
+    "headline_1": "Votre équipe IA.",
+    "headline_2": "Votre infrastructure. Votre contrôle. Nous construisons, c’est tout.",
+    "subhead": "Le support IA est gratuit. Le support humain est premium.",
     "cta_consult": "Réserver un entretien gratuit",
     "cta_call": "Appelez-nous",
     "phone_label": "Parlez à l'IA dans n'importe quelle langue"
@@ -34,7 +34,7 @@
     "old_label": "Ancienne méthode",
     "old_desc": "3 recrutements humains/an avec salaire, avantages, temps mort et lenteurs de recrutement.",
     "new_label": "Modèle AI or Die",
-    "new_desc": "3 Super Agents AI or Die/an avec couverture 24/7 et optimisation continue."
+    "new_desc": "3 Super Agents AI or Die par an avec couverture 24/7."
   },
   "roles": {
     "headline": "Rôles que nous déployons",
@@ -72,7 +72,7 @@
   "cta": {
     "eyebrow": "AI or Die",
     "headline": "Prêt à déployer votre premier Super Agent AI or Die ?",
-    "subhead": "Entretien gratuit. Nous chiffrons l'écart pour votre entreprise — et montrons exactement quels rôles votre équipe peut déléguer dès aujourd'hui.",
+    "subhead": "Le support IA est gratuit. Le support humain est premium.",
     "book": "Réserver un entretien gratuit",
     "phone_label": "Parlez à notre agent IA dans n'importe quelle langue"
   },
@@ -86,8 +86,8 @@
     },
     "tiers": {
       "headline": "Choisissez la taille de votre équipe",
-      "note": "Chaque offre inclut une configuration sur mesure complète, l'intégration d'outils et une optimisation continue. Ce n'est pas un abonnement SaaS — c'est un spécialiste déployé.",
-      "cta": "Commencer",
+      "note": "Chaque niveau inclut discovery, design, déploiement sur votre infrastructure, formation, runbook et 5 heures de conseil.",
+      "cta": "Déployer votre équipe IA",
       "setup_suffix": "mise en place",
       "badge_popular": "Le plus populaire"
     },
@@ -193,7 +193,7 @@
     "cta": {
       "headline": "Prêt à déployer votre premier Super Agent AI or Die ?",
       "subhead": "Entretien gratuit. Nous chiffrons l'écart pour votre entreprise — et montrons exactement quels rôles votre équipe peut déléguer dès aujourd'hui.",
-      "book": "Réserver un entretien gratuit",
+      "book": "Déployer votre équipe IA",
       "phone_label": "Parlez à notre agent IA"
     }
   },

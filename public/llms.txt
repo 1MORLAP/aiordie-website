@@ -1,69 +1,54 @@
 # AI or Die
-> We deploy AI or Die Super Agents as direct reports to your existing leaders. Scale output without scaling headcount.
+> Your AI team. Your infrastructure. Your control. We just build it.
 
 ## Company
 - Name: AI or Die
 - Website: https://aiordie.now
 - Offices: Miami, FL and Seattle, WA
 - Phone: (786) 998-9310
-- Founded by: Tomasz Wojewoda (human)
-- This website is written and maintained by an AI CMO — the same type of Super Agent we deploy for clients
 
 ## What We Do
-AI or Die deploys Super Agents into your business operations. Your CMO gets an AI content team. Your CTO gets AI developers. Your CRO gets AI SDRs. The human leaders stay — they get AI direct reports. Output scales. Payroll doesn't.
+AI or Die is a consulting firm that deploys AI teams into client businesses.
+We do not operate as a managed service.
 
-One Super Agent can cover multiple roles simultaneously — Finance + Legal, Marketing + Sales, Design + Engineering. Unlike humans, there's no cognitive overhead or context-switching cost.
+Model:
+1) DEPLOY — one-time build on client infrastructure
+2) TRAIN — included handoff, runbooks, and team training
+3) ADVISE — optional monthly advisory for edge cases
 
-## Services
-- Super Agent Deployment: Custom-built AI agents for any business function
-- 34 roles across 8 departments: Executive & Leadership; Marketing & Content; Sales & Revenue; Finance, Legal & Compliance; Engineering & Product; Operations & HR; Customer Success & Support; Research, IT & Security
-- Setup: $2,000 per agent, $500/month ongoing
-- 3-agent bundle: $5,000 setup, $1,200/month
-- Deployment time: 1-2 weeks
-- Deployment tiers:
-  - Cloud: hosted cloud deployment using Anthropic (Claude) or OpenAI
-  - Private Cloud: dedicated private cloud using Venice AI (private models, data never leaves your environment)
-  - On-Premise: full on-hardware deployment using self-hosted open-source models
+## Pricing
+### Deployment (one-time)
+- STARTER: $5,000 (1-2 agents)
+- GROWTH: $10,000 (3-5 agents)
+- SCALE: $15,000-$20,000 (6-10 agents)
+- ENTERPRISE: Custom (10+ agents)
 
-## Technology Stack
-- Built on: OpenClaw (open-source AI agent framework)
-- Partners: Nous Research, Venice AI, OpenAI, Anthropic, NVIDIA, EXO Labs, Apple Silicon
+All deployment tiers include discovery, custom design, deployment on client infrastructure, training, runbook, and 5 post-deployment advisory hours.
 
-## AI Brain Costs (paid directly to providers, zero markup)
-- Anthropic Max 5x: $100/month
-- Anthropic Max 20x: $200/month (recommended)
-- OpenAI Pro: $200/month (recommended)
-- Venice AI: API pay-per-use (for private/on-prem)
+### Advisory (optional monthly)
+- LIGHT: $1,500/mo (4 hours)
+- STANDARD: $2,500/mo (8 hours)
+- PRIORITY: $4,000/mo (16 hours)
 
-## Proof of Concept — We Eat Our Own Dog Food
-- TomBot (realtom.bot): Zero-human company, 100% AI operated
-- NEXORA (nexora.build): HKEX-listed, scaling Web3 with AI Super Agents
-- Any.Markets (any.markets): Prediction markets platform, AI CEO/CTO/CMO from day one
-- AI or Die (aiordie.now): This site is written and maintained by our AI CMO
+## Support Escalation
+1. Ask your AI team (free)
+2. Check your runbook (free)
+3. Call AI or Die advisory (paid)
 
-## Key Facts
-- 22 AI Super Agents running in production across 4 business units
-- All Super Agents are multilingual by default — any language in, any language out, any currency
-- No long-term contracts, cancel with 30 days notice
-- Each client runs on isolated infrastructure
-- 5,400+ pre-built integrations (email, CRM, Slack, GitHub, and more)
-- Pre-loaded with proprietary skills library developed and refined in live operations
+## Positioning
+- We build it. You own it. You run it.
+- Your platform hosts your agents.
+- We never see your API keys.
+- Cancel and keep everything.
 
-## Transparency
-- Consults are with Tomasz Wojewoda (real human)
-- Phone calls connect to AI Super Agent (labeled)
-- All AI-generated content is labeled
-- We never blur the line between human and AI
-
-## Pages
-- Homepage: https://aiordie.now
-- Pricing: https://aiordie.now/pricing
-- Roles: https://aiordie.now/roles
-- Blog: https://aiordie.now/blog
-- Free AI Audit: https://aiordie.now/audit
-- Brand: https://aiordie.now/brand
+## Client-paid Tools
+Clients pay providers directly for:
+- 1Password
+- LLM API keys
+- Hosting
+- Discord or Telegram (recommended)
+- Slack (supported)
 
 ## Contact
-- Book a consult: https://calendar.notion.so/meet/tomaszwojewoda/aod
-- Call: (786) 998-9310
-- Website: https://aiordie.now
+- Book: https://calendar.notion.so/meet/tomaszwojewoda/aod
+- Phone: (786) 998-9310
