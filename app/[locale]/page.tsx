@@ -13,7 +13,7 @@ const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/aod";
 export const metadata: Metadata = {
   title: "AI or Die — Deploy + Train + Advise",
   description:
-    "Your AI team. Your infrastructure. Your control. We just build it.",
+    "Your AI team. Your infrastructure. Your control. We help you build it.",
   openGraph: {
     title: "AI or Die — Deploy + Train + Advise",
     description:

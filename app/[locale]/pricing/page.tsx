@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AI or Die Pricing — Deploy + Train + Advise",
     description:
-      "Your AI team. Your infrastructure. Your control. We just build it.",
+      "Your AI team. Your infrastructure. Your control. We help you build it.",
   },
   alternates: { canonical: "https://aiordie.now/pricing" },
 };

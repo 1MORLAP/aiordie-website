@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s — AI or Die",
   },
   description:
-    "Your AI team. Your infrastructure. Your control. We just build it.",
+    "Your AI team. Your infrastructure. Your control. We help you build it.",
   icons: {
     icon: "/icon.svg",
     apple: "/icon.svg",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AI or Die — Deploy + Train + Advise",
     description:
-      "Your AI team. Your infrastructure. Your control. We just build it.",
+      "Your AI team. Your infrastructure. Your control. We help you build it.",
     site: "@aiordie",
   },
   robots: {
