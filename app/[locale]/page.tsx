@@ -253,7 +253,7 @@ export default function Home() {
       "name": "AI Super Agent Deployment",
       "price": "500",
       "priceCurrency": "USD",
-      "description": "$2,000 setup + $500/month per agent. Deployed in 1-2 weeks."
+      "description": "$2,000 setup + $2,500/month per agent. Deployed in 1-2 weeks."
     }
   };
 
@@ -718,7 +718,7 @@ export default function Home() {
       <section className="px-6 py-12">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] px-6 py-5">
           <p className="text-sm font-semibold text-[var(--text-primary)]">
-            Pricing: $2,000 setup + $500/month per agent · 3-agent bundle from $1,200/month
+            Pricing: $2,000 setup + $2,500/month per agent · 3-agent bundle from $6,000/month
           </p>
           <Link href="/pricing" className="text-sm font-semibold text-[var(--accent)] hover:underline">
             Full pricing →

@@ -106,19 +106,19 @@
       "tier2_best": "Equipos técnicos que quieren construir su propio agente. Un toolkit, no una contratación.",
       "tier3_label": "Nivel 3 — Especialista implementado",
       "tier3_name": "AI or Die Super Agent",
-      "tier3_price": "$500/mo + $2,000 setup",
+      "tier3_price": "$2,500/mo + $2,000 setup",
       "tier3_desc": "Construido sobre OpenClaw — pero configurado de punta a punta para tu negocio por nuestro equipo. Hacemos nosotros los meses de configuración para que tú no tengas que hacerlo. Recibes un especialista que ya conoce a tus clientes, tu tono, tus herramientas y tus objetivos. Gestionas resultados, no prompts.",
       "tier3_best": "Dueños de negocio que quieren delegar un rol — no construir un sistema.",
       "best_for": "Mejor para",
-      "diy_why": "¿Por qué $500/mo vs $5/mo?",
+      "diy_why": "¿Por qué $2,500/mo vs $5/mo?",
       "diy_p1": "OpenClaw cuesta $5/month porque te entrega la plataforma en bruto y tú haces todo el trabajo. Inviertes semanas — siendo realistas, meses — configurando prompts, conectando integraciones, entrenándolo con tu negocio y depurando fallas. La mayoría empieza, se frena y lo abandona en silencio. La plataforma no es el producto. El especialista configurado, implementado y operando sí lo es.",
-      "diy_p2": "El setup de $2,000 es que nosotros hagamos ese trabajo de meses en dos semanas. Los $500/month mantienen al agente al día — nuevos modelos, mejoras de rendimiento y ajustes continuos mientras tu negocio evoluciona. No estás pagando software. Estás pagando por un especialista que aparece todos los días y no deja caer la pelota.",
+      "diy_p2": "El setup de $2,000 es que nosotros hagamos ese trabajo de meses en dos semanas. Los $2,500/month mantienen al agente al día — nuevos modelos, mejoras de rendimiento y ajustes continuos mientras tu negocio evoluciona. No estás pagando software. Estás pagando por un especialista que aparece todos los días y no deja caer la pelota.",
       "diy_quote": "\"Podrías levantar OpenClaw tú mismo en una tarde — pero tu agente no va a conocer tu negocio, tus clientes ni tus SOPs. Esa parte toma semanas.\"",
       "diy_quote_label": "Cómo se ve realmente un despliegue DIY",
       "diy_vs_label": "OpenClaw DIY:",
       "diy_vs_value": "$5/mo + 200+ horas de tu tiempo",
       "aod_label": "AI or Die:",
-      "aod_value": "$500/mo + activo en 2 semanas"
+      "aod_value": "$2,500/mo + activo en 2 semanas"
     },
     "skills": {
       "eyebrow": "Nuestro IP. Tu ventaja.",
@@ -168,7 +168,7 @@
       "step05_desc": "Tu Super Agent ya está activo. Te guiamos paso a paso — un consultor humano te muestra exactamente cómo funciona, qué puede manejar, dónde exigirle más y cómo sacarle máximo provecho desde el día uno. Sin documentación eterna. Una persona real te guía con tu agente real.",
       "step06_eyebrow": "Continuo",
       "step06_title": "Soporte, optimización y upgrades",
-      "step06_badge": "IA + humano · Incluido en $500/mo",
+      "step06_badge": "IA + humano · Incluido en $2,500/mo",
       "step06_desc": "Nunca te quedas solo. Tu Super Agent se monitorea, mejora y mantiene actualizado — nuevas versiones de modelos aplicadas automáticamente, rendimiento ajustado cada mes y una persona disponible cuando la necesites. El soporte es IA-first por velocidad, con respaldo humano para lo que de verdad importa."
     },
     "features": {

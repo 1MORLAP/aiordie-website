@@ -106,19 +106,19 @@
       "tier2_best": "Technical teams who want to build their own agent. A toolkit, not a hire.",
       "tier3_label": "Tier 3 — Deployed Specialist",
       "tier3_name": "AI or Die Super Agent",
-      "tier3_price": "$500/mo + $2,000 setup",
+      "tier3_price": "$2,500/mo + $2,000 setup",
       "tier3_desc": "Built on OpenClaw — but configured end-to-end for your business by our team. We do the months of setup work so you don't have to. You get a specialist who already knows your clients, your tone, your tools, and your goals. You manage outcomes, not prompts.",
       "tier3_best": "Business owners who want to hand off a role — not build a system.",
       "best_for": "Best for",
-      "diy_why": "Why $500/mo vs $5/mo?",
+      "diy_why": "Why $2,500/mo vs $5/mo?",
       "diy_p1": "OpenClaw costs $5/month because it gives you the raw platform and you do all the work. You spend weeks — realistically months — configuring prompts, wiring up integrations, training it on your business, and debugging failures. Most businesses start, stall, and quietly abandon it. The platform isn't the product. The configured, deployed, running specialist is the product.",
-      "diy_p2": "The $2,000 setup is us doing that months-long work in two weeks. The $500/month keeps the agent current — new model releases, performance improvements, and ongoing tuning as your business evolves. You're not paying for software. You're paying for a specialist who shows up every day and never drops the ball.",
+      "diy_p2": "The $2,000 setup is us doing that months-long work in two weeks. The $2,500/month keeps the agent current — new model releases, performance improvements, and ongoing tuning as your business evolves. You're not paying for software. You're paying for a specialist who shows up every day and never drops the ball.",
       "diy_quote": "\"You could spin up OpenClaw yourself in an afternoon — but your agent won't know your business, your clients, or your SOPs. That part takes weeks.\"",
       "diy_quote_label": "What a DIY deploy actually looks like",
       "diy_vs_label": "OpenClaw DIY:",
       "diy_vs_value": "$5/mo + 200+ hours of your time",
       "aod_label": "AI or Die:",
-      "aod_value": "$500/mo + live in 2 weeks"
+      "aod_value": "$2,500/mo + live in 2 weeks"
     },
     "skills": {
       "eyebrow": "Our IP. Your advantage.",
@@ -168,7 +168,7 @@
       "step05_desc": "Your Super Agent is live. We walk you through it together — a human consultant shows you exactly how it works, what it can handle, where to push it, and how to get the most out of it from day one. No documentation to wade through. A real person walks you through your actual agent.",
       "step06_eyebrow": "Ongoing",
       "step06_title": "Support, Optimization & Upgrades",
-      "step06_badge": "AI + human · Included in $500/mo",
+      "step06_badge": "AI + human · Included in $2,500/mo",
       "step06_desc": "You're never on your own. Your Super Agent is monitored, improved, and kept current — new model releases applied automatically, performance tuned monthly, and a human available when you need one. Support is AI-first for speed, human-backed for anything that matters."
     },
     "features": {

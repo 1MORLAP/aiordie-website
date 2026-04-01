@@ -6,17 +6,17 @@ import {getTranslations} from "next-intl/server";
 export const metadata: Metadata = {
   title: "Pricing — AI or Die",
   description:
-    "Transparent pricing for AI or Die Super Agents. $2,000 setup + $500/mo per agent. Volume bundles from $1,200/mo. No contracts, cancel anytime.",
+    "Transparent pricing for AI or Die Super Agents. $2,000 setup + $2,500/mo per agent. Volume bundles from $6,000/mo. No contracts, cancel anytime.",
   openGraph: {
     title: "AI or Die Super Agent Pricing — AI or Die",
     description:
-      "$2,000 setup + $500/mo per agent. Volume bundles from $1,200/mo. No contracts, cancel anytime.",
+      "$2,000 setup + $2,500/mo per agent. Volume bundles from $6,000/mo. No contracts, cancel anytime.",
     url: "https://aiordie.now/pricing",
   },
   twitter: {
     card: "summary_large_image",
     title: "AI or Die Super Agent Pricing — AI or Die",
-    description: "$2,000 setup + $500/mo per agent. No contracts, cancel anytime.",
+    description: "$2,000 setup + $2,500/mo per agent. No contracts, cancel anytime.",
   },
   alternates: { canonical: "https://aiordie.now/pricing" },
 };
@@ -94,14 +94,14 @@ const tiers = [
   {
     name: "1 Agent",
     setup: "$2,000",
-    monthly: "$500/mo",
+    monthly: "$2,500/mo",
     highlight: false,
     desc: "Perfect for a single high-impact role — start with legal, finance, or sales.",
   },
   {
     name: "3 Agents",
     setup: "$5,000",
-    monthly: "$1,200/mo",
+    monthly: "$6,000/mo",
     highlight: true,
     badge: "Most Popular",
     desc: "A full AI team. Legal + financial + sales running in parallel, 24/7.",
@@ -109,7 +109,7 @@ const tiers = [
   {
     name: "5 Agents",
     setup: "$7,500",
-    monthly: "$1,800/mo",
+    monthly: "$9,000/mo",
     highlight: false,
     desc: "Expand into marketing, HR, and project management.",
   },
@@ -886,7 +886,7 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
                         <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Ongoing</p>
                         <h3 className="font-space-grotesk mt-1 text-xl font-bold text-[var(--text-primary)]">Support, Optimization &amp; Upgrades</h3>
                       </div>
-                      <span className="rounded-full border border-[var(--accent-border)] bg-[var(--bg)] px-3 py-1 text-xs font-semibold text-[var(--accent)]">AI + human · Included in $500/mo</span>
+                      <span className="rounded-full border border-[var(--accent-border)] bg-[var(--bg)] px-3 py-1 text-xs font-semibold text-[var(--accent)]">AI + human · Included in $2,500/mo</span>
                     </div>
                     <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
                       You&apos;re never on your own. Your agent is monitored, improved, and kept current —
