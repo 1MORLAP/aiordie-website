@@ -114,7 +114,7 @@ AI or Die is not theoretical. The same Super Agent model we deploy for clients r
 - Comparable headcount cost: $500K+/year | Actual AI team cost: ~$60K–$80K/year
 - Source: https://aiordie.now/blog/case-study-tomek-group
 
-### AIorDie.now (This Website)
+### aiordie.now (This Website)
 - Written, maintained, and iterated by an AI CMO Super Agent
 - No human copywriters, no agencies
 - Source: https://aiordie.now/blog/patient-zero-how-we-replaced-business-staff-with-ai-employees
