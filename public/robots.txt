@@ -35,4 +35,22 @@ Allow: /
 
 User-agent: Bytespider
 Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: xAI-SearchBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: DiffBot
+Allow: /
 <!-- deploy-test-1774909718 -->

@@ -580,8 +580,8 @@ export default function Home() {
               const Icon = item.icon;
 
               return (
-                <ScrollReveal key={item.title + i} delayMs={i * 70}>
-                  <div className="rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5">
+                <ScrollReveal key={item.title + i} delayMs={i * 70} className="h-full">
+                  <div className="flex h-full flex-col rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5">
                     <Icon className="mb-3 h-6 w-6 text-[var(--accent)]" />
                     <p className="font-space-grotesk text-xl font-bold text-[var(--text-primary)]">{item.title}</p>
                     <p className="mt-1 text-sm text-[var(--text-secondary)]">{item.text}</p>
@@ -610,20 +610,20 @@ export default function Home() {
             </p>
           </ScrollReveal>
           <div className="mt-8 grid gap-4 md:grid-cols-3">
-            <ScrollReveal delayMs={100}>
-              <div className="rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5">
+            <ScrollReveal delayMs={100} className="h-full">
+              <div className="flex h-full flex-col rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5">
                 <p className="font-space-grotesk text-xl font-bold text-[var(--text-primary)]">Input</p>
                 <p className="mt-1 text-sm text-[var(--text-secondary)]">Submit documents, data, and instructions in any language. Invoices in any currency.</p>
               </div>
             </ScrollReveal>
-            <ScrollReveal delayMs={170}>
-              <div className="rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5">
+            <ScrollReveal delayMs={170} className="h-full">
+              <div className="flex h-full flex-col rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5">
                 <p className="font-space-grotesk text-xl font-bold text-[var(--text-primary)]">Process</p>
                 <p className="mt-1 text-sm text-[var(--text-secondary)]">Agents understand context across languages — no translation layer, no loss of meaning.</p>
               </div>
             </ScrollReveal>
-            <ScrollReveal delayMs={240}>
-              <div className="rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5">
+            <ScrollReveal delayMs={240} className="h-full">
+              <div className="flex h-full flex-col rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5">
                 <p className="font-space-grotesk text-xl font-bold text-[var(--text-primary)]">Output</p>
                 <p className="mt-1 text-sm text-[var(--text-secondary)]">Get results in whichever language you need. Same agent, any language, zero overhead.</p>
               </div>
