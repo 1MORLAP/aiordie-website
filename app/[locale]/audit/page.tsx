@@ -2,20 +2,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Free AI Audit — AI or Die",
+  title: "Free AI Audit — AIorDie",
   description:
     "30 minutes. We map your ops, identify which functions are agent-ready, and show you the math for your specific business. You get a written Agent Readiness Report.",
   openGraph: {
-    title: "Get Your Free AI Audit — AI or Die",
+    title: "Get Your Free AI Audit — AIorDie",
     description:
-      "Find out which roles in your business should be AI or Die Super Agents. Free 30-minute audit + written Agent Readiness Report.",
+      "Find out which roles in your business should be AIorDie Super Agents. Free 30-minute audit + written Agent Readiness Report.",
     url: "https://aiordie.now/audit",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free AI Audit — AI or Die",
+    title: "Free AI Audit — AIorDie",
     description:
-      "Find out which roles in your business should be AI or Die Super Agents. Free 30-minute audit.",
+      "Find out which roles in your business should be AIorDie Super Agents. Free 30-minute audit.",
   },
   alternates: { canonical: "https://aiordie.now/audit" },
 };
@@ -209,7 +209,7 @@ export default function AuditPage() {
             We Eat Our Own Cooking
           </h2>
           <p className="text-gray-400 mb-12 text-lg max-w-2xl">
-            We don&apos;t sell theory. Every Super Agent type we recommend, we run internally. This website, our outreach, our ops — all of it is run by AI or Die Super Agents.
+            We don&apos;t sell theory. Every Super Agent type we recommend, we run internally. This website, our outreach, our ops — all of it is run by AIorDie Super Agents.
           </p>
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
             {[

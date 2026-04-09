@@ -10,7 +10,7 @@
     "blog": "Blog",
     "book_consult": "Deploy your AI team",
     "call_us": "Call Us",
-    "ask_ai_bar": "Ask your AI about AI or Die"
+    "ask_ai_bar": "Ask your AI about AIorDie"
   },
   "footer": {
     "location": "Miami, FL · Seattle, WA",
@@ -20,7 +20,7 @@
     "ai_attribution": "This website is written and maintained by an AI CMO — the same kind of Super Agent we deploy for you."
   },
   "hero": {
-    "eyebrow": "AI or Die Super Agents",
+    "eyebrow": "AIorDie Super Agents",
     "headline_1": "Your AI team.",
     "headline_2": "Your infrastructure. Your control. We help you build it.",
     "subhead": "AI support is free. Human support is premium.",
@@ -33,8 +33,8 @@
     "subhead": "Same outcomes, completely different cost structure.",
     "old_label": "Old way",
     "old_desc": "3 human hires/year with salary, benefits, downtime, and recruiting drag.",
-    "new_label": "AI or Die model",
-    "new_desc": "3 AI or Die Super Agents/year with 24/7 coverage."
+    "new_label": "AIorDie model",
+    "new_desc": "3 AIorDie Super Agents/year with 24/7 coverage."
   },
   "roles": {
     "headline": "Roles We Deploy",
@@ -70,8 +70,8 @@
     "subhead": "Five steps from consult to full deployment."
   },
   "cta": {
-    "eyebrow": "AI or Die",
-    "headline": "Ready to deploy your first AI or Die Super Agent?",
+    "eyebrow": "AIorDie",
+    "headline": "Ready to deploy your first AIorDie Super Agent?",
     "subhead": "AI support is free. Human support is premium.",
     "book": "Book a Free Consult",
     "phone_label": "Talk to our AI agent in any language"
@@ -105,7 +105,7 @@
       "tier2_desc": "A step up — the agent can take actions, run autonomously, and connect to tools. But it's a blank slate. You configure it, you prompt it, you manage it. The platform gives you a car. You still have to build the engine.",
       "tier2_best": "Technical teams who want to build their own agent. A toolkit, not a hire.",
       "tier3_label": "Tier 3 — Deployed Specialist",
-      "tier3_name": "AI or Die Super Agent",
+      "tier3_name": "AIorDie Super Agent",
       "tier3_price": "$2,500/mo + $2,000 setup",
       "tier3_desc": "Built on OpenClaw — but configured end-to-end for your business by our team. We do the months of setup work so you don't have to. You get a specialist who already knows your clients, your tone, your tools, and your goals. You manage outcomes, not prompts.",
       "tier3_best": "Business owners who want to hand off a role — not build a system.",
@@ -117,13 +117,13 @@
       "diy_quote_label": "What a DIY deploy actually looks like",
       "diy_vs_label": "OpenClaw DIY:",
       "diy_vs_value": "$5/mo + 200+ hours of your time",
-      "aod_label": "AI or Die:",
+      "aod_label": "AIorDie:",
       "aod_value": "$2,500/mo + live in 2 weeks"
     },
     "skills": {
       "eyebrow": "Our IP. Your advantage.",
       "headline": "Every agent ships with skills.",
-      "body": "Think of it like hiring someone out of college vs. hiring a PhD who's spent years mastering exactly your field. Our agents come pre-loaded with skills we've built, tested, and refined in live operations. When you hire an AI or Die Super Agent, you get our IP — not a blank slate you have to educate from scratch.",
+      "body": "Think of it like hiring someone out of college vs. hiring a PhD who's spent years mastering exactly your field. Our agents come pre-loaded with skills we've built, tested, and refined in live operations. When you hire an AIorDie Super Agent, you get our IP — not a blank slate you have to educate from scratch.",
       "badge_headline": "24/7 PhD hire",
       "badge_sub": "for the price of lunch",
       "tier1_label": "ChatGPT / Claude",
@@ -132,7 +132,7 @@
       "tier2_label": "Generic Agent Platform",
       "tier2_title": "Potential, but you supply the training",
       "tier2_desc": "The raw intelligence is there. But you're the professor. You build the curriculum, run the lessons, grade the output. Most businesses burn out before they graduate it.",
-      "tier3_label": "AI or Die Super Agent",
+      "tier3_label": "AIorDie Super Agent",
       "tier3_title": "Pre-loaded with our skills library",
       "tier3_desc": "Arrives already trained. Our proprietary skills — honed across real deployments — are embedded from day one. You customize the specifics. We supply the expertise.",
       "included_label": "Skills included in every deployment"
@@ -191,7 +191,7 @@
       "group4": "Technical & Security"
     },
     "cta": {
-      "headline": "Ready to deploy your first AI or Die Super Agent?",
+      "headline": "Ready to deploy your first AIorDie Super Agent?",
       "subhead": "Free consult. We'll price out the gap for your specific business — and show exactly which roles your team could hand off today.",
       "book": "Deploy your AI team",
       "phone_label": "Talk to our AI agent"

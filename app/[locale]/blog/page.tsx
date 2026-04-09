@@ -4,8 +4,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Blog — AI or Die",
-  description: "Insights on AI or Die Super Agents, automation, and the future of work.",
+  title: "Blog — AIorDie",
+  description: "Insights on AIorDie Super Agents, automation, and the future of work.",
 };
 
 export default function BlogPage() {
@@ -18,7 +18,7 @@ export default function BlogPage() {
       <div className="mx-auto max-w-6xl">
         <ScrollReveal>
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
-            AI or Die Journal
+            AIorDie Journal
           </p>
         </ScrollReveal>
         <ScrollReveal delayMs={80}>
@@ -28,7 +28,7 @@ export default function BlogPage() {
         </ScrollReveal>
         <ScrollReveal delayMs={130}>
           <p className="mb-14 mt-5 max-w-3xl text-lg leading-relaxed text-[var(--text-secondary)]">
-            Straight talk on AI or Die Super Agents, automation, and building a business
+            Straight talk on AIorDie Super Agents, automation, and building a business
             that scales without headcount.
           </p>
         </ScrollReveal>

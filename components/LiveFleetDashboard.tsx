@@ -11,7 +11,7 @@ type Agent = {
 };
 
 const AGENTS: Agent[] = [
-  { name: "AI CMO", unit: "AI or Die", lane: "Content + web growth", status: "ACTIVE" },
+  { name: "AI CMO", unit: "AIorDie", lane: "Content + web growth", status: "ACTIVE" },
   { name: "AI CEO", unit: "HQ", lane: "Daily strategic ops", status: "ACTIVE" },
   { name: "AI CTO", unit: "HQ", lane: "Infra + incident coverage", status: "ACTIVE" },
   { name: "AI CRO", unit: "HQ", lane: "Pipeline + follow-up", status: "ACTIVE" },

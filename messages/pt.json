@@ -10,7 +10,7 @@
     "blog": "Blog",
     "book_consult": "Implantar sua equipe de IA",
     "call_us": "Ligue para Nós",
-    "ask_ai_bar": "Pergunte à sua IA sobre AI or Die"
+    "ask_ai_bar": "Pergunte à sua IA sobre AIorDie"
   },
   "footer": {
     "location": "Miami, FL · Seattle, WA",
@@ -20,7 +20,7 @@
     "ai_attribution": "Este site é escrito e mantido por um CMO de IA — o mesmo tipo de Super Agent que implementamos para você."
   },
   "hero": {
-    "eyebrow": "Super Agents AI or Die",
+    "eyebrow": "Super Agents AIorDie",
     "headline_1": "Sua equipe de IA.",
     "headline_2": "Sua infraestrutura. Seu controle. Nós só construímos.",
     "subhead": "Suporte de IA é gratuito. Suporte humano é premium.",
@@ -33,8 +33,8 @@
     "subhead": "Mesmo resultado, estrutura de custo completamente diferente.",
     "old_label": "Modelo antigo",
     "old_desc": "3 contratações humanas/ano com salário, benefícios, tempo ocioso e atrito de recrutamento.",
-    "new_label": "Modelo AI or Die",
-    "new_desc": "3 Super Agents da AI or Die por ano com cobertura 24/7."
+    "new_label": "Modelo AIorDie",
+    "new_desc": "3 Super Agents da AIorDie por ano com cobertura 24/7."
   },
   "roles": {
     "headline": "Funções que Implementamos",
@@ -70,8 +70,8 @@
     "subhead": "Cinco passos da consultoria à implementação completa."
   },
   "cta": {
-    "eyebrow": "AI or Die",
-    "headline": "Pronto para implementar seu primeiro Super Agent AI or Die?",
+    "eyebrow": "AIorDie",
+    "headline": "Pronto para implementar seu primeiro Super Agent AIorDie?",
     "subhead": "Suporte de IA é gratuito. Suporte humano é premium.",
     "book": "Agende uma Consultoria Gratuita",
     "phone_label": "Fale com nosso agente de IA em qualquer idioma"
@@ -105,7 +105,7 @@
       "tier2_desc": "Um passo acima — o agente pode agir, rodar de forma autônoma e conectar com ferramentas. Mas é uma tela em branco. Você configura, você escreve prompts, você gerencia. A plataforma te entrega um carro. O motor você ainda precisa construir.",
       "tier2_best": "Times técnicos que querem construir o próprio agente. Uma caixa de ferramentas, não uma contratação.",
       "tier3_label": "Nível 3 — Especialista Implementado",
-      "tier3_name": "Super Agent AI or Die",
+      "tier3_name": "Super Agent AIorDie",
       "tier3_price": "$500/mês + $2,000 setup",
       "tier3_desc": "Construído sobre OpenClaw — mas configurado de ponta a ponta para o seu negócio pelo nosso time. A gente faz os meses de configuração para você não precisar fazer. Você recebe um especialista que já entende seus clientes, seu tom, suas ferramentas e seus objetivos. Você gerencia resultado, não prompt.",
       "tier3_best": "Empresários que querem delegar uma função — não construir um sistema.",
@@ -117,13 +117,13 @@
       "diy_quote_label": "Como uma implementação DIY realmente é",
       "diy_vs_label": "OpenClaw DIY:",
       "diy_vs_value": "$5/mês + 200+ horas do seu tempo",
-      "aod_label": "AI or Die:",
+      "aod_label": "AIorDie:",
       "aod_value": "$500/mês + ao vivo em 2 semanas"
     },
     "skills": {
       "eyebrow": "Nosso IP. Sua vantagem.",
       "headline": "Todo agente sai com skills.",
-      "body": "Pense assim: contratar alguém recém-formado vs. contratar um PhD que passou anos dominando exatamente sua área. Nossos agentes chegam pré-carregados com skills que construímos, testamos e refinamos em operações reais. Quando você contrata um Super Agent AI or Die, leva nosso IP — não uma tela em branco para treinar do zero.",
+      "body": "Pense assim: contratar alguém recém-formado vs. contratar um PhD que passou anos dominando exatamente sua área. Nossos agentes chegam pré-carregados com skills que construímos, testamos e refinamos em operações reais. Quando você contrata um Super Agent AIorDie, leva nosso IP — não uma tela em branco para treinar do zero.",
       "badge_headline": "Contratação PhD 24/7",
       "badge_sub": "pelo preço de um almoço",
       "tier1_label": "ChatGPT / Claude",
@@ -132,7 +132,7 @@
       "tier2_label": "Plataforma de Agente Genérico",
       "tier2_title": "Potencial alto, mas o treinamento é por sua conta",
       "tier2_desc": "A inteligência bruta está lá. Mas você é o professor. Você monta o currículo, conduz as lições, corrige a entrega. A maioria das empresas se esgota antes de formar esse agente.",
-      "tier3_label": "Super Agent AI or Die",
+      "tier3_label": "Super Agent AIorDie",
       "tier3_title": "Pré-carregado com nossa biblioteca de skills",
       "tier3_desc": "Chega já treinado. Nossas skills proprietárias — lapidadas em implementações reais — vêm embutidas desde o dia um. Você personaliza os detalhes. A expertise a gente entrega.",
       "included_label": "Skills incluídas em toda implementação"
@@ -191,7 +191,7 @@
       "group4": "Técnico e segurança"
     },
     "cta": {
-      "headline": "Pronto para implementar seu primeiro Super Agent AI or Die?",
+      "headline": "Pronto para implementar seu primeiro Super Agent AIorDie?",
       "subhead": "Consultoria gratuita. Vamos calcular a diferença para o seu negócio e mostrar exatamente quais funções seu time pode delegar hoje.",
       "book": "Implantar sua equipe de IA",
       "phone_label": "Fale com nosso agente de IA"

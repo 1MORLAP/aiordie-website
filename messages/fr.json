@@ -10,7 +10,7 @@
     "blog": "Blog",
     "book_consult": "Déployer votre équipe IA",
     "call_us": "Appelez-nous",
-    "ask_ai_bar": "Demandez à votre IA à propos de AI or Die"
+    "ask_ai_bar": "Demandez à votre IA à propos de AIorDie"
   },
   "footer": {
     "location": "Miami, FL · Seattle, WA",
@@ -20,7 +20,7 @@
     "ai_attribution": "Ce site web est rédigé et maintenu par un CMO IA — le même type de Super Agent que nous déployons pour vous."
   },
   "hero": {
-    "eyebrow": "Super Agents AI or Die",
+    "eyebrow": "Super Agents AIorDie",
     "headline_1": "Votre équipe IA.",
     "headline_2": "Votre infrastructure. Votre contrôle. Nous construisons, c’est tout.",
     "subhead": "Le support IA est gratuit. Le support humain est premium.",
@@ -33,8 +33,8 @@
     "subhead": "Les mêmes résultats, avec une structure de coûts totalement différente.",
     "old_label": "Ancienne méthode",
     "old_desc": "3 recrutements humains/an avec salaire, avantages, temps mort et lenteurs de recrutement.",
-    "new_label": "Modèle AI or Die",
-    "new_desc": "3 Super Agents AI or Die par an avec couverture 24/7."
+    "new_label": "Modèle AIorDie",
+    "new_desc": "3 Super Agents AIorDie par an avec couverture 24/7."
   },
   "roles": {
     "headline": "Rôles que nous déployons",
@@ -70,8 +70,8 @@
     "subhead": "Cinq étapes de l'entretien au déploiement complet."
   },
   "cta": {
-    "eyebrow": "AI or Die",
-    "headline": "Prêt à déployer votre premier Super Agent AI or Die ?",
+    "eyebrow": "AIorDie",
+    "headline": "Prêt à déployer votre premier Super Agent AIorDie ?",
     "subhead": "Le support IA est gratuit. Le support humain est premium.",
     "book": "Réserver un entretien gratuit",
     "phone_label": "Parlez à notre agent IA dans n'importe quelle langue"
@@ -105,7 +105,7 @@
       "tier2_desc": "Un cran au-dessus — l'agent peut agir, fonctionner de manière autonome et se connecter aux outils. Mais c'est une page blanche. Vous le configurez, vous le guidez, vous le gérez. La plateforme vous donne une voiture. Vous devez encore construire le moteur.",
       "tier2_best": "Équipes techniques qui veulent construire leur propre agent. Une boîte à outils, pas un recrutement.",
       "tier3_label": "Niveau 3 — Spécialiste déployé",
-      "tier3_name": "Super Agent AI or Die",
+      "tier3_name": "Super Agent AIorDie",
       "tier3_price": "500$/mois + 2,000$ de mise en place",
       "tier3_desc": "Construit sur OpenClaw — mais configuré de bout en bout pour votre entreprise par notre équipe. Nous faisons les mois de configuration à votre place. Vous obtenez un spécialiste qui connaît déjà vos clients, votre ton, vos outils et vos objectifs. Vous pilotez les résultats, pas les prompts.",
       "tier3_best": "Dirigeants qui veulent déléguer un rôle — pas construire un système.",
@@ -117,13 +117,13 @@
       "diy_quote_label": "À quoi ressemble vraiment un déploiement DIY",
       "diy_vs_label": "OpenClaw DIY :",
       "diy_vs_value": "5$/mois + 200+ heures de votre temps",
-      "aod_label": "AI or Die :",
+      "aod_label": "AIorDie :",
       "aod_value": "500$/mois + en production en 2 semaines"
     },
     "skills": {
       "eyebrow": "Notre propriété intellectuelle. Votre avantage.",
       "headline": "Chaque agent est livré avec des compétences.",
-      "body": "C'est la différence entre recruter un jeune diplômé et recruter un PhD qui a passé des années à maîtriser précisément votre domaine. Nos agents arrivent préchargés avec des compétences que nous avons construites, testées et affinées en opérations réelles. Quand vous recrutez un Super Agent AI or Die, vous obtenez notre IP — pas une page blanche à former depuis zéro.",
+      "body": "C'est la différence entre recruter un jeune diplômé et recruter un PhD qui a passé des années à maîtriser précisément votre domaine. Nos agents arrivent préchargés avec des compétences que nous avons construites, testées et affinées en opérations réelles. Quand vous recrutez un Super Agent AIorDie, vous obtenez notre IP — pas une page blanche à former depuis zéro.",
       "badge_headline": "Recrutement PhD 24/7",
       "badge_sub": "au prix d'un déjeuner",
       "tier1_label": "ChatGPT / Claude",
@@ -132,7 +132,7 @@
       "tier2_label": "Plateforme d'agent générique",
       "tier2_title": "Du potentiel, mais vous fournissez la formation",
       "tier2_desc": "L'intelligence brute est là. Mais vous êtes le professeur. Vous construisez le programme, animez les leçons, évaluez les sorties. La plupart des entreprises s'épuisent avant la remise de diplôme.",
-      "tier3_label": "Super Agent AI or Die",
+      "tier3_label": "Super Agent AIorDie",
       "tier3_title": "Préchargé avec notre bibliothèque de compétences",
       "tier3_desc": "Arrive déjà entraîné. Nos compétences propriétaires — affinées sur des déploiements réels — sont intégrées dès le premier jour. Vous personnalisez les spécificités. Nous apportons l'expertise.",
       "included_label": "Compétences incluses dans chaque déploiement"
@@ -191,7 +191,7 @@
       "group4": "Technique & sécurité"
     },
     "cta": {
-      "headline": "Prêt à déployer votre premier Super Agent AI or Die ?",
+      "headline": "Prêt à déployer votre premier Super Agent AIorDie ?",
       "subhead": "Entretien gratuit. Nous chiffrons l'écart pour votre entreprise — et montrons exactement quels rôles votre équipe peut déléguer dès aujourd'hui.",
       "book": "Déployer votre équipe IA",
       "phone_label": "Parlez à notre agent IA"

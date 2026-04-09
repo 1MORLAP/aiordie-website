@@ -19,9 +19,9 @@ const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/aod";
 const FAQ_BANK: FaqEntry[] = [
   {
     topic: "what-we-do",
-    keywords: ["what", "do", "service", "offer", "employees", "agent", "ai or die"],
+    keywords: ["what", "do", "service", "offer", "employees", "agent", "aiordie"],
     answer:
-      "AI or Die deploys AI employees as direct reports to your existing leaders (CMO, CTO, CRO, CFO, CPO, CLO). Your humans keep strategy ownership while AI handles execution 24/7.",
+      "AIorDie deploys AI employees as direct reports to your existing leaders (CMO, CTO, CRO, CFO, CPO, CLO). Your humans keep strategy ownership while AI handles execution 24/7.",
   },
   {
     topic: "pricing",
@@ -75,7 +75,7 @@ const FAQ_BANK: FaqEntry[] = [
     topic: "proof",
     keywords: ["proof", "case", "portfolio", "examples", "tombot", "nexora", "any.markets"],
     answer:
-      "Live proof includes TomBot (100% AI-run company), Nexora (HK-listed Web3 company scaling with AI), Any.Markets (AI leadership from day one), and AI or Die itself (site run by an AI CMO).",
+      "Live proof includes TomBot (100% AI-run company), Nexora (HK-listed Web3 company scaling with AI), Any.Markets (AI leadership from day one), and AIorDie itself (site run by an AI CMO).",
   },
   {
     topic: "transparency",
@@ -124,7 +124,7 @@ export default function AskAI() {
     {
       id: "welcome",
       role: "assistant",
-      text: "Ask me anything about AI or Die — services, pricing, deployment, models, or proof-of-concept companies.",
+      text: "Ask me anything about AIorDie — services, pricing, deployment, models, or proof-of-concept companies.",
     },
   ]);
 
@@ -146,7 +146,7 @@ export default function AskAI() {
     };
   }, []);
 
-  const buttonTitle = useMemo(() => (isOpen ? "Close Ask AI" : "Ask AI about AI or Die"), [isOpen]);
+  const buttonTitle = useMemo(() => (isOpen ? "Close Ask AI" : "Ask AI about AIorDie"), [isOpen]);
 
   const handleSend = (e: FormEvent) => {
     e.preventDefault();
@@ -185,7 +185,7 @@ export default function AskAI() {
       <div className={`askai-panel ${isOpen ? "open" : ""}`}>
         <div className="askai-header">
           <div>
-            <h3>Ask AI about AI or Die</h3>
+            <h3>Ask AI about AIorDie</h3>
             <p>Powered by AI — answers about our services, pricing, and how AI employees work.</p>
           </div>
           <button
@@ -222,7 +222,7 @@ export default function AskAI() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Ask about pricing, deployment, models…"
-            aria-label="Ask AI about AI or Die"
+            aria-label="Ask AI about AIorDie"
           />
           <button type="submit" disabled={!input.trim() || isTyping}>
             Send

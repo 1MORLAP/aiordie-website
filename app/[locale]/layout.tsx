@@ -15,8 +15,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://aiordie.now"),
   title: {
-    default: "AI or Die — Deploy + Train + Advise",
-    template: "%s — AI or Die",
+    default: "AIorDie — Deploy + Train + Advise",
+    template: "%s — AIorDie",
   },
   description:
     "Your AI team. Your infrastructure. Your control. We help you build it.",
@@ -26,16 +26,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    title: "AI or Die — Deploy + Train + Advise",
+    title: "AIorDie — Deploy + Train + Advise",
     description:
       "We deploy AI teams on your infrastructure, train your people, and offer optional advisory.",
     url: "https://aiordie.now",
-    siteName: "AI or Die",
+    siteName: "AIorDie",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI or Die — Deploy + Train + Advise",
+    title: "AIorDie — Deploy + Train + Advise",
     description:
       "Your AI team. Your infrastructure. Your control. We help you build it.",
     site: "@aiordie",
@@ -111,7 +111,7 @@ function Footer({ t }: { t: (key: string) => string }) {
             className="font-bold text-base"
             style={{ color: "var(--accent)" }}
           >
-            AI or Die
+            AIorDie
           </span>
           <span>·</span>
           <span>{t('footer.location')}</span>

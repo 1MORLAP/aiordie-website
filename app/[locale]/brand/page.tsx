@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Brand Assets — AI or Die',
-  description: 'Official AI or Die logos, wordmarks, and brand assets.',
+  title: 'Brand Assets — AIorDie',
+  description: 'Official AIorDie logos, wordmarks, and brand assets.',
   robots: 'noindex',
 }
 
@@ -45,8 +45,8 @@ export default function BrandPage() {
 
         <div className="mb-14">
           <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">Brand Kit</p>
-          <h1 className="font-space-grotesk mb-4 text-4xl font-bold tracking-tight md:text-6xl">AI or Die Brand Assets</h1>
-          <p className="max-w-2xl text-[var(--text-secondary)]">Official logos, wordmarks, and color palette. Use when referencing AI or Die in press, partnerships, or integrations.</p>
+          <h1 className="font-space-grotesk mb-4 text-4xl font-bold tracking-tight md:text-6xl">AIorDie Brand Assets</h1>
+          <p className="max-w-2xl text-[var(--text-secondary)]">Official logos, wordmarks, and color palette. Use when referencing AIorDie in press, partnerships, or integrations.</p>
         </div>
 
         {/* Wordmarks */}

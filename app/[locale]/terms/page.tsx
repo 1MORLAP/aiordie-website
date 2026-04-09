@@ -3,20 +3,20 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — AI or Die",
+  title: "Terms of Service — AIorDie",
   description:
-    "Terms of Service for AI or Die, including service terms, SMS disclosures, cancellation policy, and privacy references.",
+    "Terms of Service for AIorDie, including service terms, SMS disclosures, cancellation policy, and privacy references.",
   openGraph: {
-    title: "Terms of Service — AI or Die",
+    title: "Terms of Service — AIorDie",
     description:
-      "Terms governing AI or Die services, including pricing references, SMS terms, and cancellation policy.",
+      "Terms governing AIorDie services, including pricing references, SMS terms, and cancellation policy.",
     url: "https://aiordie.now/terms",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Terms of Service — AI or Die",
+    title: "Terms of Service — AIorDie",
     description:
-      "Terms governing AI or Die services, including pricing references, SMS terms, and cancellation policy.",
+      "Terms governing AIorDie services, including pricing references, SMS terms, and cancellation policy.",
   },
   alternates: { canonical: "https://aiordie.now/terms" },
 };
@@ -36,7 +36,7 @@ export default function TermsPage() {
               Terms of Service
             </h1>
             <p className="mt-5 max-w-3xl text-lg leading-relaxed text-[var(--text-secondary)]">
-              These Terms govern your use of AI or Die services. By using our services, you agree to
+              These Terms govern your use of AIorDie services. By using our services, you agree to
               the terms below.
             </p>
             <p className="mt-4 text-sm text-[var(--text-muted)]">Last updated: {updatedAt}</p>
@@ -50,8 +50,8 @@ export default function TermsPage() {
             <article className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-7">
               <h2 className="font-space-grotesk text-2xl font-bold text-[var(--text-primary)]">Company and program</h2>
               <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                Company: AI or Die.<br />
-                Program name: AI or Die AI Employee Deployment Program.<br />
+                Company: AIorDie.<br />
+                Program name: AIorDie AI Employee Deployment Program.<br />
                 Program description: We deploy AI direct reports into your business operations.
               </p>
             </article>
@@ -61,7 +61,7 @@ export default function TermsPage() {
             <article className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-7">
               <h2 className="font-space-grotesk text-2xl font-bold text-[var(--text-primary)]">Services</h2>
               <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                AI or Die provides AI direct report deployment and management services,
+                AIorDie provides AI direct report deployment and management services,
                 including setup, integration, optimization, and ongoing support.
               </p>
             </article>
@@ -94,7 +94,7 @@ export default function TermsPage() {
             <article className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-7">
               <h2 className="font-space-grotesk text-2xl font-bold text-[var(--text-primary)]">SMS terms</h2>
               <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                AI or Die sends one-time transactional SMS messages (booking links, meeting confirmations) only after receiving verbal consent during a phone call with our AI receptionist. No recurring or promotional messages are sent. Message and data rates may apply. Text <strong>STOP</strong> to cancel SMS messages at any time. Text <strong>HELP</strong> for help. For SMS support, contact <a className="text-[var(--accent)] hover:underline" href="tel:+17869989310">(786) 998-9310</a>.
+                AIorDie sends one-time transactional SMS messages (booking links, meeting confirmations) only after receiving verbal consent during a phone call with our AI receptionist. No recurring or promotional messages are sent. Message and data rates may apply. Text <strong>STOP</strong> to cancel SMS messages at any time. Text <strong>HELP</strong> for help. For SMS support, contact <a className="text-[var(--accent)] hover:underline" href="tel:+17869989310">(786) 998-9310</a>.
               </p>
             </article>
           </ScrollReveal>
@@ -103,7 +103,7 @@ export default function TermsPage() {
             <article className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-7">
               <h2 className="font-space-grotesk text-2xl font-bold text-[var(--text-primary)]">Limitations of liability</h2>
               <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                To the maximum extent permitted by law, AI or Die is not liable for indirect,
+                To the maximum extent permitted by law, AIorDie is not liable for indirect,
                 incidental, special, consequential, or punitive damages, or for lost profits, data,
                 or business opportunities arising from use of our services.
               </p>
@@ -144,7 +144,7 @@ export default function TermsPage() {
             <article className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-7">
               <h2 className="font-space-grotesk text-2xl font-bold text-[var(--text-primary)]">Contact</h2>
               <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                AI or Die<br />
+                AIorDie<br />
                 Website: <a className="text-[var(--accent)] hover:underline" href="https://aiordie.now">aiordie.now</a><br />
                 Phone: <a className="text-[var(--accent)] hover:underline" href="tel:+17869989310">(786) 998-9310</a>
               </p>

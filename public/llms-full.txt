@@ -1,15 +1,15 @@
-# AI or Die — Full LLM Reference
+# AIorDie — Full LLM Reference
 > Your AI team. Your infrastructure. Your control. We help you build it.
 
 ## Company Snapshot
-- Name: AI or Die
+- Name: AIorDie
 - Website: https://aiordie.now
 - Offices: Miami, FL and Seattle, WA
 - Phone: (786) 998-9310
 - Founder: Tomasz Wojewoda
 
 ## Service Model
-AI or Die is not a managed service provider.
+AIorDie is not a managed service provider.
 
 We deploy AI teams into client businesses, train client teams to run independently, and provide optional advisory support.
 
@@ -74,7 +74,7 @@ We deploy AI teams into client businesses, train client teams to run independent
 ## Support Escalation
 1. Ask your AI team (free)
 2. Check your runbook (free)
-3. Call AI or Die advisory (paid)
+3. Call AIorDie advisory (paid)
 
 ## Positioning
 - Them: "Let us run your AI."
@@ -106,7 +106,7 @@ Clients pay providers directly for:
 - Phone: (786) 998-9310
 
 ## Live Proof
-AI or Die is not theoretical. The same Super Agent model we deploy for clients runs our own company.
+AIorDie is not theoretical. The same Super Agent model we deploy for clients runs our own company.
 
 ### Tomek Group (Patient Zero)
 - One founder, 5 business units, 20+ AI agents running 24/7

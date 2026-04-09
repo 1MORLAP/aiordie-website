@@ -10,7 +10,7 @@
     "blog": "Blog",
     "book_consult": "Ihr KI-Team bereitstellen",
     "call_us": "Anrufen",
-    "ask_ai_bar": "Fragen Sie Ihre KI nach AI or Die"
+    "ask_ai_bar": "Fragen Sie Ihre KI nach AIorDie"
   },
   "footer": {
     "location": "Miami, FL · Seattle, WA",
@@ -20,7 +20,7 @@
     "ai_attribution": "Diese Website wird von einem AI CMO geschrieben und gepflegt — derselbe Super Agent-Typ, den wir für Sie einsetzen."
   },
   "hero": {
-    "eyebrow": "AI or Die Super Agents",
+    "eyebrow": "AIorDie Super Agents",
     "headline_1": "Ihr KI-Team.",
     "headline_2": "Ihre Infrastruktur. Ihre Kontrolle. Wir bauen es nur.",
     "subhead": "KI-Support ist kostenlos. Menschlicher Support ist Premium.",
@@ -33,8 +33,8 @@
     "subhead": "Gleiche Ergebnisse, komplett andere Kostenstruktur.",
     "old_label": "Alter Ansatz",
     "old_desc": "3 menschliche Neueinstellungen/Jahr mit Gehalt, Benefits, Ausfallzeiten und Recruiting-Aufwand.",
-    "new_label": "AI or Die-Modell",
-    "new_desc": "3 AI or Die Super Agents pro Jahr mit 24/7-Abdeckung."
+    "new_label": "AIorDie-Modell",
+    "new_desc": "3 AIorDie Super Agents pro Jahr mit 24/7-Abdeckung."
   },
   "roles": {
     "headline": "Rollen, die wir einsetzen",
@@ -70,8 +70,8 @@
     "subhead": "Fünf Schritte vom Erstgespräch bis zum vollständigen Deployment."
   },
   "cta": {
-    "eyebrow": "AI or Die",
-    "headline": "Bereit, Ihren ersten AI or Die Super Agent einzusetzen?",
+    "eyebrow": "AIorDie",
+    "headline": "Bereit, Ihren ersten AIorDie Super Agent einzusetzen?",
     "subhead": "KI-Support ist kostenlos. Menschlicher Support ist Premium.",
     "book": "Kostenloses Erstgespräch buchen",
     "phone_label": "Sprechen Sie in jeder Sprache mit unserem KI-Agenten"
@@ -105,7 +105,7 @@
       "tier2_desc": "Ein Schritt weiter — der Agent kann Aktionen ausführen, autonom arbeiten und sich mit Tools verbinden. Aber er ist ein Blanko-Setup. Sie konfigurieren ihn, Sie prompten ihn, Sie managen ihn. Die Plattform gibt Ihnen ein Auto. Den Motor müssen Sie selbst bauen.",
       "tier2_best": "Technische Teams, die ihren eigenen Agent bauen wollen. Ein Toolkit, keine Einstellung.",
       "tier3_label": "Stufe 3 — Eingesetzter Spezialist",
-      "tier3_name": "AI or Die Super Agent",
+      "tier3_name": "AIorDie Super Agent",
       "tier3_price": "$500/Monat + $2,000 Einrichtung",
       "tier3_desc": "Basiert auf OpenClaw — aber von unserem Team Ende-zu-Ende für Ihr Unternehmen konfiguriert. Wir übernehmen die monatelange Setup-Arbeit, damit Sie es nicht tun müssen. Sie erhalten einen Spezialisten, der Ihre Kunden, Ihren Ton, Ihre Tools und Ihre Ziele bereits kennt. Sie steuern Ergebnisse, nicht Prompts.",
       "tier3_best": "Unternehmer, die eine Rolle abgeben wollen — nicht ein System bauen.",
@@ -117,13 +117,13 @@
       "diy_quote_label": "So sieht ein echtes DIY-Deployment aus",
       "diy_vs_label": "OpenClaw DIY:",
       "diy_vs_value": "$5/Monat + 200+ Stunden Ihrer Zeit",
-      "aod_label": "AI or Die:",
+      "aod_label": "AIorDie:",
       "aod_value": "$500/Monat + live in 2 Wochen"
     },
     "skills": {
       "eyebrow": "Unser IP. Ihr Vorteil.",
       "headline": "Jeder Agent wird mit Skills ausgeliefert.",
-      "body": "Stellen Sie sich den Unterschied vor zwischen jemandem direkt von der Uni und einem PhD, der Jahre genau Ihr Feld gemeistert hat. Unsere Agents kommen mit Skills, die wir im Live-Betrieb entwickelt, getestet und verfeinert haben. Wenn Sie einen AI or Die Super Agent einstellen, bekommen Sie unser IP — kein Blanko-System, das Sie von Grund auf schulen müssen.",
+      "body": "Stellen Sie sich den Unterschied vor zwischen jemandem direkt von der Uni und einem PhD, der Jahre genau Ihr Feld gemeistert hat. Unsere Agents kommen mit Skills, die wir im Live-Betrieb entwickelt, getestet und verfeinert haben. Wenn Sie einen AIorDie Super Agent einstellen, bekommen Sie unser IP — kein Blanko-System, das Sie von Grund auf schulen müssen.",
       "badge_headline": "24/7 PhD-Einstellung",
       "badge_sub": "zum Preis eines Mittagessens",
       "tier1_label": "ChatGPT / Claude",
@@ -132,7 +132,7 @@
       "tier2_label": "Generische Agent-Plattform",
       "tier2_title": "Potenzial, aber Sie liefern das Training",
       "tier2_desc": "Die Rohintelligenz ist da. Aber Sie sind der Professor. Sie bauen das Curriculum, führen die Lektionen durch, bewerten den Output. Die meisten Unternehmen brennen aus, bevor der Agent einsatzreif ist.",
-      "tier3_label": "AI or Die Super Agent",
+      "tier3_label": "AIorDie Super Agent",
       "tier3_title": "Vorgeladen mit unserer Skills-Bibliothek",
       "tier3_desc": "Kommt bereits trainiert an. Unsere proprietären Skills — geschärft in realen Deployments — sind ab Tag eins integriert. Sie passen die Details an. Wir liefern die Expertise.",
       "included_label": "In jedem Deployment enthaltene Skills"
@@ -191,7 +191,7 @@
       "group4": "Technik & Sicherheit"
     },
     "cta": {
-      "headline": "Bereit, Ihren ersten AI or Die Super Agent einzusetzen?",
+      "headline": "Bereit, Ihren ersten AIorDie Super Agent einzusetzen?",
       "subhead": "Kostenloses Erstgespräch. Wir berechnen die Lücke für Ihr konkretes Unternehmen — und zeigen exakt, welche Rollen Ihr Team heute abgeben kann.",
       "book": "Ihr KI-Team bereitstellen",
       "phone_label": "Sprechen Sie mit unserem KI-Agenten"
