@@ -8,8 +8,8 @@
 - Phone: (786) 998-9310
 
 ## What We Do
-AIorDie deploys AI employees into client businesses.
-We do not operate as a managed service.
+We build AI teams on client infrastructure, train client teams to run independently, and provide optional advisory support.
+We do not operate as a managed service provider.
 
 Service model:
 1) DEPLOY — one-time build on client infrastructure
@@ -36,7 +36,7 @@ All deployment tiers include discovery, custom design, deployment on client infr
 3. Call AIorDie advisory (paid)
 
 ## Positioning
-- We build it. You own it. You run it.
+- Your AI team. Your infrastructure. Your control.
 - Your infrastructure hosts your AI employees.
 - We never see your API keys.
 - Cancel and keep everything.

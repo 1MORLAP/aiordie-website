@@ -11,7 +11,7 @@
 ## Service Model
 AIorDie is not a managed service provider.
 
-We deploy AI teams into client businesses, train client teams to run independently, and provide optional advisory support.
+We build AI teams on client infrastructure, train client teams to run independently, and provide optional advisory support.
 
 ### Phase 1 — DEPLOY (one-time)
 - Discovery and workflow assessment
