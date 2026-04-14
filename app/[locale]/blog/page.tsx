@@ -78,7 +78,7 @@ export default function BlogPage() {
             {remainingPosts.length > 0 && (
               <div className="grid gap-6 md:grid-cols-2">
                 {remainingPosts.map((post, idx) => (
-                  <ScrollReveal key={post.slug} delayMs={idx * 70}>
+                  <ScrollReveal key={post.slug} delayMs={idx * 70} className="h-full">
                     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-border)] hover:shadow-[0_20px_60px_-46px_var(--accent)]">
                       {post.image && (
                         <Link href={`/blog/${post.slug}`} className="block border-b border-[var(--border)]">

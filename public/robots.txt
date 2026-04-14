@@ -21,6 +21,9 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-User
+Allow: /
+
 User-agent: Anthropic-AI
 Allow: /
 

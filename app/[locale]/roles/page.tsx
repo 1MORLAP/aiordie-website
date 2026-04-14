@@ -316,7 +316,7 @@ export default async function RolesPage({ params }: { params: Promise<{ locale: 
 
                 <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                   {department.roles.map((role, roleIdx) => (
-                    <ScrollReveal key={role.name} delayMs={roleIdx * 35}>
+                    <ScrollReveal key={role.name} delayMs={roleIdx * 35} className="h-full">
                       <article
                         className="h-full rounded-2xl border border-[var(--border)] border-l-4 border-l-[var(--dept-accent)] bg-[var(--bg-card)] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-border)] hover:shadow-[0_22px_55px_-36px_var(--accent)]"
                         style={{ "--dept-accent": department.accent } as CSSProperties}

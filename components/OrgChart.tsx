@@ -64,7 +64,7 @@ export default function OrgChart() {
         const Icon = team.icon;
 
         return (
-          <ScrollReveal key={team.leader} delayMs={teamIdx * 90}>
+          <ScrollReveal key={team.leader} delayMs={teamIdx * 90} className="h-full">
             <article className="org-team-card flex h-full flex-col rounded-[1.4rem] border border-[var(--border)] p-5 md:p-6">
               <div className="org-network">
                 <div className="org-hub-wrap">

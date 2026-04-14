@@ -1,5 +1,5 @@
 # AIorDie — Full LLM Reference
-> Your AI team. Your infrastructure. Your control. We help you build it.
+> Your AI employees. Your infrastructure. Your control. We deploy them. You own them.
 
 ## Company Snapshot
 - Name: AIorDie
@@ -11,7 +11,7 @@
 ## Service Model
 AIorDie is not a managed service provider.
 
-We build AI teams on client infrastructure, train client teams to run independently, and provide optional advisory support.
+We deploy AI employees on client infrastructure, train client teams to run independently, and provide optional advisory support.
 
 ### Phase 1 — DEPLOY (one-time)
 - Discovery and workflow assessment
@@ -28,7 +28,7 @@ We build AI teams on client infrastructure, train client teams to run independen
 ### Phase 3 — ADVISE (optional monthly)
 - Advisory hours for difficult issues
 - Strategy sessions and expansion planning
-- Escalation support when AI team cannot resolve a case
+- Escalation support when your AI employees cannot resolve a case
 
 ## Pricing
 ### Deployment (one-time)
@@ -72,7 +72,7 @@ We build AI teams on client infrastructure, train client teams to run independen
 - 5 hours post-deploy advisory
 
 ## Support Escalation
-1. Ask your AI team (free)
+1. Ask your AI employees (free)
 2. Check your runbook (free)
 3. Call AIorDie advisory (paid)
 
@@ -111,7 +111,7 @@ AIorDie is not theoretical. The same Super Agent model we deploy for clients run
 ### Tomek Group (Patient Zero)
 - One founder, 5 business units, 20+ AI agents running 24/7
 - Functions covered: CEO orchestration, CMO content/brand, CTO architecture/deploy, CRO pipeline, receptionist, legal review, finance reporting, ops
-- Comparable headcount cost: $500K+/year | Actual AI team cost: ~$60K–$80K/year
+- Comparable headcount cost: $500K+/year | Actual AI employee deployment cost: ~$60K–$80K/year
 - Source: https://aiordie.now/blog/case-study-tomek-group
 
 ### aiordie.now (This Website)

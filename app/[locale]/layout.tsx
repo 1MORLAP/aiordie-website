@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s — AIorDie",
   },
   description:
-    "Your AI team. Your infrastructure. Your control. We help you build it.",
+    "Your AI employees. Your infrastructure. Your control. We deploy them. You own them.",
   icons: {
     icon: "/icon.svg",
     apple: "/icon.svg",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "AIorDie — Deploy + Train + Advise",
     description:
-      "We deploy AI teams on your infrastructure, train your people, and offer optional advisory.",
+      "We deploy AI employees on your infrastructure, train your team, and offer optional advisory.",
     url: "https://aiordie.now",
     siteName: "AIorDie",
     locale: "en_US",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AIorDie — Deploy + Train + Advise",
     description:
-      "Your AI team. Your infrastructure. Your control. We help you build it.",
+      "Your AI employees. Your infrastructure. Your control. We deploy them. You own them.",
     site: "@aiordie",
   },
   robots: {

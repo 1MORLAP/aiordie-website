@@ -13,11 +13,11 @@ const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/aod";
 export const metadata: Metadata = {
   title: "AIorDie — Deploy + Train + Advise",
   description:
-    "Your AI team. Your infrastructure. Your control. We help you build it.",
+    "Your AI employees. Your infrastructure. Your control. We deploy them. You own them.",
   openGraph: {
     title: "AIorDie — Deploy + Train + Advise",
     description:
-      "We build your AI team on your infrastructure, train your people, then hand over control.",
+      "We deploy AI employees on your infrastructure, train your team, then hand over control.",
     url: "https://aiordie.now",
   },
   twitter: {
@@ -64,7 +64,7 @@ const caseStudies = [
   {
     name: "NEXORA",
     badge: "HKEX-listed · Global scale",
-    line: "HKEX-listed Web3 infrastructure using AI teams to scale without proportional hiring.",
+    line: "HKEX-listed Web3 infrastructure using AI employees to scale without proportional hiring.",
     color: "#3B82F6",
     href: "https://nexora.build",
   },
@@ -240,7 +240,7 @@ export default function Home() {
     "name": "AIorDie",
     "url": "https://aiordie.now",
     "logo": "https://aiordie.now/brand/circle-mark-orange.svg",
-    "description": "AIorDie deploys AI teams on client infrastructure, trains client teams to run independently, and offers optional advisory support.",
+    "description": "AIorDie deploys AI employees on client infrastructure, trains client teams to run independently, and offers optional advisory support.",
     "telephone": "+17869989310",
     "address": [
       { "@type": "PostalAddress", "addressLocality": "Miami", "addressRegion": "FL", "addressCountry": "US" },
@@ -414,7 +414,7 @@ export default function Home() {
 
           <div className="mt-8 grid gap-4 md:grid-cols-3">
             {deploymentTiers.map((tier, idx) => (
-              <ScrollReveal key={tier.name} delayMs={idx * 70}>
+              <ScrollReveal key={tier.name} delayMs={idx * 70} className="h-full">
                 <article className={`h-full rounded-2xl border p-6 ${tier.cardClass}`}>
                   <div className={`mb-3 flex items-center gap-2 ${tier.textClass}`}>
                     <DeploymentIcon kind={tier.icon} />
@@ -459,7 +459,7 @@ export default function Home() {
 
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {technologyProviders.map((provider, idx) => (
-              <ScrollReveal key={provider.name} delayMs={idx * 70}>
+              <ScrollReveal key={provider.name} delayMs={idx * 70} className="h-full">
                 <a
                   href={provider.href}
                   target="_blank"
@@ -495,7 +495,7 @@ export default function Home() {
 
           <div className="mt-8 grid gap-5 md:grid-cols-2">
             {caseStudies.map((item, idx) => (
-              <ScrollReveal key={item.name} delayMs={idx * 70}>
+              <ScrollReveal key={item.name} delayMs={idx * 70} className="h-full">
                 <a
                   href={item.href}
                   target="_blank"
@@ -656,7 +656,7 @@ export default function Home() {
               },
               {
                 title: "3. ADVISE",
-                text: "Optional advisory hours for edge cases your AI team cannot solve alone.",
+                text: "Optional advisory hours for edge cases your AI employees cannot solve alone.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6">
@@ -667,7 +667,7 @@ export default function Home() {
           </div>
           <div className="mt-6 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6">
             <p className="text-sm text-[var(--text-secondary)]">
-              <span className="font-semibold text-[var(--text-primary)]">Support escalation:</span> Step 1 ask your AI team (free), Step 2 check your runbook (free), Step 3 call us (advisory).
+              <span className="font-semibold text-[var(--text-primary)]">Support escalation:</span> Step 1 ask your AI employees (free), Step 2 check your runbook (free), Step 3 call us (advisory).
             </p>
           </div>
         </div>
@@ -731,7 +731,7 @@ export default function Home() {
           </div>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {featuredRoles.map((role, idx) => (
-              <ScrollReveal key={role.name} delayMs={idx * 60}>
+              <ScrollReveal key={role.name} delayMs={idx * 60} className="h-full">
                 <article className="h-full rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-border)] hover:shadow-[0_20px_40px_-30px_var(--accent)]">
                   <h3 className="font-space-grotesk text-lg font-bold text-[var(--text-primary)]">{role.name}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]">{role.summary}</p>
@@ -749,7 +749,7 @@ export default function Home() {
             Deployment pricing starts at $5,000 one-time. Training included. Advisory optional.
           </p>
           <Link href="/pricing" className="text-sm font-semibold text-[var(--accent)] hover:underline">
-            Deploy your AI team →
+            Deploy AI employees →
           </Link>
         </div>
       </section>
