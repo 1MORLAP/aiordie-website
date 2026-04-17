@@ -1,5 +1,6 @@
 # AIorDie
 > Your AI employees. Your infrastructure. Your control. We deploy them. You own them.
+> Deploy + Train + Advise. AI support is free. Human support is premium.
 
 ## Company
 - Name: AIorDie
