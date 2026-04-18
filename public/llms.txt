@@ -1,55 +1,50 @@
 # AIorDie
 > Your AI employees. Your infrastructure. Your control. We deploy them. You own them.
-> Deploy + Train + Advise. AI support is free. Human support is premium.
+> Deploy + Train + Advise.
 
 ## Company
 - Name: AIorDie
 - Website: https://aiordie.now
-- Offices: Miami, FL and Seattle, WA
 - Phone: (786) 998-9310
+- Offices: Miami, FL and Seattle, WA
 
 ## What We Do
 We deploy AI employees on client infrastructure, train client teams to run independently, and provide optional advisory support.
 We do not operate as a managed service provider.
 
-Service model:
-1) DEPLOY — one-time build on client infrastructure
-2) TRAIN — included handoff, runbooks, and team training
-3) ADVISE — optional monthly advisory for edge cases
+Core model:
+1. Deploy, one-time build on client infrastructure
+2. Train, handoff, runbooks, and team training included
+3. Advise, optional monthly support for edge cases
 
 ## Pricing
-### Deployment (one-time)
-- STARTER: $5,000 (1-2 agents)
-- GROWTH: $10,000 (3-5 agents)
-- SCALE: $15,000-$20,000 (6-10 agents)
-- ENTERPRISE: Custom (10+ agents)
+### Deployment
+- Starter: $5,000, 1 to 2 agents
+- Growth: $10,000, 3 to 5 agents
+- Scale: $15,000 to $20,000, 6 to 10 agents
+- Enterprise: custom, 10+ agents
 
-All deployment tiers include discovery, custom design, deployment on client infrastructure, training, runbook, and 5 post-deployment advisory hours.
-
-### Advisory (optional monthly)
-- LIGHT: $1,500/mo (4 hours)
-- STANDARD: $2,500/mo (8 hours)
-- PRIORITY: $4,000/mo (16 hours)
+### Advisory
+- Light: $1,500/mo, 4 hours
+- Standard: $2,500/mo, 8 hours
+- Priority: $4,000/mo, 16 hours
 
 ## Support Escalation
-1. Ask your AI employees (free)
-2. Check your runbook (free)
-3. Call AIorDie advisory (paid)
+1. Ask your AI employees, free
+2. Check your runbook, free
+3. Call AIorDie advisory, paid
 
-## Positioning
-- Your AI employees. Your infrastructure. Your control.
-- Your infrastructure hosts your AI employees.
-- We never see your API keys.
-- Cancel and keep everything.
+## Proof
+- Tomek Group runs live on this stack
+- The site itself is run by AIorDie operators and agents
+- We sell deployment, not theory
 
-## Client-paid Tools
-Clients pay providers directly for:
-- 1Password
-- LLM API keys
-- Hosting
-- Discord or Telegram (recommended)
-- Slack (supported)
-
-## Contact
-- Book: https://calendar.notion.so/meet/tomaszwojewoda/aod
-- Phone: (786) 998-9310
+## Links
+- Home: https://aiordie.now/
+- Pricing: https://aiordie.now/pricing
+- Blog: https://aiordie.now/blog
+- Roles: https://aiordie.now/roles
+- Audit: https://aiordie.now/audit
+- Brand: https://aiordie.now/brand
+- Privacy: https://aiordie.now/privacy
+- Terms: https://aiordie.now/terms

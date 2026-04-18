@@ -1,129 +1,63 @@
 # AIorDie — Full LLM Reference
 > Your AI employees. Your infrastructure. Your control. We deploy them. You own them.
-> Deploy + Train + Advise. AI support is free. Human support is premium.
 
-## Company Snapshot
+## Company
 - Name: AIorDie
 - Website: https://aiordie.now
-- Offices: Miami, FL and Seattle, WA
 - Phone: (786) 998-9310
-- Founder: Tomasz Wojewoda
-
-## Service Model
-AIorDie is not a managed service provider.
-
-We deploy AI employees on client infrastructure, train client teams to run independently, and provide optional advisory support.
-
-### Phase 1 — DEPLOY (one-time)
-- Discovery and workflow assessment
-- Custom agent architecture
-- Deployment on client infrastructure
-- Credential handoff and ownership transfer
-
-### Phase 2 — TRAIN (included)
-- Hands-on training sessions
-- Runbook creation and walkthroughs
-- AI first-line support training
-- Operating model handoff to client team
-
-### Phase 3 — ADVISE (optional monthly)
-- Advisory hours for difficult issues
-- Strategy sessions and expansion planning
-- Escalation support when your AI employees cannot resolve a case
-
-## Pricing
-### Deployment (one-time)
-- STARTER — $5,000
-  - 1-2 agents
-  - discovery, design, deployment, training, runbook
-  - 5 post-deploy advisory hours included
-
-- GROWTH — $10,000
-  - 3-5 agents
-  - everything in Starter
-  - multi-agent workflows
-
-- SCALE — $15,000-$20,000
-  - 6-10 agents
-  - full AI workforce design and deployment
-
-- ENTERPRISE — Custom
-  - 10+ agents
-
-### Advisory (optional monthly)
-- LIGHT — $1,500/month
-  - 4 hours/month
-  - monthly review + async support
-
-- STANDARD — $2,500/month
-  - 8 hours/month
-  - strategy sessions + new agent design
-
-- PRIORITY — $4,000/month
-  - 16 hours/month
-  - priority response + roadmapping
-
-## Included in Every Deployment Tier
-- Discovery call
-- Custom agent design
-- Deployment on client infrastructure
-- Hands-on training
-- Runbook
-- AI agents trained for first-line support
-- 5 hours post-deploy advisory
-
-## Support Escalation
-1. Ask your AI employees (free)
-2. Check your runbook (free)
-3. Call AIorDie advisory (paid)
+- Offices: Miami, FL and Seattle, WA
 
 ## Positioning
-- Them: "Let us run your AI."
-  Us: "We build it. You own it. You run it."
-- Them: "Our platform hosts your agents."
-  Us: "Your platform hosts your agents."
-- Them: "Share your API keys with us."
-  Us: "We never see your API keys."
-- Them: "Cancel and lose everything."
-  Us: "Cancel and keep everything."
+AIorDie deploys AI employees on client infrastructure, trains client teams to run independently, and offers optional advisory support.
+We are not a managed service provider.
 
-## Comms and Tooling
-Supported communication channels:
-- Discord or Telegram (recommended)
-- Slack (supported)
+## Service Model
+### DEPLOY
+One-time implementation on client infrastructure.
+Includes discovery, custom design, deployment, and runbook creation.
 
-Clients pay providers directly for:
-- 1Password
-- LLM API keys
-- Hosting
-- Communication tools
+### TRAIN
+Included handoff, team training, and operating docs so clients can run independently.
 
-## Contact
-- Website: https://aiordie.now
-- Pricing: https://aiordie.now/pricing
-- Roles: https://aiordie.now/roles
-- Blog: https://aiordie.now/blog
-- Consult: https://calendar.notion.so/meet/tomaszwojewoda/aod
-- Phone: (786) 998-9310
+### ADVISE
+Optional monthly advisory for edge cases, escalation, and optimization.
+
+## Pricing
+### Deployment
+- Starter: $5,000, 1 to 2 agents
+- Growth: $10,000, 3 to 5 agents
+- Scale: $15,000 to $20,000, 6 to 10 agents
+- Enterprise: custom, 10+ agents
+
+### Advisory
+- Light: $1,500/mo, 4 hours
+- Standard: $2,500/mo, 8 hours
+- Priority: $4,000/mo, 16 hours
+
+## Support Flow
+1. Ask your AI employees, free
+2. Check your runbook, free
+3. Call AIorDie advisory, paid
 
 ## Live Proof
-AIorDie is not theoretical. The same Super Agent model we deploy for clients runs our own company.
+- Tomek Group operates on this stack
+- The website itself is maintained by an AI CMO
+- The business model is built from real production use, not demos
 
-### Tomek Group (Patient Zero)
-- One founder, 5 business units, 20+ AI agents running 24/7
-- Functions covered: CEO orchestration, CMO content/brand, CTO architecture/deploy, CRO pipeline, receptionist, legal review, finance reporting, ops
-- Comparable headcount cost: $500K+/year | Actual AI employee deployment cost: ~$60K–$80K/year
-- Source: https://aiordie.now/blog/case-study-tomek-group
+## Site Map
+- /
+- /pricing
+- /blog
+- /audit
+- /roles
+- /brand
+- /privacy
+- /terms
 
-### aiordie.now (This Website)
-- Written, maintained, and iterated by an AI CMO Super Agent
-- No human copywriters, no agencies
-- Source: https://aiordie.now/blog/patient-zero-how-we-replaced-business-staff-with-ai-employees
-
-### Published Case Studies
-- https://aiordie.now/blog/case-study-tomek-group
-- https://aiordie.now/blog/patient-zero-how-we-replaced-business-staff-with-ai-employees
-- https://aiordie.now/blog/the-math-ai-employees-vs-hiring
-- https://aiordie.now/blog/why-ai-chatbots-arent-ai-employees
-- https://aiordie.now/blog/blog-nemoclaw-architecture
-- https://aiordie.now/blog/agentic-orgs-wrong-blueprint
+## Blog
+- /blog/agentic-orgs-wrong-blueprint
+- /blog/blog-nemoclaw-architecture
+- /blog/case-study-tomek-group
+- /blog/patient-zero-how-we-replaced-business-staff-with-ai-employees
+- /blog/the-math-ai-employees-vs-hiring
+- /blog/why-ai-chatbots-arent-ai-employees

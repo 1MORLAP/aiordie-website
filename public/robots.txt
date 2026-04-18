@@ -33,6 +33,12 @@ Allow: /
 User-agent: Perplexity-User
 Allow: /
 
+User-agent: OpenAI-SearchBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
 User-agent: CCBot
 Allow: /
 
