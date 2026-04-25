@@ -258,8 +258,7 @@ const departments: Department[] = [
 
 const totalRoles = departments.reduce((sum, dept) => sum + dept.roles.length, 0);
 
-export default async function RolesPage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
+export default async function RolesPage() {
   const t = await getTranslations();
   return (
     <>

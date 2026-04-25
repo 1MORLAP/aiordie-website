@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 import Nav from "@/components/Nav";
 import { Analytics } from "@vercel/analytics/react";
 import { NextIntlClientProvider } from "next-intl";
@@ -63,8 +64,9 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
+  const locales = routing.locales as readonly string[];
 
-  if (!routing.locales.includes(locale as any)) {
+  if (!locales.includes(locale)) {
     notFound();
   }
 
@@ -124,12 +126,12 @@ function Footer({ t }: { t: (key: string) => string }) {
           </a>
         </div>
         <nav className="flex flex-wrap items-center justify-center gap-6">
-          <a href="/" className="hover:text-[var(--text-primary)] transition-colors">{t('nav.home')}</a>
-          <a href="/pricing" className="hover:text-[var(--text-primary)] transition-colors">{t('nav.pricing')}</a>
-          <a href="/blog" className="hover:text-[var(--text-primary)] transition-colors">{t('nav.blog')}</a>
-          <a href="/privacy" className="hover:text-[var(--text-primary)] transition-colors">{t('footer.privacy')}</a>
-          <a href="/terms" className="hover:text-[var(--text-primary)] transition-colors">{t('footer.terms')}</a>
-          <a href="/brand" className="hover:text-[var(--text-primary)] transition-colors">{t('footer.brand')}</a>
+          <Link href="/" className="transition-colors hover:text-[var(--text-primary)]">{t('nav.home')}</Link>
+          <Link href="/pricing" className="transition-colors hover:text-[var(--text-primary)]">{t('nav.pricing')}</Link>
+          <Link href="/blog" className="transition-colors hover:text-[var(--text-primary)]">{t('nav.blog')}</Link>
+          <Link href="/privacy" className="transition-colors hover:text-[var(--text-primary)]">{t('footer.privacy')}</Link>
+          <Link href="/terms" className="transition-colors hover:text-[var(--text-primary)]">{t('footer.terms')}</Link>
+          <Link href="/brand" className="transition-colors hover:text-[var(--text-primary)]">{t('footer.brand')}</Link>
         </nav>
         <div className="text-xs text-[var(--text-muted)] text-center">
           {t('footer.ai_attribution')}

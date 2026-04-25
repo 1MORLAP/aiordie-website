@@ -14,16 +14,19 @@ const INTERVAL_MS = 2500;
 
 export default function AnimatedTimeline() {
   const [activeStep, setActiveStep] = useState(0);
-  const [connectorAnimating, setConnectorAnimating] = useState(false);
+  const [connectorAnimating, setConnectorAnimating] = useState(true);
 
   useEffect(() => {
-    setConnectorAnimating(false);
+    let frame = 0;
 
-    const frame = requestAnimationFrame(() => {
+    frame = requestAnimationFrame(() => {
       setConnectorAnimating(true);
     });
 
-    return () => cancelAnimationFrame(frame);
+    return () => {
+      cancelAnimationFrame(frame);
+      setConnectorAnimating(false);
+    };
   }, [activeStep]);
 
   useEffect(() => {

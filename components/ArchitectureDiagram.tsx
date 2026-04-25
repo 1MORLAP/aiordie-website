@@ -59,13 +59,13 @@ export default function ArchitectureDiagram() {
   return (
     <section className="bg-[var(--bg-secondary)] px-6 py-16 md:py-20">
       <div className="mx-auto max-w-6xl">
-        <ScrollReveal>
+          <ScrollReveal>
           <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">Security Architecture</p>
           <h2 className="font-space-grotesk mb-4 text-3xl font-bold tracking-tight md:text-5xl">
-            Your Agents. Your Data. Nobody Else's.
+            Your Agents. Your Data. Nobody Else&apos;s.
           </h2>
           <p className="max-w-3xl text-[var(--text-secondary)]">
-            Your data stays yours. Isolated by default, controlled by you — whether you're a 5-person team or a 500-person company.
+            Your data stays yours. Isolated by default, controlled by you — whether you&apos;re a 5-person team or a 500-person company.
           </p>
         </ScrollReveal>
 
