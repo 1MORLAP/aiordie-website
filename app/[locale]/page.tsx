@@ -35,7 +35,7 @@ const organizationJsonLd = {
   name: "AIorDie",
   url: "https://aiordie.now",
   description:
-    "AIorDie Super Agents deployed as direct reports to existing leaders, so companies scale output without scaling headcount.",
+    "AI employees deployed as direct reports to existing leaders, so companies scale output without scaling headcount.",
   telephone: "+17869989310",
   address: [
     {
@@ -57,7 +57,7 @@ const caseStudies = [
   {
     name: "TomBot",
     badge: "Zero-human operations",
-    line: "A full company run by AIorDie Super Agents across leadership, execution, and reporting.",
+    line: "A full company run by AI employees across leadership, execution, and reporting.",
     color: "#FF4C00",
     href: "https://www.realtom.bot/",
   },
@@ -78,7 +78,7 @@ const caseStudies = [
   {
     name: "AIorDie",
     badge: "Dog-fooded daily",
-    line: "Our own site, strategy, and output are operated by the same Super Agent model.",
+    line: "Our own site, strategy, and output are operated by the same AI employee model.",
     color: "#10B981",
     href: "https://aiordie.now",
   },
@@ -163,14 +163,14 @@ const technologyProviders = [
   {
     name: "OpenAI",
     href: "https://openai.com",
-    description: "GPT models for cloud and production Super Agent deployments.",
-    function: "GPT model intelligence for production Super Agent deployments",
+    description: "GPT models for cloud and production AI employee deployments.",
+    function: "GPT model intelligence for production AI employee deployments",
   },
   {
     name: "Anthropic",
     href: "https://anthropic.com",
-    description: "Claude models. Our recommended brain for production Super Agents.",
-    function: "Claude model intelligence for production Super Agents",
+    description: "Claude models. Our recommended brain for production AI employees.",
+    function: "Claude model intelligence for production AI employees",
   },
   {
     name: "EXO Labs",
@@ -450,7 +450,7 @@ export default function Home() {
               Powered By
             </p>
             <h2 className="font-space-grotesk mb-4 text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
-              The technology behind AIorDie&apos;s Super Agent deployments
+              The technology behind AIorDie&apos;s AI employee deployments
             </h2>
             <p className="max-w-3xl text-[var(--text-secondary)]">
               We build on the best. These are the platforms, models, and infrastructure behind every AIorDie deployment.
@@ -601,12 +601,12 @@ export default function Home() {
               Every Language. Every Currency.
             </p>
             <h2 className="font-space-grotesk mb-4 text-3xl font-bold tracking-tight md:text-5xl">
-              Your Super Agents speak every language your business does.
+              Your AI employees speak every language your business does.
             </h2>
           </ScrollReveal>
           <ScrollReveal delayMs={80}>
             <p className="max-w-3xl text-[var(--text-secondary)]">
-              AIorDie Super Agents are multilingual by default. Documents, invoices, and research can be submitted in any language and any currency — the output comes back in whatever language you need. If your team works in Spanish but reports need to be in English, done. If a client sends contracts in German, your AI Legal Counsel reads them natively.
+              AIorDie AI employees are multilingual by default. Documents, invoices, and research can be submitted in any language and any currency — the output comes back in whatever language you need. If your team works in Spanish but reports need to be in English, done. If a client sends contracts in German, your AI Legal Counsel reads them natively.
             </p>
           </ScrollReveal>
           <div className="mt-8 grid gap-4 md:grid-cols-3">
@@ -691,7 +691,7 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* Super-agent callout */}
+          {/* Multi-role callout */}
           <div className="mb-8 rounded-2xl border border-[var(--accent-border)] bg-[var(--accent-subtle)] p-6 md:p-8">
             <div className="flex flex-wrap items-start gap-5">
               <div className="flex-1 min-w-[240px]">
@@ -706,7 +706,7 @@ export default function Home() {
                   no divided attention. One agent, configured across multiple disciplines, running everything simultaneously.
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                  We call these super-agents. When we scope your deployment, we&apos;ll tell you exactly
+                  We call these multi-role AI employees. When we scope your deployment, we&apos;ll tell you exactly
                   where combining roles saves you money without sacrificing output quality.
                 </p>
               </div>
@@ -778,7 +778,7 @@ export default function Home() {
                 <div className="font-space-grotesk text-5xl font-bold text-[var(--text-primary)]">
                   $<AnimatedCounter to={19.4} decimals={1} suffix="K" />
                 </div>
-                <p className="mt-3 text-sm text-[var(--text-secondary)]">Equivalent coverage with Super Agents running full-time, all year.</p>
+                <p className="mt-3 text-sm text-[var(--text-secondary)]">Equivalent coverage with AI employees running full-time, all year.</p>
               </article>
             </ScrollReveal>
           </div>

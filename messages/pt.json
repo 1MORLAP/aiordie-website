@@ -2,7 +2,7 @@
   "lang": "pt",
   "lang_label": "Português (Brasil)",
   "lang_translated_by": "Traduzido por IA",
-  "lang_translated_tooltip": "Esta página é traduzida e mantida pelo nosso CMO de IA — o mesmo tipo de Super Agent que implementamos para você.",
+  "lang_translated_tooltip": "Esta página é traduzida e mantida pelo nosso CMO de IA — o mesmo tipo de agente de IA que implementamos para você.",
   "nav": {
     "home": "Início",
     "pricing": "Preços",
@@ -17,10 +17,10 @@
     "privacy": "Privacidade",
     "terms": "Termos",
     "brand": "Marca",
-    "ai_attribution": "Este site é escrito e mantido por um CMO de IA — o mesmo tipo de Super Agent que implementamos para você."
+    "ai_attribution": "Este site é escrito e mantido por um CMO de IA — o mesmo tipo de agente de IA que implementamos para você."
   },
   "hero": {
-    "eyebrow": "Super Agents AIorDie",
+    "eyebrow": "agentes de IA AIorDie",
     "headline_1": "Sua equipe de IA.",
     "headline_2": "Sua infraestrutura. Seu controle. Nós só construímos.",
     "subhead": "Suporte de IA é gratuito. Suporte humano é premium.",
@@ -34,7 +34,7 @@
     "old_label": "Modelo antigo",
     "old_desc": "3 contratações humanas/ano com salário, benefícios, tempo ocioso e atrito de recrutamento.",
     "new_label": "Modelo AIorDie",
-    "new_desc": "3 Super Agents da AIorDie por ano com cobertura 24/7."
+    "new_desc": "3 agentes de IA da AIorDie por ano com cobertura 24/7."
   },
   "roles": {
     "headline": "Funções que Implementamos",
@@ -42,13 +42,13 @@
     "see_all": "Ver todas as 34 funções →",
     "super_agent_eyebrow": "A vantagem dos agentes",
     "super_agent_headline": "Um agente. Várias funções.",
-    "super_agent_body": "Com pessoas, você contrata um CFO ou um advogado. Nunca os dois. Competências não se acumulam assim. Com Super Agents, acumulam. Implementamos com frequência agentes únicos que cobrem finanças e jurídico, ou marketing e vendas — porque não existe sobrecarga cognitiva, custo de troca de contexto ou atenção dividida.",
-    "super_agent_body2": "Chamamos isso de super-agents. Quando desenharmos sua implementação, vamos mostrar exatamente onde combinar funções economiza dinheiro sem sacrificar qualidade de entrega.",
+    "super_agent_body": "Com pessoas, você contrata um CFO ou um advogado. Nunca os dois. Competências não se acumulam assim. Com agentes de IA, acumulam. Implementamos com frequência agentes únicos que cobrem finanças e jurídico, ou marketing e vendas — porque não existe sobrecarga cognitiva, custo de troca de contexto ou atenção dividida.",
+    "super_agent_body2": "Chamamos isso de agentes de IA. Quando desenharmos sua implementação, vamos mostrar exatamente onde combinar funções economiza dinheiro sem sacrificar qualidade de entrega.",
     "combos_label": "Combinações comuns"
   },
   "multilingual": {
     "headline": "Seus agentes falam todos os idiomas do seu negócio.",
-    "body": "Super Agents já nascem multilíngues. Documentos, faturas e pesquisas podem ser enviados em qualquer idioma e qualquer moeda — a saída volta no idioma que você precisar.",
+    "body": "agentes de IA já nascem multilíngues. Documentos, faturas e pesquisas podem ser enviados em qualquer idioma e qualquer moeda — a saída volta no idioma que você precisar.",
     "input_label": "Entrada",
     "process_label": "Processo",
     "output_label": "Saída",
@@ -59,7 +59,7 @@
     "units_label": "Unidades de negócio",
     "ftes_label": "Carga de FTE removida",
     "deployment_label": "Primeira implementação",
-    "coverage_label": "Cobertura equivalente com Super Agents rodando em tempo integral o ano todo."
+    "coverage_label": "Cobertura equivalente com agentes de IA rodando em tempo integral o ano todo."
   },
   "dogfood": {
     "eyebrow": "A gente usa o que vende",
@@ -71,7 +71,7 @@
   },
   "cta": {
     "eyebrow": "AIorDie",
-    "headline": "Pronto para implementar seu primeiro Super Agent AIorDie?",
+    "headline": "Pronto para implementar seu primeiro agente de IA AIorDie?",
     "subhead": "Suporte de IA é gratuito. Suporte humano é premium.",
     "book": "Agende uma Consultoria Gratuita",
     "phone_label": "Fale com nosso agente de IA em qualquer idioma"
@@ -105,7 +105,7 @@
       "tier2_desc": "Um passo acima — o agente pode agir, rodar de forma autônoma e conectar com ferramentas. Mas é uma tela em branco. Você configura, você escreve prompts, você gerencia. A plataforma te entrega um carro. O motor você ainda precisa construir.",
       "tier2_best": "Times técnicos que querem construir o próprio agente. Uma caixa de ferramentas, não uma contratação.",
       "tier3_label": "Nível 3 — Especialista Implementado",
-      "tier3_name": "Super Agent AIorDie",
+      "tier3_name": "agente de IA AIorDie",
       "tier3_price": "$500/mês + $2,000 setup",
       "tier3_desc": "Construído sobre OpenClaw — mas configurado de ponta a ponta para o seu negócio pelo nosso time. A gente faz os meses de configuração para você não precisar fazer. Você recebe um especialista que já entende seus clientes, seu tom, suas ferramentas e seus objetivos. Você gerencia resultado, não prompt.",
       "tier3_best": "Empresários que querem delegar uma função — não construir um sistema.",
@@ -123,7 +123,7 @@
     "skills": {
       "eyebrow": "Nosso IP. Sua vantagem.",
       "headline": "Todo agente sai com skills.",
-      "body": "Pense assim: contratar alguém recém-formado vs. contratar um PhD que passou anos dominando exatamente sua área. Nossos agentes chegam pré-carregados com skills que construímos, testamos e refinamos em operações reais. Quando você contrata um Super Agent AIorDie, leva nosso IP — não uma tela em branco para treinar do zero.",
+      "body": "Pense assim: contratar alguém recém-formado vs. contratar um PhD que passou anos dominando exatamente sua área. Nossos agentes chegam pré-carregados com skills que construímos, testamos e refinamos em operações reais. Quando você contrata um agente de IA AIorDie, leva nosso IP — não uma tela em branco para treinar do zero.",
       "badge_headline": "Contratação PhD 24/7",
       "badge_sub": "pelo preço de um almoço",
       "tier1_label": "ChatGPT / Claude",
@@ -132,7 +132,7 @@
       "tier2_label": "Plataforma de Agente Genérico",
       "tier2_title": "Potencial alto, mas o treinamento é por sua conta",
       "tier2_desc": "A inteligência bruta está lá. Mas você é o professor. Você monta o currículo, conduz as lições, corrige a entrega. A maioria das empresas se esgota antes de formar esse agente.",
-      "tier3_label": "Super Agent AIorDie",
+      "tier3_label": "agente de IA AIorDie",
       "tier3_title": "Pré-carregado com nossa biblioteca de skills",
       "tier3_desc": "Chega já treinado. Nossas skills proprietárias — lapidadas em implementações reais — vêm embutidas desde o dia um. Você personaliza os detalhes. A expertise a gente entrega.",
       "included_label": "Skills incluídas em toda implementação"
@@ -161,18 +161,18 @@
       "step04_eyebrow": "Semana 1 — Dias 3–5",
       "step04_title": "Questionário de Configuração Personalizada",
       "step04_badge": "Assíncrono · Gerado por IA, revisado por humanos",
-      "step04_desc": "Um questionário detalhado, feito especificamente para seu negócio e para a função que vamos implementar — não é um formulário genérico. Entramos em voz de marca, clientes, casos de borda e SOPs. Você preenche no seu tempo. A gente usa isso para treinar seu Super Agent com precisão.",
+      "step04_desc": "Um questionário detalhado, feito especificamente para seu negócio e para a função que vamos implementar — não é um formulário genérico. Entramos em voz de marca, clientes, casos de borda e SOPs. Você preenche no seu tempo. A gente usa isso para treinar seu agente de IA com precisão.",
       "step05_eyebrow": "Semana 2",
       "step05_title": "Implementação e Sessão de Treinamento",
       "step05_badge": "1 hora · Condução humana, suporte de IA",
-      "step05_desc": "Seu Super Agent está ao vivo. A gente te conduz por tudo junto — um consultor humano mostra exatamente como funciona, o que ele consegue assumir, onde pressionar e como extrair o máximo desde o dia um. Sem documentação interminável. Uma pessoa real te guia pelo seu agente de verdade.",
+      "step05_desc": "Seu agente de IA está ao vivo. A gente te conduz por tudo junto — um consultor humano mostra exatamente como funciona, o que ele consegue assumir, onde pressionar e como extrair o máximo desde o dia um. Sem documentação interminável. Uma pessoa real te guia pelo seu agente de verdade.",
       "step06_eyebrow": "Contínuo",
       "step06_title": "Suporte, Otimização e Upgrades",
       "step06_badge": "IA + humano · Incluído nos $500/mês",
-      "step06_desc": "Você nunca fica sozinho. Seu Super Agent é monitorado, melhorado e mantido atualizado — novos modelos aplicados automaticamente, performance ajustada todo mês e um humano disponível quando você precisar. O suporte é IA-first pela velocidade, com respaldo humano no que realmente importa."
+      "step06_desc": "Você nunca fica sozinho. Seu agente de IA é monitorado, melhorado e mantido atualizado — novos modelos aplicados automaticamente, performance ajustada todo mês e um humano disponível quando você precisar. O suporte é IA-first pela velocidade, com respaldo humano no que realmente importa."
     },
     "features": {
-      "headline": "O que todo Super Agent inclui"
+      "headline": "O que todo agente de IA inclui"
     },
     "deployment": {
       "headline": "Opções de implementação",
@@ -191,7 +191,7 @@
       "group4": "Técnico e segurança"
     },
     "cta": {
-      "headline": "Pronto para implementar seu primeiro Super Agent AIorDie?",
+      "headline": "Pronto para implementar seu primeiro agente de IA AIorDie?",
       "subhead": "Consultoria gratuita. Vamos calcular a diferença para o seu negócio e mostrar exatamente quais funções seu time pode delegar hoje.",
       "book": "Implantar sua equipe de IA",
       "phone_label": "Fale com nosso agente de IA"

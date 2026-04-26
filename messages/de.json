@@ -2,7 +2,7 @@
   "lang": "de",
   "lang_label": "Deutsch",
   "lang_translated_by": "Von KI übersetzt",
-  "lang_translated_tooltip": "Diese Seite wird von unserem AI CMO übersetzt und gepflegt — derselbe Super Agent-Typ, den wir für Sie einsetzen.",
+  "lang_translated_tooltip": "Diese Seite wird von unserem AI CMO übersetzt und gepflegt — derselbe KI-Agent-Typ, den wir für Sie einsetzen.",
   "nav": {
     "home": "Startseite",
     "pricing": "Preise",
@@ -17,10 +17,10 @@
     "privacy": "Datenschutz",
     "terms": "AGB",
     "brand": "Marke",
-    "ai_attribution": "Diese Website wird von einem AI CMO geschrieben und gepflegt — derselbe Super Agent-Typ, den wir für Sie einsetzen."
+    "ai_attribution": "Diese Website wird von einem AI CMO geschrieben und gepflegt — derselbe KI-Agent-Typ, den wir für Sie einsetzen."
   },
   "hero": {
-    "eyebrow": "AIorDie Super Agents",
+    "eyebrow": "AIorDie KI-Agenten",
     "headline_1": "Ihr KI-Team.",
     "headline_2": "Ihre Infrastruktur. Ihre Kontrolle. Wir bauen es nur.",
     "subhead": "KI-Support ist kostenlos. Menschlicher Support ist Premium.",
@@ -34,7 +34,7 @@
     "old_label": "Alter Ansatz",
     "old_desc": "3 menschliche Neueinstellungen/Jahr mit Gehalt, Benefits, Ausfallzeiten und Recruiting-Aufwand.",
     "new_label": "AIorDie-Modell",
-    "new_desc": "3 AIorDie Super Agents pro Jahr mit 24/7-Abdeckung."
+    "new_desc": "3 AIorDie KI-Agenten pro Jahr mit 24/7-Abdeckung."
   },
   "roles": {
     "headline": "Rollen, die wir einsetzen",
@@ -42,13 +42,13 @@
     "see_all": "Alle 34 Rollen ansehen →",
     "super_agent_eyebrow": "Der Agenten-Vorteil",
     "super_agent_headline": "Ein Agent. Mehrere Rollen.",
-    "super_agent_body": "Bei Menschen stellen Sie einen CFO oder einen Juristen ein. Nie beides. Kompetenzen lassen sich so nicht stapeln. Bei Super Agents schon. Wir setzen regelmäßig einzelne Agents ein, die Finanzen und Recht oder Marketing und Vertrieb abdecken — ohne kognitive Overhead-Kosten, ohne Kontextwechsel-Kosten, ohne geteilte Aufmerksamkeit.",
-    "super_agent_body2": "Wir nennen das Super Agents. Wenn wir Ihr Deployment planen, zeigen wir Ihnen genau, wo kombinierte Rollen Geld sparen, ohne die Qualität zu senken.",
+    "super_agent_body": "Bei Menschen stellen Sie einen CFO oder einen Juristen ein. Nie beides. Kompetenzen lassen sich so nicht stapeln. Bei KI-Agenten schon. Wir setzen regelmäßig einzelne Agents ein, die Finanzen und Recht oder Marketing und Vertrieb abdecken — ohne kognitive Overhead-Kosten, ohne Kontextwechsel-Kosten, ohne geteilte Aufmerksamkeit.",
+    "super_agent_body2": "Wir nennen das KI-Agenten. Wenn wir Ihr Deployment planen, zeigen wir Ihnen genau, wo kombinierte Rollen Geld sparen, ohne die Qualität zu senken.",
     "combos_label": "Häufige Kombinationen"
   },
   "multilingual": {
     "headline": "Ihre Agents sprechen jede Sprache, die Ihr Unternehmen spricht.",
-    "body": "Super Agents sind standardmäßig mehrsprachig. Dokumente, Rechnungen und Recherchen können in jeder Sprache und jeder Währung eingereicht werden — das Ergebnis kommt in der Sprache zurück, die Sie benötigen.",
+    "body": "KI-Agenten sind standardmäßig mehrsprachig. Dokumente, Rechnungen und Recherchen können in jeder Sprache und jeder Währung eingereicht werden — das Ergebnis kommt in der Sprache zurück, die Sie benötigen.",
     "input_label": "Eingabe",
     "process_label": "Prozess",
     "output_label": "Ausgabe",
@@ -59,7 +59,7 @@
     "units_label": "Geschäftseinheiten",
     "ftes_label": "Entlastete FTE-Last",
     "deployment_label": "Erstes Deployment",
-    "coverage_label": "Entsprechende Abdeckung mit Super Agents im Vollzeitbetrieb, das ganze Jahr."
+    "coverage_label": "Entsprechende Abdeckung mit KI-Agenten im Vollzeitbetrieb, das ganze Jahr."
   },
   "dogfood": {
     "eyebrow": "Wir leben, was wir verkaufen",
@@ -71,7 +71,7 @@
   },
   "cta": {
     "eyebrow": "AIorDie",
-    "headline": "Bereit, Ihren ersten AIorDie Super Agent einzusetzen?",
+    "headline": "Bereit, Ihren ersten AIorDie KI-Agent einzusetzen?",
     "subhead": "KI-Support ist kostenlos. Menschlicher Support ist Premium.",
     "book": "Kostenloses Erstgespräch buchen",
     "phone_label": "Sprechen Sie in jeder Sprache mit unserem KI-Agenten"
@@ -105,7 +105,7 @@
       "tier2_desc": "Ein Schritt weiter — der Agent kann Aktionen ausführen, autonom arbeiten und sich mit Tools verbinden. Aber er ist ein Blanko-Setup. Sie konfigurieren ihn, Sie prompten ihn, Sie managen ihn. Die Plattform gibt Ihnen ein Auto. Den Motor müssen Sie selbst bauen.",
       "tier2_best": "Technische Teams, die ihren eigenen Agent bauen wollen. Ein Toolkit, keine Einstellung.",
       "tier3_label": "Stufe 3 — Eingesetzter Spezialist",
-      "tier3_name": "AIorDie Super Agent",
+      "tier3_name": "AIorDie KI-Agent",
       "tier3_price": "$500/Monat + $2,000 Einrichtung",
       "tier3_desc": "Basiert auf OpenClaw — aber von unserem Team Ende-zu-Ende für Ihr Unternehmen konfiguriert. Wir übernehmen die monatelange Setup-Arbeit, damit Sie es nicht tun müssen. Sie erhalten einen Spezialisten, der Ihre Kunden, Ihren Ton, Ihre Tools und Ihre Ziele bereits kennt. Sie steuern Ergebnisse, nicht Prompts.",
       "tier3_best": "Unternehmer, die eine Rolle abgeben wollen — nicht ein System bauen.",
@@ -123,7 +123,7 @@
     "skills": {
       "eyebrow": "Unser IP. Ihr Vorteil.",
       "headline": "Jeder Agent wird mit Skills ausgeliefert.",
-      "body": "Stellen Sie sich den Unterschied vor zwischen jemandem direkt von der Uni und einem PhD, der Jahre genau Ihr Feld gemeistert hat. Unsere Agents kommen mit Skills, die wir im Live-Betrieb entwickelt, getestet und verfeinert haben. Wenn Sie einen AIorDie Super Agent einstellen, bekommen Sie unser IP — kein Blanko-System, das Sie von Grund auf schulen müssen.",
+      "body": "Stellen Sie sich den Unterschied vor zwischen jemandem direkt von der Uni und einem PhD, der Jahre genau Ihr Feld gemeistert hat. Unsere Agents kommen mit Skills, die wir im Live-Betrieb entwickelt, getestet und verfeinert haben. Wenn Sie einen AIorDie KI-Agent einstellen, bekommen Sie unser IP — kein Blanko-System, das Sie von Grund auf schulen müssen.",
       "badge_headline": "24/7 PhD-Einstellung",
       "badge_sub": "zum Preis eines Mittagessens",
       "tier1_label": "ChatGPT / Claude",
@@ -132,7 +132,7 @@
       "tier2_label": "Generische Agent-Plattform",
       "tier2_title": "Potenzial, aber Sie liefern das Training",
       "tier2_desc": "Die Rohintelligenz ist da. Aber Sie sind der Professor. Sie bauen das Curriculum, führen die Lektionen durch, bewerten den Output. Die meisten Unternehmen brennen aus, bevor der Agent einsatzreif ist.",
-      "tier3_label": "AIorDie Super Agent",
+      "tier3_label": "AIorDie KI-Agent",
       "tier3_title": "Vorgeladen mit unserer Skills-Bibliothek",
       "tier3_desc": "Kommt bereits trainiert an. Unsere proprietären Skills — geschärft in realen Deployments — sind ab Tag eins integriert. Sie passen die Details an. Wir liefern die Expertise.",
       "included_label": "In jedem Deployment enthaltene Skills"
@@ -161,18 +161,18 @@
       "step04_eyebrow": "Woche 1 — Tage 3–5",
       "step04_title": "Individueller Konfigurationsfragebogen",
       "step04_badge": "Asynchron · KI-generiert, menschlich geprüft",
-      "step04_desc": "Ein detaillierter Fragebogen, speziell für Ihr Unternehmen und die Rolle, die wir ausrollen — kein generisches Intake-Formular. Wir gehen tief in Markenstimme, Kunden, Sonderfälle und SOPs. Sie füllen ihn in Ihrem Tempo aus. Wir nutzen ihn, um Ihren Super Agent präzise zu trainieren.",
+      "step04_desc": "Ein detaillierter Fragebogen, speziell für Ihr Unternehmen und die Rolle, die wir ausrollen — kein generisches Intake-Formular. Wir gehen tief in Markenstimme, Kunden, Sonderfälle und SOPs. Sie füllen ihn in Ihrem Tempo aus. Wir nutzen ihn, um Ihren KI-Agent präzise zu trainieren.",
       "step05_eyebrow": "Woche 2",
       "step05_title": "Deployment- & Training-Session",
       "step05_badge": "1 Stunde · Menschlich geführt, KI-unterstützt",
-      "step05_desc": "Ihr Super Agent ist live. Wir gehen alles gemeinsam durch — ein menschlicher Berater zeigt Ihnen genau, wie er funktioniert, was er übernehmen kann, wo Sie mehr Druck geben können und wie Sie ab Tag eins maximalen Nutzen erzielen. Keine Doku-Wüste. Eine echte Person führt Sie durch Ihren echten Agent.",
+      "step05_desc": "Ihr KI-Agent ist live. Wir gehen alles gemeinsam durch — ein menschlicher Berater zeigt Ihnen genau, wie er funktioniert, was er übernehmen kann, wo Sie mehr Druck geben können und wie Sie ab Tag eins maximalen Nutzen erzielen. Keine Doku-Wüste. Eine echte Person führt Sie durch Ihren echten Agent.",
       "step06_eyebrow": "Laufend",
       "step06_title": "Support, Optimierung & Upgrades",
       "step06_badge": "KI + Mensch · In $500/Monat enthalten",
-      "step06_desc": "Sie sind nie auf sich allein gestellt. Ihr Super Agent wird überwacht, verbessert und aktuell gehalten — neue Modell-Releases werden automatisch übernommen, die Leistung monatlich optimiert und bei Bedarf ist ein Mensch verfügbar. Support ist KI-first für Geschwindigkeit, menschlich abgesichert für alles, was zählt."
+      "step06_desc": "Sie sind nie auf sich allein gestellt. Ihr KI-Agent wird überwacht, verbessert und aktuell gehalten — neue Modell-Releases werden automatisch übernommen, die Leistung monatlich optimiert und bei Bedarf ist ein Mensch verfügbar. Support ist KI-first für Geschwindigkeit, menschlich abgesichert für alles, was zählt."
     },
     "features": {
-      "headline": "Was jeder Super Agent mitbringt"
+      "headline": "Was jeder KI-Agent mitbringt"
     },
     "deployment": {
       "headline": "Deployment-Optionen",
@@ -191,7 +191,7 @@
       "group4": "Technik & Sicherheit"
     },
     "cta": {
-      "headline": "Bereit, Ihren ersten AIorDie Super Agent einzusetzen?",
+      "headline": "Bereit, Ihren ersten AIorDie KI-Agent einzusetzen?",
       "subhead": "Kostenloses Erstgespräch. Wir berechnen die Lücke für Ihr konkretes Unternehmen — und zeigen exakt, welche Rollen Ihr Team heute abgeben kann.",
       "book": "Ihr KI-Team bereitstellen",
       "phone_label": "Sprechen Sie mit unserem KI-Agenten"

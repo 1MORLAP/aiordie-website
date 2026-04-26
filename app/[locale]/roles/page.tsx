@@ -8,18 +8,18 @@ const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/aod";
 export const metadata: Metadata = {
   title: "AI Direct Report Roles — AIorDie",
   description:
-    "34 Super Agent roles across marketing, sales, legal, finance, engineering, HR, and more. Custom-built for your business.",
+    "34 AI employee roles across marketing, sales, legal, finance, engineering, HR, and more. Custom-built for your business.",
   openGraph: {
     title: "AI Direct Report Roles — AIorDie",
     description:
-      "34 Super Agent roles across marketing, sales, legal, finance, engineering, HR, and more. Custom-built for your business.",
+      "34 AI employee roles across marketing, sales, legal, finance, engineering, HR, and more. Custom-built for your business.",
     url: "https://aiordie.now/roles",
   },
   twitter: {
     card: "summary_large_image",
     title: "AI Direct Report Roles — AIorDie",
     description:
-      "34 Super Agent roles across marketing, sales, legal, finance, engineering, HR, and more. Custom-built for your business.",
+      "34 AI employee roles across marketing, sales, legal, finance, engineering, HR, and more. Custom-built for your business.",
   },
   alternates: { canonical: "https://aiordie.now/roles" },
 };
