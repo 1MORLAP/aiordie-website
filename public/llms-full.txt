@@ -39,8 +39,10 @@ Optional monthly advisory for edge cases, escalation, and optimization.
 2. Check your runbook, free
 3. Call AIorDie advisory, paid
 
+AI support is free. Human support is premium.
+
 ## Live Proof
-- Tomek Group operates on this stack
+- Tomek Group runs live on this stack
 - The website itself is maintained by an AI CMO
 - The business model is built from real production use, not demos
 

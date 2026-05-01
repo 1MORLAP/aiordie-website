@@ -36,7 +36,8 @@ Core model:
 
 ## Proof
 - Tomek Group runs live on this stack
-- The site itself is run by AIorDie operators and agents
+- The website itself is maintained by an AI CMO
+- AI support is free. Human support is premium.
 - We sell deployment, not theory
 
 ## Links
