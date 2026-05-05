@@ -368,7 +368,7 @@ export default function Home() {
               This is not a mockup.
             </h2>
             <p className="mb-8 max-w-2xl text-[var(--text-secondary)]">
-              Eight core agents shown below — including CPO and HRO. 22 are live across four business units. This infrastructure runs every day before a single sales call.
+              Eight core agents shown below — including CPO and HRO. 20+ agents are live across five business units. This infrastructure runs every day before a single sales call.
             </p>
           </ScrollReveal>
           <LiveFleetDashboard />

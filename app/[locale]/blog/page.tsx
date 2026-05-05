@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 import { getAllPosts } from "@/lib/blog";
 
@@ -44,7 +45,7 @@ export default function BlogPage() {
                 <article className="group mb-10 rounded-2xl border border-[var(--accent-border)] bg-[var(--bg-card)] p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_70px_-46px_var(--accent)] md:p-10">
                   {featuredPost.image && (
                     <div className="mb-6 overflow-hidden rounded-xl">
-                      <img src={featuredPost.image} alt={featuredPost.title} className="h-auto w-full object-cover" style={{ aspectRatio: "1200/630" }} />
+                      <Image src={featuredPost.image} alt={featuredPost.title} width={1200} height={630} className="h-auto w-full object-cover" />
                     </div>
                   )}
                   <p className="mb-3 text-sm font-semibold uppercase tracking-[0.08em] text-[var(--accent)]">
@@ -82,7 +83,7 @@ export default function BlogPage() {
                     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-border)] hover:shadow-[0_20px_60px_-46px_var(--accent)]">
                       {post.image && (
                         <Link href={`/blog/${post.slug}`} className="block border-b border-[var(--border)]">
-                          <img src={post.image} alt={post.title} className="h-auto w-full object-cover" style={{ aspectRatio: "1200/630" }} />
+                          <Image src={post.image} alt={post.title} width={1200} height={630} className="h-auto w-full object-cover" />
                         </Link>
                       )}
                       <div className="flex h-full flex-col p-7">

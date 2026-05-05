@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { getPostBySlug, getAllPosts } from "@/lib/blog";
 import { MDXRemote } from "next-mdx-remote/rsc";
 
@@ -113,12 +114,7 @@ export default async function BlogPostPage({ params }: Props) {
 
           {post.image && (
             <div className="mb-12 overflow-hidden rounded-2xl border border-[var(--border)]">
-              <img
-                src={post.image}
-                alt={post.title}
-                className="h-auto w-full object-cover"
-                style={{ aspectRatio: "1200/630" }}
-              />
+              <Image src={post.image} alt={post.title} width={1200} height={630} className="h-auto w-full object-cover" />
             </div>
           )}
 

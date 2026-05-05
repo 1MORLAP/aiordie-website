@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Brand Assets — AIorDie',
@@ -55,7 +56,7 @@ export default function BrandPage() {
           <div className="grid gap-4 md:grid-cols-2">
             {wordmarks.map((wm) => (
               <div key={wm.name} className={`rounded-2xl border p-10 ${wm.bg} ${wm.border}`}>
-                <img src={`${wm.file}.svg`} alt={wm.name} className="h-12 w-auto" />
+                <Image src={`${wm.file}.svg`} alt={wm.name} width={320} height={96} className="h-12 w-auto" unoptimized />
                 <div className="mt-4 flex items-center justify-between">
                   <div>
                     <span className="text-xs font-semibold text-[var(--text-muted)]">{wm.name}</span>
@@ -74,7 +75,7 @@ export default function BrandPage() {
           <div className="grid gap-4 grid-cols-2 md:grid-cols-4">
             {circleMarks.map((mark) => (
               <div key={mark.name} className={`rounded-2xl border p-8 flex flex-col items-center gap-4 ${mark.bg} ${mark.border}`}>
-                <img src={`${mark.file}.svg`} alt={mark.name} className="h-16 w-16" />
+                <Image src={`${mark.file}.svg`} alt={mark.name} width={64} height={64} className="h-16 w-16" unoptimized />
                 <div className="text-center">
                   <p className="text-xs font-semibold text-[var(--text-muted)] mb-2">{mark.name}</p>
                   <DownloadLinks file={mark.file} />
