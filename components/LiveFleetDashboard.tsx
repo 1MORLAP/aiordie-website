@@ -57,7 +57,7 @@ export default function LiveFleetDashboard() {
       <div className="grid gap-3 md:grid-cols-2">
         {AGENTS.map((agent, idx) => (
           <ScrollReveal key={agent.name} delayMs={idx * 80} direction={idx % 2 ? "right" : "up"} className="h-full">
-            <article className="group rounded-xl border border-[var(--border)] bg-[var(--bg)]/55 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--accent-border)] hover:bg-[var(--bg)]">
+            <article className="group flex h-full flex-col rounded-xl border border-[var(--border)] bg-[var(--bg)]/55 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--accent-border)] hover:bg-[var(--bg)]">
               <div className="mb-2 flex items-center justify-between gap-3">
                 <h3 className="font-space-grotesk text-lg font-bold text-[var(--text-primary)]">
                   {agent.name}

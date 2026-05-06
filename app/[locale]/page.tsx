@@ -500,7 +500,7 @@ export default function Home() {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group block h-full rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-border)]"
+                  className="group flex h-full flex-col rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-border)]"
                 >
                   <div className="mb-6 h-1.5 w-16 rounded-full" style={{ backgroundColor: item.color }} />
                   <div className="mb-3 flex items-start justify-between gap-3">
@@ -659,7 +659,7 @@ export default function Home() {
                 text: "Optional advisory hours for edge cases your AI employees cannot solve alone.",
               },
             ].map((item) => (
-              <div key={item.title} className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6">
+              <div key={item.title} className="flex h-full flex-col rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6">
                 <h3 className="font-space-grotesk text-xl font-bold text-[var(--text-primary)]">{item.title}</h3>
                 <p className="mt-2 text-sm text-[var(--text-secondary)]">{item.text}</p>
               </div>
