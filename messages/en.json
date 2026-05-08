@@ -10,7 +10,7 @@
     "blog": "Blog",
     "book_consult": "Deploy your AI team",
     "call_us": "Call Us",
-    "ask_ai_bar": "Ask your AI about AIorDie"
+    "ask_ai_bar": "Ask your AI about AI or Die"
   },
   "footer": {
     "location": "Miami, FL · Seattle, WA",
@@ -20,7 +20,7 @@
     "ai_attribution": "This website is written and maintained by an AI CMO — the same kind of AI employee we deploy for you."
   },
   "hero": {
-    "eyebrow": "AIorDie AI team",
+    "eyebrow": "AI or Die AI team",
     "headline_1": "Your AI team.",
     "headline_2": "Your infrastructure. Your control. We help you build it.",
     "subhead": "AI support is free. Human support is premium.",
@@ -33,7 +33,7 @@
     "subhead": "Same outcomes, completely different cost structure.",
     "old_label": "Old way",
     "old_desc": "3 human hires/year with salary, benefits, downtime, and recruiting drag.",
-    "new_label": "AIorDie model",
+    "new_label": "AI or Die model",
     "new_desc": "3 deployed AI employees/year with 24/7 coverage."
   },
   "roles": {
@@ -70,7 +70,7 @@
     "subhead": "Five steps from consult to full deployment."
   },
   "cta": {
-    "eyebrow": "AIorDie",
+    "eyebrow": "AI or Die",
     "headline": "Ready to deploy your first AI employee?",
     "subhead": "AI support is free. Human support is premium.",
     "book": "Book a Free Consult",
@@ -117,7 +117,7 @@
       "diy_quote_label": "What a DIY deploy actually looks like",
       "diy_vs_label": "OpenClaw DIY:",
       "diy_vs_value": "$5/mo + 200+ hours of your time",
-      "aod_label": "AIorDie:",
+      "aod_label": "AI or Die:",
       "aod_value": "$2,500/mo + live in 2 weeks"
     },
     "skills": {
