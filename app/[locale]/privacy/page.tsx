@@ -2,20 +2,20 @@ import type { Metadata } from "next";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — AIorDie",
+  title: "Privacy Policy — AI or Die",
   description:
-    "Privacy Policy for AIorDie, including data collection, usage, retention, deletion requests, and SMS compliance details.",
+    "Privacy Policy for AI or Die, including data collection, usage, retention, deletion requests, and SMS compliance details.",
   openGraph: {
-    title: "Privacy Policy — AIorDie",
+    title: "Privacy Policy — AI or Die",
     description:
-      "How AIorDie collects, uses, stores, and protects your information, including SMS compliance disclosures.",
+      "How AI or Die collects, uses, stores, and protects your information, including SMS compliance disclosures.",
     url: "https://aiordie.now/privacy",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy — AIorDie",
+    title: "Privacy Policy — AI or Die",
     description:
-      "How AIorDie collects, uses, stores, and protects your information, including SMS compliance disclosures.",
+      "How AI or Die collects, uses, stores, and protects your information, including SMS compliance disclosures.",
   },
   alternates: { canonical: "https://aiordie.now/privacy" },
 };
@@ -35,7 +35,7 @@ export default function PrivacyPage() {
               Privacy Policy
             </h1>
             <p className="mt-5 max-w-3xl text-lg leading-relaxed text-[var(--text-secondary)]">
-              AIorDie (Miami, FL and Seattle, WA) respects your privacy. This policy explains what
+              AI or Die (Miami, FL and Seattle, WA) respects your privacy. This policy explains what
               we collect, why we collect it, and how you can control your data.
             </p>
             <p className="mt-4 text-sm text-[var(--text-muted)]">Last updated: {updatedAt}</p>
@@ -49,7 +49,7 @@ export default function PrivacyPage() {
             <article className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-7">
               <h2 className="font-space-grotesk text-2xl font-bold text-[var(--text-primary)]">Who we are</h2>
               <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                Company: AIorDie<br />
+                Company: AI or Die<br />
                 Website: <a className="text-[var(--accent)] hover:underline" href="https://aiordie.now">aiordie.now</a><br />
                 Phone: <a className="text-[var(--accent)] hover:underline" href="tel:+17869989310">(786) 998-9310</a><br />
                 Locations: Miami, FL and Seattle, WA
@@ -120,7 +120,7 @@ export default function PrivacyPage() {
             <article className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-7">
               <h2 className="font-space-grotesk text-2xl font-bold text-[var(--text-primary)]">SMS disclosures</h2>
               <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                AIorDie may send you a one-time SMS message containing booking or scheduling information after you provide verbal consent during a phone call with our AI receptionist. We collect your phone number from caller ID or as provided by you during the call. No recurring or marketing messages are sent. Standard message and data rates may apply. Text <strong>STOP</strong> to opt out of future messages. Text <strong>HELP</strong> for assistance.
+                AI or Die may send you a one-time SMS message containing booking or scheduling information after you provide verbal consent during a phone call with our AI receptionist. We collect your phone number from caller ID or as provided by you during the call. No recurring or marketing messages are sent. Standard message and data rates may apply. Text <strong>STOP</strong> to opt out of future messages. Text <strong>HELP</strong> for assistance.
               </p>
             </article>
           </ScrollReveal>
@@ -161,7 +161,7 @@ export default function PrivacyPage() {
             <article className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-7">
               <h2 className="font-space-grotesk text-2xl font-bold text-[var(--text-primary)]">Contact</h2>
               <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                AIorDie<br />
+                AI or Die<br />
                 Website: <a className="text-[var(--accent)] hover:underline" href="https://aiordie.now">aiordie.now</a><br />
                 Phone: <a className="text-[var(--accent)] hover:underline" href="tel:+17869989310">(786) 998-9310</a>
               </p>

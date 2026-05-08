@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const url = `https://aiordie.now/blog/${slug}`;
   return {
-    title: `${post.title} — AIorDie`,
+    title: `${post.title} — AI or Die`,
     description: post.excerpt,
     openGraph: {
       type: "article",
@@ -29,8 +29,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.excerpt,
       url,
       publishedTime: post.date,
-      authors: ["AIorDie"],
-      siteName: "AIorDie",
+      authors: ["AI or Die"],
+      siteName: "AI or Die",
       ...(post.image ? { images: [{ url: post.image, width: 1200, height: 630 }] } : {}),
     },
     twitter: {
@@ -53,12 +53,12 @@ function buildArticleJsonLd(post: { title: string; excerpt: string; date: string
     dateModified: post.date,
     author: {
       "@type": "Organization",
-      name: "AIorDie",
+      name: "AI or Die",
       url: "https://aiordie.now",
     },
     publisher: {
       "@type": "Organization",
-      name: "AIorDie",
+      name: "AI or Die",
       url: "https://aiordie.now",
     },
     mainEntityOfPage: {

@@ -11,18 +11,18 @@ import ArchitectureDiagram from "@/components/ArchitectureDiagram";
 const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/aod";
 
 export const metadata: Metadata = {
-  title: "AIorDie — Deploy + Train + Advise",
+  title: "AI or Die — Deploy + Train + Advise",
   description:
     "Your AI employees. Your infrastructure. Your control. We deploy them. You own them.",
   openGraph: {
-    title: "AIorDie — Deploy + Train + Advise",
+    title: "AI or Die — Deploy + Train + Advise",
     description:
       "We deploy AI employees on your infrastructure, train your team, then hand over control.",
     url: "https://aiordie.now",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AIorDie — Scale Leaders With AI Teams",
+    title: "AI or Die — Scale Leaders With AI Teams",
     description:
       "AI support is free. Human support is premium.",
   },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "AIorDie",
+  name: "AI or Die",
   url: "https://aiordie.now",
   description:
     "AI employees deployed as direct reports to existing leaders, so companies scale output without scaling headcount.",
@@ -76,7 +76,7 @@ const caseStudies = [
     href: "https://any.markets",
   },
   {
-    name: "AIorDie",
+    name: "AI or Die",
     badge: "Dog-fooded daily",
     line: "Our own site, strategy, and output are operated by the same AI employee model.",
     color: "#10B981",
@@ -183,7 +183,7 @@ const technologyProviders = [
 const technologyPartnersJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "AIorDie Technology Partners",
+  name: "AI or Die Technology Partners",
   itemListElement: technologyProviders.map((provider, index) => ({
     "@type": "ListItem",
     position: index + 1,
@@ -237,10 +237,10 @@ export default function Home() {
   const orgJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "AIorDie",
+    "name": "AI or Die",
     "url": "https://aiordie.now",
     "logo": "https://aiordie.now/brand/circle-mark-orange.svg",
-    "description": "AIorDie deploys AI employees on client infrastructure, trains client teams to run independently, and offers optional advisory support.",
+    "description": "AI or Die deploys AI employees on client infrastructure, trains client teams to run independently, and offers optional advisory support.",
     "telephone": "+17869989310",
     "address": [
       { "@type": "PostalAddress", "addressLocality": "Miami", "addressRegion": "FL", "addressCountry": "US" },
@@ -450,10 +450,10 @@ export default function Home() {
               Powered By
             </p>
             <h2 className="font-space-grotesk mb-4 text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
-              The technology behind AIorDie&apos;s AI employee deployments
+              The technology behind AI or Die&apos;s AI employee deployments
             </h2>
             <p className="max-w-3xl text-[var(--text-secondary)]">
-              We build on the best. These are the platforms, models, and infrastructure behind every AIorDie deployment.
+              We build on the best. These are the platforms, models, and infrastructure behind every AI or Die deployment.
             </p>
           </ScrollReveal>
 
@@ -464,7 +464,7 @@ export default function Home() {
                   href={provider.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`AIorDie uses ${provider.name} for ${provider.function}. Visit ${provider.name} website.`}
+                  aria-label={`AI or Die uses ${provider.name} for ${provider.function}. Visit ${provider.name} website.`}
                   className="group block h-full rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent-border)] hover:shadow-[0_14px_34px_-24px_var(--accent)]"
                 >
                   <h3 className="font-space-grotesk text-3xl font-bold tracking-tight text-[var(--text-primary)] transition-colors duration-300 group-hover:text-[var(--accent)]">
@@ -606,7 +606,7 @@ export default function Home() {
           </ScrollReveal>
           <ScrollReveal delayMs={80}>
             <p className="max-w-3xl text-[var(--text-secondary)]">
-              AIorDie AI employees are multilingual by default. Documents, invoices, and research can be submitted in any language and any currency — the output comes back in whatever language you need. If your team works in Spanish but reports need to be in English, done. If a client sends contracts in German, your AI Legal Counsel reads them natively.
+              AI or Die AI employees are multilingual by default. Documents, invoices, and research can be submitted in any language and any currency — the output comes back in whatever language you need. If your team works in Spanish but reports need to be in English, done. If a client sends contracts in German, your AI Legal Counsel reads them natively.
             </p>
           </ScrollReveal>
           <div className="mt-8 grid gap-4 md:grid-cols-3">
@@ -791,7 +791,7 @@ export default function Home() {
       <section className="mesh-bg border-t border-[var(--border)] px-6 py-20 text-center md:py-24">
         <div className="mx-auto max-w-3xl">
           <ScrollReveal>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">AIorDie</p>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">AI or Die</p>
             <h2 className="font-space-grotesk text-balance text-4xl font-bold tracking-tight md:text-6xl">
               We deploy AI employees into your business. You own them. We&apos;re here if you need us.
             </h2>

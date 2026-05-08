@@ -7,14 +7,14 @@ export const metadata: Metadata = {
   description:
     "One-time deployment pricing for AI employees you own. Training is included. Advisory is optional.",
   openGraph: {
-    title: "AIorDie Pricing — Deploy + Train + Advise",
+    title: "AI or Die Pricing — Deploy + Train + Advise",
     description:
       "We build it. You own it. You run it. One-time deployment plus optional advisory.",
     url: "https://aiordie.now/pricing",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AIorDie Pricing — Deploy + Train + Advise",
+    title: "AI or Die Pricing — Deploy + Train + Advise",
     description:
       "Your AI employees. Your infrastructure. Your control. We deploy them. You own them.",
   },
@@ -280,7 +280,7 @@ export default async function PricingPage() {
       <section className="mesh-bg border-t border-[var(--border)] px-6 py-20 text-center md:py-24">
         <div className="mx-auto max-w-3xl">
           <ScrollReveal>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">AIorDie</p>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">AI or Die</p>
             <h2 className="font-space-grotesk text-balance text-4xl font-bold tracking-tight text-[var(--text-primary)] md:text-6xl">
               We deploy AI employees into your business. You own them. We&apos;re here if you need us.
             </h2>

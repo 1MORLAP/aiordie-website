@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Free AI Audit — AIorDie",
+  title: "Free AI Audit — AI or Die",
   description:
     "30 minutes. We map your ops, identify which functions are agent-ready, and show you the math for your specific business. You get a written Agent Readiness Report.",
   openGraph: {
-    title: "Get Your Free AI Audit — AIorDie",
+    title: "Get Your Free AI Audit — AI or Die",
     description:
       "Find out which roles in your business should be AI employees. Free 30-minute audit + written Agent Readiness Report.",
     url: "https://aiordie.now/audit",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free AI Audit — AIorDie",
+    title: "Free AI Audit — AI or Die",
     description:
       "Find out which roles in your business should be AI employees. Free 30-minute audit.",
   },
