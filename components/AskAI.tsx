@@ -21,7 +21,7 @@ const FAQ_BANK: FaqEntry[] = [
     topic: "what-we-do",
     keywords: ["what", "do", "service", "offer", "employees", "agent", "aiordie"],
     answer:
-      "AI or Die deploys AI employees as direct reports to your existing leaders (CMO, CTO, CRO, CFO, CPO, CLO). Your humans keep strategy ownership while AI handles execution 24/7.",
+      "AI or Die deploys AI direct reports to your existing leaders (CMO, CTO, CRO, CFO, CPO, CLO). Your humans keep strategy ownership while AI handles execution 24/7.",
   },
   {
     topic: "pricing",
@@ -39,7 +39,7 @@ const FAQ_BANK: FaqEntry[] = [
     topic: "deployment-time",
     keywords: ["time", "timeline", "how long", "weeks", "launch"],
     answer:
-      "Typical deployment time is 1–2 weeks from consult to production-ready AI employee.",
+      "Typical deployment time is 1–2 weeks from consult to production-ready AI direct report.",
   },
   {
     topic: "models",
@@ -186,7 +186,7 @@ export default function AskAI() {
         <div className="askai-header">
           <div>
             <h3>Ask AI about AI or Die</h3>
-            <p>Powered by AI — answers about our services, pricing, and how AI employees work.</p>
+            <p>Powered by AI — answers about our services, pricing, and how AI direct reports work.</p>
           </div>
           <button
             type="button"

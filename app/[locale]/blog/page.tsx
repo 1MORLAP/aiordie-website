@@ -6,7 +6,7 @@ import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "Blog — AI or Die",
-  description: "Insights on AI or Die AI employees, automation, and the future of work.",
+  description: "Insights on AI or Die AI direct reports, automation, and the future of work.",
 };
 
 export default function BlogPage() {
@@ -29,7 +29,7 @@ export default function BlogPage() {
         </ScrollReveal>
         <ScrollReveal delayMs={130}>
           <p className="mb-14 mt-5 max-w-3xl text-lg leading-relaxed text-[var(--text-secondary)]">
-            Straight talk on AI or Die AI employees, automation, and building a business
+            Straight talk on AI or Die AI direct reports, automation, and building a business
             that scales without headcount.
           </p>
         </ScrollReveal>

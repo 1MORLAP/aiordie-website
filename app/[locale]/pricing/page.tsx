@@ -5,7 +5,7 @@ import { getTranslations } from "next-intl/server";
 export const metadata: Metadata = {
   title: "Pricing — Deploy + Train + Advise",
   description:
-    "One-time deployment pricing for AI employees you own. Training is included. Advisory is optional.",
+    "One-time deployment pricing for AI direct reports you own. Training is included. Advisory is optional.",
   openGraph: {
     title: "AI or Die Pricing — Deploy + Train + Advise",
     description:
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AI or Die Pricing — Deploy + Train + Advise",
     description:
-      "Your AI employees. Your infrastructure. Your control. We deploy them. You own them.",
+      "Your AI team. Your infrastructure. Your control. We deploy them. You own them.",
   },
   alternates: { canonical: "https://aiordie.now/pricing" },
 };
@@ -54,7 +54,7 @@ const faqJsonLd = {
       name: "How does support escalation work?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Step 1: ask your AI employees (free). Step 2: check your runbook (free). Step 3: call us through optional advisory hours.",
+        text: "Step 1: ask your AI team (free). Step 2: check your runbook (free). Step 3: call us through optional advisory hours.",
       },
     },
   ],
@@ -145,7 +145,7 @@ export default async function PricingPage() {
               Deploy + Train + Advise
             </h1>
             <p className="mt-5 max-w-3xl text-lg leading-relaxed text-[var(--text-secondary)]">
-              One-time deployment. Included training. Optional advisory. We deploy AI employees on your infrastructure,
+              One-time deployment. Included training. Optional advisory. We deploy AI direct reports on your infrastructure,
               then hand over control.
             </p>
             <div className="mt-6 inline-flex rounded-full border border-[var(--accent-border)] bg-[var(--accent-subtle)] px-4 py-2 text-sm font-semibold text-[var(--accent)]">
@@ -181,7 +181,7 @@ export default async function PricingPage() {
                     rel="noopener noreferrer"
                     className="mt-6 rounded-lg border border-[var(--accent-border)] bg-[var(--accent-subtle)] px-4 py-2 text-center text-sm font-semibold text-[var(--accent)]"
                   >
-                    Deploy AI employees
+                    Deploy your AI team
                   </a>
                 </article>
               </ScrollReveal>
@@ -244,7 +244,7 @@ export default async function PricingPage() {
               <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Support escalation</p>
               <h3 className="font-space-grotesk mt-2 text-2xl font-bold text-[var(--text-primary)]">Free first. Advisory last.</h3>
               <ul className="mt-4 space-y-3 text-sm text-[var(--text-secondary)]">
-                <li><strong>Step 1:</strong> Ask your AI employees (free)</li>
+                <li><strong>Step 1:</strong> Ask your AI team (free)</li>
                 <li><strong>Step 2:</strong> Check your runbook (free)</li>
                 <li><strong>Step 3:</strong> Call us (advisory)</li>
               </ul>
@@ -282,7 +282,7 @@ export default async function PricingPage() {
           <ScrollReveal>
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">AI or Die</p>
             <h2 className="font-space-grotesk text-balance text-4xl font-bold tracking-tight text-[var(--text-primary)] md:text-6xl">
-              We deploy AI employees into your business. You own them. We&apos;re here if you need us.
+              We deploy AI direct reports into your business. You own them. We&apos;re here if you need us.
             </h2>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
@@ -291,7 +291,7 @@ export default async function PricingPage() {
                 rel="noopener noreferrer"
                 className="btn-accent inline-block rounded-xl px-10 py-4 text-lg font-bold"
               >
-                Deploy AI employees
+                Deploy your AI team
               </a>
               <a
                 href="tel:+17869989310"

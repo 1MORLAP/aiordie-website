@@ -13,11 +13,11 @@ const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/aod";
 export const metadata: Metadata = {
   title: "AI or Die — Deploy + Train + Advise",
   description:
-    "Your AI employees. Your infrastructure. Your control. We deploy them. You own them.",
+    "Your AI team. Your infrastructure. Your control. We deploy them. You own them.",
   openGraph: {
     title: "AI or Die — Deploy + Train + Advise",
     description:
-      "We deploy AI employees on your infrastructure, train your team, then hand over control.",
+      "We deploy AI direct reports on your infrastructure, train your team, then hand over control.",
     url: "https://aiordie.now",
   },
   twitter: {
@@ -35,7 +35,7 @@ const organizationJsonLd = {
   name: "AI or Die",
   url: "https://aiordie.now",
   description:
-    "AI employees deployed as direct reports to existing leaders, so companies scale output without scaling headcount.",
+    "AI direct reports deployed to existing leaders, so companies scale output without scaling headcount.",
   telephone: "+17869989310",
   address: [
     {
@@ -57,14 +57,14 @@ const caseStudies = [
   {
     name: "TomBot",
     badge: "Zero-human operations",
-    line: "A full company run by AI employees across leadership, execution, and reporting.",
+    line: "A full company run by AI direct reports across leadership, execution, and reporting.",
     color: "#FF4C00",
     href: "https://www.realtom.bot/",
   },
   {
     name: "NEXORA",
     badge: "HKEX-listed · Global scale",
-    line: "HKEX-listed Web3 infrastructure using AI employees to scale without proportional hiring.",
+    line: "HKEX-listed Web3 infrastructure using AI direct reports to scale without proportional hiring.",
     color: "#3B82F6",
     href: "https://nexora.build",
   },
@@ -78,7 +78,7 @@ const caseStudies = [
   {
     name: "AI or Die",
     badge: "Dog-fooded daily",
-    line: "Our own site, strategy, and output are operated by the same AI employee model.",
+    line: "Our own site, strategy, and output are operated by the same AI direct-report model.",
     color: "#10B981",
     href: "https://aiordie.now",
   },
@@ -163,14 +163,14 @@ const technologyProviders = [
   {
     name: "OpenAI",
     href: "https://openai.com",
-    description: "GPT models for cloud and production AI employee deployments.",
-    function: "GPT model intelligence for production AI employee deployments",
+    description: "GPT models for cloud and production AI direct-report deployments.",
+    function: "GPT model intelligence for production AI direct-report deployments",
   },
   {
     name: "Anthropic",
     href: "https://anthropic.com",
-    description: "Claude models. Our recommended brain for production AI employees.",
-    function: "Claude model intelligence for production AI employees",
+    description: "Claude models. Our recommended brain for production AI direct reports.",
+    function: "Claude model intelligence for production AI direct reports",
   },
   {
     name: "EXO Labs",
@@ -240,7 +240,7 @@ export default function Home() {
     "name": "AI or Die",
     "url": "https://aiordie.now",
     "logo": "https://aiordie.now/brand/circle-mark-orange.svg",
-    "description": "AI or Die deploys AI employees on client infrastructure, trains client teams to run independently, and offers optional advisory support.",
+    "description": "AI or Die deploys AI direct reports on client infrastructure, trains client teams to run independently, and offers optional advisory support.",
     "telephone": "+17869989310",
     "address": [
       { "@type": "PostalAddress", "addressLocality": "Miami", "addressRegion": "FL", "addressCountry": "US" },
@@ -450,7 +450,7 @@ export default function Home() {
               Powered By
             </p>
             <h2 className="font-space-grotesk mb-4 text-3xl font-bold tracking-tight text-[var(--text-primary)] md:text-5xl">
-              The technology behind AI or Die&apos;s AI employee deployments
+              The technology behind AI or Die&apos;s AI direct-report deployments
             </h2>
             <p className="max-w-3xl text-[var(--text-secondary)]">
               We build on the best. These are the platforms, models, and infrastructure behind every AI or Die deployment.
@@ -601,12 +601,12 @@ export default function Home() {
               Every Language. Every Currency.
             </p>
             <h2 className="font-space-grotesk mb-4 text-3xl font-bold tracking-tight md:text-5xl">
-              Your AI employees speak every language your business does.
+              Your AI direct reports speak every language your business does.
             </h2>
           </ScrollReveal>
           <ScrollReveal delayMs={80}>
             <p className="max-w-3xl text-[var(--text-secondary)]">
-              AI or Die AI employees are multilingual by default. Documents, invoices, and research can be submitted in any language and any currency — the output comes back in whatever language you need. If your team works in Spanish but reports need to be in English, done. If a client sends contracts in German, your AI Legal Counsel reads them natively.
+              AI or Die AI direct reports are multilingual by default. Documents, invoices, and research can be submitted in any language and any currency — the output comes back in whatever language you need. If your team works in Spanish but reports need to be in English, done. If a client sends contracts in German, your AI Legal Counsel reads them natively.
             </p>
           </ScrollReveal>
           <div className="mt-8 grid gap-4 md:grid-cols-3">
@@ -656,7 +656,7 @@ export default function Home() {
               },
               {
                 title: "3. ADVISE",
-                text: "Optional advisory hours for edge cases your AI employees cannot solve alone.",
+                text: "Optional advisory hours for edge cases your AI direct reports cannot solve alone.",
               },
             ].map((item) => (
               <div key={item.title} className="flex h-full flex-col rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6">
@@ -667,7 +667,7 @@ export default function Home() {
           </div>
           <div className="mt-6 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6">
             <p className="text-sm text-[var(--text-secondary)]">
-              <span className="font-semibold text-[var(--text-primary)]">Support escalation:</span> Step 1 ask your AI employees (free), Step 2 check your runbook (free), Step 3 call us (advisory).
+              <span className="font-semibold text-[var(--text-primary)]">Support escalation:</span> Step 1 ask your AI team (free), Step 2 check your runbook (free), Step 3 call us (advisory).
             </p>
           </div>
         </div>
@@ -706,7 +706,7 @@ export default function Home() {
                   no divided attention. One agent, configured across multiple disciplines, running everything simultaneously.
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                  We call these multi-role AI employees. When we scope your deployment, we&apos;ll tell you exactly
+                  We call these multi-role AI direct reports. When we scope your deployment, we&apos;ll tell you exactly
                   where combining roles saves you money without sacrificing output quality.
                 </p>
               </div>
@@ -749,7 +749,7 @@ export default function Home() {
             Deployment pricing starts at $5,000 one-time. Training included. Advisory optional.
           </p>
           <Link href="/pricing" className="text-sm font-semibold text-[var(--accent)] hover:underline">
-            Deploy AI employees →
+            Deploy your AI team →
           </Link>
         </div>
       </section>
@@ -778,7 +778,7 @@ export default function Home() {
                 <div className="font-space-grotesk text-5xl font-bold text-[var(--text-primary)]">
                   $<AnimatedCounter to={19.4} decimals={1} suffix="K" />
                 </div>
-                <p className="mt-3 text-sm text-[var(--text-secondary)]">Equivalent coverage with AI employees running full-time, all year.</p>
+                <p className="mt-3 text-sm text-[var(--text-secondary)]">Equivalent coverage with AI direct reports running full-time, all year.</p>
               </article>
             </ScrollReveal>
           </div>
@@ -793,7 +793,7 @@ export default function Home() {
           <ScrollReveal>
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">AI or Die</p>
             <h2 className="font-space-grotesk text-balance text-4xl font-bold tracking-tight md:text-6xl">
-              We deploy AI employees into your business. You own them. We&apos;re here if you need us.
+              We deploy AI direct reports into your business. You own them. We&apos;re here if you need us.
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-[var(--text-secondary)]">
               {t('cta.subhead')}
