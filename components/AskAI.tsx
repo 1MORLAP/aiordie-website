@@ -19,7 +19,7 @@ const CONSULT_URL = "https://calendar.notion.so/meet/tomaszwojewoda/aod";
 const FAQ_BANK: FaqEntry[] = [
   {
     topic: "what-we-do",
-    keywords: ["what", "do", "service", "offer", "employees", "agent", "aiordie"],
+    keywords: ["what", "do", "service", "offer", "direct reports", "agent", "aiordie"],
     answer:
       "AI or Die deploys AI direct reports to your existing leaders (CMO, CTO, CRO, CFO, CPO, CLO). Your humans keep strategy ownership while AI handles execution 24/7.",
   },
@@ -27,7 +27,7 @@ const FAQ_BANK: FaqEntry[] = [
     topic: "pricing",
     keywords: ["price", "pricing", "cost", "setup", "monthly", "bundle", "contract"],
     answer:
-      "Pricing starts at $2,000 setup + $500/month per agent. The 3-agent bundle is $5,000 setup + $1,200/month. No long-term contracts — cancel with 30 days notice.",
+      "Deployment starts at $5,000 for Starter (1–2 agents), $10,000 for Growth (3–5 agents), and $15,000–$20,000 for Scale (6–10 agents). Advisory is optional at $1,500/mo, $2,500/mo, or $4,000/mo depending on support level.",
   },
   {
     topic: "how-it-works",
@@ -75,7 +75,7 @@ const FAQ_BANK: FaqEntry[] = [
     topic: "proof",
     keywords: ["proof", "case", "portfolio", "examples", "tombot", "nexora", "any.markets"],
     answer:
-      "Live proof includes TomBot (100% AI-run company), Nexora (HK-listed Web3 company scaling with AI), Any.Markets (AI leadership from day one), and AI or Die itself (site run by an AI CMO).",
+      "Live proof includes TomBot (100% AI-run company), Nexora (HKEX-listed Web3 company scaling with AI direct reports), Any.Markets (AI leadership from day one), and AI or Die itself (site run by an AI CMO).",
   },
   {
     topic: "transparency",
