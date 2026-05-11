@@ -8,12 +8,12 @@
 - Offices: Miami, FL and Seattle, WA
 
 ## Positioning
-AI or Die deploys AI direct reports on client infrastructure, trains client teams to run independently, and offers optional advisory support.
+AI or Die deploys AI direct reports on your infrastructure, trains your team to run independently, and offers optional advisory support.
 We are not a managed service provider.
 
 ## Service Model
 ### DEPLOY
-One-time implementation on client infrastructure.
+One-time implementation on your infrastructure.
 Includes discovery, custom design, deployment, and runbook creation.
 
 ### TRAIN

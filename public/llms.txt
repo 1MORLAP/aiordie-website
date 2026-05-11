@@ -9,11 +9,11 @@
 - Offices: Miami, FL and Seattle, WA
 
 ## What We Do
-We deploy AI direct reports on client infrastructure, train client teams to run independently, and provide optional advisory support.
+We deploy AI direct reports on your infrastructure, train your team to run independently, and provide optional advisory support.
 We do not operate as a managed service provider.
 
 Core model:
-1. Deploy, one-time build on client infrastructure
+1. Deploy, one-time build on your infrastructure
 2. Train, handoff, runbooks, and team training included
 3. Advise, optional monthly support for edge cases
 

@@ -240,7 +240,7 @@ export default function Home() {
     "name": "AI or Die",
     "url": "https://aiordie.now",
     "logo": "https://aiordie.now/brand/circle-mark-orange.svg",
-    "description": "AI or Die deploys AI direct reports on client infrastructure, trains client teams to run independently, and offers optional advisory support.",
+    "description": "AI or Die deploys AI direct reports on your infrastructure, trains your team to run independently, and offers optional advisory support.",
     "telephone": "+17869989310",
     "address": [
       { "@type": "PostalAddress", "addressLocality": "Miami", "addressRegion": "FL", "addressCountry": "US" },

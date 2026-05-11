@@ -51,7 +51,7 @@ export default function TermsPage() {
               <h2 className="font-space-grotesk text-2xl font-bold text-[var(--text-primary)]">Company and program</h2>
               <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
                 Company: AI or Die.<br />
-                Program name: AI or Die AI Employee Deployment Program.<br />
+                Program name: AI or Die AI Direct Report Deployment Program.<br />
                 Program description: We deploy AI direct reports into your business operations.
               </p>
             </article>
