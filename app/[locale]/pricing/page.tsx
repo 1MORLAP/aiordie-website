@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import ScrollReveal from "@/components/ScrollReveal";
-import { getTranslations } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "Pricing — Deploy + Train + Advise",
@@ -130,9 +129,7 @@ const advisoryTiers = [
   },
 ];
 
-export default async function PricingPage() {
-  const t = await getTranslations();
-
+export default function PricingPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -292,12 +289,6 @@ export default async function PricingPage() {
                 className="btn-accent inline-block rounded-xl px-10 py-4 text-lg font-bold"
               >
                 Deploy your AI team
-              </a>
-              <a
-                href="tel:+17869989310"
-                className="inline-flex items-center gap-2 rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-10 py-4 text-lg font-bold text-[var(--text-primary)]"
-              >
-                {t("nav.call_us")}
               </a>
             </div>
           </ScrollReveal>

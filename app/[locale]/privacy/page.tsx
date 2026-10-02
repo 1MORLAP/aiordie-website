@@ -20,7 +20,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://aiordie.now/privacy" },
 };
 
-const updatedAt = "March 17, 2026";
+const updatedAt = "October 2, 2026";
+const CONTACT_EMAIL = "aiordie@agentmail.to";
 
 export default function PrivacyPage() {
   return (
@@ -51,7 +52,7 @@ export default function PrivacyPage() {
               <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
                 Company: AI or Die<br />
                 Website: <a className="text-[var(--accent)] hover:underline" href="https://aiordie.now">aiordie.now</a><br />
-                Phone: <a className="text-[var(--accent)] hover:underline" href="tel:+17869989310">(786) 998-9310</a><br />
+                Email: <a className="text-[var(--accent)] hover:underline" href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a><br />
                 Locations: Miami, FL and Seattle, WA
               </p>
             </article>
@@ -139,8 +140,8 @@ export default function PrivacyPage() {
             <article className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6 md:p-7">
               <h2 className="font-space-grotesk text-2xl font-bold text-[var(--text-primary)]">Data deletion requests</h2>
               <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
-                You can request deletion of your data at any time by calling us at{" "}
-                <a className="text-[var(--accent)] hover:underline" href="tel:+17869989310">(786) 998-9310</a>.
+                You can request deletion of your data at any time by emailing{" "}
+                <a className="text-[var(--accent)] hover:underline" href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
                 We will process verified deletion requests in a reasonable timeframe, subject to legal
                 retention requirements.
               </p>
@@ -163,7 +164,7 @@ export default function PrivacyPage() {
               <p className="mt-3 text-sm leading-relaxed text-[var(--text-secondary)]">
                 AI or Die<br />
                 Website: <a className="text-[var(--accent)] hover:underline" href="https://aiordie.now">aiordie.now</a><br />
-                Phone: <a className="text-[var(--accent)] hover:underline" href="tel:+17869989310">(786) 998-9310</a>
+                Email: <a className="text-[var(--accent)] hover:underline" href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
               </p>
             </article>
           </ScrollReveal>

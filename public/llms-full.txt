@@ -4,7 +4,7 @@
 ## Company
 - Name: AI or Die
 - Website: https://aiordie.now
-- Phone: (786) 998-9310
+- Book a free consult: https://calendar.notion.so/meet/tomaszwojewoda/aod
 - Offices: Miami, FL and Seattle, WA
 
 ## Positioning
@@ -37,7 +37,7 @@ Optional monthly advisory for edge cases, escalation, and optimization.
 ## Support Flow
 1. Ask your AI team, free
 2. Check your runbook, free
-3. Call AI or Die advisory, paid
+3. Optional AI or Die advisory, paid
 
 AI support is free. Human support is premium.
 

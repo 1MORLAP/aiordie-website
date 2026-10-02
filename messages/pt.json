@@ -9,7 +9,6 @@
     "roles": "Funções",
     "blog": "Blog",
     "book_consult": "Implantar sua equipe de IA",
-    "call_us": "Ligue para Nós",
     "ask_ai_bar": "Pergunte à sua IA sobre AI or Die"
   },
   "footer": {
@@ -24,9 +23,7 @@
     "headline_1": "Sua equipe de IA.",
     "headline_2": "Sua infraestrutura. Seu controle. Nós só construímos.",
     "subhead": "Suporte de IA é gratuito. Suporte humano é premium.",
-    "cta_consult": "Agende uma Consultoria Gratuita",
-    "cta_call": "Ligue para Nós",
-    "phone_label": "Fale com a IA em qualquer idioma"
+    "cta_consult": "Agende uma Consultoria Gratuita"
   },
   "math": {
     "headline": "A Matemática",
@@ -51,8 +48,7 @@
     "body": "agentes de IA já nascem multilíngues. Documentos, faturas e pesquisas podem ser enviados em qualquer idioma e qualquer moeda — a saída volta no idioma que você precisar.",
     "input_label": "Entrada",
     "process_label": "Processo",
-    "output_label": "Saída",
-    "phone_label": "Fale com nosso agente de IA em qualquer idioma"
+    "output_label": "Saída"
   },
   "stats": {
     "agents_label": "Agentes em operação",
@@ -73,8 +69,7 @@
     "eyebrow": "AI or Die",
     "headline": "Pronto para implementar seu primeiro agente de IA AI or Die?",
     "subhead": "Suporte de IA é gratuito. Suporte humano é premium.",
-    "book": "Agende uma Consultoria Gratuita",
-    "phone_label": "Fale com nosso agente de IA em qualquer idioma"
+    "book": "Agende uma Consultoria Gratuita"
   },
   "pricing": {
     "hero": {
@@ -193,8 +188,7 @@
     "cta": {
       "headline": "Pronto para implementar seu primeiro agente de IA AI or Die?",
       "subhead": "Consultoria gratuita. Vamos calcular a diferença para o seu negócio e mostrar exatamente quais funções seu time pode delegar hoje.",
-      "book": "Implantar sua equipe de IA",
-      "phone_label": "Fale com nosso agente de IA"
+      "book": "Implantar sua equipe de IA"
     }
   },
   "audit": {

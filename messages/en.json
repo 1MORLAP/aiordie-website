@@ -9,7 +9,6 @@
     "roles": "Roles",
     "blog": "Blog",
     "book_consult": "Deploy your AI team",
-    "call_us": "Call Us",
     "ask_ai_bar": "Ask your AI about AI or Die"
   },
   "footer": {
@@ -24,9 +23,7 @@
     "headline_1": "Your AI team.",
     "headline_2": "Your infrastructure. Your control. We help you build it.",
     "subhead": "AI support is free. Human support is premium.",
-    "cta_consult": "Book a Free Consult",
-    "cta_call": "Call Us",
-    "phone_label": "Talk to AI in any language"
+    "cta_consult": "Book a Free Consult"
   },
   "math": {
     "headline": "The Math",
@@ -51,8 +48,7 @@
     "body": "AI direct reports are multilingual by default. Documents, invoices, and research can be submitted in any language and any currency — the output comes back in whatever language you need.",
     "input_label": "Input",
     "process_label": "Process",
-    "output_label": "Output",
-    "phone_label": "Talk to our AI agent in any language"
+    "output_label": "Output"
   },
   "stats": {
     "agents_label": "Agents live",
@@ -73,8 +69,7 @@
     "eyebrow": "AI or Die",
     "headline": "Ready to deploy your first AI direct report?",
     "subhead": "AI support is free. Human support is premium.",
-    "book": "Book a Free Consult",
-    "phone_label": "Talk to our AI agent in any language"
+    "book": "Book a Free Consult"
   },
   "pricing": {
     "hero": {
@@ -193,8 +188,7 @@
     "cta": {
       "headline": "Ready to deploy your first AI direct report?",
       "subhead": "Free consult. We'll price out the gap for your specific business — and show exactly which roles your team could hand off today.",
-      "book": "Deploy your AI team",
-      "phone_label": "Talk to our AI agent"
+      "book": "Deploy your AI team"
     }
   },
   "audit": {

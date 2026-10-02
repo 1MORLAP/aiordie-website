@@ -36,7 +36,6 @@ const organizationJsonLd = {
   url: "https://aiordie.now",
   description:
     "AI direct reports deployed to existing leaders, so companies scale output without scaling headcount.",
-  telephone: "+17869989310",
   address: [
     {
       "@type": "PostalAddress",
@@ -241,7 +240,6 @@ export default function Home() {
     "url": "https://aiordie.now",
     "logo": "https://aiordie.now/brand/circle-mark-orange.svg",
     "description": "AI or Die deploys AI direct reports on your infrastructure, trains your team to run independently, and offers optional advisory support.",
-    "telephone": "+17869989310",
     "address": [
       { "@type": "PostalAddress", "addressLocality": "Miami", "addressRegion": "FL", "addressCountry": "US" },
       { "@type": "PostalAddress", "addressLocality": "Seattle", "addressRegion": "WA", "addressCountry": "US" }
@@ -314,15 +312,6 @@ export default function Home() {
                 >
                   {t('hero.cta_consult')}
                 </a>
-<a
-                href="tel:+17869989310"
-                className="inline-flex items-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--bg-card)] px-7 py-3 text-base font-bold text-[var(--text-primary)] transition-all hover:border-[var(--accent-border)] hover:text-[var(--accent)]"
-              >
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" aria-hidden>
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.56 2 2 0 0 1 3.6 1.36h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-                </svg>
-                {t('hero.cta_call')}
-              </a>
               </div>
             </ScrollReveal>
           </div>
@@ -807,19 +796,7 @@ export default function Home() {
               >
                 {t('cta.book')}
               </a>
-              <a
-                href="tel:+17869989310"
-                className="inline-flex items-center gap-2 rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-10 py-4 text-lg font-bold text-[var(--text-primary)] transition-all hover:border-[var(--accent-border)] hover:text-[var(--accent)]"
-              >
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5" aria-hidden>
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.56 2 2 0 0 1 3.6 1.36h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-                </svg>
-                {t('nav.call_us')}
-              </a>
             </div>
-            <p className="mt-2 text-xs text-[var(--text-muted)]">
-              {t('cta.phone_label')}
-            </p>
           </ScrollReveal>
         </div>
       </section>

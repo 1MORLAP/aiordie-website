@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import BotFactorySlot from "@/components/BotFactorySlot";
 import { Analytics } from "@vercel/analytics/react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
@@ -97,6 +98,7 @@ export default async function LocaleLayout({
           <Nav />
           <main>{children}</main>
           <Footer t={t} />
+          <BotFactorySlot />
           <Analytics />
         </NextIntlClientProvider>
       </body>
@@ -117,13 +119,6 @@ function Footer({ t }: { t: (key: string) => string }) {
           </span>
           <span>·</span>
           <span>{t('footer.location')}</span>
-          <span>·</span>
-          <a
-            href="tel:+17869989310"
-            className="font-bold text-[var(--accent)] text-base hover:text-[var(--accent-hover)] transition-colors"
-          >
-            (786) 998-9310
-          </a>
         </div>
         <nav className="flex flex-wrap items-center justify-center gap-6">
           <Link href="/" className="transition-colors hover:text-[var(--text-primary)]">{t('nav.home')}</Link>

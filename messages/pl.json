@@ -9,7 +9,6 @@
     "roles": "Role",
     "blog": "Blog",
     "book_consult": "Wdróż swój zespół AI",
-    "call_us": "Zadzwoń do nas",
     "ask_ai_bar": "Zapytaj swoje AI o AI or Die"
   },
   "footer": {
@@ -24,9 +23,7 @@
     "headline_1": "Twój zespół AI.",
     "headline_2": "Twoja infrastruktura. Twoja kontrola. My tylko to budujemy.",
     "subhead": "Wsparcie AI jest bezpłatne. Wsparcie ludzi jest premium.",
-    "cta_consult": "Zarezerwuj bezpłatną konsultację",
-    "cta_call": "Zadzwoń do nas",
-    "phone_label": "Porozmawiaj z AI w dowolnym języku"
+    "cta_consult": "Zarezerwuj bezpłatną konsultację"
   },
   "math": {
     "headline": "Matematyka",
@@ -51,8 +48,7 @@
     "body": "agenci AI są domyślnie wielojęzyczni. Dokumenty, faktury i research mogą być przesyłane w dowolnym języku i dowolnej walucie — wynik wraca w języku, którego potrzebujesz.",
     "input_label": "Wejście",
     "process_label": "Proces",
-    "output_label": "Wyjście",
-    "phone_label": "Porozmawiaj z naszym agentem AI w dowolnym języku"
+    "output_label": "Wyjście"
   },
   "stats": {
     "agents_label": "Aktywni agenci",
@@ -73,8 +69,7 @@
     "eyebrow": "AI or Die",
     "headline": "Gotowy, aby wdrożyć pierwszego AI or Die agent AI?",
     "subhead": "Wsparcie AI jest bezpłatne. Wsparcie ludzi jest premium.",
-    "book": "Zarezerwuj bezpłatną konsultację",
-    "phone_label": "Porozmawiaj z naszym agentem AI w dowolnym języku"
+    "book": "Zarezerwuj bezpłatną konsultację"
   },
   "pricing": {
     "hero": {
@@ -193,8 +188,7 @@
     "cta": {
       "headline": "Gotowy, aby wdrożyć pierwszego AI or Die agent AI?",
       "subhead": "Bezpłatna konsultacja. Wycenimy lukę dla Twojego konkretnego biznesu — i pokażemy dokładnie, które role Twój zespół może przekazać już dziś.",
-      "book": "Wdróż swój zespół AI",
-      "phone_label": "Porozmawiaj z naszym agentem AI"
+      "book": "Wdróż swój zespół AI"
     }
   },
   "audit": {
