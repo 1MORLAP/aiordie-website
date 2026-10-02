@@ -9,7 +9,6 @@
     "roles": "Roles",
     "blog": "Blog",
     "book_consult": "Despliega tu equipo de IA",
-    "call_us": "Llámanos",
     "ask_ai_bar": "Pregúntale a tu IA sobre AI or Die"
   },
   "footer": {
@@ -24,9 +23,7 @@
     "headline_1": "Tu equipo de IA.",
     "headline_2": "Tu infraestructura. Tu control. Nosotros solo lo construimos.",
     "subhead": "El soporte de IA es gratis. El soporte humano es premium.",
-    "cta_consult": "Agenda una consultoría gratis",
-    "cta_call": "Llámanos",
-    "phone_label": "Habla con IA en cualquier idioma"
+    "cta_consult": "Agenda una consultoría gratis"
   },
   "math": {
     "headline": "Los números",
@@ -51,8 +48,7 @@
     "body": "Los agentes de IA son multilingües por defecto. Documentos, facturas e investigación se pueden enviar en cualquier idioma y cualquier moneda — la salida vuelve en el idioma que necesites.",
     "input_label": "Entrada",
     "process_label": "Proceso",
-    "output_label": "Salida",
-    "phone_label": "Habla con nuestro agente de IA en cualquier idioma"
+    "output_label": "Salida"
   },
   "stats": {
     "agents_label": "Agentes activos",
@@ -73,8 +69,7 @@
     "eyebrow": "AI or Die",
     "headline": "¿Listo para implementar tu primer AI or Die agente de IA?",
     "subhead": "El soporte de IA es gratis. El soporte humano es premium.",
-    "book": "Agenda una consultoría gratis",
-    "phone_label": "Habla con nuestro agente de IA en cualquier idioma"
+    "book": "Agenda una consultoría gratis"
   },
   "pricing": {
     "hero": {
@@ -193,8 +188,7 @@
     "cta": {
       "headline": "¿Listo para implementar tu primer AI or Die agente de IA?",
       "subhead": "Consultoría gratis. Vamos a calcular la brecha para tu negocio específico — y mostrarte exactamente qué roles tu equipo puede delegar hoy.",
-      "book": "Despliega tu equipo de IA",
-      "phone_label": "Habla con nuestro agente de IA"
+      "book": "Despliega tu equipo de IA"
     }
   },
   "audit": {

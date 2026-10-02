@@ -87,7 +87,7 @@ const FAQ_BANK: FaqEntry[] = [
     topic: "contact",
     keywords: ["contact", "consult", "book", "call", "phone", "email", "reach"],
     answer:
-      "Book a free consult with Tomasz: https://calendar.notion.so/meet/tomaszwojewoda/aod or call (786) 998-9310.",
+      "Book a free consult with Tomasz: https://calendar.notion.so/meet/tomaszwojewoda/aod",
   },
 ];
 

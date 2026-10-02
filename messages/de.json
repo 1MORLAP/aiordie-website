@@ -9,7 +9,6 @@
     "roles": "Rollen",
     "blog": "Blog",
     "book_consult": "Ihr KI-Team bereitstellen",
-    "call_us": "Anrufen",
     "ask_ai_bar": "Fragen Sie Ihre KI nach AI or Die"
   },
   "footer": {
@@ -24,9 +23,7 @@
     "headline_1": "Ihr KI-Team.",
     "headline_2": "Ihre Infrastruktur. Ihre Kontrolle. Wir bauen es nur.",
     "subhead": "KI-Support ist kostenlos. Menschlicher Support ist Premium.",
-    "cta_consult": "Kostenloses Erstgespräch buchen",
-    "cta_call": "Anrufen",
-    "phone_label": "Sprechen Sie mit KI in jeder Sprache"
+    "cta_consult": "Kostenloses Erstgespräch buchen"
   },
   "math": {
     "headline": "Die Rechnung",
@@ -51,8 +48,7 @@
     "body": "KI-Agenten sind standardmäßig mehrsprachig. Dokumente, Rechnungen und Recherchen können in jeder Sprache und jeder Währung eingereicht werden — das Ergebnis kommt in der Sprache zurück, die Sie benötigen.",
     "input_label": "Eingabe",
     "process_label": "Prozess",
-    "output_label": "Ausgabe",
-    "phone_label": "Sprechen Sie in jeder Sprache mit unserem KI-Agenten"
+    "output_label": "Ausgabe"
   },
   "stats": {
     "agents_label": "Agents live",
@@ -73,8 +69,7 @@
     "eyebrow": "AI or Die",
     "headline": "Bereit, Ihren ersten AI or Die KI-Agent einzusetzen?",
     "subhead": "KI-Support ist kostenlos. Menschlicher Support ist Premium.",
-    "book": "Kostenloses Erstgespräch buchen",
-    "phone_label": "Sprechen Sie in jeder Sprache mit unserem KI-Agenten"
+    "book": "Kostenloses Erstgespräch buchen"
   },
   "pricing": {
     "hero": {
@@ -193,8 +188,7 @@
     "cta": {
       "headline": "Bereit, Ihren ersten AI or Die KI-Agent einzusetzen?",
       "subhead": "Kostenloses Erstgespräch. Wir berechnen die Lücke für Ihr konkretes Unternehmen — und zeigen exakt, welche Rollen Ihr Team heute abgeben kann.",
-      "book": "Ihr KI-Team bereitstellen",
-      "phone_label": "Sprechen Sie mit unserem KI-Agenten"
+      "book": "Ihr KI-Team bereitstellen"
     }
   },
   "audit": {

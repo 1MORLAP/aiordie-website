@@ -105,12 +105,6 @@ export default function AuditPage() {
             >
               Book Your Free Audit
             </a>
-            <a
-              href="tel:7869989310"
-              className="text-gray-400 hover:text-white transition-colors text-lg font-medium"
-            >
-              (786) 998-9310
-            </a>
           </div>
         </div>
       </section>
@@ -258,12 +252,6 @@ export default function AuditPage() {
               className="bg-red-500 hover:bg-red-600 text-white px-10 py-4 rounded font-bold text-lg transition-colors w-full sm:w-auto text-center"
             >
               Book Your Free Audit
-            </a>
-            <a
-              href="tel:7869989310"
-              className="text-gray-300 hover:text-white transition-colors text-lg font-semibold"
-            >
-              (786) 998-9310
             </a>
           </div>
           <p className="text-gray-600 text-sm mt-6">
